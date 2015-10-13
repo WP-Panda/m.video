@@ -1,0 +1,200 @@
+/*===================================================================================*/
+/*  CHECKOUT
+/*===================================================================================*/
+
+.checkout{
+	h3{
+		margin-top: 10px;
+		font-weight: 800;
+		font-size: 20px;
+		text-transform: uppercase;
+		margin-bottom: 23px;
+	}
+	.checkout-steps{
+		.panel-group{
+			.panel{
+				border: none;
+				border-radius: 0;
+				box-shadow: none;
+				+.panel{
+					margin-top: 15px;
+				}
+			}
+		}
+	}
+	.panel-heading{
+		background-color: #fff;
+		border: 1px solid #ddd;
+		border-radius: 0;
+		padding: 10.5px 10px;
+		h4{
+			margin: inherit;
+		}
+		.panel-title{
+			font-family: @headings-font-family;
+			a{
+				font-size: 14px;
+				text-transform: uppercase;
+				color: #555;
+				display: block;
+				.step{
+					padding: 6px 12px;
+					color: #fff;
+					font-size: 14px;
+					display: inline-block;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+	.panel-collapse{
+		.panel-body{
+			border: none!important;
+			padding-left: 0;
+			font-size: 12px;
+			padding-right: 0;
+			text-align: justify;
+			form{
+				margin-bottom: 20px;
+			}
+			.checkout-subtitle{
+				font-size: 13px;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: #555;
+				margin-bottom: 20px;
+			}
+			p{
+				font-weight: 500;
+				font-size: 13px;
+				color: #666;
+				display: inline-block;
+			}
+			.radio{
+				label{
+					font-size: 12px;
+					color: #666;
+				}
+				input{
+					margin-left: 0;
+				}
+			}
+			
+			ul{
+				margin-bottom: 20px;
+				list-style: inside; 
+				li{
+					font-size: 12px;
+					&:last-child{
+						margin-top: 10px;
+					}
+					i{
+						font-size: 3px !important;
+						vertical-align: middle;
+						padding-right: 6px;
+					}
+				}
+			}
+			button{
+				&.btn{
+					font-size: 13px;
+					font-family: @headings-font-family;
+					padding: 11px 22.5px;
+				}
+			}
+			.login,.form-rimbus{
+				form{
+					.form-group{
+						margin-bottom: 20px;
+					}
+					&.register-form{
+						margin-top: 10px;
+					}
+					.form-control{
+						border-radius: 0;
+						box-shadow: none;
+						border-color: #e5e5e5;
+						height: 32px;
+						width: 80%;
+						&:focus{
+							box-shadow: none;
+							border-color: #bbb;
+						}
+					}
+					label{
+						font-size: 12px;
+						font-weight: normal;
+						text-transform: capitalize;
+						span{
+							color: red;
+							font-size: 16px;
+							font-weight: 700;
+							line-height: 1px;
+						}
+					}
+				}
+			}
+			a{
+				font-size: 13px;
+				padding-left: 10px;
+				color: #555;
+			}
+			.form-rimbus{
+				form{
+					.form-control{
+						width: 100%;
+					}
+				}
+				button{
+					margin-top: 10px !important;
+				}
+				.checkbox{
+					label{
+						input{
+							margin-top: 0;
+							top: 2px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.checkout-sidebar{
+		.panel-group{
+			.panel{
+				border: none;
+				box-shadow: none;
+				.panel-body{
+					padding: 0;
+					ul{
+						li{
+							&:first-child{
+								a{
+									padding-top: 0;
+								}
+							}
+							a{
+								font-size: 13px;
+								font-weight: 500;
+								color: #555;
+								padding-left: 0;
+								&:hover,
+								&:active,
+								&:focus{
+									background-color: transparent;
+								}
+								&:before{
+									content: "\f0da";
+		  							font-family: 'FontAwesome';
+		  							font-size: 12px;
+		  							color: #bbb;
+		  							padding-right: 10px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

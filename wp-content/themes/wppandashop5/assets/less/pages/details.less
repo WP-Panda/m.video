@@ -1,0 +1,271 @@
+/*===================================================================================*/
+/*  DETAIL PAGE
+/*===================================================================================*/
+
+.details-page{
+	margin-top: 14px;
+	.category-product{
+		.grid-v1{
+			.cart {
+	            .action {
+	                ul {
+	                    li {
+	                        a.whislist,a.compare {
+	                            //visibility: hidden !important;
+	                        }
+	                    }
+	                }
+	            }
+	        }
+		}
+	}
+	.sidebar-single-product{
+		margin-bottom: 20px;
+	}
+	.product-name{
+		h3{
+			font-size: 18px;
+			font-weight: 600;
+			text-transform: uppercase;
+			margin-top: 0;
+		}
+	}
+	.review-comment-stock{
+		font-size: 13px;
+		padding-bottom: 16px;
+		padding-top: 12px;
+		span{
+			&:first-child{
+				a{
+					padding-right: 10px;
+					
+				}
+				&:after{
+					content: "|";
+					font-size: 10px;
+					padding-right: 10px;
+				}
+			}
+			.status{
+				&:after{
+					display: none;
+				}
+			}
+		}
+		a{
+			font-weight: 500;
+			color: #666;
+			text-transform: capitalize;
+			&:hover{
+				color: #666;
+			}
+			
+		}
+		.product-stock{
+			float: right;
+			font-weight: 500;
+		}
+
+	}
+	.product-description{
+		font-size: 13px;
+		color: #666;
+		padding: 20px 0;
+		border-top: 1px dashed #bbb;
+		border-bottom: 1px dashed #bbb;
+		p{
+			margin-bottom: 0;
+		}
+	}
+	.details-product-price{
+		padding: 20px 0;
+		font-family: @headings-font-family;
+		border-bottom: 1px dashed #bbb;
+		ins{
+			font-size: 30px;
+		}
+		del{
+			font-size: 16px;
+			color: #aaa;
+		}
+	}
+	.custom-select{
+		text-align: left;
+		padding: 20px 0;
+		border-bottom: 1px dashed #bbb;
+		ul{
+			margin: 0;
+			width: 100%;
+			&:first-child{
+				padding-right: 0;
+			}
+			li{
+				width: 50%;
+				&:last-child{
+					float: right;
+					padding-right: 0;
+					padding-left: 10px;
+				}
+				&:first-child{
+					padding-left: 0;
+					padding-right: 10px;
+				}
+				select{
+					display: block;
+					height: 36px;
+					width: 45% !important;
+				}
+				.customSelect{
+					display: block !important;
+					width: 100% !important;
+
+				}
+				.mandatory{
+					color: red;
+					font-size: 14px;
+				}
+				label{
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+	.point-of-action{
+		padding: 20px 0;
+		border-bottom: 1px dashed #bbb;
+		.quantity,
+		.add-to-cart{
+			display: inline-block;
+		}
+		.quantity{
+			padding-right: 30px;
+			label{
+				font-size: 13px;
+				font-weight: 400;
+				padding-right: 10px;
+			}
+			input{
+				padding: 8px;
+				width: 70px;
+				border: 1px solid #f1f1f1;
+			}
+		}
+		.add-to-cart{
+			.btn{
+				padding: 10.5px 15.5px;
+				font-family: @headings-font-family;
+				font-size: 12px;
+			}
+			i{
+				font-size: 13px;
+				padding-right: 6px;
+			}
+		}
+	}
+	.product-btn{
+		padding: 20px 0;
+		text-transform: capitalize;
+		border-bottom: 1px dashed #bbb;
+		ul{
+			display: inline-block !important;
+			> li{
+				float: left;
+				padding-right: 20px;
+				a{
+					color: #666;
+					font-size: 13px;
+					font-weight: 500;
+					padding-right: 20px;
+					
+					i{
+						padding-right: 10px;
+					}
+				}
+				&:after{
+					content: "|";
+					font-size: 10px;
+				}
+				&:last-child{
+					padding-right: 0;
+					a{
+						padding-right: 0;
+					}
+					&:after{
+						display: none;
+					}
+				}
+			}
+		}	
+	}
+	.product-share-social{
+		padding: 20px 0;
+	}
+	.product-info-panel{
+		.nav-tabs{
+			border-bottom: none;
+			li{
+				border: none; ;
+				margin-bottom: 0;
+				&.active{
+						a{
+							color: #fff;
+						}
+					}
+				a{
+					border-radius: 0;
+					border: 1px solid #d2d1d0;
+					font-size: 15px;
+					font-weight: 700;
+					text-transform: uppercase;
+					margin-right: 10px;
+					color: #555;
+					&:hover{
+						color: #fff;
+					}
+				}
+			}
+		}
+
+	}
+	.tab-content{
+		margin-top: 20px;
+		margin-bottom: 30px;
+		.tab-pane{
+			p{
+				margin: 0;
+				font-size: 13px;
+				line-height: 1.6;
+			}
+		}
+	}
+
+	.gallery-holder{
+		.product-item-holder{
+			.gallery-thumbs{
+				margin-top: 15px;
+				.item{
+                    margin-right: 15px;
+                    border:2px solid rgba(0,0,0,0);
+				}
+				.owl-controls {
+					margin-top: 10px;
+                    text-align: center;
+                    top: auto !important;
+                    .owl-dots{
+                    	.owl-dot{
+                    		display: inline-block;
+                    		span{
+                    			background: none repeat scroll 0 0 #869791;
+							    border-radius: 20px;
+							    display: block;
+							    height: 12px;
+							    margin: 5px 7px;							    
+							    width: 12px;
+                    		}                    	
+                    	}
+                    }
+				}
+			}
+		}
+	}
+}

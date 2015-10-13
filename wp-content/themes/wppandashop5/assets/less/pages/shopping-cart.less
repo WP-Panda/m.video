@@ -1,0 +1,122 @@
+/*===================================================================================*/
+/*  SHOPPING CART
+/*===================================================================================*/
+
+.shopping-cart{
+	.entry-title{
+		font-size: 20px;
+		text-transform: uppercase;
+		color: @content-color;
+		font-weight: 800;
+		margin-bottom: 16px;
+	}
+	form{
+		table{
+			margin-bottom: 50px;
+			thead{
+				font-family: @headings-font-family;
+				font-size: 13px;
+				color: @headings-color;
+				text-transform: capitalize;
+				tr > th{
+					font-weight: 400;
+				}
+				tr{
+					th{
+						text-align: center;
+						vertical-align: middle;
+					}
+					
+				}
+			}
+			tfoot{
+				tr{
+					td{
+						padding: 20px 30px;
+						.shopping-cart-btn{
+							span{
+								a{
+									font-family: @headings-font-family;
+									font-size: 13px;
+									text-transform: uppercase;
+									color: #555;
+									&:last-child{
+										float: right;
+									}
+								}
+								a:hover{
+										color: #fff !important;
+									}
+								.btn{
+									padding: 11px 21px;
+								}
+							}
+						}
+					}
+				}
+			}
+			tbody{
+				tr{
+					td{
+						text-align: center;
+						vertical-align: middle;
+						&.product-thumbnail{
+							padding: 26px 10px;
+						}
+						&.product-remove{
+							a{
+								font-size: 20px;
+								color: #aaa;
+							}
+						}
+						a{
+							&.name{
+								font-size: 13px;
+								font-family: @headings-font-family;
+								text-transform: uppercase;
+								display: block;
+								color: @headings-color;
+								margin-bottom: 10px;
+							}
+						}
+						&.product-name{
+							text-align: left;
+							padding-left: 36px;
+
+						}
+						.product-size,
+						.product-color{
+							display: block;
+							font-size: 12px;
+							text-transform: capitalize;
+							font-weight: 500;
+						}
+						&.product-edit{
+							a{
+								font-size: 12px;
+								color: #aaa;
+								text-decoration: underline;
+							}
+						}
+						&.product-quantity{
+							input{
+								width: 76px;
+								border: 1px solid #eee;
+								padding: 6px 10px;
+								font-size: 13px;
+								font-weight: 600;
+							}
+						}
+						&.product-price,
+						&.product-total{
+							font-weight: 400;
+							font-size: 18px;
+							font-family: @headings-font-family;
+							color: #666;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+/*===================================================================================*/
+/*  BUTTON
+/*===================================================================================*/
+
+.button{
+	font-size: 13px;
+	font-family: @headings-font-family;
+	color: #555;
+	background-color: #e7e7e7;
+	border: none;
+	text-transform: uppercase;
+	padding: 11px 19.5px;
+	display: inline-block;
+
+	&:focus, &:active{
+		background-color: darken( #e7e7e7, 10%);
+	}
+
+	&:hover{
+		background-color: @primary-color;
+		color: #FFF;
+	}
+}

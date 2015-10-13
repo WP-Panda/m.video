@@ -1,0 +1,30 @@
+/*===================================================================================*/
+/*  PAGINATION
+/*===================================================================================*/
+
+.pagination{
+	> li{
+		display: inline-block;
+		margin-right: 2px;
+	}
+	>li:first-child >a, 
+	>li:first-child >span {
+	    border-bottom-left-radius: 0;
+	    border-top-left-radius: 0;
+	}
+	>li:last-child >a, 
+	>li:last-child >span {
+	    border-bottom-right-radius: 0;
+	    border-top-right-radius: 0;
+	}
+	> li > a, > li > span{
+		padding: 2px 9.5px;
+		color: #666;
+	}
+	> li > a >i, > li > span > i{
+		color: #aaa !important;
+	}
+	> li > a:hover, > li > span:hover, > li > a:focus, > li > span:focus{
+        color: #fff;
+    }
+}

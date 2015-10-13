@@ -1,0 +1,181 @@
+/*===================================================================================*/
+/* FASHION
+/*===================================================================================*/
+
+.fashion-v1-position{
+	margin-bottom: -202px;
+    position: relative;
+    top: -202px;
+    z-index: 0;
+}
+.fashion-v2{
+	.product-1,
+	.product-2,
+	.product-3,
+	.product-4{
+		height: 640px;
+		background-position: center;
+		background-repeat: no-repeat;
+		.content-outer{
+			position: relative;
+			height: 640px;
+			.content{
+				position: absolute;
+				h1{
+					font-size: 60px;
+					text-transform: uppercase;
+					color: #444;
+					font-weight: 400;
+				}
+				p{
+					font-size: 18px;
+					color: #444;
+					letter-spacing: 1.6px;
+				}
+				.product-price{
+					font-family: @headings-font-family;
+					line-height: 1;
+					ins{
+						font-size: 60px;
+					}
+					del{
+						font-size: 35px !important;
+						color: #969696;
+						
+					}
+					ins,del{
+						letter-spacing: -3px;
+					}
+				}
+				button{
+					font-size: 15px;
+					margin-right: 16px !important;
+					background-color: #5d5e5f;
+					&:last-child {
+						margin: 0  !important;
+					}
+					&.btn{
+						padding: 9.5px 26.5px;
+					}
+					&.btn-primary{
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	.product-1{
+		.content-outer{
+			.content{
+				right: 0;
+				bottom: 28%;
+				text-align: center;
+				.product-price{
+					margin-bottom: 30px;
+					del{
+						padding-left: 10px;
+					}
+				}
+			}
+		}
+	}
+	.product-2{
+		background-color: #f9f9f9;
+		.content-outer{
+			text-align: center;
+			.content{
+				right: 22%;
+				bottom: 11%;
+				text-align: center;
+				h1{
+					//font-size: 55px;
+				}
+				p{
+					margin-bottom: 40px;
+					font-size: 20px;
+				}
+				.product-price{
+					margin-bottom: 0;
+					ins,del{
+						display: block;
+					}	
+					ins{
+						font-size: 50px;
+					}
+					del{
+						padding-bottom: 10px;
+						font-size: 30px;
+					}
+				}
+			}
+			img{
+				display: inline-block;
+				text-align: center;
+			}
+		}
+	}
+	.product-3{
+		.content-outer{
+			.content{
+				text-align: right;
+				right: 44%;
+				bottom: 30%;
+				h1{
+					//font-size: 55px;
+				}
+				p{
+					margin-bottom: 25px;
+					font-size: 20px;
+				}
+				.product-price{
+					ins{
+						padding-left: 10px;
+					}
+				}
+			}
+		}
+	}
+	.product-4{
+		.content-outer{
+			img{
+				position: absolute;
+				left: 10%;
+			}
+			.content{
+				text-align: center;
+				right: 0;
+				bottom: 22%;
+				h1{
+					//font-size: 55px;
+				}
+				p{
+					margin-bottom: 42px;
+					font-size: 20px;
+				}
+				.product-price{
+					ins,del{
+						display: block;
+					}	
+					ins{
+						font-size: 50px;
+					}
+					del{
+						font-size: 30px;
+						margin-bottom: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+.fashion-v5{
+	.sidebar{
+		.single-banner{
+			a{
+				.content{
+				    right: 11px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,56 @@
+/*===================================================================================*/
+/*  CUSTOM SELECT
+/*===================================================================================*/
+
+.custom-select{
+	text-align: center;
+	section{
+		padding-left: 10px;
+		display: inline-block;
+		width: inherit;
+			&:first-child{
+			padding-right: 0;
+		}
+		label{
+			font-size: 12px;
+			font-weight: 500;
+			margin-right: 6px;
+		}
+	}
+	ul,
+	section{
+		display: inline-block;
+		width: inherit;
+		&:first-child{
+			padding-right: 40px;
+		}
+		label{
+			font-size: 12px;
+			font-weight: 500;
+			margin-right: 6px;
+		}
+		span.customSelect{
+			background-color: #fff;
+		    border: 1px solid #dddddd;
+		    color: #7c7c7c;
+		    font-size: 12px;
+		    padding: 5px 10px 5px 14px;
+		    font-weight: 600;
+		    text-align: left;
+		    .customSelectInner{
+		    	width: inherit !important;
+		    }
+		    span.customSelectInner{
+		    	width: inherit;
+		    	&:after{
+		    		content: "\f0dd";
+  					font-family: 'FontAwesome';
+  					float: right;
+  					padding-left: 10px;
+  					font-size: 10px;
+
+		    	}
+		    }
+		}
+	}
+}

@@ -1,0 +1,42 @@
+/*===================================================================================*/
+/*  PRODUCT ITEM VIEW
+/*===================================================================================*/
+
+.product-item-view{
+    padding: 2px 0;
+    .nav-tabs{
+        border: none;
+    }
+    .nav{
+        li{
+            a{
+                background-color: #ffffff;
+                border: medium none;
+                border-radius: 0;
+                color: #555555;
+                padding: 2px 6px;
+            }
+            span{
+                display: inline-block;
+                font-size: 12px;
+                font-weight: 500;
+                padding: 4px 10px 2px 0;
+            }
+        }
+        li.active{
+            a{
+                color: #ffffff;
+            }
+            a,
+            a:hover,
+            a:focus{
+                border: none;
+            }
+        }
+        li{
+            &:last-child{
+                margin-left: 4px;
+            }
+        }
+    }
+}

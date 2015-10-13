@@ -1,0 +1,241 @@
+/*===================================================================================*/
+/*  HEADERS
+/*===================================================================================*/
+
+.headers{
+	background-color: #dcdcdc;
+	.header-v1,.header-v2,.header-v3,.header-v4,.header-v5,.header-v6,.header-v7,.header-v8,.header-v9{
+		box-shadow: 0 0 20px rgba(0,0,0,.1);
+		.shopping-cart{
+			.dropdown-toggle{
+				display: block !important;
+			}
+		}
+	}
+}
+header{
+	.top{
+		background-color: #f1f1f1;
+		padding: 8.5px 0;
+	}
+	.top-bar{
+		.welcome-msg,
+		.customer-care-info{
+			font-size: 12px;
+			font-weight: 500;
+			text-transform: initial !important;
+			color: #666;
+		}
+		.customer-care-info{
+			padding-left: 30px;
+			i{
+				padding-right: 4px;
+				font-size: 16px;
+			}
+		}
+	}
+	.top-navbar{
+		text-align: right;
+		.top-nav{
+			> ul{
+				> li{
+					line-height: 0.7;
+					border-right: 1px solid  #bbb;
+					padding-left: 15px;
+					padding-right: 15px;
+					&:last-child{
+						padding-right: 0;
+						border-right: none !important;
+					}
+
+					a{
+						font-size: 12px;
+						font-weight: 500;
+						color: #666;
+					}
+				}
+			}
+		}
+	}
+	.middle{
+		margin-top: 32px;
+		margin-bottom: 40px;			
+	}
+	.option-search-bar{
+		.custom-select{
+			ul,section{
+				&:first-child{
+					padding-right: 0;
+				}
+			}
+			ul,section{
+				span{
+					&.customSelect{
+						padding: 10px 10px 10px 14px;
+						border-right: 0;
+						background-color: #f6f6f6;
+						span{
+							&.customSelectInner{
+								&:after{
+									float: none;
+									vertical-align: top;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.input-group{
+			.category-menu{
+				.dropdown-menu{
+					border: 1px solid  #f1f1f1;
+					
+				}
+				button{
+					font-size: 12px;
+					font-weight: 500;
+					color: #fff;
+					i{
+						color: #fff;
+						padding-left: 4px;
+					}
+				}
+				.btn{
+					padding: 8px 19.5px;
+				}
+				.btn-default{
+					background-color: #525252;
+					border-color: #525252;
+				}
+			}
+			input{
+				height: 35px;
+				box-shadow: none;
+				border-color: #e4e4e4;
+				font-size: 12px;
+				border-right: none;
+				padding-right: 0;
+				&:hover,
+				&:focus,
+				&:active{
+					border-color: #e4e4e4;
+				}
+			}
+			span{
+				button{
+					border: 1px solid  #e4e4e4;
+					border-left: none;
+					background-color: #fff;
+					i{
+						color: #666 !important;	
+					}
+					
+					&.btn{
+						padding: 6.5px 12px;
+					}
+
+					&:hover{
+						border-left: none;
+					}
+				}
+			}
+		}
+	}
+	.logo{
+		text-align: center;
+	}
+	.language-currency{
+		margin-top: 10px;
+		text-align: right;
+		ul{
+			> li{
+				padding-right: 15px;
+				> a{
+					font-size: 12px;
+					text-transform: uppercase;
+					font-family: @headings-font-family;
+					i{
+						color: #666;
+						padding-left: 6px;
+					}
+					span{
+						img{
+							padding-right: 6px;
+						}
+					}
+				}
+				.dropdown-menu{
+					border: 1px solid  #f1f1f1;
+					width: 100px !important;
+					min-width: 100px !important;
+					> li{
+						padding-right: 0;
+						> a{
+							span{
+								img{
+									padding-right: 6px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+			
+}
+
+
+// .navbar-default{
+// 	.navbar-nav{
+// 		  > .open{
+// 			   > a{
+// 			   	&,
+// 			   	&:hover,
+// 			   	&:focus{
+// 			   		background: rgba(0,0,0,0);
+// 			   	}
+// 			}
+// 		}
+// 	}
+// }
+
+// .animate-dropdown .open > .dropdown-menu,
+// .animate-dropdown .open > .dropdown-menu > .dropdown-submenu > .dropdown-menu {
+//   animation-name: slidenavAnimation;
+//   animation-duration: 200ms;
+//   animation-iteration-count: 1;
+//   animation-timing-function: ease-out;
+//   animation-fill-mode: forwards;
+//   -webkit-animation-name: slidenavAnimation;
+//   -webkit-animation-duration: 200ms;
+//   -webkit-animation-iteration-count: 1;
+//   -webkit-animation-timing-function: ease-out;
+//   -webkit-animation-fill-mode: forwards;
+//   -moz-animation-name: slidenavAnimation;
+//   -moz-animation-duration: 200ms;
+//   -moz-animation-iteration-count: 1;
+//   -moz-animation-timing-function: ease-out;
+//   -moz-animation-fill-mode: forwards;
+// }
+// @keyframes slidenavAnimation {
+//   from {
+//     margin-top: -30px;
+//     opacity: 0;
+//   }
+//   to {
+//     margin-top: 0;
+//     opacity: 1;
+//   }
+// }
+// @-webkit-keyframes slidenavAnimation {
+//   from {
+//     margin-top: -30px;
+//     opacity: 0;
+//   }
+//   to {
+//     margin-top: 0;
+//     opacity: 1;
+//   }
+// }  

@@ -1,0 +1,25 @@
+<!-- ========================================== PRODUCT INFO ========================================= -->
+<div class="product-info-panel wow fadeInUp">
+
+	<!-- Nav tabs -->
+	<ul class="nav nav-tabs" role="tablist">
+		<li role="presentation" class="active"><a href="#description" aria-controls="description" role="tab" data-toggle="tab">description</a></li>
+		<li role="presentation"><a href="#review" aria-controls="review" role="tab" data-toggle="tab">review</a></li>
+		<li role="presentation"><a href="#product-tags" aria-controls="product-tags" role="tab" data-toggle="tab">product tags</a></li>
+	</ul><!-- /.nav-tabs -->
+
+	<!-- Tab panes -->
+	<div class="tab-content">
+		<div role="tabpanel" class="tab-pane fade in active" id="description">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas eleifend. Phasellus a felis at est bibendum feugiat ut eget eni Praesent et massa consectetur, posuere dolor non, varius lorem. Aenean eu tempor lorem, ac consequat dui. Ut placerat risus et rutrum digniss im. Pellentesque volutpat mi et augue imperdiet pellentesque. Praesent ac lorem fringilla, congue sem at, dapibus neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas eleifend. Phasellus a felis at est bibendum feugiat ut eget enim. Praesent et massa consectetur, posuere dolor non, varius lorem.  <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas eleifend. Phasellus a felis at est bibendum feugiat ut eget eni Praesent et massa consectetur, posuere dolor non, varius lorem. Aenean eu tempor lorem, ac consequat dui. Ut placerat risus et rutrum digniss im. Pellentesque volutpat mi et augue imperdiet pellentesque. Praesent ac lorem fringilla, congue sem at, dapibus neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas eleifend. Phasellus a felis at est bibendum feugiat ut eget enim. Praesent et massa consectetur, posuere dolor non, varius lorem. Aenean eu tempor lorem, ac consequat dui.</p>
+		</div>
+		<div role="tabpanel" class="tab-pane fade" id="review">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas eleifend. Phasellus a felis at est bibendum feugiat ut eget eni Praesent et massa consectetur, posuere dolor non, varius lorem. Aenean eu tempor lorem, ac consequat dui. Ut placerat risus et rutrum digniss im. Pellentesque volutpat mi et augue imperdiet pellentesque. Praesent ac lorem fringilla, congue sem at, dapibus neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas eleifend. Phasellus a felis at est bibendum feugiat ut eget enim. Praesent et massa consectetur, posuere dolor non, varius lorem. Aenean eu tempor lorem, ac consequat dui. <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas eleifend. Phasellus a felis at est bibendum feugiat ut eget eni Praesent et massa consectetur, posuere dolor non, varius lorem. Aenean eu tempor lorem, ac consequat dui. Ut placerat risus et rutrum digniss im. Pellentesque volutpat mi et augue imperdiet pellentesque. Praesent ac lorem fringilla, congue sem at, dapibus neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas eleifend. Phasellus a felis at est bibendum feugiat ut eget enim. Praesent et massa consectetur, posuere dolor non, varius lorem.</p>
+		</div>
+		<div role="tabpanel" class="tab-pane fade" id="product-tags">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas eleifend. Phasellus a felis at est bibendum feugiat ut eget eni Praesent et massa consectetur, posuere dolor non, varius lorem. Aenean eu tempor lorem, ac consequat dui. Ut placerat risus et rutrum digniss im. Pellentesque volutpat mi et augue imperdiet pellentesque. Praesent ac lorem fringilla, congue sem at, dapibus neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas eleifend. Phasellus a felis at est bibendum feugiat ut eget enim. Praesent et massa consectetur, posuere dolor non, varius lorem.  <br> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas eleifend. Phasellus a felis at est bibendum feugiat ut eget eni Praesent et massa consectetur, posuere dolor non, varius lorem. Aenean eu tempor lorem, ac consequat dui. Ut placerat risus et rutrum digniss im. Pellentesque volutpat mi et augue imperdiet pellentesque. Praesent ac lorem fringilla, congue sem at, dapibus neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan egestas eleifend. Phasellus a felis at est bibendum feugiat ut eget enim. Praesent et massa consectetur, posuere dolor non, varius lorem. Aenean eu tempor lorem, ac consequat dui.</p>
+		</div>
+	</div><!-- /.tab-content -->
+
+</div><!-- /.product-info-panel -->
+<!-- ========================================== PRODUCT INFO : END ========================================= -->
