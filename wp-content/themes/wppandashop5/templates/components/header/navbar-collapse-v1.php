@@ -36,7 +36,7 @@
 				</a>
 				<ul class="dropdown-menu fadeInUp animated">
 					<li>
-						<?php require RB_ROOT . '/parts/navigation/megamenu-fullwidth.php';?>
+						<?php get_template_part('templates/components/navigation/megamenu','fullwidth');?>
 					</li>
 				</ul>
 			</li>
@@ -51,7 +51,7 @@
 				</a>
 				<ul class="dropdown-menu fadeInUp animated">
 					<li>
-						<?php require RB_ROOT . '/parts/navigation/megamenu.php';?>
+						<?php get_template_part('templates/components/navigation/megamenu');?>
 					</li>
 				</ul>
 			</li>

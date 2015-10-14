@@ -2,7 +2,7 @@
 <div class="header-nav animate-dropdown">
     <div class="yamm navbar navbar-default" role="navigation">
         <div class="nav-bg-class">
-            <?php require RB_ROOT . '/parts/widgets/header/navbar-collapse-v1.php';?>
+            <?php get_template_part('templates/components/header/navbar-collapse','v1');?>
         </div><!-- /.nav-bg-class -->
     </div><!-- /.navbar-default -->
 </div><!-- /.header-nav -->

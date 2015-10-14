@@ -21,7 +21,7 @@
 		            	<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-manufactures.php' ?>
 		            	<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-price-slider.php' ?>
 		            	<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-color.php' ?>
-		            	<?php require RB_ROOT . '/parts/widgets/sidebar/product-tags.php' ?>
+		            	<?php get_template_part('templates/components/sidebar/product-tags'); ?>
 		            	<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-comparision.php' ?>
 		            	<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-advertisement.php' ?>
 

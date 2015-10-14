@@ -34,7 +34,7 @@
 				<a href="index.php?page=home" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">men's</a>
 				<ul class="dropdown-menu fadeInUp animated">
 					<li>
-						<?php require RB_ROOT . '/parts/navigation/megamenu-fullwidth.php';?>
+						<?php get_template_part('templates/components/navigation/megamenu','fullwidth');?>
 					</li>
 				</ul>
 			</li>
@@ -45,7 +45,7 @@
 				</a>
 				<ul class="dropdown-menu fadeInUp animatedfadeInUp animated">
 					<li>
-						<?php require RB_ROOT . '/parts/navigation/megamenu.php';?>
+						<?php get_template_part('templates/components/navigation/megamenu');?>
 					</li>
 				</ul>
 			</li>
@@ -54,7 +54,7 @@
 				<a href="#" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">kids</a>
 				<ul class="dropdown-menu fadeInUp animated">
 					<li>
-						<?php require RB_ROOT . '/parts/navigation/megamenu-fullwidth.php';?>
+						<?php get_template_part('templates/components/navigation/megamenu','fullwidth');?>
 					</li>
 				</ul>
 			</li>
@@ -65,7 +65,7 @@
 				</a>
 				<ul class="dropdown-menu fadeInUp animated">
 					<li>
-						<?php require RB_ROOT . '/parts/navigation/megamenu.php';?>
+						<?php get_template_part('templates/components/navigation/megamenu');?>
 					</li>
 				</ul>
 			</li>

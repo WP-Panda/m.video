@@ -9,7 +9,6 @@
     <?php wp_head(); ?>
 
 
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,3 +18,4 @@
 
 </head>
 <body>
+<?php get_template_part('templates/headers/header','v1');

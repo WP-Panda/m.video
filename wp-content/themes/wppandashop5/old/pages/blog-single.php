@@ -14,17 +14,17 @@
 	<div class="container">
 		<div class="row blog">
 			<div class="col-md-9">
-				<?php require RB_ROOT . '/parts/section/blog/blog-single-post.php' ?>
-				<?php require RB_ROOT . '/parts/section/blog/blog-comments.php' ?>
-				<?php require RB_ROOT . '/parts/section/blog/blog-write-comments.php' ?>
+				<?php get_template_part('templates/content-templates/blog','single-post'); ?>
+				<?php get_template_part('templates/content-templates/blog','comments'); ?>
+				<?php get_template_part('templates/content-templates/blog','write-comments'); ?>
 			</div><!-- /.col -->
 
 			<div class="col-md-3 sidebar">
-				<?php require RB_ROOT . '/parts/widgets/sidebar/blog-category.php' ?>
-				<?php require RB_ROOT . '/parts/widgets/sidebar/recent-post.php' ?>
-				<?php require RB_ROOT . '/parts/widgets/sidebar/archive.php' ?>
-				<?php require RB_ROOT . '/parts/widgets/sidebar/product-tags.php' ?>
-				<?php require RB_ROOT . '/parts/widgets/sidebar/gallery.php' ?>
+				<?php get_template_part('templates/components/sidebar/blog-category'); ?>
+				<?php get_template_part('templates/components/sidebar/recent-post'); ?>
+				<?php get_template_part('templates/components/sidebar/archive'); ?>
+				<?php get_template_part('templates/components/sidebar/product-tags'); ?>
+				<?php get_template_part('templates/components/sidebar/gallery'); ?>
 			</div><!-- /.sidebar -->
 		</div><!-- /.row -->
 	</div><!-- /.container -->

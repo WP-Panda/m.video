@@ -9,8 +9,8 @@
 		<li class=""><a href="#"><i class="fa fa-search"></i></a></li>
 		<li class="">
 			<div class="dropdown dropdown-cart shopping-cart">
-				<?php require RB_ROOT . '/parts/widgets/header/cart-style-v3.php'; ?>
-				<?php require RB_ROOT . '/parts/widgets/header/shopping-cart.php'; ?>
+				<?php get_template_part('templates/components/header/cart-style','v3'); ?>
+				<?php get_template_part('templates/components/header/shopping-cart'); ?>
 			</div>
 		</li>
 	</ul><!-- /.list-inline -->

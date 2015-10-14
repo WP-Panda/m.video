@@ -8,12 +8,12 @@
                 
                 <li class="dropdown menu-item">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">benders</a>
-                    <?php require RB_ROOT . '/parts/navigation/sidebar/normal-menu.php' ?>
+                    <?php get_template_part('templates/components/navigation/sidebar/normal-menu'); ?>
                 </li><!-- /.dropdown -->
 
                 <li class="dropdown menu-item">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">clamps<span class="menu-label hot-menu hidden-xs">hot</span></a>
-                    <?php require RB_ROOT . '/parts/navigation/sidebar/mega-menu.php' ?>
+                    <?php get_template_part('templates/components/navigation/sidebar/mega-menu'); ?>
                 </li><!-- /.dropdown -->
 
                 <li class="dropdown menu-item no-menu">
@@ -22,7 +22,7 @@
 
                 <li class="dropdown menu-item">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">communication tools</a>
-                    <?php require RB_ROOT . '/parts/navigation/sidebar/mega-menu.php' ?>
+                    <?php get_template_part('templates/components/navigation/sidebar/mega-menu'); ?>
                 </li><!-- /.dropdown -->
 
                 <li class="dropdown menu-item no-menu">
@@ -31,12 +31,12 @@
 
                 <li class="dropdown menu-item">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">crimping tools</a>
-                    <?php require RB_ROOT . '/parts/navigation/sidebar/normal-menu.php' ?>
+                    <?php get_template_part('templates/components/navigation/sidebar/normal-menu'); ?>
                 </li><!-- /.dropdown -->
 
                 <li class="dropdown menu-item">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">pipe storage<span class="menu-label new-menu hidden-xs">new</span></a>
-                    <?php require RB_ROOT . '/parts/navigation/sidebar/mega-menu.php' ?>
+                    <?php get_template_part('templates/components/navigation/sidebar/mega-menu'); ?>
                 </li><!-- /.dropdown -->
 
             </ul><!-- /.nav -->

@@ -12,7 +12,7 @@
 			</div><!-- /.panel-heading -->
 			<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 				<div class="panel-body">
-					<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-category-items.php' ?>
+					<?php get_template_part('templates/components/sidebar/sidebar-category','items'); ?>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel-collapse -->
 		</div><!-- /.panel -->
@@ -26,7 +26,7 @@
 			</div><!-- /.panel-heading -->
 			<div id="collapseTwo" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
 				<div class="panel-body">
-					<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-category-items.php' ?>
+					<?php get_template_part('templates/components/sidebar/sidebar-category','items'); ?>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel-collapse -->
 		</div><!-- /.panel -->
@@ -40,7 +40,7 @@
 			</div><!-- /.panel-heading -->
 			<div id="collapseThree" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingThree">
 				<div class="panel-body">
-					<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-category-items.php' ?>
+					<?php get_template_part('templates/components/sidebar/sidebar-category','items'); ?>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel-collapse -->
 		</div><!-- /.panel -->
@@ -64,7 +64,7 @@
 			</div><!-- /.panel-heading -->
 			<div id="collapseFive" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingFive">
 				<div class="panel-body">
-					<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-category-items.php' ?>
+					<?php get_template_part('templates/components/sidebar/sidebar-category','items'); ?>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel-collapse -->
 		</div><!-- /.dropdown -->
@@ -78,7 +78,7 @@
 			</div><!-- /.panel-heading -->
 			<div id="collapseSix" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingSix">
 				<div class="panel-body">
-					<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-category-items.php' ?>
+					<?php get_template_part('templates/components/sidebar/sidebar-category','items'); ?>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel-collapse -->
 		</div><!-- /.panel -->

@@ -38,7 +38,7 @@
 	</div><!-- /.col -->
 
 	<div class="col col-sm-4 col-md-3">
-		<?php require RB_ROOT . '/parts/section/category/pagination.php' ?>
+		<?php get_template_part('templates/content-templates/category/pagination'); ?>
 	</div><!-- /.col -->
 </div><!-- /.row -->
 <!-- ========================================== CONTROLS PRODUCT ITEM : END ========================================= -->
