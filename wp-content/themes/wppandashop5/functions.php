@@ -9,6 +9,7 @@
  * Константы
  */
 define('WPS5_BASE_DIR',trailingslashit( get_template_directory_uri() ) );
+define('WPS5_BASE_URI',trailingslashit( get_template_directory() ) );
 
 /**
  * Активация тайтла
@@ -44,3 +45,12 @@ function wps5_register_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'wps5_register_scripts' );
+
+/**
+ * Подключение всякого
+ */
+
+require_once(WPS5_BASE_URI .'/framework/redux/redux-core/framework.php');
+require_once(WPS5_BASE_URI .'/framework/redux/loader.php');
+require_once(WPS5_BASE_URI .'/framework/redux/meta-config.php');
+require_once(WPS5_BASE_URI .'/framework/redux/config.php');
