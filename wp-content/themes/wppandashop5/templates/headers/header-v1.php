@@ -1,17 +1,16 @@
-<!-- ============================================== HEADER-v5 ============================================== -->
+<!-- ============================================== HEADER-v1 ============================================== -->
 <header>
-	<div class="header-v5">
+	
+	<div class="header-v1">
 		<div class="top">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-6 top-bar">
-						<div class="language-currency">
-							<?php require RB_ROOT . '/parts/widgets/header/language-currency.php'; ?>
-						</div>
-						<span class="welcome-msg hidden-xs">Default welcome msg!</span>
+						<span class="welcome-msg">Default welcome msg!</span>
+						<span class="customer-care-info hidden-xs"><i class="fa fa-phone"></i> Call for free +1868 123 456</span>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-6 top-navbar">
-						<?php require RB_ROOT . '/parts/navigation/top-navbar.php';?>
+						<?php require '../components/navigation/top-navbar.php';?>
 					</div>
 				</div><!-- /.row -->
 			</div><!-- /.container -->
@@ -20,15 +19,13 @@
 		<div class="middle">
 			<div class="container">
 				<div class="row">
-
 					<div class="col-xs-12 col-sm-12 col-md-4">
-						<?php require RB_ROOT . '/parts/widgets/header/option-search-bar.php';?>
+						<?php require '../components/header/option-search-bar.php';?>
 					</div>
-
-					<div class="col-xs-12 col-sm-12 col-md-5 logo">
+					<div class="col-xs-12 col-sm-12 col-md-4 logo">
 						<div class="navbar-header">
 							<a href="index.php?page=fashion-v1" class="navbar-brand">
-								<?php require RB_ROOT . '/parts/widgets/header/logo.php'; ?>
+								<?php require '../components/header/logo.php'; ?>
 							</a>
 							<button data-target=".mc-horizontal-menu-collapse1" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
 				                <span class="sr-only">Toggle navigation</span>
@@ -36,13 +33,17 @@
 				                <span class="icon-bar"></span>
 				                <span class="icon-bar"></span>
 				            </button>
+			            </div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-2 hidden-xs">
+						<div class="language-currency">
+							<?php require '../components/header/language-currency.php'; ?>
 						</div>
 					</div>
-
-					<div class="col-xs-12 col-sm-12 col-md-3">
+					<div class="col-xs-12 col-sm-12 col-md-2">
 						<div class="dropdown dropdown-cart shopping-cart">
-							<?php require RB_ROOT . '/parts/widgets/header/cart-style-v2.php'; ?>
-							<?php require RB_ROOT . '/parts/widgets/header/shopping-cart.php'; ?>
+							<?php require '../components/header/cart-style-v1.php'; ?>
+							<?php require '../components/header/shopping-cart.php'; ?>
 						</div>
 					</div>
 				</div><!-- /.row -->
@@ -51,14 +52,12 @@
 
 		<div class="bottom">
 			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-12 navbar">
-						<?php require RB_ROOT . '/parts/navigation/navbar.php';?>
-					</div>
-				</div><!-- /.row -->
+				<div class="navbar">
+					<?php require '../components/navigation/navbar.php';?>
+				</div>
 			</div><!-- /.container -->
 		</div><!-- /.bottom -->
-	</div><!-- /.header-v5 -->
-
+	</div><!-- /.header-v1 -->
+	
 </header>
-<!-- ============================================== HEADER-v5 : END ============================================== -->
+<!-- ============================================== HEADER-v1 : END ============================================== -->

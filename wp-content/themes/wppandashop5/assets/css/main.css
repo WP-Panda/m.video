@@ -9998,7 +9998,7 @@ footer .footer-outer-2 .payment-card img:hover {
     margin-bottom: 20px;
   }
   header .header-v7 .middle .compare {
-    padding: ;
+   /* padding:auto ;*/
   }
   header .header-v7 .middle .search-option {
     text-align: center;

@@ -6,7 +6,7 @@
 				<div class="navbar navbar-default yamm">
 					<div class="navbar-header">						
 						<a href="index.php?page=fashion-v1" class="navbar-brand">
-							<?php require RB_ROOT . '/parts/widgets/header/logo-mixed.php'; ?>
+							<?php require '../components/header/logo-mixed.php'; ?>
 						</a>
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".mc-horizontal-menu-collapse">
 					        <span class="sr-only">Toggle navigation</span>
@@ -51,7 +51,7 @@
 								</a>
 								<ul class="dropdown-menu fadeInUp animated">
 									<li>
-										<?php require RB_ROOT . '/parts/navigation/megamenu-fullwidth.php';?>
+										<?php require '../components/navigation/megamenu-fullwidth.php';?>
 									</li>
 								</ul>
 							</li>
@@ -66,7 +66,7 @@
 								</a>
 								<ul class="dropdown-menu fadeInUp animated">
 									<li>
-										<?php require RB_ROOT . '/parts/navigation/megamenu.php';?>
+										<?php require '../components/navigation/megamenu.php';?>
 									</li>
 								</ul>
 							</li>
@@ -154,8 +154,8 @@
 								</ul>
 							</li>
 							<li class="dropdown dropdown-cart shopping-cart">
-								<?php require RB_ROOT . '/parts/widgets/header/cart-style-v6.php'; ?>
-								<?php require RB_ROOT . '/parts/widgets/header/shopping-cart.php'; ?>
+								<?php require '../components/header/cart-style-v6.php'; ?>
+								<?php require '../components/header/shopping-cart.php'; ?>
 							</li>
 						</ul>
 					</div>

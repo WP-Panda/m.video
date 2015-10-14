@@ -5,6 +5,7 @@
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
   z-index: 1;
+
   
   .owl-stage{
     position: relative;

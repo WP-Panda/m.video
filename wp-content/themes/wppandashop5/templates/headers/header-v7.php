@@ -6,12 +6,12 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-6 top-bar">
 						<div class="language-currency">
-							<?php require RB_ROOT . '/parts/widgets/header/language-currency.php'; ?>
+							<?php require '../components/header/language-currency.php'; ?>
 						</div>
 						<span class="welcome-msg hidden-xs">Default welcome msg!</span>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-6 top-navbar">
-						<?php require RB_ROOT . '/parts/navigation/top-navbar.php';?>
+						<?php require '../components/navigation/top-navbar.php';?>
 					</div>
 				</div><!-- /.row -->
 			</div><!-- /.container -->
@@ -23,7 +23,7 @@
 					<div class="col-xs-12 col-sm-12 col-md-6 logo">
 						<div class="navbar-header">
 							<a href="index.php?page=fashion-v1">
-								<?php require RB_ROOT . '/parts/widgets/header/logo-white.php'; ?>
+								<?php require '../components/header/logo-white.php'; ?>
 							</a>
 							<button data-target=".mc-horizontal-menu-collapse1" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
 				                <span class="sr-only">Toggle navigation</span>
@@ -36,7 +36,7 @@
 
 					<div class="col-xs-8 col-sm-12 col-md-6 search-option">
 						<div class="search-bar">
-							<?php require RB_ROOT . '/parts/widgets/header/option-search-bar.php';?>
+							<?php require '../components/header/option-search-bar.php';?>
 							<div class="compare hidden-xs">
 								<ul class="list-unstyled">
 									<li>
@@ -61,12 +61,12 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-9 col-md-10 navbar">
-						<?php require RB_ROOT . '/parts/navigation/navbar.php';?>
+						<?php require '../components/navigation/navbar.php';?>
 					</div>
 					<div class="col-xs-12 col-sm-3 col-md-2">
 						<div class="dropdown dropdown-cart shopping-cart">
-							<?php require RB_ROOT . '/parts/widgets/header/cart-style-v7.php'; ?>
-							<?php require RB_ROOT . '/parts/widgets/header/shopping-cart.php'; ?>
+							<?php require '../components/header/cart-style-v7.php'; ?>
+							<?php require '../components/header/shopping-cart.php'; ?>
 						</div>
 					</div>
 				</div><!-- /.row -->

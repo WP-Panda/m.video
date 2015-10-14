@@ -5,11 +5,11 @@
 			<div class="container top-action-bar navbar">
 				<div class="row">
 					<div class="col-xs-12 col-sm-8 col-md-6 top-navbar">
-						<?php require RB_ROOT . '/parts/navigation/top-navbar.php';?>
+						<?php require '../components/navigation/top-navbar.php';?>
 					</div>
 					<div class="col-xs-12 col-sm-4 col-md-6 top-bar">
 						<div class="language-currency pull-right">
-							<?php require RB_ROOT . '/parts/widgets/header/language-currency-search.php'; ?>
+							<?php require '../components/header/language-currency-search.php'; ?>
 						</div>
 					</div>
 				</div><!-- /.row -->
@@ -18,7 +18,7 @@
 				<div class="container head-wrapper">
 					<div class="navbar-header">
 						<a href="index.php?page=fashion-v1" class="navbar-brand">
-							<?php require RB_ROOT . '/parts/widgets/header/logo-small.php'; ?>
+							<?php require '../components/header/logo-small.php'; ?>
 						</a>
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".mc-horizontal-menu-collapse">
 					        <span class="sr-only">Toggle navigation</span>
@@ -63,7 +63,7 @@
 								</a>
 								<ul class="dropdown-menu fadeInUp animated">
 									<li>
-										<?php require RB_ROOT . '/parts/navigation/megamenu-fullwidth.php';?>
+										<?php require '../components/navigation/megamenu-fullwidth.php';?>
 									</li>
 								</ul>
 							</li>
@@ -78,7 +78,7 @@
 								</a>
 								<ul class="dropdown-menu fadeInUp animated">
 									<li>
-										<?php require RB_ROOT . '/parts/navigation/megamenu.php';?>
+										<?php require '../components/navigation/megamenu.php';?>
 									</li>
 								</ul>
 							</li>
@@ -147,8 +147,8 @@
 
 						<ul class="nav navbar-nav navbar-right">
 							<li class="dropdown dropdown-cart shopping-cart">
-								<?php require RB_ROOT . '/parts/widgets/header/cart-style-v8.php'; ?>
-								<?php require RB_ROOT . '/parts/widgets/header/shopping-cart.php'; ?>
+								<?php require '../components/header/cart-style-v8.php'; ?>
+								<?php require '../components/header/shopping-cart.php'; ?>
 							</li>
 						</ul><!-- /.navbar-nav -->
 					</div><!-- /.navbar-collapse -->
