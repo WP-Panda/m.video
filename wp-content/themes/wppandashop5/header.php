@@ -18,4 +18,15 @@
 
 </head>
 <body>
-<?php get_template_part('templates/headers/header','v1');
+<?php global $wps5_option;
+if( !empty( $wps5_option['site_layout_mode'] && 'box' === $wps5_option['site_layout_mode']) ) {
+    echo '<div class="box-wrapper">
+		        <div class="custom-container">
+			        <div class="wrapper-body-inner">';
+
+} else {
+    echo '<div id="wrapper" class="rimbus">';
+}
+
+get_template_part('templates/headers/header','v1');
+
