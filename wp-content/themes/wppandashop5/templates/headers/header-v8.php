@@ -5,11 +5,11 @@
 			<div class="container top-action-bar navbar">
 				<div class="row">
 					<div class="col-xs-12 col-sm-8 col-md-6 top-navbar">
-						<?php require '../components/navigation/top-navbar.php';?>
+						<?php get_template_part('templates/components/navigation/top-navbar'); ?>
 					</div>
 					<div class="col-xs-12 col-sm-4 col-md-6 top-bar">
 						<div class="language-currency pull-right">
-							<?php require '../components/header/language-currency-search.php'; ?>
+							<?php get_template_part('templates/components/header/language-currency','search'); ?>
 						</div>
 					</div>
 				</div><!-- /.row -->
@@ -18,7 +18,7 @@
 				<div class="container head-wrapper">
 					<div class="navbar-header">
 						<a href="index.php?page=fashion-v1" class="navbar-brand">
-							<?php require '../components/header/logo-small.php'; ?>
+							<?php get_template_part('templates/components/header/logo','small'); ?>
 						</a>
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".mc-horizontal-menu-collapse">
 					        <span class="sr-only">Toggle navigation</span>
@@ -63,7 +63,7 @@
 								</a>
 								<ul class="dropdown-menu fadeInUp animated">
 									<li>
-										<?php require '../components/navigation/megamenu-fullwidth.php';?>
+										<?php get_template_part('templates/components/navigation/megamenu','fullwidth'); ?>
 									</li>
 								</ul>
 							</li>
@@ -78,7 +78,7 @@
 								</a>
 								<ul class="dropdown-menu fadeInUp animated">
 									<li>
-										<?php require '../components/navigation/megamenu.php';?>
+										<?php get_template_part('templates/components/navigation/megamenu',''); ?>
 									</li>
 								</ul>
 							</li>
@@ -147,8 +147,8 @@
 
 						<ul class="nav navbar-nav navbar-right">
 							<li class="dropdown dropdown-cart shopping-cart">
-								<?php require '../components/header/cart-style-v8.php'; ?>
-								<?php require '../components/header/shopping-cart.php'; ?>
+								<?php get_template_part('templates/components/header/cart-style','v8'); ?>
+								<?php get_template_part('templates/components/header/shopping-cart'); ?>
 							</li>
 						</ul><!-- /.navbar-nav -->
 					</div><!-- /.navbar-collapse -->

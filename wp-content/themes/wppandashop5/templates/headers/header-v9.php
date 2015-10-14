@@ -6,20 +6,20 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-6 top-bar">
 						<div class="language-currency">
-							<?php require '../components/header/language-currency.php'; ?>
+							<?php get_template_part('templates/components/header/language-currency'); ?>
 						</div>
 						<span class="customer-care-info hidden-xs"><i class="fa fa-phone"></i> Call for free +1868 123 456</span>
 					</div>
 
 					<div class="col-xs-12 col-sm-12 col-md-6 top-navbar">
-						<?php require '../components/navigation/top-navbar.php';?>
+						<?php get_template_part('templates/components/navigation/top-navbar'); ?>
 					</div>
 				</div><!-- /.row -->
 			</div><!-- /.container -->
 		</div><!-- /.top -->
 
 		<div class="fashion-v4">
-			<?php require '../components/section/fashion/fashion-v4-slider.php' ?>
+			<?php get_template_part('templates/components/header/cart-stylesection/fashion/fashion','v4-slider'); ?>
 		</div>
 
 		<div class="middle">
@@ -28,7 +28,7 @@
 					<div class="col-xs-12 col-sm-12 col-md-4 logo">
 						<div class="navbar-header">
 							<a href="index.php?page=fashion-v1" class="navbar-brand">
-								<?php require '../components/header/logo.php'; ?>
+								<?php get_template_part('templates/components/header/logo',''); ?>
 							</a>
 							<button data-target=".mc-horizontal-menu-collapse1" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
 				                <span class="sr-only">Toggle navigation</span>
@@ -40,13 +40,13 @@
 					</div>
 
 					<div class="col-xs-12 col-sm-12 col-md-5 search-option">
-						<?php require '../components/header/option-search-bar.php';?>
+						<?php get_template_part('templates/components/header/option-search-bar'); ?>
 					</div>
 				
 					<div class="col-xs-12 col-sm-12 col-md-3">
 						<div class="dropdown dropdown-cart shopping-cart">
-							<?php require '../components/header/cart-style-v2.php'; ?>
-							<?php require '../components/header/shopping-cart.php'; ?>
+							<?php get_template_part('templates/components/header/cart-style','v2'); ?>
+							<?php get_template_part('templates/components/header/shopping-cart'); ?>
 						</div>
 					</div>
 				</div><!-- /.row -->
@@ -57,7 +57,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 navbar">
-						<?php require '../components/navigation/navbar.php';?>
+						<?php get_template_part('templates/components/navigation/navbar',''); ?>
 					</div>
 				</div><!-- /.row -->
 			</div><!-- /.container -->

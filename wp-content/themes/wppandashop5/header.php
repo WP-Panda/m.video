@@ -28,5 +28,6 @@ if( !empty( $wps5_option['site_layout_mode'] && 'box' === $wps5_option['site_lay
     echo '<div id="wrapper" class="rimbus">';
 }
 
-get_template_part('templates/headers/header','v1');
+$header= !empty($wps5_option['header_layout']) ? $wps5_option['header_layout'] : 1;
+get_template_part( 'templates/headers/header','v' . $header );
 

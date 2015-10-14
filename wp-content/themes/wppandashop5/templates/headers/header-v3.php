@@ -6,12 +6,12 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-6 top-bar">
 						<div class="language-currency">
-							<?php require '../components/header/language-currency.php'; ?>
+							<?php get_template_part('templates/components/header/language-currency'); ?>
 						</div>
 						<span class="customer-care-info hidden-xs"><i class="fa fa-phone"></i> Call for free +1868 123 456</span>
 					</div>
 					<div class="col-xs-12 col-sm-12 col-md-6 top-navbar">
-						<?php require '../components/navigation/top-navbar-v2.php';?>
+						<?php get_template_part('templates/components/navigation/top-navbar','v2'); ?>
 					</div>
 				</div><!-- /.row -->
 			</div><!-- /.container -->
@@ -20,7 +20,7 @@
 			<div class="container">
 				<div class="navbar-header">
 			    	<a href="index.php?page=fashion-v1" class="navbar-brand">					
-						<?php require '../components/header/logo.php'; ?>
+						<?php get_template_part('templates/components/header/logo',''); ?>
 					</a>
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".mc-horizontal-menu-collapse1">
 				        <span class="sr-only">Toggle navigation</span>
@@ -63,7 +63,7 @@
 							<a href="index.php?page=home" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">men's</a>
 							<ul class="dropdown-menu fadeInUp animated">
 								<li>
-									<?php require '../components/navigation/megamenu-fullwidth.php';?>
+									<?php get_template_part('templates/components/navigation/megamenu','fullwidth'); ?>
 								</li>
 							</ul>
 						</li>
@@ -74,7 +74,7 @@
 							</a>
 							<ul class="dropdown-menu fadeInUp animated">
 								<li>
-									<?php require '../components/navigation/megamenu.php';?>
+									<?php get_template_part('templates/components/navigation/megamenu',''); ?>
 								</li>
 							</ul>
 						</li>
@@ -83,7 +83,7 @@
 							<a href="#" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">kids</a>
 							<ul class="dropdown-menu fadeInUp animated">
 								<li>
-									<?php require '../components/navigation/megamenu-fullwidth.php';?>
+									<?php get_template_part('templates/components/navigation/megamenu','fullwidth'); ?>
 								</li>
 							</ul>
 						</li>
@@ -94,7 +94,7 @@
 							</a>
 							<ul class="dropdown-menu fadeInUp animated">
 								<li>
-									<?php require '../components/navigation/megamenu.php';?>
+									<?php get_template_part('templates/components/navigation/megamenu',''); ?>
 								</li>
 							</ul>
 						</li>

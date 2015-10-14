@@ -753,6 +753,27 @@ if (!class_exists('Redux_Framework_sample_config')) {
                     'customizer'    =>  false,
                     'fields'        =>  array(
 
+                        array(
+                            'id'       => 'header_layout',
+                            'type'     => 'radio',
+                            'title'    => __( 'Header layout', 'redux-framework-demo' ),
+                            'subtitle' => __( 'Selected header layout.', 'redux-framework-demo' ),
+                            //'desc'     => __( 'Selected header layout.', 'redux-framework-demo' ),
+                            //Must provide key => value pairs for radio options
+                            'options'  => array(
+                                '1' => __( 'Header 1', 'redux-framework-demo' ),
+                                '2' => __( 'Header 2', 'redux-framework-demo' ),
+                                '3' => __( 'Header 3', 'redux-framework-demo' ),
+                                '4' => __( 'Header 4', 'redux-framework-demo' ),
+                                '5' => __( 'Header 5', 'redux-framework-demo' ),
+                                '6' => __( 'Header 6', 'redux-framework-demo' ),
+                                '7' => __( 'Header 7', 'redux-framework-demo' ),
+                                '8' => __( 'Header 8', 'redux-framework-demo' ),
+                                '9' => __( 'Header 9', 'redux-framework-demo' )
+                            ),
+                            'default'  => '1'
+                        ),
+
                         // Menu Type
                         array(
                             'id'        =>  'global_menu_type',
