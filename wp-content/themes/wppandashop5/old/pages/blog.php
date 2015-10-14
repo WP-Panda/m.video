@@ -14,7 +14,7 @@
 	<div class="container">
 		<div class="row blog">
 			<div class="col-md-9">
-				<?php require 'templates/content-templates/blog/blog-post.php' ?>
+				<?php get_template_part('templates/content-templates/blog/blog/','post'); ?>
 				<div class="blog-pagination wow fadeInUp">
 					<?php get_template_part('templates/content-templates/category/pagination'); ?>
 
