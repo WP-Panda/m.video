@@ -1303,6 +1303,23 @@ if (!class_exists('Redux_Framework_sample_config')) {
                 'fields'     =>  array(
 
                     array(
+                        'id'       => 'footer_layout',
+                        'type'     => 'radio',
+                        'title'    => __( 'Footer layout', 'redux-framework-demo' ),
+                        'subtitle' => __( 'Selected footer layout.', 'redux-framework-demo' ),
+                        //'desc'     => __( 'Selected header layout.', 'redux-framework-demo' ),
+                        //Must provide key => value pairs for radio options
+                        'options'  => array(
+                            '1' => __( 'Footer 1', 'redux-framework-demo' ),
+                            '2' => __( 'Footer 2', 'redux-framework-demo' ),
+                            '3' => __( 'Footer 3', 'redux-framework-demo' ),
+                            '4' => __( 'Footer 4', 'redux-framework-demo' ),
+                            '5' => __( 'Footer 5', 'redux-framework-demo' )
+                        ),
+                        'default'  => '1'
+                    ),
+
+                    array(
                         'id'        =>  'global_footer_widget_visibility',
                         'type'      =>  'button_set',
                         'title'     =>  __('Global Footer Widgets Area', 'wppandashop5'),

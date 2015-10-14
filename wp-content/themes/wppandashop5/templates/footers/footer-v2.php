@@ -6,7 +6,7 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-md-3 company-info">
 						<div class="logo">
-							<?php require RB_ROOT . '/parts/widgets/footer/logo-mixed.php'; ?>
+							<?php get_template_part('templates/components/footer/logo','mixed'); ?>
 						</div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipi scing elit. Duis a feugiat nibh. Aliq uam scele risque tellus et tortor laoreet..</p>
 						<div class="social-network">

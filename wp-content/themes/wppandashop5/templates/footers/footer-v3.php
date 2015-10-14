@@ -6,7 +6,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-md-3 company-info">
 					<div class="logo">
-						<?php require RB_ROOT . '/parts/widgets/footer/logo-mixed.php'; ?>
+						<?php get_template_part('templates/components/footer/logo','mixed'); ?>
 					</div>
 					<div class="contact more-info">
 						<div class="contact-outer">
