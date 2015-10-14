@@ -324,7 +324,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
             );
 
                 // Preloader
-                $this->sections[] = array(
+            /*    $this->sections[] = array(
                     'title'         =>  __('Preloader', 'wppandashop5'),
                     'subsection'    =>  true,
                     'icon'          =>  'font-icon-arrow-right-simple-thin-round',
@@ -379,7 +379,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
                         ),
 
                     )
-                );
+                ); */
 
                 // Common
                 $this->sections[] = array(
