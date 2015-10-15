@@ -15,7 +15,12 @@ get_header(); ?>
 		<div class="container">
 			<div class="row blog">
 				<div class="col-md-9">
+
+					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 						<?php get_template_part('templates/content-templates/blog/blog','post'); ?>
+					<?php endwhile; else: ?>
+						<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+					<?php endif; ?>
 					<div class="blog-pagination wow fadeInUp">
 						<?php get_template_part('templates/content-templates/category/pagination'); ?>
 					</div><!-- /.pagination -->
