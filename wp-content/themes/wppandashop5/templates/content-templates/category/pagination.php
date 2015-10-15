@@ -1,19 +1,19 @@
-<!-- ========================================== PAGINATION ========================================= -->
 <nav>
-	<ul class="pagination">
-		<li>
-			<a href="#" class="prev" aria-label="Previous">
-				<span aria-hidden="true"><i class="fa fa-angle-left"></i></span>
-			</a>
-		</li>
-		<li class="active" ><a href="#">1</a></li>
-		<li><a href="#">2</a></li>
-		<li><a href="#">3</a></li>
-		<li>
-			<a href="#" class="next" aria-label="Next">
-				<span aria-hidden="true"><i class="fa fa-angle-right"></i></span>
-			</a>
-		</li>
-	</ul><!-- /.pagination -->
+	<?php
+	$args = array(
+		'show_all'     => False, // показаны все страницы участвующие в пагинации
+		'end_size'     => 1,     // количество страниц на концах
+		'type'		   => 'list',
+		'mid_size'     => 1,     // количество страниц вокруг текущей
+		'prev_next'    => True,  // выводить ли боковые ссылки "предыдущая/следующая страница".
+		'prev_text'    => '<span aria-hidden="true"><i class="fa fa-angle-left"></i></span>',
+		'next_text'    => '<span aria-hidden="true"><i class="fa fa-angle-right"></i></span>',
+		'add_args'     => False,
+		'add_fragment' => '',     // Текст который добавиться ко всем ссылкам.
+		'screen_reader_text' => ' '
+	);
+
+	the_posts_pagination($args);
+
+	?>
 </nav>
-<!-- ========================================== PAGINATION : END ========================================= -->
