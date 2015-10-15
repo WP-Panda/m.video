@@ -11,9 +11,12 @@ get_header(); ?>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         <?php get_template_part('templates/content-templates/blog/blog','single-post'); ?>
                         <?php get_template_part('templates/content-templates/blog/blog','comments'); ?>
-                        <?php get_template_part('templates/content-templates/blog/blog','write-comments'); ?>
+                        <?php //get_template_part('templates/content-templates/blog/blog','write-comments'); ?>
+
+                        <?php comments_template(); ?>
+
                     <?php endwhile; else: ?>
-                        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+                        <p><?php _e('Sorry, no posts matched your criteria.','wppandashop5'); ?></p>
                     <?php endif; ?>
                 </div><!-- /.col -->
 

@@ -11,7 +11,7 @@ get_header(); ?>
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 						<?php get_template_part('templates/content-templates/blog/blog','post'); ?>
 					<?php endwhile; else: ?>
-						<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+						<p><?php _e('Sorry, no posts matched your criteria.','wppandashop5'); ?></p>
 					<?php endif; ?>
 					<div class="blog-pagination wow fadeInUp">
 						<?php get_template_part('templates/content-templates/category/pagination'); ?>

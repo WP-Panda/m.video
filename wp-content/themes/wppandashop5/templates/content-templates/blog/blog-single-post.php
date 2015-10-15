@@ -4,7 +4,7 @@
 	<?php } ?>
 	<h1><?php the_title(); ?></h1>
 	<span class="author-date">
-		<?php printf(__('By %s - %s'),get_the_author(),get_the_date('d.m.Y'));?>
+		<?php printf(__('By %s - %s','wppandashop5'),get_the_author(),get_the_date('d.m.Y'));?>
 	</span>
 	<div class="blog-content">
 		<?php the_content(); ?>

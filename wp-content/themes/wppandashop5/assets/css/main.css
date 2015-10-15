@@ -147,7 +147,7 @@ hr {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-  color: #fff;
+  color: #fff!important;
 }
 .animated {
   -webkit-animation-duration: 0.3s !important;
@@ -5701,11 +5701,13 @@ font-weight:400 .star-rating:before {
 .blog .blog-write-comment textarea.form-control {
   height: 200px;
 }
-.blog .blog-write-comment button {
+.blog .blog-write-comment button,
+.blog .blog-write-comment input[type=submit]{
   font-size: 13px;
   font-family: 'Montserrat', sans-serif;
 }
-.blog .blog-write-comment button.btn {
+.blog .blog-write-comment button.btn,
+.blog .blog-write-comment input.btn {
   padding: 12px 15.5px;
 }
 /*===================================================================================*/
