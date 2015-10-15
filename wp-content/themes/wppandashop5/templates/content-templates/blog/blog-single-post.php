@@ -1,37 +1,27 @@
-<!-- ============================================== BLOG SINGLE POST ============================================== -->
 <div class="blog-single-post wow fadeInUp">
-	<img class="img-responsive" src="assets/images/blog/1.jpg" alt="#">
-	<h1>30 Beautiful and Creative Ecommerce Website</h1>
-	<span class="author-date">By Admin - Jan 21,2015</span>
+	<?php if(has_post_thumbnail()) { ?>
+			<?php the_post_thumbnail( array( 'class' => ' img-responsive ',870, 400 ) ); ?>
+	<?php } ?>
+	<h1><?php the_title(); ?></h1>
+	<span class="author-date">
+		<?php printf(__('By %s - %s'),get_the_author(),get_the_date('d.m.Y'));?>
+	</span>
 	<div class="blog-content">
-		<p>Cras condimentum venenatis enim a facilisis. Fusce in mauris velit. Ut ipsum lectus, laoreet ac condimentum nec, rhoncus ac augue. Maecenas sollicitudin euismod congue. Nunc in vestibulum arcu. Donec vitae enim est. Phasellus fermentum odio quam. Donec aliquam lacinia nisi, idrhs oncus sapien pharetra ac. </p>
-		<div class="row">
-			<div class="col-md-6 col-sm-6">
-				<p class="">Cras condimentum venenatis enim a facilisis. Fusce in mauris velit. Utsd ipsum lectus, laoreet ac condimentum nec, rhoncus ac augue. Maec enas sollicitudin euismod congue. Nunc in vestibulum arcu. Donec vita enims est. Phasellus fermentum odio quam. Donec aliquam lacini a nisi idrhses oncus sapien pharetra ac. Quisque sed pharetra eros, at molestie eratsd. Maecenas quis risus tristique, vehicula sem. Donec vitae enim est. Phas ellus fermentum odio quam. Donec vitae enim est. Donec vitae enim.</p>
-			</div>
-			<div class="col-md-6 col-sm-6">
-				<span class=""><img class="img-responsive" src="assets/images/blog/10.jpg" alt=""></span>	
-			</div>			
-		</div>
-		<p class="last-para">Cras condimentum venenatis enim a facilisis. Fusce in mauris velit. Ut ipsum lectus, laoreet ac condimentum nec, rhoncus ac augue. Maecenas sollicitudin euismod congue. Nunc in vestibulum arcu. Donec vitae enim est. Phasellus fermentum odio quam. Donec aliquam lacinia nisi, idrhs oncus sapien pharetra ac. Quisque sed pharetra eros, at molestie erat. Maecenas quis risus tristique, vehicula sem. Donec vitae enim est. Phas ellus fermentum odio quam. </p>
-	</div><!-- /.blog-content -->
+		<?php the_content(); ?>
+	</div>
 
 	<div class="cat-tags">
 		<span class="cat-links">
-			<span class="tags-title">tags:</span>
-			<a href="#" rel="category tag">Rokan</a>, 
-			<a href="#" rel="category tag">Blog</a>,
-			<a href="#" rel="category tag">PSD</a>,
-			<a href="#" rel="category tag">Wordpress</a>
+			<?php echo get_the_tag_list('<span class="tags-title">' . __('tags:','wppandashop5') .'</span>',', ',''); ?>
 		</span>
-	</div><!-- /.cat-tags -->
+	</div>
 	
 	<div class="share">
-		<span class="share-title">share:</span>
+		<span class="share-title"><?php _e('share:','wppandashop5'); ?></span>
 		<a href="#"><i class="fa fa-facebook"></i></a>
 		<a href="#"><i class="fa fa-twitter"></i></a>
 		<a href="#"><i class="fa fa-google-plus"></i></a>
 		<a href="#"><i class="fa fa-tumblr"></i></a>
-	</div><!-- /.share -->
-</div><!-- /.blog-single-post -->
-<!-- ============================================== BLOG SINGLE POST : END ============================================== -->
+	</div>
+
+</div>
