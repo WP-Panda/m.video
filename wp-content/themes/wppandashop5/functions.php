@@ -12,14 +12,25 @@ define('WPS5_BASE_DIR',trailingslashit( get_template_directory_uri() ) );
 define('WPS5_BASE_URI',trailingslashit( get_template_directory() ) );
 
 /**
- * Активация тайтла
+ * Активация всякого в тему
  */
-add_theme_support('title-tag');
+function wps5_theme_setup() {
+
+    /* Активация тайтла */
+    add_theme_support('title-tag');
+    /* Support for HTML5 */
+    add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery'));
+    /* Automatic Feed Links */
+    add_theme_support('automatic-feed-links');
+    /* Add thumbnails support */
+    add_theme_support('post-thumbnails');
+
+}
+add_action( 'after_setup_theme', 'wps5_theme_setup' );
 
 /**
  * Подключение скриптов и стилей
  */
-// Register Script
 function wps5_register_scripts() {
 
     wp_enqueue_style( 'bootstrap-css', WPS5_BASE_DIR . 'assets/css/bootstrap.min.css', false, '1.0.0' );
@@ -49,8 +60,10 @@ add_action( 'wp_enqueue_scripts', 'wps5_register_scripts' );
 /**
  * Подключение всякого
  */
-
+//компоненты redux
 require_once(WPS5_BASE_URI .'/framework/redux/redux-core/framework.php');
 require_once(WPS5_BASE_URI .'/framework/redux/loader.php');
 require_once(WPS5_BASE_URI .'/framework/redux/meta-config.php');
 require_once(WPS5_BASE_URI .'/framework/redux/config.php');
+//обрезка миниатюр
+require_once(WPS5_BASE_URI .'/framework/bfi-thumb.php');
