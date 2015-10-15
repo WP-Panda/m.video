@@ -8,9 +8,7 @@
 						<?php get_template_part('templates/components/navigation/top-navbar'); ?>
 					</div>
 					<div class="col-xs-12 col-sm-4 col-md-6 top-bar">
-						<div class="language-currency pull-right">
-							<?php get_template_part('templates/components/header/language-currency','search'); ?>
-						</div>
+						<span class="customer-care-info hidden-xs"><i class="fa fa-phone"></i> Call for free +1868 123 456</span>
 					</div>
 				</div><!-- /.row -->
 			</div><!-- /.container -->

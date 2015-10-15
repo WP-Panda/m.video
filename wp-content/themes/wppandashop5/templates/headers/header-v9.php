@@ -5,9 +5,6 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-6 top-bar">
-						<div class="language-currency">
-							<?php get_template_part('templates/components/header/language-currency'); ?>
-						</div>
 						<span class="customer-care-info hidden-xs"><i class="fa fa-phone"></i> Call for free +1868 123 456</span>
 					</div>
 
