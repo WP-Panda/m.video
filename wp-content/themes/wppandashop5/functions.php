@@ -5,6 +5,8 @@
  * Date: 14.10.2015
  * Time: 1:56
  */
+global $wps5_option;
+
 /**
  * Константы
  */
@@ -67,3 +69,7 @@ require_once(WPS5_BASE_URI .'/framework/redux/meta-config.php');
 require_once(WPS5_BASE_URI .'/framework/redux/config.php');
 //обрезка миниатюр
 require_once(WPS5_BASE_URI .'/framework/bfi-thumb.php');
+
+//функции кирилицы
+if( ! empty( $wps5_option['cyrillic_site'] ) && 'on' == $wps5_option['cyrillic_site'] )
+    require_once(WPS5_BASE_URI .'/framework/cir-to-lat.php');

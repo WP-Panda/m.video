@@ -263,6 +263,19 @@ if (!class_exists('Redux_Framework_sample_config')) {
                         'default'   =>  'wide'
                     ),
 
+                    array(
+                        'id'        =>  'cyrillic_site',
+                        'type'      =>  'button_set',
+                        'title'     =>  __('Enable cirilic options', 'wppandashop5'),
+                        'subtitle'  =>  __('To enable the adaptation of the site to Russian language', 'wppandashop5'),
+                        'desc'      =>  '',
+                        'options'   =>  array(
+                            'on'  =>  __('On','wppandashop5'),
+                            'off'  =>  __('Off','wppandashop5')
+                        ),
+                        'default'   =>  'off',
+                    ),
+
                     // Custom Admin Logo + Custom Favicon + Custom iOS Icons
                     array(
                         'id'        =>  'custom_admin_logo',
