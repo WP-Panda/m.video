@@ -69,6 +69,8 @@ require_once(WPS5_BASE_URI .'/framework/redux/meta-config.php');
 require_once(WPS5_BASE_URI .'/framework/redux/config.php');
 //обрезка миниатюр
 require_once(WPS5_BASE_URI .'/framework/bfi-thumb.php');
+//хлебные крошки
+require_once(WPS5_BASE_URI .'/framework/breadcrumbs.php');
 
 //функции кирилицы
 if( ! empty( $wps5_option['cyrillic_site'] ) && 'on' == $wps5_option['cyrillic_site'] )
