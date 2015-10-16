@@ -90,12 +90,15 @@
       <file leaf-file-name="slider.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/templates/components/section/slider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.298573">
-              <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.41053787">
+              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1444965120104" expanded="true" signature="425:877" placeholder="..." />
-                <marker date="1444965120104" expanded="true" signature="461:854" placeholder="..." />
+                <element signature="e#1039#1099#0#HTML" expanded="true" />
+                <marker date="1444968083151" expanded="true" signature="1046:1084" placeholder="..." />
+                <marker date="1444968083151" expanded="true" signature="1187:1694" placeholder="..." />
+                <marker date="1444968083151" expanded="true" signature="1223:1293" placeholder="..." />
+                <marker date="1444968083151" expanded="true" signature="1223:1667" placeholder="..." />
+                <marker date="1444968083151" expanded="true" signature="1468:1526" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -137,8 +140,8 @@
       <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/redux/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.2909093">
-              <caret line="1316" column="0" selection-start-line="1316" selection-start-column="0" selection-end-line="1316" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.909091">
+              <caret line="1318" column="41" selection-start-line="1318" selection-start-column="41" selection-end-line="1318" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -205,9 +208,9 @@
         <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/cir-to-lat.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/single.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/comments.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/redux/config.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/assets/js/owl.carousel.min.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/redux/config.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/templates/components/section/slider.php" />
       </list>
     </option>
@@ -1066,19 +1069,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/comments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.636364">
-          <caret line="120" column="136" selection-start-line="120" selection-start-column="136" selection-end-line="120" selection-end-column="136" />
-          <folding>
-            <marker date="1444954767184" expanded="true" signature="4579:4860" placeholder="..." />
-            <marker date="1444954767184" expanded="true" signature="4620:4860" placeholder="..." />
-            <marker date="1444954767184" expanded="true" signature="4996:5384" placeholder="..." />
-            <marker date="1444954767184" expanded="true" signature="4996:5391" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/templates/components/section/food/food-slider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09330406">
@@ -1105,9 +1095,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/redux/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.2909093">
-          <caret line="1316" column="0" selection-start-line="1316" selection-start-column="0" selection-end-line="1316" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.909091">
+          <caret line="1318" column="41" selection-start-line="1318" selection-start-column="41" selection-end-line="1318" selection-end-column="60" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.636364">
+          <caret line="120" column="136" selection-start-line="120" selection-start-column="136" selection-end-line="120" selection-end-column="136" />
+          <folding>
+            <marker date="1444954767184" expanded="true" signature="4579:4860" placeholder="..." />
+            <marker date="1444954767184" expanded="true" signature="4620:4860" placeholder="..." />
+            <marker date="1444954767184" expanded="true" signature="4996:5384" placeholder="..." />
+            <marker date="1444954767184" expanded="true" signature="4996:5391" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1121,12 +1124,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/templates/components/section/slider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.298573">
-          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.41053787">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1444965120104" expanded="true" signature="425:877" placeholder="..." />
-            <marker date="1444965120104" expanded="true" signature="461:854" placeholder="..." />
+            <element signature="e#1039#1099#0#HTML" expanded="true" />
+            <marker date="1444968083151" expanded="true" signature="1046:1084" placeholder="..." />
+            <marker date="1444968083151" expanded="true" signature="1187:1694" placeholder="..." />
+            <marker date="1444968083151" expanded="true" signature="1223:1293" placeholder="..." />
+            <marker date="1444968083151" expanded="true" signature="1223:1667" placeholder="..." />
+            <marker date="1444968083151" expanded="true" signature="1468:1526" placeholder="..." />
           </folding>
         </state>
       </provider>

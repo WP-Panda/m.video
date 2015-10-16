@@ -1316,6 +1316,20 @@ if (!class_exists('Redux_Framework_sample_config')) {
                 'fields'     =>  array(
 
                     array(
+                        'id'        =>  'home_slider_content',
+                        'type'      =>  'button_set',
+                        'title'     =>  __('Home Slider Content', 'wppandashop5'),
+                        'subtitle'  =>  __('Select the content for home slider.', 'wppandashop5'),
+                        'desc'      =>  '',
+                        'options'   =>  array(
+                            'custom'   =>  'Custom slides',
+                            'blog'     =>  'Blog Posts',
+                            'shop'     =>  'Shop Products'
+                        ),
+                        'default'   =>  'custom',
+                    ),
+
+                    array(
                         'id'          => 'home-slider',
                         'type'        => 'slides',
                         'title'       => __( 'Slides Options', 'redux-framework-demo' ),
@@ -1341,19 +1355,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
                         'default'   =>  'dark-type',
                     ),
 
-                    array(
-                        'id'        =>  'footer_widget_columns',
-                        'type'      =>  'button_set',
-                        'title'     =>  __('Footer Widget Columns', 'wppandashop5'),
-                        'subtitle'  =>  __('Select the columns for footer widget area.', 'wppandashop5'),
-                        'desc'      =>  '',
-                        'options'   =>  array(
-                            '2'     =>  '2 Columns',
-                            '3'     =>  '3 Columns',
-                            '4'     =>  '4 Columns'
-                        ),
-                        'default'   =>  '3',
-                    ),
+
 
                     // Copyright/Credits Text
                     array(
