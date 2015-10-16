@@ -10497,3 +10497,13 @@ footer .footer-outer-2 .payment-card img:hover {
     width: 100%;
   }
 }
+
+
+.comment-list li.comment ul.children li.depth-2, .comment-list li.comment ul.children li.depth-3, .comment-list li.comment ul.children li.depth-4, .comment-list li.comment ul.children li.depth-5 {
+  border-top: 1px solid #e7e7e7;
+  margin: 20px 0 0 40px;
+  padding-top: 25px;
+}
+li.depth-1 {
+  margin-top: 45px !important;
+}

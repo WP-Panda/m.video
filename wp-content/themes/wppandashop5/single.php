@@ -10,8 +10,6 @@ get_header(); ?>
                 <div class="col-md-9">
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         <?php get_template_part('templates/content-templates/blog/blog','single-post'); ?>
-                        <?php get_template_part('templates/content-templates/blog/blog','comments'); ?>
-                        <?php //get_template_part('templates/content-templates/blog/blog','write-comments'); ?>
 
                         <?php comments_template(); ?>
 

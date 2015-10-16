@@ -8,17 +8,65 @@ if ( post_password_required() ) {
 }
 ?>
 
+
+<?php function mytheme_comment($comment, $args, $depth){
+    $GLOBALS['comment'] = $comment;
+    switch( $comment->comment_type ) :
+        case 'pingback' :
+        case 'trackback' : ?>
+            <li <?php comment_class('media'); ?> id="comment<?php comment_ID(); ?>">
+            <div class="back-link"><?php comment_author_link(); ?></div>
+            <?php break;
+        default : ?>
+            <li <?php comment_class('media'); ?> id="comment-<?php comment_ID(); ?>">
+            <article <?php comment_class(); ?> class="comment">
+
+                <div class="media-left">
+                    <?php echo get_avatar( $comment, 70 ); ?>
+                </div>
+
+                <div class="media-body">
+                        <h4 class="author-name media-heading"><?php comment_author(); ?></h4>
+                        <div class="comment-action">
+                            <ul class="list-inline list-unstyled">
+                                <li>
+                                    <time <?php comment_time( 'c' ); ?> class="comment-time">
+                                        <span class="date">
+                                            <?php comment_date(); ?>
+                                        </span>
+                                        <span class="time">
+                                            <?php comment_time(); ?>
+                                        </span>
+                                </li>
+                                <li>
+                                    <div class="reply"><?php
+                                        comment_reply_link( array_merge( $args, array(
+                                            'reply_text' => __('Reply','wppandashop5'),
+                                            'depth' => $depth,
+                                            'max_depth' => $args['max_depth']
+                                        ) ) ); ?>
+                                    </div><!-- .reply -->
+                                </li>
+                            </ul>
+                        </div>
+                    <?php comment_text(); ?>
+                </div><!-- comment-body -->
+
+            </article><!-- #comment-<?php comment_ID(); ?> -->
+            <?php // End the default styling of comment
+            break;
+    endswitch;
+
+} ?>
 <?php if ( have_comments() ) : ?>
-    <div id="comments" class="comments-main">
-        <div class="comments-holder main-box">
-            <h3 class="comment-title main-box-title"><?php comments_number(__('no_comments'), __('one_comment'), __('comments_number')); ?></h3>
+    <div id="comments" class="blog-comments wow fadeInUp">
+            <h3 class="title"><?php comments_number(__('no comments'), __('one comment'), __('% comments')); ?></h3>
 
             <div class="main-box-inside content-inside">
                 <ul class="comment-list">
                     <?php $args = array(
-                        'avatar_size' => 75,
-                        'reply_text' => __('reply_comment'),
-                        'format' => 'html5'
+                        'format' => 'html5',
+                        'callback' => 'mytheme_comment'
                     );?>
                     <?php wp_list_comments($args); ?>
                 </ul><!--END comment-list-->
@@ -27,7 +75,7 @@ if ( post_password_required() ) {
             <div class="navigation">
                 <?php paginate_comments_links(); ?>
             </div>
-        </div><!--END comments holder -->
+
     </div>
 <?php endif; ?>
 
