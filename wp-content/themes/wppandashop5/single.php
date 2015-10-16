@@ -9,6 +9,7 @@ get_header(); ?>
 
                 <div class="col-md-9">
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
                         <?php get_template_part('templates/content-templates/blog/blog','single-post'); ?>
 
                         <?php comments_template(); ?>
@@ -16,13 +17,13 @@ get_header(); ?>
                     <?php endwhile; else: ?>
                         <p><?php _e('Sorry, no posts matched your criteria.','wppandashop5'); ?></p>
                     <?php endif; ?>
-                </div><!-- /.col -->
+                </div>
 
                 <div class="col-md-3 sidebar">
                     <?php get_sidebar(); ?>
-                </div><!-- /.sidebar -->
+                </div>
 
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!-- /.body-content -->
+            </div>
+        </div>
+    </div>
 <?php get_footer();

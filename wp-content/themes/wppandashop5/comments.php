@@ -45,15 +45,15 @@ if ( post_password_required() ) {
                                             'depth' => $depth,
                                             'max_depth' => $args['max_depth']
                                         ) ) ); ?>
-                                    </div><!-- .reply -->
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                     <?php comment_text(); ?>
-                </div><!-- comment-body -->
+                </div>
 
-            </article><!-- #comment-<?php comment_ID(); ?> -->
-            <?php // End the default styling of comment
+            </article>
+            <?php
             break;
     endswitch;
 
@@ -69,7 +69,7 @@ if ( post_password_required() ) {
                         'callback' => 'mytheme_comment'
                     );?>
                     <?php wp_list_comments($args); ?>
-                </ul><!--END comment-list-->
+                </ul>
             </div>
 
             <div class="navigation">
@@ -95,8 +95,8 @@ if ( post_password_required() ) {
             '<input name="%1$s" type="submit" id="%2$s" class="%3$s bbtn-upper btn btn-primary checkout-page-button" value="%4$s" />'.
             '</div>',
         'title_reply' => '<div class="col-md-12"><h4>' . __( 'leave a comment','wppandashop5' ) . '</h4></div>',
-        'must_log_in' => '<p class="must-log-in">' . sprintf( __('must log in','wppandashop5'), wp_login_url( apply_filters( 'the_permalink', get_permalink() ) ) ) . '</p>',
-        'logged_in_as' => '<p class="logged-in-as">' . sprintf(__( 'logged in as','wppandashop5' ), admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
+        'must_log_in' => '<div class="col-md-12 must-log-in">' . sprintf( __('You must be <a href="%s">logged in</a> to post a comment.','wppandashop5'), wp_login_url( apply_filters( 'the_permalink', get_permalink() ) ) ) . '</div>',
+        'logged_in_as' => '<div class="col-md-12 logged-in-as">' . sprintf(__( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>','wppandashop5' ), admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</div>',
         'comment_notes_before' => '',
         'comment_notes_after' => '',
         'comment_field' =>

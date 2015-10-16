@@ -1306,6 +1306,73 @@ if (!class_exists('Redux_Framework_sample_config')) {
 
 
             /*-----------------------------------------------------------------------------------*/
+            /*  - Home page
+            /*-----------------------------------------------------------------------------------*/
+            $this->sections[] = array(
+                'title'      =>  __('Home Page', 'wppandashop5'),
+                'desc'       =>  __('Control and configure of your Home Page.', 'wppandashop5'),
+                'icon'       =>  'font-icon-cone',
+                'customizer' =>  false,
+                'fields'     =>  array(
+
+                    array(
+                        'id'          => 'home-slider',
+                        'type'        => 'slides',
+                        'title'       => __( 'Slides Options', 'redux-framework-demo' ),
+                        'subtitle'    => __( 'Unlimited slides with drag and drop sortings.', 'redux-framework-demo' ),
+                        'desc'        => __( 'This field will store all slides values into a multidimensional array to use into a foreach loop.', 'redux-framework-demo' ),
+                        'placeholder' => array(
+                            'title'       => __( 'This is a title', 'redux-framework-demo' ),
+                            'description' => __( 'Description Here', 'redux-framework-demo' ),
+                            'url'         => __( 'Give us a link!', 'redux-framework-demo' ),
+                        ),
+                    ),
+
+                    array(
+                        'id'        =>  'footer_widget_area_color_type',
+                        'type'      =>  'button_set',
+                        'title'     =>  __('Footer Widgets Color Type', 'wppandashop5'),
+                        'subtitle'  =>  __('The setting refers to which color type for footer widgets area will appear.', 'wppandashop5'),
+                        'desc'      =>  '',
+                        'options'   =>  array(
+                            'light-type' =>  'Light',
+                            'dark-type'  =>  'Dark',
+                        ),
+                        'default'   =>  'dark-type',
+                    ),
+
+                    array(
+                        'id'        =>  'footer_widget_columns',
+                        'type'      =>  'button_set',
+                        'title'     =>  __('Footer Widget Columns', 'wppandashop5'),
+                        'subtitle'  =>  __('Select the columns for footer widget area.', 'wppandashop5'),
+                        'desc'      =>  '',
+                        'options'   =>  array(
+                            '2'     =>  '2 Columns',
+                            '3'     =>  '3 Columns',
+                            '4'     =>  '4 Columns'
+                        ),
+                        'default'   =>  '3',
+                    ),
+
+                    // Copyright/Credits Text
+                    array(
+                        'id'        =>  'footer_credits_text',
+                        'type'      =>  'editor',
+                        'title'     =>  __('Credits Section Area', 'wppandashop5'),
+                        'subtitle'  =>  __('Optional. Please enter your custom credits/copyright section text.', 'wppandashop5'),
+                        'desc'      =>  '',
+                        'args'   => array(
+                            'teeny'         => false,
+                            'wpautop'       => true,
+                            'media_buttons' => false
+                        )
+                    ),
+                )
+            );
+
+
+            /*-----------------------------------------------------------------------------------*/
             /*  - Footer
             /*-----------------------------------------------------------------------------------*/
             $this->sections[] = array(
