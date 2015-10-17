@@ -30,10 +30,8 @@
 				</ul>
 			</li>
 
-			<li class="dropdown yamm">
-				<a href="#" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Desserts <i class="fa fa-angle-down"></i>
-					<span class="menu-label hot-menu hidden-xs">hot</span>
-				</a>
+			<li class="dropdown">
+				<a href="#" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">Desserts <i class="fa fa-angle-down"></i></a>
 				<ul class="dropdown-menu fadeInUp animated">
 					<li>
 						<?php get_template_part('templates/components/navigation/megamenu','fullwidth');?>
@@ -41,11 +39,11 @@
 				</ul>
 			</li>
 
-			<li class=" no-down">
+			<li class="no-down">
 				<a href="#">main dishes</a>
 			</li>
 
-			<li class="dropdown yamm-fw">
+			<li class="dropdown">
 				<a href="#" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">appetizers<i class="fa fa-angle-down"></i>
 					<span class="menu-label new-menu hidden-xs">new</span>
 				</a>
@@ -59,14 +57,14 @@
 			<li class="no-down ">
 				<a href="#">drinks</a>
 			</li>
-			
+
 			<li class="dropdown navbar-right">
 				<a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Pages</a>
 				<ul class="dropdown-menu pages fadeInUp animated">
 					<li>
 						<div class="yamm-content">
 							<div class="row">
-								
+
 								<div class='col-xs-12 col-sm-4 col-md-4'>
 									<h2 class="title">home Pages</h2>
                                   	<ul class='links'>
@@ -110,14 +108,14 @@
 										<li><a href="index.php?page=footers">footer styles</a></li>
                                   	</ul>
 								</div>
-								
+
 							</div>
 						</div>
 					</li>
 				</ul>
 			</li>
 		</ul><!-- /.navbar-nav -->
-		<div class="clearfix"></div>				
+		<div class="clearfix"></div>
 	</div><!-- /.nav-outer -->
 </div><!-- /.navbar-collapse -->
 <!-- ============================================== NAVBAR COLLPASE-V1 : END ============================================== -->

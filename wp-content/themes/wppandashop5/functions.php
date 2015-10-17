@@ -1,24 +1,24 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Максим
+ * User: РњР°РєСЃРёРј
  * Date: 14.10.2015
  * Time: 1:56
  */
 global $wps5_option;
 
 /**
- * Константы
+ * РљРѕРЅСЃС‚Р°РЅС‚С‹
  */
 define('WPS5_BASE_DIR',trailingslashit( get_template_directory_uri() ) );
 define('WPS5_BASE_URI',trailingslashit( get_template_directory() ) );
 
 /**
- * Активация всякого в тему
+ * РђРєС‚РёРІР°С†РёСЏ РІСЃСЏРєРѕРіРѕ РІ С‚РµРјСѓ
  */
 function wps5_theme_setup() {
 
-    /* Активация тайтла */
+    /* РђРєС‚РёРІР°С†РёСЏ С‚Р°Р№С‚Р»Р° */
     add_theme_support('title-tag');
     /* Support for HTML5 */
     add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery'));
@@ -31,7 +31,7 @@ function wps5_theme_setup() {
 add_action( 'after_setup_theme', 'wps5_theme_setup' );
 
 /**
- * Подключение скриптов и стилей
+ * РџРѕРґРєР»СЋС‡РµРЅРёРµ СЃРєСЂРёРїС‚РѕРІ Рё СЃС‚РёР»РµР№
  */
 function wps5_register_scripts() {
 
@@ -60,18 +60,29 @@ function wps5_register_scripts() {
 add_action( 'wp_enqueue_scripts', 'wps5_register_scripts' );
 
 /**
- * Подключение всякого
+ * РџРѕРґРєР»СЋС‡РµРЅРёРµ РІСЃСЏРєРѕРіРѕ
  */
-//компоненты redux
+//РєРѕРјРїРѕРЅРµРЅС‚С‹ redux
 require_once(WPS5_BASE_URI .'/framework/redux/redux-core/framework.php');
 require_once(WPS5_BASE_URI .'/framework/redux/loader.php');
 require_once(WPS5_BASE_URI .'/framework/redux/meta-config.php');
 require_once(WPS5_BASE_URI .'/framework/redux/config.php');
-//обрезка миниатюр
+//РѕР±СЂРµР·РєР° РјРёРЅРёР°С‚СЋСЂ
 require_once(WPS5_BASE_URI .'/framework/bfi-thumb.php');
-//хлебные крошки
+//С…Р»РµР±РЅС‹Рµ РєСЂРѕС€РєРё
 require_once(WPS5_BASE_URI .'/framework/breadcrumbs.php');
 
-//функции кирилицы
+//С„СѓРЅРєС†РёРё РєРёСЂРёР»РёС†С‹
 if( ! empty( $wps5_option['cyrillic_site'] ) && 'on' == $wps5_option['cyrillic_site'] )
     require_once(WPS5_BASE_URI .'/framework/cir-to-lat.php');
+
+
+/**
+ * РђРєС‚РёРІР°С†РёСЏ РјРµРЅСЋ
+ */
+add_action('after_setup_theme', function(){
+    register_nav_menus( array(
+        'header_menu' => 'РњРµРЅСЋ РІ С€Р°РїРєРµ',
+        'footer_menu' => 'РњРµРЅСЋ РІ РїРѕРґРІР°Р»Рµ'
+    ) );
+});

@@ -53,7 +53,7 @@
 		<div class="bottom">
 			<div class="container">
 				<div class="navbar">
-					<?php get_template_part('templates/components/navigation/navbar');?>
+					<?php get_template_part('templates/components/navigation/navbar',''); ?>
 				</div>
 			</div><!-- /.container -->
 		</div><!-- /.bottom -->

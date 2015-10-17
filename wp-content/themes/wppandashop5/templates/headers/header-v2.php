@@ -23,11 +23,11 @@
 								<?php get_template_part('templates/components/header/logo',''); ?>
 							</a>
 							<button data-target=".mc-horizontal-menu-collapse1" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-				                <span class="sr-only">Toggle navigation</span>
-				                <span class="icon-bar"></span>
-				                <span class="icon-bar"></span>
-				                <span class="icon-bar"></span>
-				            </button>
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
 						</div>
 					</div>
 
@@ -54,6 +54,22 @@
 				</div><!-- /.row -->
 			</div><!-- /.container -->
 		</div><!-- /.bottom -->
+
+
+		<div class="top">
+			<div class="container">
+				<div class="row">
+		<?php
+		wp_nav_menu( array(
+			'theme_location'  => 'header_menu',
+			'menu'            => '',
+		));
+		?>
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.bottom -->
+
+
 	</div><!-- /.header-v2 -->
 
 </header>
