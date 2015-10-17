@@ -36,10 +36,12 @@
 					</div>
 
 					<div class="col-xs-12 col-sm-12 col-md-3">
-						<div class="dropdown dropdown-cart shopping-cart">
-							<?php get_template_part('templates/components/header/cart-style','v2'); ?>
-							<?php get_template_part('templates/components/header/shopping-cart'); ?>
-						</div>
+						<?php if ( is_woocommerce_activated() ) { ?>
+							<div id="cart-drop" class="dropdown dropdown-cart shopping-cart">
+								<?php get_template_part('templates/components/header/cart-style','v2'); ?>
+								<?php get_template_part('templates/components/header/shopping-cart'); ?>
+							</div>
+						<?php } ?>
 					</div>
 				</div><!-- /.row -->
 			</div><!-- /.container -->

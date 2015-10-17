@@ -802,5 +802,17 @@
     $('.fashion-v1-position').next('footer').addClass('behind-slider-f');
 
 
+    /*===================================================================================*/
+    /* CART DROPDOWN
+    /*===================================================================================*/
+    $('#cart-drop').hover(
+        function(){
+            $(this).find('ul.dropdown-menu').fadeIn();
+        },function() {
+            $(this).find('ul.dropdown-menu').fadeOut();
+        }
+    );
+
+
 })(jQuery);
 

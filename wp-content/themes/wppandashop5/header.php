@@ -30,5 +30,7 @@ if( !empty( $wps5_option['site_layout_mode'] && 'box' === $wps5_option['site_lay
 
 $header= !empty($wps5_option['header_layout']) ? $wps5_option['header_layout'] : 1;
 get_template_part( 'templates/headers/header','v' . $header );
-get_template_part( 'templates/components/section/slider','' );
+if(is_home() || is_front_page()) {
+    get_template_part('templates/components/section/slider', '');
+}
 

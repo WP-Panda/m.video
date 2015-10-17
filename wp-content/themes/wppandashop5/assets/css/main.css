@@ -2404,6 +2404,11 @@ span.page-numbers.current{
 .shopping-cart > .dropdown-menu .cart-item.product-summary .padding-no {
   padding-left: 0;
 }
+.cart-head img.attachment-shop_thumbnail.wp-post-image {
+  width: 50px!important;
+  height: 50px!important;
+}
+
 .shopping-cart > .dropdown-menu .cart-item.product-summary .name {
   font-size: 11px;
   font-family: 'Montserrat', sans-serif;

@@ -71,6 +71,8 @@ require_once(WPS5_BASE_URI .'/framework/redux/config.php');
 require_once(WPS5_BASE_URI .'/framework/bfi-thumb.php');
 //хлебные крошки
 require_once(WPS5_BASE_URI .'/framework/breadcrumbs.php');
+//настройки woocommerce
+require_once(WPS5_BASE_URI .'/framework/woocommerce-config.php');
 
 //функции кирилицы
 if( ! empty( $wps5_option['cyrillic_site'] ) && 'on' == $wps5_option['cyrillic_site'] )
