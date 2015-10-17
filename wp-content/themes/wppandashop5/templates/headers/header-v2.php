@@ -56,19 +56,6 @@
 		</div><!-- /.bottom -->
 
 
-		<div class="top">
-			<div class="container">
-				<div class="row">
-		<?php
-		wp_nav_menu( array(
-			'theme_location'  => 'header_menu',
-			'menu'            => '',
-		));
-		?>
-				</div><!-- /.row -->
-			</div><!-- /.container -->
-		</div><!-- /.bottom -->
-
 
 	</div><!-- /.header-v2 -->
 

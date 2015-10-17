@@ -828,7 +828,12 @@ hr {
 .header-v2 .navbar .header-nav .navbar-default,
 .header-v5 .navbar .header-nav .navbar-default,
 .header-v7 .navbar .header-nav .navbar-default,
-.header-v9 .navbar .header-nav .navbar-default {
+.header-v9 .navbar .header-nav .navbar-default,
+.header-v1 .wr-megamenu-container,
+.header-v2 .wr-megamenu-container,
+.header-v5 .wr-megamenu-container,
+.header-v7 .wr-megamenu-container,
+.header-v9 .wr-megamenu-container {
   background-color: #f1f1f1;
   border-color: #f1f1f1;
   border-radius: 0;
