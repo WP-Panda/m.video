@@ -65,9 +65,9 @@
 			'menu'            => '',
 		));
 		?>
-				</div><!-- /.row -->
-			</div><!-- /.container -->
-		</div><!-- /.bottom -->
+				</div>
+			</div>
+		</div>
 
 
 	</div><!-- /.header-v2 -->
