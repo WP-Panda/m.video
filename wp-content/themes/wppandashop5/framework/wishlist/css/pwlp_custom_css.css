@@ -1,0 +1,26 @@
+.pwlp_table img{max-width: 32px!important;}
+.pwlp_genral .form-table th{ padding: 20px 10px 20px 20px;}
+.pwlp_genral .form-table {background: #fff none repeat scroll 0 0;}
+.pwlp_genral .form-table td {  padding: 15px 100px;}
+.pwlp_genral  .button-primary{margin-top: 15px !important;}
+
+.pwlp_share_setting .form-table th{ padding: 20px 10px 20px 20px;}
+.pwlp_share_setting .form-table {background: #fff none repeat scroll 0 0;}
+.pwlp_share_setting .form-table td {  padding: 15px 100px;}
+.pwlp_share_setting  .button-primary{margin-top: 15px !important;}
+
+.pwlp_style .form-table th{ padding: 20px 10px 20px 20px;}
+.pwlp_style .form-table {background: #fff none repeat scroll 0 0;}
+.pwlp_style .form-table td {  padding: 15px 100px;}
+.pwlp_style  .button-primary{margin-top: 15px !important;}
+.pwlp_table .product-stock-status { text-align: center;}
+
+.pwlp_table .product-add-to-cart{text-align: center;}
+.pwlp_genral {width: 98%;}
+.pwlp_share_setting {width: 98%;}
+.pwlp_style {width: 98%;}
+.pwlp_genral .button-info {margin-top: 15px;}
+.pwlp_share_setting .button-info {margin-top: 15px;}
+.pwlp_style .button-info {margin-top: 15px;}
+
+

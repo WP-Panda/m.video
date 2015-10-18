@@ -108,15 +108,7 @@ function cr_template_loop_product_thumbnail($size = 'shop_catalog'){
 /**
  * Добавление в списое желаний
  */
- function cr_add_too_wishlist(){ ?>
-     <li>
-         <a class="btn btn-primary whislist" href="#" title="<?php _e('Wishlist','wppandashop5'); ?>">
-             <i class="icon fa fa-heart"></i>
-         </a>
-     </li>
-<?php }
-// подклюбчение кнопки список желаний
-add_action( 'woocommerce_after_shop_loop_item','cr_add_too_wishlist',20 );
+add_action('woocommerce_after_shop_loop_item','pwlp_product_display',20);
 
 /**
  * Добавление в сравнение
@@ -130,11 +122,3 @@ function cr_add_too_compare(){ ?>
 <?php }
 // подклюбчение кнопки сравнение
 add_action( 'woocommerce_after_shop_loop_item','cr_add_too_compare',30 );
-
-if ( shortcode_exists( 'yith_wcwl_add_to_wishlist' ) ) {
-    function custom_woo_whishlist_btn() {
-        echo do_shortcode('[yith_wcwl_add_to_wishlist]');
-    }
-
-    add_action('woocommerce_after_shop_loop_item', 'custom_woo_whishlist_btn');
-}
