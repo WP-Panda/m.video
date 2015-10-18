@@ -14,17 +14,17 @@
 	<div class="container">
 		<div class="row category-v1 outer-bottom-sm">
 			<div class="col-md-3 col-sm-12 sidebar">
-	            <?php require RB_ROOT . '/parts/navigation/sidemenu.php' ?>
+	           <?php get_template_part('templates/components/navigation/sidemenu'); ?>
 	            <h3 class="section-title">shop by</h3>
             	<div class="sidebar-filter">
-	            	<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-manufactures.php' ?>
-	            	<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-price-slider.php' ?>
-	            	<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-color.php' ?>
+	            	<?php get_template_part('templates/components/sidebar/sidebar','manufactures'); ?>
+	            	<?php get_template_part('templates/components/sidebar/sidebar','price-slider'); ?>
+	            	<?php get_template_part('templates/components/sidebar/sidebar','color'); ?>
 	            </div><!-- /.sidebar-filter -->
 
 	            	<?php get_template_part('templates/components/sidebar/product-tags'); ?>
-	            	<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-comparision.php' ?>
-	            	<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-advertisement.php' ?>
+	            	<?php get_template_part('templates/components/sidebar/sidebar','comparision'); ?>
+	            	<?php get_template_part('templates/components/sidebar/sidebar','advertisement'); ?>
 	            	
             </div><!-- /.sidebar -->
 
@@ -39,6 +39,7 @@
 
 				<div class="search-result-container">
 					<div id="myTabContent" class="tab-content">
+
 						<div class="tab-pane active " id="grid-container">
 							<div class="category-product  inner-top-xs">
 								<div class="row">		
@@ -57,6 +58,7 @@
 
 							</div><!-- /.category-product -->
 						</div><!-- /.tab-pane #list-container -->
+
 					</div><!-- /.tab-content -->
 					
 					<div class="clearfix controls-product-bottom wow fadeInUp">

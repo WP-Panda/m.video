@@ -16,11 +16,11 @@
 		<div class="row">
 			
 			<div class='col-md-3 sidebar wow fadeInUp'>
-	            <?php require RB_ROOT . '/parts/navigation/sidemenu.php' ?>
+	            <?php require <?php get_template_part('templates/components/navigation/sidemenu'); ?> ?>
 	            <div class="sidebar-module-container">
 	            	<div class="related-product clearfix">
 		            	<?php require RB_ROOT . '/parts/widgets/sidebar/related-products.php' ?>
-		            	<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-advertisement.php' ?>
+		            	<?php get_template_part('templates/components/sidebar/sidebar','advertisement'); ?>
 	            	</div><!-- /.sidebar-filter -->
 	            </div><!-- /.sidebar-module-container -->
             </div><!-- /.sidebar -->

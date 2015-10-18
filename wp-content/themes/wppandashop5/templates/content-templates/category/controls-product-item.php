@@ -1,5 +1,6 @@
 <!-- ========================================== CONTROLS PRODUCT ITEM ========================================= -->
 <div class="controls-product-item row">
+
 	<div class="col-sm-3 col-md-3">
 		<div class="product-item-view">
 			<ul class="nav nav-tabs">

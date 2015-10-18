@@ -26,6 +26,8 @@ function wps5_theme_setup() {
     add_theme_support('automatic-feed-links');
     /* Add thumbnails support */
     add_theme_support('post-thumbnails');
+    /* woocommerce */
+    add_theme_support( 'woocommerce' );
 
 }
 add_action( 'after_setup_theme', 'wps5_theme_setup' );
@@ -73,6 +75,8 @@ require_once(WPS5_BASE_URI .'/framework/bfi-thumb.php');
 require_once(WPS5_BASE_URI .'/framework/breadcrumbs.php');
 //настройки woocommerce
 require_once(WPS5_BASE_URI .'/framework/woocommerce-config.php');
+//кнопка wishlist
+require_once(WPS5_BASE_URI .'/framework/wishlist-config.php');
 
 //функции кирилицы
 if( ! empty( $wps5_option['cyrillic_site'] ) && 'on' == $wps5_option['cyrillic_site'] )

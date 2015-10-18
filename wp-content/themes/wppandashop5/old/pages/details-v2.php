@@ -24,7 +24,7 @@
 	            		
         			<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-single-product.php'; ?>
         		
-            		<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-advertisement.php' ?>
+            		<?php get_template_part('templates/components/sidebar/sidebar','advertisement'); ?>
 		            	
 	            	</div><!-- /.sidebar-filter -->
 	            </div><!-- /.sidebar-module-container -->

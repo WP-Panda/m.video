@@ -14,16 +14,16 @@
 	<div class='container'>
 		<div class='row outer-bottom-sm category-v2'>
 			<div class='col-md-3 sidebar'>
-	            <?php require RB_ROOT . '/parts/navigation/sidemenu.php' ?>
+	            <?php require <?php get_template_part('templates/components/navigation/sidemenu'); ?> ?>
 	            <div class="sidebar-module-container">
 	            	<h3 class="section-title">shop by</h3>
 	            	<div class="sidebar-filter">
-		            	<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-manufactures.php' ?>
-		            	<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-price-slider.php' ?>
-		            	<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-color.php' ?>
+		            	<?php get_template_part('templates/components/sidebar/sidebar','manufactures'); ?>
+		            	<?php get_template_part('templates/components/sidebar/sidebar','price-slider'); ?>
+		            	<?php get_template_part('templates/components/sidebar/sidebar','color'); ?>
 		            	<?php get_template_part('templates/components/sidebar/product-tags'); ?>
-		            	<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-comparision.php' ?>
-		            	<?php require RB_ROOT . '/parts/widgets/sidebar/sidebar-advertisement.php' ?>
+		            	<?php get_template_part('templates/components/sidebar/sidebar','comparision'); ?>
+		            	<?php get_template_part('templates/components/sidebar/sidebar','advertisement'); ?>
 
 	            	</div><!-- /.sidebar-filter -->
 	            </div><!-- /.sidebar-module-container -->

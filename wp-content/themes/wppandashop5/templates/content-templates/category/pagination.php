@@ -10,10 +10,12 @@
 		'next_text'    => '<span aria-hidden="true"><i class="fa fa-angle-right"></i></span>',
 		'add_args'     => False,
 		'add_fragment' => '',     // “екст который добавитьс€ ко всем ссылкам.
-		'screen_reader_text' => ' '
+		'screen_reader_text' => 'XXX'
 	);
 
-	the_posts_pagination($args);
+	$nav = get_the_posts_pagination($args);
+	$nav = str_replace('<h2 class="screen-reader-text">XXX</h2>', '', $nav);
+	echo $nav;
 
 	?>
 </nav>

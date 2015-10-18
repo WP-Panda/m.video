@@ -78,7 +78,7 @@ add_filter('sanitize_file_name', 'ctl_sanitize_title');
 
 
 //правильное склонение у комментариев
-function rus_comments($zero = false, $one = false, $more = false) {
+function rus_comments($null = false, $one = false, $mores = false) {
     global $id;
     $number = get_comments_number($id);
 
