@@ -86,7 +86,7 @@
 .wr-megamenu-container ul.wr-mega-menu > li {
     float: left;
     height: 100%;
-    position: relative;
+    /*position: relative;*/
 }
 .wr-mega-menu > li > a {
     padding: 15px;
@@ -102,7 +102,7 @@
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     display: block;
     left: 0;
-    position: relative;
+   /* position: relative;*/
     width: 100%;
 }
 .wr-megamenu-container ul.wr-mega-menu li.megaitem-widget .itmm-widget-container ul li {
@@ -276,7 +276,7 @@ ul.sub-menu li a > i, ul.submenu-items li a > i {
         max-height: 2000px;
         opacity: 1;
         overflow: hidden;
-        position: relative;
+       /* position: relative;*/
         visibility: visible;
     }
     .wr-megamenu-container ul.wr-mega-menu li.megaitem-widget .itmm-widget-container ul {
@@ -360,7 +360,7 @@ ul.sub-menu li a > i, ul.submenu-items li a > i {
         height: 32px;
         line-height: 32px;
         margin: -35px 5px 0 0;
-        position: relative;
+       /* position: relative;*/
         text-align: center;
         width: 32px;
         z-index: 9999;
@@ -405,7 +405,7 @@ ul.sub-menu li a > i, ul.submenu-items li a > i {
     .wr-megamenu-container li {
         border: 0 none;
         display: inline-block;
-        position: relative;
+       /* position: relative;*/
     }
     .wr-megamenu-container a {
         white-space: nowrap;

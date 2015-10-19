@@ -131,7 +131,7 @@
 
 .wr-megamenu-container ul.wr-mega-menu > li {
     height: 100%;
-    position: relative;
+    /*position: relative;*/
     float: left;
 }
 .wr-mega-menu > li > a {
@@ -514,7 +514,7 @@ ul.sub-menu li a > i, ul.submenu-items li a > i {
     .wr-megamenu-container li {
         border: 0;
         display: inline-block;
-        position: relative;
+        /*position: relative;*/
     }
     .wr-megamenu-container a {
         white-space: nowrap;
