@@ -113,12 +113,4 @@ add_action('woocommerce_after_shop_loop_item','pwlp_product_display',20);
 /**
  * Добавление в сравнение
  */
-function cr_add_too_compare(){ ?>
-    <li>
-        <a class="btn btn-primary compare" href="#" title="<?php _e('Compare','wppandashop5'); ?>">
-            <i class="fa fa-exchange"></i>
-        </a>
-    </li>
-<?php }
-// подклюбчение кнопки сравнение
-add_action( 'woocommerce_after_shop_loop_item','cr_add_too_compare',30 );
+add_action( 'woocommerce_after_shop_loop_item', 'pcp_shop_display_compare', 30);

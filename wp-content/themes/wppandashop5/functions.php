@@ -77,6 +77,8 @@ require_once(WPS5_BASE_URI .'/framework/breadcrumbs.php');
 require_once(WPS5_BASE_URI .'/framework/woocommerce-config.php');
 //кнопка wishlist
 require_once(WPS5_BASE_URI .'/framework/wishlist/wishlist.php');
+//кнопка compare
+require_once(WPS5_BASE_URI .'/framework/compare/compare.php');
 
 //функции кирилицы
 if( ! empty( $wps5_option['cyrillic_site'] ) && 'on' == $wps5_option['cyrillic_site'] )
