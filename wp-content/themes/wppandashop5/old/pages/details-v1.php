@@ -16,7 +16,7 @@
 		<div class="row">
 			
 			<div class='col-md-3 sidebar wow fadeInUp'>
-	            <?php require <?php get_template_part('templates/components/navigation/sidemenu'); ?> ?>
+	            <?php get_template_part('templates/components/navigation/sidemenu'); ?>
 	            <div class="sidebar-module-container">
 	            	<div class="related-product clearfix">
 		            	<?php require RB_ROOT . '/parts/widgets/sidebar/related-products.php' ?>
