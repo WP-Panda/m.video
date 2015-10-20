@@ -18,7 +18,7 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 
-			<div class='col-md-3 sidebar wow fadeInUp'>
+			<?php /* div class='col-md-3 sidebar wow fadeInUp'>
 				<?php get_template_part('templates/components/navigation/sidemenu'); ?>
 				<div class="sidebar-module-container">
 					<div class="related-product clearfix">
@@ -26,9 +26,9 @@ get_header(); ?>
 						<?php get_template_part('templates/components/sidebar/sidebar','advertisement'); ?>
 					</div><!-- /.sidebar-filter -->
 				</div><!-- /.sidebar-module-container -->
-			</div><!-- /.sidebar -->
+			</div */ ?><!-- /.sidebar -->
 
-			<div class="col-md-9 details-page">
+			<div class="col-md-12 details-page">
 
 				<?php
 				/**

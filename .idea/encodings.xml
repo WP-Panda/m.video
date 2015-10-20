@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/comments.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/breadcrumbs.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/cir-to-lat.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-config.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/functions.php" charset="UTF-8" />
   </component>
 </project>

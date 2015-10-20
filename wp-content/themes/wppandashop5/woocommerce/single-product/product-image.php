@@ -15,7 +15,7 @@ global $post, $woocommerce, $product;
 
 ?>
 
-	<div class="col-xs-12 col-sm-6 col-md-5 gallery-holder wow fadeInUp">
+
 
 		<div id="owl-single-product">
 			<?php
@@ -88,4 +88,4 @@ global $post, $woocommerce, $product;
 
 		</div><!-- /.single-product-slider -->
 		<?php do_action( 'woocommerce_product_thumbnails' ); ?>
-	</div><!-- /.col -->
+

@@ -9,7 +9,7 @@ if ( ! function_exists( 'is_woocommerce_activated' ) ) {
 }
 
 /**
- * œÓÍ‡Á˚‚‡Ú¸ ÔÓ XX «‡ÔËÒÂÈ
+ * –ü–æ–∫–∞–∑—ã–≤–∞—Ç—å –ø–æ XX –ó–∞–ø–∏—Å–µ–π
  */
 function woocommerce_catalog_per_page_ordering() {
     ?>
@@ -62,17 +62,17 @@ add_filter('loop_shop_per_page','dl_sort_by_page');
 add_action( 'cr_woocommerce_before_shop_loop', 'woocommerce_catalog_per_page_ordering', 20 );
 
 
-//ÓÚÍÎ˛˜ÂÌËÂ ‡ÒÔÓ‰‡ÊË
+//–æ—Ç–∫–ª—é—á–µ–Ω–∏–µ —Ä–∞—Å–ø—Ä–æ–¥–∞–∂–∏
 remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10 );
-//ÓÚÍÎ˛˜ÂÌËÂ ÏËÌË‡Ú˛˚
+//–æ—Ç–∫–ª—é—á–µ–Ω–∏–µ –º–∏–Ω–∏–∞—Ç—é—Ä—ã
 remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );
 
-//ÌÓ‚‡ˇ ÏËÌË‡Ú˛‡ Ë ‡ÒÔÓ‰‡Ê‡
+//–Ω–æ–≤–∞—è –º–∏–Ω–∏–∞—Ç—é—Ä–∞ –∏ —Ä–∞—Å–ø—Ä–æ–¥–∞–∂–∞
 add_action( 'woocommerce_before_shop_loop_item_title', 'cr_template_loop_product_thumbnail', 10 );
 
 /**
- * ÕÓ‚‡ˇ ÏËÌË‡Ú˛‡ Ë ‡ÒÔÓ‰‡Ê‡
- * @param string $size - ‡ÁÏÂ ÏËÌË‡Ú˛˚
+ * –ù–æ–≤–∞—è –º–∏–Ω–∏–∞—Ç—é—Ä–∞ –∏ —Ä–∞—Å–ø—Ä–æ–¥–∞–∂–∞
+ * @param string $size - —Ä–∞–∑–º–µ—Ä –º–∏–Ω–∏–∞—Ç—é—Ä—ã
  */
 function cr_template_loop_product_thumbnail($size = 'shop_catalog'){
     global $post, $product;
@@ -106,11 +106,200 @@ function cr_template_loop_product_thumbnail($size = 'shop_catalog'){
 }
 
 /**
- * ƒÓ·‡‚ÎÂÌËÂ ‚ ÒÔËÒÓÂ ÊÂÎ‡ÌËÈ
+ * –î–æ–±–∞–≤–ª–µ–Ω–∏–µ –≤ —Å–ø–∏—Å–æ–µ –∂–µ–ª–∞–Ω–∏–π
  */
 add_action('woocommerce_after_shop_loop_item','pwlp_product_display',20);
 
 /**
- * ƒÓ·‡‚ÎÂÌËÂ ‚ Ò‡‚ÌÂÌËÂ
+ * –î–æ–±–∞–≤–ª–µ–Ω–∏–µ –≤ —Å—Ä–∞–≤–Ω–µ–Ω–∏–µ
  */
 add_action( 'woocommerce_after_shop_loop_item', 'pcp_shop_display_compare', 30);
+
+/** $array = array(
+'woocommerce_template_single_title' => 5,
+'woocommerce_template_single_rating' => 10,
+'woocommerce_template_single_price' => 10,
+'woocommerce_template_single_excerpt' => 20,
+'woocommerce_template_single_add_to_cart' => 30,
+'woocommerce_template_single_meta' => 40,
+'woocommerce_template_single_sharing' => 50
+);
+foreach ($array as $key => $val) {
+remove_action('woocommerce_single_product_summary',  $key , $val);
+}*/
+/**
+ * –ú–æ–¥—É–ª–∏ –∫–∞—Ä—Ç–æ—á–∫–∏ —Ç–æ–≤–∞—Ä–∞
+ */
+/**
+ * woocommerce_single_product_summary hook
+ *
+ * @hooked woocommerce_template_single_title - 5
+ * @hooked woocommerce_template_single_rating - 10
+ * @hooked woocommerce_template_single_price - 10
+ * @hooked woocommerce_template_single_excerpt - 20
+ * @hooked woocommerce_template_single_add_to_cart - 30
+ * @hooked woocommerce_template_single_meta - 40
+ * @hooked woocommerce_template_single_sharing - 50
+ */
+
+/*remove_action( 'woocommerce_single_product_summary','woocommerce_template_single_price', 10 );
+remove_action( 'woocommerce_single_product_summary','woocommerce_template_single_excerpt', 20 );
+add_action( 'woocommerce_single_product_summary','woocommerce_template_single_excerpt', 11 );
+add_action( 'woocommerce_single_product_summary','woocommerce_template_single_price', 12 );*/
+
+if ( ! function_exists( 'cr_single_variation_add_to_cart_button' ) ) {
+    /**
+     * Output the add to cart button for variations.
+     */
+    function cr_single_variation_add_to_cart_button() {
+        global $product;
+        ?>
+        <div class="variations_button point-of-action">
+            <div class="quantity">
+                <label>Qty:</label>
+                <?php woocommerce_quantity_input( array( 'input_value' => isset( $_POST['quantity'] ) ? wc_stock_amount( $_POST['quantity'] ) : 1 ) ); ?>
+            </div>
+            <div class="add-to-cart">
+                <button type="submit" class="single_add_to_cart_button button alt btn btn-primary"><i class="fa fa-shopping-cart"></i> <?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+            </div>
+            <input type="hidden" name="add-to-cart" value="<?php echo absint( $product->id ); ?>" />
+            <input type="hidden" name="product_id" value="<?php echo absint( $product->id ); ?>" />
+            <input type="hidden" name="variation_id" class="variation_id" value="" />
+        </div>
+        <?php
+    }
+
+    remove_action( 'woocommerce_single_variation','woocommerce_single_variation_add_to_cart_button', 20 );
+    add_action( 'woocommerce_single_variation','cr_single_variation_add_to_cart_button', 20 );
+}
+
+
+
+
+function cr_modules_tab_options_tab() { ?>
+    <li class="cr_modules"><a href="#cr_modules_tab"><?php _e('–ú–æ–¥—É–ª–∏', 'woothemes'); ?></a></li>
+    <?php
+}
+add_action('woocommerce_product_write_panel_tabs', 'cr_modules_tab_options_tab');
+
+/**
+ * Custom Tab Options
+ *
+ * Provides the input fields and add/remove buttons for custom tabs on the single product page.
+ */
+function cr_modules_tab_options() {
+    global $post;
+
+    $opening_hours_options = array(
+        'title' => get_post_meta($post->ID, 'opening_hours_title', true),
+        'content' => get_post_meta($post->ID, 'opening_hours_content', true),
+    );
+    ?>
+    <div id="cr_modules_tab" class="panel woocommerce_options_panel">
+        <div class="club-opening-hours">
+            <p class="form-field day_field_type">
+            </p>
+
+
+            <style>
+                #sortable1, #sortable2 {
+                    border: 1px solid #eee;
+                    width: 40%;
+                    min-height: 20px;
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 5px 0 0 0;
+                    float: left;
+                    margin-right: 10px;
+                }
+                #sortable1 li, #sortable2 li {
+                    margin: 0 5px 5px 5px;
+                    padding: 5px;
+                    font-size: 1.2em;
+                    /* width: 120px; */
+                }
+
+            </style>
+            <script>
+                jQuery(function($) {
+                    $(function () {
+
+                        $("#sortable1, #sortable2").sortable({
+                            connectWith: ".connectedSortable",
+                            update: function( event, ui ) {
+                                $array = {};
+                                $('#sortable2 li').each(function(){
+                                    $array[$(this).html()] = $(this).data('block');
+                                });
+
+                                console.log($array);
+                                console.log($array.toString());
+                                $('#cr_single_modules').val(JSON.stringify($array));
+                            }
+                        }).disableSelection();
+
+
+
+                    });
+                });
+            </script>
+
+            <?php $array_block=array(
+                '–ó–∞–≥–æ–ª–æ–≤–æ–∫'         => 'woocommerce_template_single_title',
+                '–†–µ–π—Ç–∏–Ω–≥'           => 'woocommerce_template_single_rating',
+                '–°—Ç–æ–∏–º–æ—Å—Ç—å'         => 'woocommerce_template_single_price',
+                '–û–ø–∏—Å–∞–Ω–∏–µ'          => 'woocommerce_template_single_excerpt',
+                '–î–æ–±–∞–≤–∏—Ç—å –≤ –∫–æ—Ä–∑–∏–Ω—É'=> 'woocommerce_template_single_add_to_cart',
+                '–ú–µ—Ç–∞'              => 'woocommerce_template_single_meta',
+                '–ü–æ–¥–µ–ª–∏—Ç—å—Å—è'        => 'woocommerce_template_single_sharing'
+            ); ?>
+            <?php $content = get_post_meta($post->ID, '_cr_single_modules_card', true);
+
+            //if( in_array( 'woocommerce_template_single_sharing',$content_to_field ) ) { ?>
+            <fieldset class="form-field">
+                <label for="day_field_type"><?php echo __( '–ù–∞—Å—Ç—Ä–æ–π–∫–∞ –º–æ–¥—É–ª–µ–π', 'woocommerce' ); ?></label>
+                <div class="wrap">
+
+                        <span> –ù–µ–∞–∫—Ç–∏–≤–Ω—ã–µ </span>
+                        <ul id="sortable1" class="connectedSortable">
+                            <?php
+                            $content_to_field = (array)json_decode($content);
+                            foreach ( $array_block as $key =>$val ) {
+                                if( ! in_array( $val,$content_to_field ) ) {
+                                    echo '<li class="ui-state-default" data-block="' . $val . '">' . $key . '</li>';
+                                }
+                            }
+                            ?>
+
+                        </ul>
+
+                        <span> –ê–∫—Ç–∏–≤–Ω—ã–µ </span>
+                        <ul id="sortable2" class="connectedSortable">
+                            <?php foreach ( $content_to_field  as $key =>$val ) {
+                                //if( in_array( $val,$content_to_field ) ) {
+                                    echo '<li class="ui-state-default" data-block="' . $val . '">' . $key . '</li>';
+                                //}
+                            } ?>
+                        </ul>
+
+                    <input type="hidden" name="_cr_single_modules_card" value="<?php echo htmlspecialchars($content); ?>" id="cr_single_modules" />
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <?php ;
+}
+add_action('woocommerce_product_write_panels', 'cr_modules_tab_options');
+
+// Save Fields
+add_action( 'woocommerce_process_product_meta', 'cr_modules_tab_fields_save' );
+
+// Function to save all custom field information from products
+function cr_modules_tab_fields_save( $post_id ){
+
+    $content = $_POST['_cr_single_modules_card'];
+    //$content = serialize($content);
+
+    update_post_meta( $post_id, '_cr_single_modules_card', $content );
+
+}
