@@ -115,18 +115,6 @@ add_action('woocommerce_after_shop_loop_item','pwlp_product_display',20);
  */
 add_action( 'woocommerce_after_shop_loop_item', 'pcp_shop_display_compare', 30);
 
-/** $array = array(
-'woocommerce_template_single_title' => 5,
-'woocommerce_template_single_rating' => 10,
-'woocommerce_template_single_price' => 10,
-'woocommerce_template_single_excerpt' => 20,
-'woocommerce_template_single_add_to_cart' => 30,
-'woocommerce_template_single_meta' => 40,
-'woocommerce_template_single_sharing' => 50
-);
-foreach ($array as $key => $val) {
-remove_action('woocommerce_single_product_summary',  $key , $val);
-}*/
 /**
  * Модули карточки товара
  */
@@ -174,122 +162,30 @@ if ( ! function_exists( 'cr_single_variation_add_to_cart_button' ) ) {
 }
 
 
-
-
-function cr_modules_tab_options_tab() { ?>
-    <li class="cr_modules"><a href="#cr_modules_tab"><?php _e('Модули', 'woothemes'); ?></a></li>
-    <?php
-}
-add_action('woocommerce_product_write_panel_tabs', 'cr_modules_tab_options_tab');
-
 /**
- * Custom Tab Options
- *
- * Provides the input fields and add/remove buttons for custom tabs on the single product page.
+ * Подключение модулей
  */
-function cr_modules_tab_options() {
-    global $post;
-
-    $opening_hours_options = array(
-        'title' => get_post_meta($post->ID, 'opening_hours_title', true),
-        'content' => get_post_meta($post->ID, 'opening_hours_content', true),
-    );
-    ?>
-    <div id="cr_modules_tab" class="panel woocommerce_options_panel">
-        <div class="club-opening-hours">
-            <p class="form-field day_field_type">
-            </p>
-
-
-            <style>
-                #sortable1, #sortable2 {
-                    border: 1px solid #eee;
-                    width: 40%;
-                    min-height: 20px;
-                    list-style-type: none;
-                    margin: 0;
-                    padding: 5px 0 0 0;
-                    float: left;
-                    margin-right: 10px;
-                }
-                #sortable1 li, #sortable2 li {
-                    margin: 0 5px 5px 5px;
-                    padding: 5px;
-                    font-size: 1.2em;
-                    /* width: 120px; */
-                }
-
-            </style>
-            <script>
-                jQuery(function($) {
-                    $(function () {
-
-                        $("#sortable1, #sortable2").sortable({
-                            connectWith: ".connectedSortable",
-                            update: function( event, ui ) {
-                                $array = {};
-                                $('#sortable2 li').each(function(){
-                                    $array[$(this).html()] = $(this).data('block');
-                                });
-
-                                console.log($array);
-                                console.log($array.toString());
-                                $('#cr_single_modules').val(JSON.stringify($array));
-                            }
-                        }).disableSelection();
+//основная вкладка ?
+require_once 'woocommerce-modules/modules-tab.php';
+// нашли дешевле ?
+require_once 'woocommerce-modules/sale-query-tab.php';
+// цена
+require_once 'woocommerce-modules/price.php';
+// бонус
+require_once 'woocommerce-modules/bonus.php';
+// в корзину
+require_once 'woocommerce-modules/add-cart.php';
+// в избранное
+require_once 'woocommerce-modules/favorites.php';
+// забрать в мавгазине
+require_once 'woocommerce-modules/pick-up-in-store.php';
+//доставка на дом
+require_once 'woocommerce-modules/shipping-in-home.php';
+// скидки
+require_once 'woocommerce-modules/discount.php';
 
 
 
-                    });
-                });
-            </script>
-
-            <?php $array_block=array(
-                'Заголовок'         => 'woocommerce_template_single_title',
-                'Рейтинг'           => 'woocommerce_template_single_rating',
-                'Стоимость'         => 'woocommerce_template_single_price',
-                'Описание'          => 'woocommerce_template_single_excerpt',
-                'Добавить в корзину'=> 'woocommerce_template_single_add_to_cart',
-                'Мета'              => 'woocommerce_template_single_meta',
-                'Поделиться'        => 'woocommerce_template_single_sharing'
-            ); ?>
-            <?php $content = get_post_meta($post->ID, '_cr_single_modules_card', true);
-
-            //if( in_array( 'woocommerce_template_single_sharing',$content_to_field ) ) { ?>
-            <fieldset class="form-field">
-                <label for="day_field_type"><?php echo __( 'Настройка модулей', 'woocommerce' ); ?></label>
-                <div class="wrap">
-
-                        <span> Неактивные </span>
-                        <ul id="sortable1" class="connectedSortable">
-                            <?php
-                            $content_to_field = (array)json_decode($content);
-                            foreach ( $array_block as $key =>$val ) {
-                                if( ! in_array( $val,$content_to_field ) ) {
-                                    echo '<li class="ui-state-default" data-block="' . $val . '">' . $key . '</li>';
-                                }
-                            }
-                            ?>
-
-                        </ul>
-
-                        <span> Активные </span>
-                        <ul id="sortable2" class="connectedSortable">
-                            <?php foreach ( $content_to_field  as $key =>$val ) {
-                                //if( in_array( $val,$content_to_field ) ) {
-                                    echo '<li class="ui-state-default" data-block="' . $val . '">' . $key . '</li>';
-                                //}
-                            } ?>
-                        </ul>
-
-                    <input type="hidden" name="_cr_single_modules_card" value="<?php echo htmlspecialchars($content); ?>" id="cr_single_modules" />
-                </div>
-            </fieldset>
-        </div>
-    </div>
-    <?php ;
-}
-add_action('woocommerce_product_write_panels', 'cr_modules_tab_options');
 
 // Save Fields
 add_action( 'woocommerce_process_product_meta', 'cr_modules_tab_fields_save' );
@@ -297,9 +193,97 @@ add_action( 'woocommerce_process_product_meta', 'cr_modules_tab_fields_save' );
 // Function to save all custom field information from products
 function cr_modules_tab_fields_save( $post_id ){
 
+    //конфигурация модулей
     $content = $_POST['_cr_single_modules_card'];
-    //$content = serialize($content);
-
     update_post_meta( $post_id, '_cr_single_modules_card', $content );
 
+    /**
+     * Блок нашли дешевле
+     */
+    //заголовок цвет
+    $color = $_POST['_title_sale_colors'];
+    update_post_meta( $post_id, '_title_sale_colors', $color );
+    // заголовок текст
+    $title = $_POST['_title_sale_query'];
+    update_post_meta( $post_id, '_title_sale_query', $title );
+    // текст
+    $text = $_POST['_text_sale_query'];
+    update_post_meta( $post_id, '_text_sale_query', $text );
+    // правила
+    $rules = $_POST['_rules_sale_query'];
+    $rules = esc_url($rules);
+    update_post_meta( $post_id, '_rules_sale_query', $rules );
+
+    /**
+     * Блок бонус
+     */
+    //сумма
+    $prise = $_POST['_bonus_price'];
+    update_post_meta( $post_id, '_bonus_price', $prise );
+    //заголовок
+    $title  = $_POST['_bonus_title'];
+    update_post_meta( $post_id, '_bonus_title', $title );
+    //текст
+    $text  = $_POST['_bonus_text'];
+    update_post_meta( $post_id, '_bonus_text', $text );
+    //цвет
+    $color = $_POST['_bonus_color'];
+    update_post_meta( $post_id, '_bonus_color', $color );
+
+    /**
+     * Кнопка в корзину
+     */
+    //текст
+    $button_text = $_POST['_button_text'];
+    update_post_meta( $post_id, '_button_text', $button_text );
+
+    /**
+     * Кнопка в избранное
+     */
+    //текст
+    $favorites_text = $_POST['_favorites_text'];
+    update_post_meta( $post_id, '_favorites_text', $favorites_text );
+
+    /**
+     * Забрать в магазине
+     */
+    //текст
+    $pick_text  = $_POST['_pick_text'];
+    update_post_meta( $post_id, '_pick_text', $pick_text );
+    $pick_summ  = $_POST['_pick_summ'];
+    //сумма
+    update_post_meta( $post_id, '_pick_summ', $pick_summ );
+    //ссылка
+    $pick_link  = esc_url($_POST['_pick_link']);
+    update_post_meta( $post_id, '_pick_link', $pick_link );
+
+    /**
+     * Скидки
+     */
+    //включение ксидки
+    $discount_card_discount  = $_POST['_discount_card_discount'];
+    update_post_meta( $post_id, '_discount_card_discount', $discount_card_discount );
+    //включение кредита
+    $discount_online_credit  = $_POST['_discount_online_credit'];
+    update_post_meta( $post_id, '_discount_online_credit', $discount_online_credit );
+    //включение купонов
+    $discount_discount_coupons  = $_POST['_discount_discount_coupons'];
+    update_post_meta( $post_id, '_discount_discount_coupons', $discount_discount_coupons );
+    //сумма скидки
+    $discount_summ  = $_POST['_discount_summ'];
+    update_post_meta( $post_id, '_discount_summ', $discount_summ );
+    //ссылка скидки
+    $discount_link  = $_POST['_discount_link'];
+    update_post_meta( $post_id, '_discount_link', $discount_link );
+    //ссылка кредита
+    $discount_credit = $_POST['_discount_credit'];
+    update_post_meta( $post_id, '_discount_credit', $discount_credit );
+    //текст кредита
+    $discount_credit_text = $_POST['_discount_credit_text'];
+    update_post_meta( $post_id, '_discount_credit_text', $discount_credit_text );
+    //количество купонов
+    $discount_coupons = $_POST['_discount_coupons'];
+    update_post_meta( $post_id, '_discount_coupons', $discount_coupons );
 }
+
+//Видели товар дешевле? Отправьте ссылку на данный товар. У конкурента будет цена ниже — вернем разницу! Промокод будет отправлен на телефон и е-mail.
