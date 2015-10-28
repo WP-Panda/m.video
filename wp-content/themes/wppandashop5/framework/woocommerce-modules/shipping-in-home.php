@@ -25,6 +25,7 @@ function cr_woocommerce_shipping_in_home_options() {
     $shipping_summ_1  = get_post_meta( $post->ID, '_shipping_summ_1', true );
     $shipping_text_2  = get_post_meta( $post->ID, '_shipping_text_2', true );
     $shipping_summ_2  = get_post_meta( $post->ID, '_shipping_summ_2', true );
+    $block_shipping_border = get_post_meta( $post->ID, '_block_shipping_border', true );
     ?>
     <div id="cr_shipping_in_home" class="panel woocommerce_options_panel">
         <div class="club-opening-hours">
@@ -55,6 +56,11 @@ function cr_woocommerce_shipping_in_home_options() {
                     <p>
                         <label>Стоимость Сегодня: </label>
                         <input type="text" class="short" name="_shipping_summ_2" id="_shipping_summ_2"  value="<?php echo $shipping_summ_2; ?>"/>
+                    </p>
+
+                    <p>
+                        <label for="_block_shipping_border">Не включать разделитель: </label>
+                        <input type="checkbox" name="_block_shipping_border" id="_block_shipping_border" value="1" <?php checked( $block_shipping_border ); ?>/>
                     </p>
 
                 </div>

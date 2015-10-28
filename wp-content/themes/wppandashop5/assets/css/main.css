@@ -2593,14 +2593,14 @@ span.page-numbers.current{
   font-family: fontawesome;
 }
 font-weight:400 .star-rating:before {
-  content: "\f005\f005\f123\f006\f006";
-  float: left;
-  top: 0;
-  left: 0;
-  position: absolute;
-  letter-spacing: 4px;
-  color: rgba(0, 0, 0, 0.5);
-}
+                  content: "\f005\f005\f123\f006\f006";
+                  float: left;
+                  top: 0;
+                  left: 0;
+                  position: absolute;
+                  letter-spacing: 4px;
+                  color: rgba(0, 0, 0, 0.5);
+                }
 .star-rating span {
   overflow: hidden;
   float: left;
@@ -10050,7 +10050,7 @@ footer .footer-outer-2 .payment-card img:hover {
     margin-bottom: 20px;
   }
   header .header-v7 .middle .compare {
-   /* padding:auto ;*/
+    /* padding:auto ;*/
   }
   header .header-v7 .middle .search-option {
     text-align: center;
@@ -10517,3 +10517,217 @@ footer .footer-outer-2 .payment-card img:hover {
 li.depth-1 {
   margin-top: 45px !important;
 }
+
+/*********************/
+/*********************/
+/*********************/
+
+.border-b-da {
+  border-bottom: 1px dashed #bbb;
+}
+.paddind-b-20 {
+  padding-bottom: 20px;
+}
+
+.cr-product-block{
+  padding: 10px 0;
+  border-bottom: 1px solid #bbb;
+  position: relative;
+}
+
+.cr-product-block h4{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.reliat{
+  position: relative;
+}
+
+.cr-product-block .abs-right{
+  position: absolute;
+  top: 20px;
+  right: 0;
+  color: #bbb;
+  font-size: 18px;
+}
+
+.cr-product-block.none-border {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/************************************/
+/***        Нашли дешевле         ***/
+/************************************/
+.cr-product-block.cr-query-block{
+  cursor: pointer;
+}
+.cr-product-block h4 .fa-thumbs-o-up{
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 3px;
+  margin-right: 10px;
+}
+.cr-query-block h4 .fa-chevron-right {
+  margin-left: 15px;
+  font-weight: normal;
+}
+
+.cr-query-hide{
+  display: none;
+}
+
+.cr-query-hide ul > li {
+  line-height: 0.7;
+  border-right: 1px solid #bbb;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+}
+
+.cr-query-hide ul{
+  padding-bottom: 13px;
+}
+
+.cr-query-hide ul > li:first-child{
+  padding-left: 0;
+}
+
+.cr-query-hide ul > li:last-child{
+  border-right: none;
+}
+
+.cr-query-hide ul > li a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+}
+
+/************************************/
+/***             Цена             ***/
+/************************************/
+
+.cr-prise-block .product-details-summary-price-label{
+  float: left;
+  position: absolute;
+}
+
+.cr-prise-block .product-details-summary-prices{
+  width: 100%;
+  text-align: right;
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  border-bottom: none;
+}
+
+.cr-prise-block del,
+.cr-prise-block ins{
+  width: 100%;
+  display: block;
+}
+
+.cr-bot-price{
+  position: absolute!important;
+  bottom: 0;
+}
+
+/************************************/
+/***            Бонус             ***/
+/************************************/
+.cr-bonus-block .fa-question {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #bbb;
+  padding: 2px 5px;
+  margin-left: 10px;
+}
+
+.cr-product-block .popover {
+  background-color: #383838;
+}
+.cr-product-block .popover-content {
+  color: #fff;
+  padding: 20px;
+}
+
+.cr-product-block .popover button.close {
+  color: #fff;
+  text-shadow: none;
+  opacity: 1;
+  margin-right: 10px;
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+.cr-product-block .popover button.close:hover {
+  color: #ff3835;
+}
+
+.cr-product-block .popover.top>.arrow:after {
+  border-top-color: #383838;
+}
+
+.cr-bonuss-block .bonus-summ {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  font-weight: bold;
+}
+
+/************************************/
+/***         В корзинку           ***/
+/************************************/
+.cr-add-cart-block .single_add_to_cart_button{
+  width: 100%;
+}
+
+/************************************/
+/***          wishlist            ***/
+/************************************/
+.cr-wishlist-block .btn.btn-primary{
+  padding: 11px 19.5px;
+  width: 100%;
+}
+
+/************************************/
+/***         Доставки             ***/
+/************************************/
+.cr-shippin-block p {
+  margin-bottom: 0;
+  margin-top: -10px;
+}
+
+.cr-shippin-block > p:nth-child(2n+1) {
+  margin-top: 0;
+}
+
+
+/************************************/
+/*******   Бонусв  ******************/
+/************************************/
+img.payments-method {
+  height: 30px;
+  float: right;
+}
+
+.cr-bonuss-block .fa-question {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #bbb;
+  padding: 2px 5px;
+  margin-left: 10px;
+}
+
+.graise span {
+  color: #3c763d;
+  font-weight: bold;
+}
+
+.graise {
+   background-color: #e7e7e7;
+   padding: 5px 10px;
+ }
+.graise{}
+.graise span{}

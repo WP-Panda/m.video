@@ -339,7 +339,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 	add_action('wp_logout', 'clear_wishlist_session');
 
 
-	add_action('woocommerce_single_product_summary','pwlp_product_display',35);
+	//add_action('woocommerce_single_product_summary','pwlp_product_display',35);
 
 	/**
 	 * Кнопка Wishlist
@@ -361,7 +361,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 		if($is_enable==1){
 			$ptitle = get_the_title($wishlist_page);
 			if(array_key_exists($pro_id,$pwlp_change)){
-				echo "<li><a href='".site_url()."/".$ptitle."/' target='_blank' class='btn btn-primary' data-toggle='tooltip' data-placement='top' title='" . __('See Wishlist','wppandashop5') . "'><i class='icon fa fa-heart'></i></a></li>";
+				echo "<a href='".site_url()."/".$ptitle."/' target='_blank' class='btn btn-primary' data-toggle='tooltip' data-placement='top' title='" . __('See Wishlist','wppandashop5') . "'></li>";
 				//echo "<a href='".site_url()."/".$ptitle."/' target='_blank' class='see_wish'>".$wl_see_text."</a>";
 			}else{
 				?>
@@ -370,6 +370,36 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 						<i class="icon fa fa-heart"></i>
 					</a>
 				</li>
+			<?php }
+		}
+	}
+
+	/**
+	 * Кнопка Wishlist 2
+	 */
+	function cr_product_display($text){
+		$pwlp_genral_dataaa=get_option('data_wishlist_genral');
+		$pwlp_share_dataaa=get_option('data_share_wishlist');
+		$pwlp_style_dataaa=get_option('data_style_wishlist');
+
+		if(isset($pwlp_genral_dataaa)&& !empty($pwlp_genral_dataaa)|| isset($pwlp_share_dataaa)&& !empty($pwlp_share_dataaa)||isset($pwlp_style_dataaa)&& !empty($pwlp_style_dataaa)){
+			extract($pwlp_genral_dataaa);
+			extract($pwlp_share_dataaa);
+			extract($pwlp_style_dataaa);
+		}
+
+		$pwlp_change=$_SESSION['wishlist'];
+		global $product ;
+		$pro_id= $product->id;
+		if($is_enable==1){
+			$ptitle = get_the_title($wishlist_page);
+			if(array_key_exists($pro_id,$pwlp_change)){
+				echo "<a href='".site_url()."/".$ptitle."/' target='_blank' class='btn btn-primary see_wish alt' data-toggle='tooltip' data-placement='top' title='" . __('See Wishlist','wppandashop5') . "'>" . esc_html($text) . "</a>";
+			}else{
+				?>
+					<a class="pwlp_product btn btn-primary whislistt"  id="pwlp_<?php echo $product->id ;?>" data-product-id="<?php echo $product->id ;?>" href="javascript:void(0)" data-toggle='tooltip' data-placement='top' title="<?php _e('Add to Wishlist','wppandashop5'); ?>">
+						<?php echo  esc_html($text) ?>
+					</a>
 			<?php }
 		}
 	}

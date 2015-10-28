@@ -21,6 +21,7 @@ add_action('woocommerce_product_write_panel_tabs', 'cr_add_cart_tab_options_tab'
 function cr_add_cart_tab_options() {
     global $post;
     $text  = get_post_meta( $post->ID, '_button_text', true );
+    $block_cart_border = get_post_meta( $post->ID, '_block_cart_border', true );
     ?>
     <div id="cr_add_cart" class="panel woocommerce_options_panel">
         <div class="club-opening-hours">
@@ -31,6 +32,11 @@ function cr_add_cart_tab_options() {
                     <p>
                         <label>Текст кнопки: </label>
                         <input type="text" class="short" row="2" cols="20"  name="_button_text" id="_button_text" value="<?php echo $text; ?>"/>
+                    </p>
+
+                    <p>
+                        <label for="_block_cart_border">Не включать разделитель: </label>
+                        <input type="checkbox" name="_block_cart_border" id="_block_cart_border" value="1" <?php checked( $block_cart_border ); ?>/>
                     </p>
 
                 </div>

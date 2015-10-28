@@ -20,13 +20,17 @@ add_action('woocommerce_product_write_panel_tabs', 'cr_woocommerce_price_tab');
  */
 function cr_woocommerce_price_options() {
     global $post;
+    $block_price_border = get_post_meta( $post->ID, '_block_price_border', true );
     ?>
     <div id="cr_price_tab" class="panel woocommerce_options_panel">
         <div class="club-opening-hours">
 
             <fieldset class="form-field">
-                <label for="day_field_type"><?php echo __( 'Блок не имеет настроек', 'woocommerce' ); ?></label>
                 <div class="wrap">
+                    <p>
+                        <label for="_discount_card_discount">Не включать разделитель: </label>
+                        <input type="checkbox" name="_block_price_border" id="_block_price_border" value="1" <?php checked( $block_price_border ); ?>/>
+                    </p>
                 </div>
             </fieldset>
         </div>

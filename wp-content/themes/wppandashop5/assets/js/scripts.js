@@ -813,6 +813,57 @@
         }
     );
 
+    /**
+     * Позакз блока нашди дешевле
+     */
+    $('.cr-product-block.cr-query-block').click(function(){
+        $('.cr-query-hide').show();
+    });
+
+    /**
+     * Скрытие блока нашли дешевле
+     */
+    $('#query-hider').click(function(e){
+        //e.preventDefault();
+        //alert('sssssssssssssss');
+        setTimeout(function(){
+            $('.cr-query-hide').css({'display':'none'});
+        },100);
+
+    });
+
+    /**
+     * поповер с кнопкой закрыть
+     */
+
+    $.fn.extend({
+        popoverClosable: function (options) {
+            var defaults = {
+                template:
+                    '<div class="popover">\
+    <div class="arrow"></div>\
+    <div class="popover-header">\
+    <button type="button" class="close" data-dismiss="popover" aria-hidden="true">&times;</button>\
+    <h3 class="popover-title"></h3>\
+    </div>\
+    <div class="popover-content"></div>\
+    </div>'
+            };
+            options = $.extend({}, defaults, options);
+            var $popover_togglers = this;
+            $popover_togglers.popover(options);
+            $popover_togglers.on('click', function (e) {
+                e.preventDefault();
+                $popover_togglers.not(this).popover('hide');
+            });
+            $('html').on('click', '[data-dismiss="popover"]', function (e) {
+                $popover_togglers.popover('hide');
+            });
+        }
+    });
+
+    $('[data-toggle="popover"]').popoverClosable({html:true});
+
 
 })(jQuery);
 

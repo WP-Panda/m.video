@@ -23,6 +23,7 @@ function cr_woocommerce_pick_up_in_store_options() {
     $pick_text  = get_post_meta( $post->ID, '_pick_text', true );
     $pick_summ  = get_post_meta( $post->ID, '_pick_summ', true );
     $pick_link  = get_post_meta( $post->ID, '_pick_link', true );
+    $block_store_border = get_post_meta( $post->ID, '_block_store_border', true );
     ?>
     <div id="cr_pick_up_in_store_tab" class="panel woocommerce_options_panel">
         <div class="club-opening-hours">
@@ -44,6 +45,12 @@ function cr_woocommerce_pick_up_in_store_options() {
                         <label>Текст блока: </label>
                         <textarea class="short" row="2" cols="20"  name="_button_text" id="_favorites_text"><?php echo $pick_text; ?></textarea>
                     </p>
+
+                    <p>
+                        <label for="_block_store_border">Не включать разделитель: </label>
+                        <input type="checkbox" name="_block_store_border" id="_block_store_border" value="1" <?php checked( $block_store_border ); ?>/>
+                    </p>
+
                 </div>
             </fieldset>
         </div>

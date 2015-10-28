@@ -24,6 +24,7 @@ function cr_bonus_tab_options() {
     $title  = get_post_meta( $post->ID, '_bonus_title', true );
     $text  = get_post_meta( $post->ID, '_bonus_text', true );
     $color = get_post_meta( $post->ID, '_bonus_color', true );
+    $block_bonus_border = get_post_meta( $post->ID, '_block_bonus_border', true );
     ?>
     <div id="cr_bonus" class="panel woocommerce_options_panel">
         <div class="club-opening-hours">
@@ -46,6 +47,11 @@ function cr_bonus_tab_options() {
                     <p>
                         <label>Cумма скидки модуля (по умолчаниб 3%): </label>
                         <input type="text" class="short"  name="_bonus_price" id="_bonus_price" value="<?php echo $prise; ?>"/>
+                    </p>
+
+                    <p>
+                        <label for="_block_bonus_border">Не включать разделитель: </label>
+                        <input type="checkbox" name="_block_bonus_border" id="_block_bonus_border" value="1" <?php checked( $block_bonus_border ); ?>/>
                     </p>
 
                 </div>

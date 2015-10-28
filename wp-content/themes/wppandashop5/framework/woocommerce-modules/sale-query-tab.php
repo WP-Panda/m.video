@@ -24,6 +24,7 @@ function cr_query_sales_tab_options() {
     $text  = get_post_meta( $post->ID, '_text_sale_query', true );
     $rules  = get_post_meta( $post->ID, '_rules_sale_query', true );
     $title  = get_post_meta( $post->ID, '_title_sale_query', true );
+    $block_query_border = get_post_meta( $post->ID, '_block_query_border', true );
     ?>
     <div id="cr_sales_tab" class="panel woocommerce_options_panel">
         <div class="club-opening-hours">
@@ -46,6 +47,10 @@ function cr_query_sales_tab_options() {
                     <p>
                         <label>Cылка на страницу Правила: </label>
                         <input type="text" class="short"  name="_rules_sale_query" id="_rules_sale_query" value="<?php echo $rules; ?>"/>
+                    </p>
+                    <p>
+                        <label for="_block_query_border">Не включать разделитель: </label>
+                        <input type="checkbox" name="_block_query_border" id="_block_cart_border" value="1" <?php checked( $block_query_border ); ?>/>
                     </p>
 
                 </div>

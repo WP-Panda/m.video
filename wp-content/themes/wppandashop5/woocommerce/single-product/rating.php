@@ -23,22 +23,14 @@ $average      = $product->get_average_rating();
 
 if ( $rating_count > 0 ) : ?>
 
-
 	<div class="star-rating" title="<?php printf( __( 'Rated %s out of 5', 'woocommerce' ), $average ); ?>" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-			<span style="width:<?php echo ( ( $average / 5 ) * 100 ); ?>%">
-				<strong itemprop="ratingValue" class="rating"><?php echo esc_html( $average ); ?></strong> <?php printf( __( 'out of %s5%s', 'woocommerce' ), '<span itemprop="bestRating">', '</span>' ); ?>
-				<?php printf( _n( 'based on %s customer rating', 'based on %s customer ratings', $rating_count, 'woocommerce' ), '<span itemprop="ratingCount" class="rating">' . $rating_count . '</span>' ); ?>
-			</span>
+		<span style="width:<?php echo ( ( $average / 5 ) * 100 ); ?>%">
+			<strong itemprop="ratingValue" class="rating"><?php echo esc_html( $average ); ?></strong> <?php printf( __( 'out of %s5%s', 'woocommerce' ), '<span itemprop="bestRating">', '</span>' ); ?>
+			<?php printf( _n( 'based on %s customer rating', 'based on %s customer ratings', $rating_count, 'woocommerce' ), '<span itemprop="ratingCount" class="rating">' . $rating_count . '</span>' ); ?>
+		</span>
+		<?php if ( comments_open() ) : ?>
+			<b>(<?php echo $review_count; ?>)</b>
+		<?php endif;  ?>
 	</div>
-
-	<?php if ( comments_open() ) : ?>
-		<div class="review-comment-stock">
-			<span><a href="#reviews" class="woocommerce-review-link" rel="nofollow"><?php printf( _n( '%s review', '%s reviews', $review_count, 'woocommerce' ),$review_count); ?></a></span>
-			<span><a href="#reviews" class="woocommerce-review-link" rel="nofollow"><?php _e('Add review',''); ?></a></span>
-			<span class="product-stock">Avilability:
-				<span class="status">In stock</span>
-			</span>
-		</div>
-	<?php endif ?>
 
 <?php endif; ?>

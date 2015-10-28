@@ -33,8 +33,12 @@ if ( post_password_required() ) {
 
 	<div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(' row '); ?>>
 
-		<div class="col-xs-12 col-sm-6 col-md-5 gallery-holder wow fadeInUp">
+		<div class="col-xs-12 col-sm-8  gallery-holder wow fadeInUp">
 			<?php
+
+			add_action('woocommerce_before_single_product_summary', 'woocommerce_template_single_title' , 8);
+			add_action('woocommerce_before_single_product_summary', 'woocommerce_template_single_rating' , 9);
+
 			/**
 			 * woocommerce_before_single_product_summary hook
 			 *
@@ -45,15 +49,19 @@ if ( post_password_required() ) {
 			?>
 		</div>
 
-		<div class="summary entry-summary col-md-7 col-sm-6 wow fadeInUp">
+		<div class="summary entry-summary col-sm-4 wow fadeInUp">
 
 			<?php
+
+			remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title' , 5);
+			remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating' , 10);
+
 			$content = get_post_meta($post->ID, '_cr_single_modules_card', true);
 			$content = (array)json_decode($content);
 			if( ! empty( $content ) ) {
 
-				remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title' , 5);
-				remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating' , 10);
+				//remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title' , 5);
+				//remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating' , 10);
 				remove_action('woocommerce_single_product_summary',  'woocommerce_template_single_price' , 10);
 				remove_action('woocommerce_single_product_summary',  'woocommerce_template_single_excerpt' , 20);
 				remove_action('woocommerce_single_product_summary',  'woocommerce_template_single_add_to_cart' , 30);
@@ -84,6 +92,7 @@ if ( post_password_required() ) {
 			?>
 
 		</div><!-- .summary -->
+		<div class="clearfix"></div>
 
 		<?php
 		/**

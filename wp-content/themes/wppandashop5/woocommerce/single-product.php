@@ -18,19 +18,12 @@ get_header(); ?>
 	<div class="container">
 		<div class="row">
 
-			<?php /* div class='col-md-3 sidebar wow fadeInUp'>
-				<?php get_template_part('templates/components/navigation/sidemenu'); ?>
-				<div class="sidebar-module-container">
-					<div class="related-product clearfix">
-						<?php get_template_part('templates/components/sidebar/related-products'); ?>
-						<?php get_template_part('templates/components/sidebar/sidebar','advertisement'); ?>
-					</div><!-- /.sidebar-filter -->
-				</div><!-- /.sidebar-module-container -->
-			</div */ ?><!-- /.sidebar -->
-
 			<div class="col-md-12 details-page">
 
 				<?php
+
+				remove_action('woocommerce_before_main_content','woocommerce_breadcrumb',20);
+				add_action('woocommerce_before_main_content','bootstrap_breadcrumb',20);
 				/**
 				 * woocommerce_before_main_content hook
 				 *

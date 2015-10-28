@@ -213,6 +213,15 @@ function cr_modules_tab_fields_save( $post_id ){
     $rules = $_POST['_rules_sale_query'];
     $rules = esc_url($rules);
     update_post_meta( $post_id, '_rules_sale_query', $rules );
+    //бордер
+    $block_query_border = $_POST['_block_query_border'];
+    update_post_meta( $post_id, '_block_query_border', $block_query_border );
+
+    /**
+     * Блок цена
+     */
+    $block_price_border = $_POST['_block_price_border'];
+    update_post_meta( $post_id, '_block_price_border', $block_price_border );
 
     /**
      * Блок бонус
@@ -229,6 +238,9 @@ function cr_modules_tab_fields_save( $post_id ){
     //цвет
     $color = $_POST['_bonus_color'];
     update_post_meta( $post_id, '_bonus_color', $color );
+    //бордер
+    $block_bonus_border = $_POST['_block_bonus_border'];
+    update_post_meta( $post_id, '_block_bonus_border', $block_bonus_border );
 
     /**
      * Кнопка в корзину
@@ -236,6 +248,9 @@ function cr_modules_tab_fields_save( $post_id ){
     //текст
     $button_text = $_POST['_button_text'];
     update_post_meta( $post_id, '_button_text', $button_text );
+    //бордер
+    $block_cart_border = $_POST['_block_cart_border'];
+    update_post_meta( $post_id, '_block_cart_border', $block_cart_border );
 
     /**
      * Кнопка в избранное
@@ -243,6 +258,9 @@ function cr_modules_tab_fields_save( $post_id ){
     //текст
     $favorites_text = $_POST['_favorites_text'];
     update_post_meta( $post_id, '_favorites_text', $favorites_text );
+    //бордер
+    $block_favorites_border = $_POST['_block_favorites_border'];
+    update_post_meta( $post_id, '_block_favorites_border', $block_favorites_border);
 
     /**
      * Забрать в магазине
@@ -250,12 +268,38 @@ function cr_modules_tab_fields_save( $post_id ){
     //текст
     $pick_text  = $_POST['_pick_text'];
     update_post_meta( $post_id, '_pick_text', $pick_text );
-    $pick_summ  = $_POST['_pick_summ'];
     //сумма
+    $pick_summ  = $_POST['_pick_summ'];
     update_post_meta( $post_id, '_pick_summ', $pick_summ );
     //ссылка
     $pick_link  = esc_url($_POST['_pick_link']);
     update_post_meta( $post_id, '_pick_link', $pick_link );
+    //бордер
+    $block_store_border = $_POST['_block_store_border'];
+    update_post_meta( $post_id, '_block_store_border', $block_store_border);
+
+    /**
+     * Привезти
+     */
+    //текст
+    $shipping_text_1  = $_POST['_shipping_text_1'];
+    update_post_meta( $post_id, '_shipping_text_1', $shipping_text_1 );
+    //сумма
+    $shipping_summ_1  = $_POST['_shipping_summ_1'];
+    update_post_meta( $post_id, '_shipping_summ_1', $shipping_summ_1 );
+    //текст2
+    $shipping_text_2  = $_POST['_shipping_text_2'];
+    update_post_meta( $post_id, '_shipping_text_2', $shipping_text_2 );
+    //сумма2
+    $shipping_summ_2  = $_POST['_shipping_summ_2'];
+    update_post_meta( $post_id, '_shipping_summ_2', $shipping_summ_2 );
+    //ссылка
+    $shipping_link  = esc_url($_POST['_shipping_link']);
+    update_post_meta( $post_id, '_shipping_link', $shipping_link );
+    //бордер
+    $block_shipping_border = $_POST['_block_shipping_border'];
+    update_post_meta( $post_id, '_block_shipping_border', $block_shipping_border);
+
 
     /**
      * Скидки
@@ -284,6 +328,9 @@ function cr_modules_tab_fields_save( $post_id ){
     //количество купонов
     $discount_coupons = $_POST['_discount_coupons'];
     update_post_meta( $post_id, '_discount_coupons', $discount_coupons );
+    //бордер
+    $block_discount_border = $_POST['_block_discount_border'];
+    update_post_meta( $post_id, '_block_discount_border', $block_discount_border);
 }
 
-//Видели товар дешевле? Отправьте ссылку на данный товар. У конкурента будет цена ниже — вернем разницу! Промокод будет отправлен на телефон и е-mail.
+add_filter( 'woocommerce_add_cart_item_data', 'woo_custom_add_to_cart' );

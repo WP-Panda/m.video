@@ -28,6 +28,7 @@ function cr_woocommerce_discount_options() {
     $discount_credit = get_post_meta( $post->ID, '_discount_credit', true );
     $discount_credit_text =  get_post_meta( $post->ID, '_discount_credit_text', true );
     $discount_coupons =  get_post_meta( $post->ID, '_discount_coupons', true );
+    $block_discount_border = get_post_meta( $post->ID, '_block_discount_border', true );
     ?>
     <div id="cr_discount" class="panel woocommerce_options_panel">
         <div class="club-opening-hours">
@@ -72,6 +73,11 @@ function cr_woocommerce_discount_options() {
                     <p>
                         <label>Купоны количество: </label>
                         <input type="text" class="short" name="_discount_coupons" id="_discount_coupons"  value="<?php echo $discount_coupons; ?>"/>
+                    </p>
+
+                    <p>
+                        <label for="_block_discount_border">Не включать разделитель: </label>
+                        <input type="checkbox" name="_block_discount_border" id="_block_discount_border" value="1" <?php checked( $block_discount_border ); ?>/>
                     </p>
 
                 </div>
