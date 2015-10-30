@@ -1,0 +1,563 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Compare Products with WooCommerce\n"
+"POT-Creation-Date: 2015-04-27 20:58-0500\n"
+"PO-Revision-Date: 2015-04-27 20:59-0500\n"
+"Last-Translator: Bolder Elements <info@bolderelements.net>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2\n"
+"X-Poedit-SearchPath-0: woocommerce-product-compare\n"
+"X-Poedit-SearchPathExcluded-0: woocommerce-product-compare/upgrader\n"
+
+#: woocommerce-product-compare/inc/class-compare-tables.php:92
+msgid "No products have been added yet"
+msgstr "いいえ製品はまだ追加されていない"
+
+#: woocommerce-product-compare/inc/class-compare-tables.php:151
+msgid "Print"
+msgstr "印刷"
+
+#: woocommerce-product-compare/inc/class-product-compare.php:74
+#: woocommerce-product-compare/inc/class-product-compare.php:192
+#: woocommerce-product-compare/woocommerce-product-compare.php:222
+msgid "Compare"
+msgstr "比較する"
+
+#: woocommerce-product-compare/inc/class-product-compare.php:80
+#: woocommerce-product-compare/inc/class-product-compare.php:322
+msgid "Add to Compare"
+msgstr "比較対象に追加"
+
+#: woocommerce-product-compare/inc/class-product-compare.php:170
+msgid "Clear All"
+msgstr "すべてクリア"
+
+#: woocommerce-product-compare/inc/class-product-compare.php:223
+msgid "You may not compare more than "
+msgstr "あなたはより多くを比較しないことがあります"
+
+#: woocommerce-product-compare/inc/class-product-compare.php:318
+#: woocommerce-product-compare/woocommerce-product-compare.php:156
+msgid "Please Enter a Title for this Category"
+msgstr "このカテゴリのタイトルを入力してください"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:28
+msgid "Categories"
+msgstr "カテゴリー"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:66
+msgid "Categories & Features"
+msgstr "カテゴリー＆特長"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:67
+msgid "Manage Features"
+msgstr "機能の管理"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:123
+msgid "Compare Features"
+msgstr "特徴を比較"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:125
+msgid ""
+"Below is a list of currently available features for product comparison. From "
+"here you may edit and delete the existing features, but new ones must be "
+"added when setting up your categories."
+msgstr ""
+"以下は、製品の比較のために、現在利用可能な機能のリストです。あなたのカテゴリ"
+"を設定するときにここから、編集し、既存の機能を削除しますが、新しいものが追加"
+"されなければならないことがあります。"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:136
+msgid "Product Categories"
+msgstr "製品カテゴリ"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:138
+msgid ""
+"Create the categories that comparable products will be assigned to. This "
+"will also manage the sub-categories and various features within each."
+msgstr ""
+"同等の製品が割り当てられるカテゴリを作成します。これはまた、それぞれの内のサ"
+"ブカテゴリーおよびさまざまな機能を管理します。"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:604
+msgid "Add Category"
+msgstr "カテゴリを追加する"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:25
+#: woocommerce-product-compare/woocommerce-product-compare.php:301
+msgid "Settings"
+msgstr "[設定]"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:42
+msgid "General Options"
+msgstr "一般オプション"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:45
+msgid "Enable Product Comparison"
+msgstr "製品比較を有効にする"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:46
+msgid "Allow users to select similar products for comparison."
+msgstr "ユーザーは、比較のために同様の製品を選択することができます。"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:53
+msgid "Comparison Page"
+msgstr "比較ページ"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:54
+msgid ""
+"This is the page that will display the comparison table when a user clicks "
+"the Compare button"
+msgstr ""
+"ユーザーが比較ボタンをクリックしたときにこれは比較表を表示するページです"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:63
+msgid "Compare Button Location"
+msgstr "ボタンの位置を比較"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:64
+msgid "Choose where the button appears on the single product page"
+msgstr "選択ボタンは、単一の製品ページに表示される場所"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:71
+msgid "Below Product Title"
+msgstr "製品タイトルの下に"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:72
+msgid "Below Product Price"
+msgstr "製品価格の下に"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:73
+msgid "Below Short Summary"
+msgstr "短い要約以下は、"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:74
+msgid "Below Categories"
+msgstr "カテゴリーの下に"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:80
+msgid "Compare Button Visibility"
+msgstr "ボタンの可視性の比較"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:81
+msgid "Choose where the button can appear in shop"
+msgstr "ボタンが店頭に表示できる場所を選択"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:88
+msgid "All Locations"
+msgstr "すべての場所"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:89
+msgid "Shop Listing / Archive Only"
+msgstr "オンリーショップリスト/アーカイブ"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:90
+msgid "Single Product Pages Only"
+msgstr "単一の製品ページ"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:96
+msgid "Compare Preview Location"
+msgstr "プレビューの場所の比較"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:97
+msgid "Display a box of product icons the user has selected to compare"
+msgstr "ユーザーが比較するために選択した製品のアイコンのボックスを表示する"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:104
+msgid "Top of Page"
+msgstr "ページの先頭へ"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:105
+msgid "End of Page"
+msgstr "ページの終わり"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:106
+msgid "Do not show this preview"
+msgstr "このプレビューを表示しない"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:112
+msgid "Compare Limit"
+msgstr "リミットの比較"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:113
+msgid "The maximum number of items a user can compare"
+msgstr "ユーザーが比較できるアイテムの最大数"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:114
+msgid "4"
+msgstr "4"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:120
+msgid "Hide Compare on Mobile/Tablet Devices"
+msgstr "モバイル/タブレットデバイスでの比較を隠す"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:121
+msgid "Removes the compare buttons, preview table, and compare table"
+msgstr "比較ボタン、プレビューテーブルを削除し、テーブルを比較"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:129
+msgid "Features Tab"
+msgstr "[機能]タブ"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:132
+msgid "Enable Features Tab"
+msgstr "[機能]タブを有効にする"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:133
+#: woocommerce-product-compare/inc/class-settings-general.php:141
+msgid ""
+"Allow users to view a complete list of features on the single product page."
+msgstr ""
+"ユーザーは、単一の製品ページに機能の完全なリストを表示することができます。"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:140
+msgid "Title"
+msgstr "タイトル"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:142
+msgid "Features"
+msgstr "特徴"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:149
+msgid "Tab Location"
+msgstr "タブの場所"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:150
+msgid "Choose which position the tab appears"
+msgstr "タブが表示される位置を選択"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:157
+msgid "Before Description Tab"
+msgstr "説明タブの前に"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:158
+msgid "Before Additional Tab"
+msgstr "追加のタブの前に"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:159
+msgid "Before Reviews Tab"
+msgstr "レビュー]タブの前に"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:160
+msgid "After Reviews Tab"
+msgstr "レビュータブの後"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:25
+msgid "Products"
+msgstr "プロダクト"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:51
+#: woocommerce-product-compare/woocommerce-product-compare.php:45
+#: woocommerce-product-compare/woocommerce-product-compare.php:106
+msgid "Compare Products"
+msgstr "製品を比較する"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:53
+msgid ""
+"Below is a list of currently enabled products. These products have the "
+"ability to be compared, however you can still disable them below to "
+"temporarily hide this feature from its options."
+msgstr ""
+"以下は、現在有効になっている製品のリストです。これらの製品を比較する能力を"
+"持って、しかしあなたはまだ一時的にそのオプションからこの機能を非表示にするに"
+"は、以下にそれらを無効にすることができます。"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:128
+msgid "Activate compare ability for this product"
+msgstr "この製品の能力を比較アクティブ化"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:130
+msgid "Select a compare category"
+msgstr "比較するカテゴリを選択"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:141
+msgid "Update"
+msgstr "アップデート"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:142
+#: woocommerce-product-compare/woocommerce-product-compare.php:175
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: woocommerce-product-compare/inc/class-settings-shortcodes.php:25
+msgid "Shortcodes"
+msgstr "ショートコード"
+
+#: woocommerce-product-compare/inc/class-settings.php:46
+msgid "Action failed. Please refresh the page and retry."
+msgstr "アクションは失敗しました。ページを更新し、再試行してください。"
+
+#: woocommerce-product-compare/inc/class-settings.php:57
+msgid "Your settings have been saved."
+msgstr "設定が保存されています。"
+
+#: woocommerce-product-compare/inc/class-settings.php:84
+msgid "The changes you made will be lost if you navigate away from this page."
+msgstr "あなたがこのページから移動した場合あなたが行った変更は失われます。"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:62
+msgid "No fields were found for this subcategory"
+msgstr "いいえフィールドは、このサブカテゴリは見つかりませんでした"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:104
+#: woocommerce-product-compare/inc/class-table-features.php:96
+msgid "Text Input"
+msgstr "テキスト入力"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:107
+#: woocommerce-product-compare/inc/class-table-features.php:99
+msgid "Textarea"
+msgstr "TEXTAREA"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:110
+msgid "Yes"
+msgstr "はい"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:110
+msgid "No"
+msgstr "ノー"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:113
+#: woocommerce-product-compare/inc/class-table-features.php:105
+msgid "Single Option"
+msgstr "シングルオプション"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:116
+#: woocommerce-product-compare/inc/class-table-features.php:108
+msgid "Multiple Options"
+msgstr "複数のオプション"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:149
+#: woocommerce-product-compare/inc/class-table-features.php:141
+msgid "Feature"
+msgstr "フィーチャー"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:150
+#: woocommerce-product-compare/inc/class-table-features.php:142
+msgid "Type"
+msgstr "タイプ"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:257
+msgid "Add Feature"
+msgstr "機能を追加"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:258
+#: woocommerce-product-compare/woocommerce-product-compare.php:176
+msgid "Delete"
+msgstr "削除"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:277
+msgid "No subcategories could be found."
+msgstr "サブカテゴリは見つかりませんでした。"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:283
+msgid "Add New Subcategory"
+msgstr "新しいサブカテゴリを追加"
+
+#: woocommerce-product-compare/inc/class-table-features.php:57
+msgid "No features could be found."
+msgstr "いいえ機能は見つかりませんでした。"
+
+#: woocommerce-product-compare/inc/class-table-features.php:57
+msgid "Create the first one under the Categories & Features section"
+msgstr "カテゴリー＆特長セクションの下に最初の1を作成します。"
+
+#: woocommerce-product-compare/inc/class-table-features.php:102
+msgid "Yes / No"
+msgstr "はい/いいえ"
+
+#: woocommerce-product-compare/inc/class-table-features.php:132
+msgid "Data Could Not Be Found"
+msgstr "データが見つかりませんでした"
+
+#: woocommerce-product-compare/inc/class-table-features.php:249
+msgid "A zone with the ID provided does not exist"
+msgstr "提供されたIDを持つゾーンは存在しません"
+
+#: woocommerce-product-compare/inc/class-table-features.php:254
+msgid "The zone titled <strong>"
+msgstr "タイトルのゾーンの<strong>"
+
+#: woocommerce-product-compare/inc/class-table-products.php:59
+msgid "No products have been added yet."
+msgstr "いいえ製品はまだ追加されていない。"
+
+#: woocommerce-product-compare/inc/class-table-products.php:59
+msgid "View Products"
+msgstr "対象製品"
+
+#: woocommerce-product-compare/inc/class-table-products.php:123
+msgid "Product"
+msgstr "製品"
+
+#: woocommerce-product-compare/inc/class-table-products.php:124
+msgid "Product Category"
+msgstr "製品カテゴリ"
+
+#: woocommerce-product-compare/inc/class-table-products.php:125
+msgid "Compare Category"
+msgstr "カテゴリーの比較"
+
+#: woocommerce-product-compare/inc/class-table-products.php:126
+msgid "Status"
+msgstr "ステータス"
+
+#: woocommerce-product-compare/inc/class-table-products.php:186
+msgid "No Categories"
+msgstr "いいえカテゴリーません"
+
+#: woocommerce-product-compare/inc/class-table-products.php:197
+#: woocommerce-product-compare/woocommerce-product-compare.php:178
+msgid "Active"
+msgstr "アクティブ"
+
+#: woocommerce-product-compare/inc/class-table-products.php:197
+#: woocommerce-product-compare/woocommerce-product-compare.php:179
+msgid "Inactive"
+msgstr "非アクティブな"
+
+#: woocommerce-product-compare/inc/html-settings.php:19
+msgid "Save changes"
+msgstr "変更を保存します"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:46
+msgid ""
+"Setup categories of products with similar to features to display a "
+"comparison table"
+msgstr "比較表を表示するには、同様の特徴を持つ製品のセットアップカテゴリ"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:124
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:157
+msgid ""
+"The title will not be seen to the user but used when setting up product "
+"features"
+msgstr ""
+"タイトルは、ユーザーに見られるが、製品の機能を設定するときに使用されることは"
+"ありません"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:158
+msgid ""
+"Are you sure you want to delete this category and all of its subcategories "
+"and features"
+msgstr ""
+"あなたは、このカテゴリを削除してもよろしいですし、そのサブカテゴリーと機能の"
+"すべて"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:159
+msgid "This action CANNOT be undone"
+msgstr "このアクションは、元に戻すことはできません"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:160
+msgid "Please Enter a Title for this Subcategory"
+msgstr "このサブカテゴリのためにタイトルを入力してください"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:161
+msgid ""
+"This title will appear in the compare table above any features assigned to it"
+msgstr "このタイトルは、それに割り当てられた機能は、上記の比較表に表示されます"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:162
+msgid ""
+"Are you sure you want to delete this subcategory and all of its features"
+msgstr "あなたは、このサブカテゴリを削除してもよろしいですし、そのすべての機能"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:163
+msgid "Add a Feature"
+msgstr "機能を追加"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:164
+msgid "Select an existing feature"
+msgstr "既存の機能を選択"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:165
+msgid "Or create a new one"
+msgstr "または新規作成"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:166
+msgid "Feature Title"
+msgstr "機能のタイトル"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:167
+msgid "Input Type"
+msgstr "入力タイプ"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:168
+msgid "Input Options"
+msgstr "入力オプション"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:169
+msgid "Edit Feature"
+msgstr "編集（Edit Feature）"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:170
+msgid "Are you sure you want to remove the feature from this subcategory"
+msgstr "あなたはこのサブカテゴリから機能を削除してもよろしいです"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:171
+msgid "Are you sure you want to delete this feature"
+msgstr "あなたは、この機能を削除してもよろしいです"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:172
+msgid "Are you sure you want to delete these features"
+msgstr "あなたは、これらの機能を削除してもよろしいです"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:173
+msgid "Add New"
+msgstr "新しいの追加"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:174
+msgid "Edit"
+msgstr "編集"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:177
+msgid "Go"
+msgstr "行く"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:245
+msgid "Enable Product Compare"
+msgstr "製品を有効に比較"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:245
+msgid "Enable the ability to compare this item to other products"
+msgstr "他の製品にこのアイテムを比較する機能を有効にする"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:246
+msgid "Select Compare Category"
+msgstr "比較カテゴリーを選択して下さい"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:302
+#: woocommerce-product-compare/woocommerce-product-compare.php:312
+msgid "Registration"
+msgstr "登録"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:337
+msgid "View details"
+msgstr "詳細を見ます"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:338
+msgid "Docs"
+msgstr "ドキュメンテーション"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:339
+msgid "Support"
+msgstr "サポート"
+
+#~ msgid ""
+#~ "This is the page that will display the comparison table when a user "
+#~ "clicks the 'Compare' button"
+#~ msgstr ""
+#~ "これにより、ユーザーは「比較」ボタンをクリックしたときに比較表が表示されま"
+#~ "すページです"
+
+#~ msgid "No fields were found for this subcategory."
+#~ msgstr "いいえフィールドは、このサブカテゴリのために見つかりませんでした。"

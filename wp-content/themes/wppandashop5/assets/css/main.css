@@ -10731,3 +10731,22 @@ img.payments-method {
  }
 .graise{}
 .graise span{}
+
+/***************************************/
+/**** линии рейтинга *******************/
+/***************************************/
+
+.cr-rating-lines{}
+
+.cr-rating-liner {
+  height: 10px;
+  background-color: #ddd;
+}
+
+.cr-rating-line {
+  height: 10px;
+  width: 50%;
+  background-color: red;
+  display: block;
+  margin: 10px 0;
+}

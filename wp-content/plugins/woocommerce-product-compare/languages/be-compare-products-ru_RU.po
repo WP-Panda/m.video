@@ -1,0 +1,568 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Compare Products with WooCommerce\n"
+"POT-Creation-Date: 2015-04-27 21:05-0500\n"
+"PO-Revision-Date: 2015-10-30 08:15+0300\n"
+"Last-Translator: Max Popov <yoowordpress@yandex.ru>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2\n"
+"X-Poedit-SearchPath-0: woocommerce-product-compare\n"
+"X-Poedit-SearchPathExcluded-0: woocommerce-product-compare/upgrader\n"
+
+#: woocommerce-product-compare/inc/class-compare-tables.php:92
+msgid "No products have been added yet"
+msgstr "Нет товаров, которые были добавлены еще"
+
+#: woocommerce-product-compare/inc/class-compare-tables.php:151
+msgid "Print"
+msgstr "Печать"
+
+#: woocommerce-product-compare/inc/class-product-compare.php:74
+#: woocommerce-product-compare/inc/class-product-compare.php:192
+#: woocommerce-product-compare/woocommerce-product-compare.php:222
+msgid "Compare"
+msgstr "Характеристики"
+
+#: woocommerce-product-compare/inc/class-product-compare.php:80
+#: woocommerce-product-compare/inc/class-product-compare.php:322
+msgid "Add to Compare"
+msgstr "Добавить в сравнение"
+
+#: woocommerce-product-compare/inc/class-product-compare.php:170
+msgid "Clear All"
+msgstr "Очистить все"
+
+#: woocommerce-product-compare/inc/class-product-compare.php:223
+msgid "You may not compare more than "
+msgstr "Вы не можете сравнивать более "
+
+#: woocommerce-product-compare/inc/class-product-compare.php:318
+#: woocommerce-product-compare/woocommerce-product-compare.php:156
+msgid "Please Enter a Title for this Category"
+msgstr "Введите название категории Продкутов"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:28
+msgid "Categories"
+msgstr "Категории"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:66
+msgid "Categories & Features"
+msgstr "Категории и Характеристики"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:67
+msgid "Manage Features"
+msgstr "Управление возможностями"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:123
+msgid "Compare Features"
+msgstr "Сравните Особенности"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:125
+msgid ""
+"Below is a list of currently available features for product comparison. From "
+"here you may edit and delete the existing features, but new ones must be "
+"added when setting up your categories."
+msgstr ""
+"Ниже список имеющихся в настоящее время возможностей для сравнения "
+"продуктов. Отсюда вы можете редактировать и удалять существующие функции, но "
+"новые должны быть добавлены при настройке категории."
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:136
+msgid "Product Categories"
+msgstr "Категории Характеристик"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:138
+msgid ""
+"Create the categories that comparable products will be assigned to. This "
+"will also manage the sub-categories and various features within each."
+msgstr ""
+"Создайте категории характеристик, разделы характеристик и сами характеристики"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:604
+msgid "Add Category"
+msgstr "Добавить Категорию Характеристик"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:25
+#: woocommerce-product-compare/woocommerce-product-compare.php:301
+msgid "Settings"
+msgstr "Настройки"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:42
+msgid "General Options"
+msgstr "Общие параметры"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:45
+msgid "Enable Product Comparison"
+msgstr "Включить сравнение изделий"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:46
+msgid "Allow users to select similar products for comparison."
+msgstr "Разрешить пользователям выбирать подобные продукты для сравнения."
+
+#: woocommerce-product-compare/inc/class-settings-general.php:53
+msgid "Comparison Page"
+msgstr "Сравнение Page"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:54
+msgid ""
+"This is the page that will display the comparison table when a user clicks "
+"the Compare button"
+msgstr ""
+"Этостраница, которая будет отображаться сравнительную таблицу , "
+"когдапользователь нажимает кнопку Сравнение"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:63
+msgid "Compare Button Location"
+msgstr "Сравните Кнопка Место"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:64
+msgid "Choose where the button appears on the single product page"
+msgstr "Выберите, где кнопка на одной странице продукта появляется"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:71
+msgid "Below Product Title"
+msgstr "Ниже в заголовке продукта"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:72
+msgid "Below Product Price"
+msgstr "Ниже цены продукта"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:73
+msgid "Below Short Summary"
+msgstr "Ниже краткое резюме"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:74
+msgid "Below Categories"
+msgstr "Ниже Категории"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:80
+msgid "Compare Button Visibility"
+msgstr "Сравните клавишу Видимость"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:81
+msgid "Choose where the button can appear in shop"
+msgstr "Выберите, где кнопка может появиться в магазине"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:88
+msgid "All Locations"
+msgstr "Все места"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:89
+msgid "Shop Listing / Archive Only"
+msgstr "Перечисления магазина / Архив Только"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:90
+msgid "Single Product Pages Only"
+msgstr "Одиночные страницы продукта только"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:96
+msgid "Compare Preview Location"
+msgstr "Сравните Preview Место"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:97
+msgid "Display a box of product icons the user has selected to compare"
+msgstr "Дисплей коробку продукта Иконки пользователь выбрал для сравнения"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:104
+msgid "Top of Page"
+msgstr "В начало страницы"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:105
+msgid "End of Page"
+msgstr "Конец страницы"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:106
+msgid "Do not show this preview"
+msgstr "Больше не показывать это просмотр"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:112
+msgid "Compare Limit"
+msgstr "Сравните Limit"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:113
+msgid "The maximum number of items a user can compare"
+msgstr "Максимальное количество элементов пользователь может сравнить"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:114
+msgid "4"
+msgstr "4"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:120
+msgid "Hide Compare on Mobile/Tablet Devices"
+msgstr "Скрыть Сравните на мобильных / планшетных устройств"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:121
+msgid "Removes the compare buttons, preview table, and compare table"
+msgstr ""
+"Удаляет сравнения кнопки, предварительный просмотр таблицы и сравнить таблицу"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:129
+msgid "Features Tab"
+msgstr "Tab Особенности"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:132
+msgid "Enable Features Tab"
+msgstr "Включить вкладку Функции"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:133
+#: woocommerce-product-compare/inc/class-settings-general.php:141
+msgid ""
+"Allow users to view a complete list of features on the single product page."
+msgstr ""
+"Позволяет пользователям просматривать полный список возможностей на одной "
+"странице продукта."
+
+#: woocommerce-product-compare/inc/class-settings-general.php:140
+msgid "Title"
+msgstr "Название"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:142
+msgid "Features"
+msgstr "Особенности"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:149
+msgid "Tab Location"
+msgstr "Tab Расположение"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:150
+msgid "Choose which position the tab appears"
+msgstr "Выберите какой позиции появится вкладка"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:157
+msgid "Before Description Tab"
+msgstr "Перед вкладку Описание"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:158
+msgid "Before Additional Tab"
+msgstr "Перед дополнительная вкладка"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:159
+msgid "Before Reviews Tab"
+msgstr "Перед Отзывы Tab"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:160
+msgid "After Reviews Tab"
+msgstr "После Отзывы Tab"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:25
+msgid "Products"
+msgstr "Продукты"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:51
+#: woocommerce-product-compare/woocommerce-product-compare.php:45
+#: woocommerce-product-compare/woocommerce-product-compare.php:106
+msgid "Compare Products"
+msgstr "Сравнить продукты"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:53
+msgid ""
+"Below is a list of currently enabled products. These products have the "
+"ability to be compared, however you can still disable them below to "
+"temporarily hide this feature from its options."
+msgstr ""
+"Ниже список активных на данный момент продукции. Эти продукты имеют "
+"способность сравнивать, однако Вы можете отключить их ниже, чтобы временно "
+"скрыть эту функцию от своих возможностей."
+
+#: woocommerce-product-compare/inc/class-settings-products.php:128
+msgid "Activate compare ability for this product"
+msgstr "Активируйте сравнить способность для данного продукта"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:130
+msgid "Select a compare category"
+msgstr "Выберите сравнить категорию"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:141
+msgid "Update"
+msgstr "Обновление"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:142
+#: woocommerce-product-compare/woocommerce-product-compare.php:175
+msgid "Cancel"
+msgstr "Отменить"
+
+#: woocommerce-product-compare/inc/class-settings-shortcodes.php:25
+msgid "Shortcodes"
+msgstr "Короткие"
+
+#: woocommerce-product-compare/inc/class-settings.php:46
+msgid "Action failed. Please refresh the page and retry."
+msgstr ""
+"Не удалось действий. Пожалуйста, обновите страницу и повторите попытку."
+
+#: woocommerce-product-compare/inc/class-settings.php:57
+msgid "Your settings have been saved."
+msgstr "Ваши настройки были сохранены."
+
+#: woocommerce-product-compare/inc/class-settings.php:84
+msgid "The changes you made will be lost if you navigate away from this page."
+msgstr "Внесенные изменения будут потеряны, если вы уйдете с этой страницы."
+
+#: woocommerce-product-compare/inc/class-table-categories.php:62
+msgid "No fields were found for this subcategory"
+msgstr "Эта группа характеристик пуста"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:104
+#: woocommerce-product-compare/inc/class-table-features.php:96
+msgid "Text Input"
+msgstr "Текстовая строка"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:107
+#: woocommerce-product-compare/inc/class-table-features.php:99
+msgid "Textarea"
+msgstr "Тектовое поле"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:110
+msgid "Yes"
+msgstr "Да"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:110
+msgid "No"
+msgstr "Нет"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:113
+#: woocommerce-product-compare/inc/class-table-features.php:105
+msgid "Single Option"
+msgstr "Выпадающий список"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:116
+#: woocommerce-product-compare/inc/class-table-features.php:108
+msgid "Multiple Options"
+msgstr "Радио"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:149
+#: woocommerce-product-compare/inc/class-table-features.php:141
+msgid "Feature"
+msgstr "Особенность"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:150
+#: woocommerce-product-compare/inc/class-table-features.php:142
+msgid "Type"
+msgstr "Тип"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:257
+msgid "Add Feature"
+msgstr "Добавить характеристику"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:258
+#: woocommerce-product-compare/woocommerce-product-compare.php:176
+msgid "Delete"
+msgstr "Удалить"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:277
+msgid "No subcategories could be found."
+msgstr "Нет подкатегорий не может быть найдено."
+
+#: woocommerce-product-compare/inc/class-table-categories.php:283
+msgid "Add New Subcategory"
+msgstr "Добавить группу характеристик"
+
+#: woocommerce-product-compare/inc/class-table-features.php:57
+msgid "No features could be found."
+msgstr "Нет возможности не могут быть найдены."
+
+#: woocommerce-product-compare/inc/class-table-features.php:57
+msgid "Create the first one under the Categories & Features section"
+msgstr "Создание первой под Категории и раздел Особенности"
+
+#: woocommerce-product-compare/inc/class-table-features.php:102
+msgid "Yes / No"
+msgstr "Да Нет"
+
+#: woocommerce-product-compare/inc/class-table-features.php:132
+msgid "Data Could Not Be Found"
+msgstr "Данные не найден"
+
+#: woocommerce-product-compare/inc/class-table-features.php:249
+msgid "A zone with the ID provided does not exist"
+msgstr "Зона с ID, предоставленной не существует"
+
+#: woocommerce-product-compare/inc/class-table-features.php:254
+msgid "The zone titled <strong>"
+msgstr "Зона под названием <STRONG>"
+
+#: woocommerce-product-compare/inc/class-table-products.php:59
+msgid "No products have been added yet."
+msgstr "Нет товаров, которые были добавлены еще."
+
+#: woocommerce-product-compare/inc/class-table-products.php:59
+msgid "View Products"
+msgstr "Все товары"
+
+#: woocommerce-product-compare/inc/class-table-products.php:123
+msgid "Product"
+msgstr "Продукт"
+
+#: woocommerce-product-compare/inc/class-table-products.php:124
+msgid "Product Category"
+msgstr "Категория продукта"
+
+#: woocommerce-product-compare/inc/class-table-products.php:125
+msgid "Compare Category"
+msgstr "Сравните Категория"
+
+#: woocommerce-product-compare/inc/class-table-products.php:126
+msgid "Status"
+msgstr "Статус"
+
+#: woocommerce-product-compare/inc/class-table-products.php:186
+msgid "No Categories"
+msgstr "Нет Категории"
+
+#: woocommerce-product-compare/inc/class-table-products.php:197
+#: woocommerce-product-compare/woocommerce-product-compare.php:178
+msgid "Active"
+msgstr "Активный"
+
+#: woocommerce-product-compare/inc/class-table-products.php:197
+#: woocommerce-product-compare/woocommerce-product-compare.php:179
+msgid "Inactive"
+msgstr "Неактивный"
+
+#: woocommerce-product-compare/inc/html-settings.php:19
+msgid "Save changes"
+msgstr "Сохранить изменения"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:46
+msgid ""
+"Setup categories of products with similar to features to display a "
+"comparison table"
+msgstr ""
+"Настройка категории продуктов с сходные по функциям, чтобы отобразить "
+"таблицу сравнения"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:124
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:157
+msgid ""
+"The title will not be seen to the user but used when setting up product "
+"features"
+msgstr ""
+"Название категории не будет отображаться на сайте, но будет использоваться "
+"для настройки продуктов."
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:158
+msgid ""
+"Are you sure you want to delete this category and all of its subcategories "
+"and features"
+msgstr ""
+"Вы уверены, что хотите удалить эту категорию и все ее подкатегорий и "
+"особенности"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:159
+msgid "This action CANNOT be undone"
+msgstr "Это действие не может быть отменено"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:160
+msgid "Please Enter a Title for this Subcategory"
+msgstr "Введите название группы характеристик"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:161
+msgid ""
+"This title will appear in the compare table above any features assigned to it"
+msgstr "Это название будет отображаться на сайте"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:162
+msgid ""
+"Are you sure you want to delete this subcategory and all of its features"
+msgstr "Вы уверены, что хотите удалить этот подкатегорию и все его особенности"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:163
+msgid "Add a Feature"
+msgstr "Добавить функцию"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:164
+msgid "Select an existing feature"
+msgstr "Выберите существующий функцию"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:165
+msgid "Or create a new one"
+msgstr "Или создайте новый"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:166
+msgid "Feature Title"
+msgstr "Заголовок характеристики"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:167
+msgid "Input Type"
+msgstr "Тип входа"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:168
+msgid "Input Options"
+msgstr "Входные параметры"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:169
+msgid "Edit Feature"
+msgstr "Редактировать элемент"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:170
+msgid "Are you sure you want to remove the feature from this subcategory"
+msgstr "Вы уверены, что хотите удалить функцию из этой подкатегории"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:171
+msgid "Are you sure you want to delete this feature"
+msgstr "Вы уверены, что хотите удалить эту функцию"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:172
+msgid "Are you sure you want to delete these features"
+msgstr "Вы уверены, что хотите удалить эти функции"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:173
+msgid "Add New"
+msgstr "Добавить новую"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:174
+msgid "Edit"
+msgstr "Редактировать"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:177
+msgid "Go"
+msgstr "Применить"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:245
+msgid "Enable Product Compare"
+msgstr "Включить Сравнение Продуктов"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:245
+msgid "Enable the ability to compare this item to other products"
+msgstr "Добавлять продукт в сравнение"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:246
+msgid "Select Compare Category"
+msgstr "Выберите группу характеристик"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:302
+#: woocommerce-product-compare/woocommerce-product-compare.php:312
+msgid "Registration"
+msgstr "регистрация"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:337
+msgid "View details"
+msgstr "посмотреть детали"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:338
+msgid "Docs"
+msgstr "документация"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:339
+msgid "Support"
+msgstr "Поддержка"
+
+#~ msgid ""
+#~ "This is the page that will display the comparison table when a user "
+#~ "clicks the 'Compare' button"
+#~ msgstr ""
+#~ "Это страница, которая будет отображаться сравнительную таблицу, когда "
+#~ "пользователь нажимает кнопку Сравнить"
+
+#~ msgid "No fields were found for this subcategory."
+#~ msgstr "Никакие поля не были найдены для этой подкатегории."

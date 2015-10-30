@@ -1,0 +1,83 @@
+#compare-products-basket {}
+	#compare-products-basket .compare-products-basket-inner { margin: 15px auto; padding: 10px 15px; border: 1px solid #f7f7f7; }
+	#compare-products-basket .compare-product, #compare-products-basket .compare-product-placeholder { display: inline-block; position: relative; margin-right: 15px; }
+	#compare-products-basket .compare-product-placeholder { width: 48px; height: 48px; border: 2px dashed #dcdcdc; }
+	#compare-products-basket img { max-width: 50px; }
+	#compare-products-basket .compare-product-remove { display: block; position: absolute; width: 9px; height: 9px; top: -4px; right: -4px; background: url( ../img/remove.png ); border-radius: 1px; }
+
+.compare-clear-items { text-align: right; font-size: 0.9em; text-decoration: none; margin: 0; }
+.basket.compare-products-button { position: relative; top: 0; }
+.print-link { text-align: right; margin: 0 !important; padding: 0 10px 0 0; }
+
+.be_compare_features_table, .sticky-thead { border: 1px solid #c2c2c2; border-collapse: collapse; table-layout: auto; width: 100%; background: #fff; }
+	.be_compare_features_table tbody td,
+	.be_compare_features_table th,
+	.be_compare_features_table td,
+	.sticky-thead th { border: 1px solid #c2c2c2; white-space: nowrap; vertical-align: middle; }
+
+	.be_compare_features_table tbody th,
+	.sticky-wrap .sticky-col tbody th,
+	.sticky-wrap .sticky-intersect th { padding: 3px 5px; text-align: left; }
+
+	.be_compare_features_table thead th,
+	.sticky-thead th { text-align: center; padding: 2.5em 1em 2em 1em; }
+		.sticky-thead th { padding-top: 0 !important; padding-bottom: 0 !important; }
+
+	.be_compare_features_table tbody td { text-align: center; }
+	.be_compare_features_table tr.alternate { background: #f7f7f7; }
+	.be_compare_features_table tr.subcategory { width: 100%; text-align: center; background: #e2e2e2; font-weight: bold; font-size: 1.2em; border: 1px solid #c2c2c2; }
+	.be_compare_features_table tr.subcategory td { font-weight: bold; border: 1px solid #c2c2c2; }
+
+	.be_compare_features_table tfoot th { padding: 15px; text-align: center; }
+	.be_compare_features_table tfoot th p { margin: 0 0 8px 0; padding: 0; text-align: center; }
+	.be_compare_features_table tfoot .amount { display: none; }
+
+	.be_compare_features_table th.product { position: relative; }
+	.be_compare_features_table .compare-product-remove { position:absolute; top:4px; right:3px; display:block; width:12px; height:12px; background-repeat: no-repeat; background-position: -42px 1px; font-size:1px; }
+	.be_compare_features_table .compare-product-remove:hover { cursor: pointer; background-position: -42px -10px; }
+
+.be_compare_features_table .products img { max-width: 150px !important; }
+.be_compare_features_table .star-rating { float: none !important; margin: 0 auto 10px auto !important; text-align: center !important; display: block; clear: both; }
+.be_compare_features_table .add_to_cart_inline a, .sticky-thead th.product .add_to_cart_button { display: block; margin-top: 20px; width: auto; }
+.sticky-thead th.product { text-align: center; }
+
+/* For appearance */
+.sticky-wrap { overflow-x: auto; overflow-y: hidden; position: relative; width: 100%; }
+.sticky-wrap .sticky-thead,
+.sticky-wrap .sticky-col,
+.sticky-wrap .sticky-intersect {
+	opacity: 1;
+	background: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all .125s ease-in-out;
+	z-index: 50;
+	width: auto; /* Prevent table from stretching to full size */
+}
+	.sticky-wrap .sticky-thead {
+		box-shadow: 0 0.25em 0.1em -0.1em rgba(0,0,0,.125);
+		z-index: 100;
+		width: 100%;
+	}
+	.sticky-wrap .sticky-intersect {
+		opacity: 1;
+		z-index: 150;
+	}
+		.sticky-wrap .sticky-intersect th {
+			background-color: #fff;
+			color: #eee;
+		}
+.sticky-thead li.product .star-rating { float: none !important; margin: 0 auto; }
+
+.sticky-thead th.product span,
+.sticky-thead th.product img,
+.sticky-thead th.product .star-rating { display: none; }
+
+
+/*-----------------------------------------------------------------------------------*/
+/* - Phone Landscape & Portrait
+/*-----------------------------------------------------------------------------------
+@media only screen and (max-width: 767px) {
+}
+*/

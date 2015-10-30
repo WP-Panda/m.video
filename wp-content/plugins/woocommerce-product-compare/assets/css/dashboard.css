@@ -1,0 +1,73 @@
+
+.be-compare-popup { position:fixed; top:0;  left:0; width:100%; height:100%; background:url(../img/overlay.png) repeat; text-align:center; z-index: 8000; }
+	.be-compare-popup .be-popup-container { display: inline-block; margin-top: 200px; z-index: 9000; box-shadow:0 0 25px #111; -webkit-box-shadow:0 0 25px #111; -moz-box-shadow:0 0 25px #111; min-width:350px; max-width:450px; background: #fff; text-align: center; padding: 30px; max-height: 600px; overflow-y: auto; }
+	.be-compare-popup .add_form label { font-size: 1.2em; font-weight: bold; }
+	.be-compare-popup .add_form span { font-style: italic; color: #aeaeae; }
+	.be-compare-popup .add_form input[type="text"] { width: 100%; }
+	.be-compare-popup .add_form select { width: 85%; }
+
+	.be-compare-popup .labeled-form { text-align: left; }
+		.be-compare-popup .labeled-form label { font-size: 1em; font-weight: bold; display: block; width: 100%; }
+		.be-compare-popup .labeled-form select, .be-compare-popup .labeled-form textarea { width: 100%; }
+		.be-compare-popup .labeled-form .subcategory_title { font-size: 1.1em; padding: 3px 5px !important; border: 0 !important; background: #dcdcdc; margin-top: 20px !important; width: 100% !important; }
+		.be-compare-popup .section label { width: auto !important; display: inline; }
+
+#be-compare-new-feature .be-popup-container, #be-compare-product-edit .be-popup-container { margin-top: 75px; }
+#be-compare-product-edit .be-popup-container { width: 50%; }
+#be-compare-product-edit .be-popup-container .labeled-form .section p { width: 90%; margin: 0 auto; padding: 15px 5%; }
+#be-compare-product-edit .be-popup-container .labeled-form p { border-bottom: 1px solid #dfdfdf; padding: 15px 0; margin: 0; }
+#be-compare-product-edit .be-popup-container .labeled-form p:last-child { border: 0; }
+#be-compare-product-edit .be-popup-container label { font-size: 1em; }
+#be-compare-product-edit .be-popup-container label.title { font-size: 1.2em; }
+
+.category-table-container { margin-bottom: 25px; }
+	.category-table-container .wp-list-table .no-padding {  padding: 0; }
+	.category-table-container .category-headline { line-height: 42px; background: url(../img/bg-category.png); font-size: 1.6em; border: 1px solid #acacac; }
+	.category-table-container .category-show { display: block; float: left; height: 42px; width: 42px; background: url(../img/category-up.png) no-repeat center center; margin-right: 15px; cursor: pointer; }
+	.category-table-container .category-show.down { display: block; float: left; height: 42px; width: 42px; background: url(../img/category-down.png) no-repeat center center; margin-right: 15px; }
+	.category-table-container .category-delete { display: block; float: right; height: 42px; width: 42px; background: url(../img/delete-cat.png) no-repeat center center; }
+	.category-table-container .category-delete:hover { background: url(../img/delete-cat-hover.png) no-repeat center center; cursor: pointer; }
+	.category-table-container .wp-list-table { display: none; }
+	.category-table-container table { border-collapse: collapse; }
+	.category-table-container .wp-list-table .no-items { text-align: left !important; font-weight: normal !important; }
+	.category-table-container .wp-list-table td, .category-table-container .wp-list-table th { border: 1px solid #acacac; padding: 4px 8px; }
+	.category-table-container .wp-list-table thead, .category-table-container .wp-list-table tfoot { background: #f2f2f2; font-weight: bold; }
+	.category-table-container .wp-list-table tbody tr:first-child td { border-top: 0; }
+	.category-table-container .wp-list-table tbody tr.row-subcategory table { width: 100%; }
+	.category-table-container .wp-list-table table.subcategory-info th { border:1px solid #acacac; border-width: 0 0 1px 0 !important; }
+	.category-table-container .wp-list-table tbody tr.row-subcategory table td { border: 0; }
+	.category-table-container .wp-list-table tbody tr.row-subcategory td:first-child { width: 16px !important; border-right: 0px; }
+	.category-table-container .wp-list-table tbody tr.subcategory-title { background: #dfdfdf; font-weight: bold; font-size: 1.1em; }
+	.category-table-container .wp-list-table tbody tr.subcategory-title span.links { font-weight: normal; float: right; font-size: 1.0em; }
+	.category-table-container .wp-list-table tbody tr td:first-child { width: 16px; }
+	.category-table-container .wp-list-table tfoot td { text-align: right; background: #dcdcdc; }
+	.category-table-container .wp-list-table .ui-sort-placeholder td:first-child { width: 16px !important; }
+	.category-table-container .wp-list-table .ui-sort-placeholder { background: #e2efcf; }
+	.category-table-container .wp-list-table .reorder, .category-table-container .wp-list-table .feature-sort { display: block; width: 16px; height: 16px; background: url(../img/reorder.png) no-repeat center center; cursor: move; }
+
+	.category-table-container td.subcategory_features { padding: 0px !important; }
+	.category-table-container .subcategory_features-table { margin: 0; width: 100%; }
+		.category-table-container .subcategory_features-table td { border-width: 1px 0; border-color: #cfcfcf; }
+		.category-table-container .subcategory_features-table tr.alternate { background: #f5f5f5; }
+		.category-table-container .subcategory_features-table td:nth-child(2) { width: 60%; font-weight: 800; }
+		.category-table-container .subcategory_features-table td:nth-child(4) { width:20%; }
+		.category-table-container .subcategory_features-table .feature-delete, #be-compare-feat-table .feature-delete { display: block; height: 20px; width: 18px; background: url(../img/delete-feat.png) no-repeat center center; cursor: pointer; float: right; }
+		.category-table-container .subcategory_features-table .feature-delete:hover, #be-compare-feat-table .feature-delete:hover { background: url(../img/delete-feat-hover.png) no-repeat center center; }
+
+.compare-active { color: #00cc33; text-transform: uppercase; }
+.compare-inactive { color: #c7c7c7; text-transform: uppercase; }
+
+blockquote.be_compare_quote, .be_compare_admin pre { display: block; padding: 15px 20px; background: #f7f7f7; border: 1px solid #d0d0d0; font-style: italic; }
+	blockquote.be_compare_quote p { text-align: right; font-style: normal; margin: 0; padding: 0; }
+	.be_compare_admin pre { font-style: normal; }
+	.be_compare_admin h3 { margin-top: 35px; }
+
+#be_message_div { position:fixed; top:100px; right:0; z-index: 8000; }
+	#be_message_div .compare-message { display: block; padding: 15px 20px; font-weight: bold; text-transform: uppercase; font-size: 1.2em; background: #484848; border: 0 !important; min-width: 18px; min-height: 18px; margin-bottom: 15px; }
+	#be_message_div .compare-message.success { color: #4F8A10; border-left: 3px solid #00ff00; }
+	#be_message_div .compare-message.error { color: #D8000C; border-left: 3px solid #D8000C; }
+
+#be-compare-feat-table table { table-layout: auto; }
+	#be-compare-feat-table table td:first-child { width: 25px !important; }
+		#be-compare-feat-table .feature-edit { display: block; height: 20px; width: 18px; background: url(../img/edit-feat.png) no-repeat left center; cursor: pointer; float: right; padding-right: 8px; }
+		#be-compare-feat-table .feature-edit:hover { background: url(../img/edit-feat-hover.png) no-repeat left center; }

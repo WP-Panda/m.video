@@ -1,0 +1,551 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Compare Products with WooCommerce\n"
+"POT-Creation-Date: 2015-04-27 21:07-0500\n"
+"PO-Revision-Date: 2015-04-27 21:08-0500\n"
+"Last-Translator: Bolder Elements <info@bolderelements.net>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2\n"
+"X-Poedit-SearchPath-0: woocommerce-product-compare\n"
+"X-Poedit-SearchPathExcluded-0: woocommerce-product-compare/upgrader\n"
+
+#: woocommerce-product-compare/inc/class-compare-tables.php:92
+msgid "No products have been added yet"
+msgstr "任何产品添加尚未"
+
+#: woocommerce-product-compare/inc/class-compare-tables.php:151
+msgid "Print"
+msgstr "打印"
+
+#: woocommerce-product-compare/inc/class-product-compare.php:74
+#: woocommerce-product-compare/inc/class-product-compare.php:192
+#: woocommerce-product-compare/woocommerce-product-compare.php:222
+msgid "Compare"
+msgstr "比较"
+
+#: woocommerce-product-compare/inc/class-product-compare.php:80
+#: woocommerce-product-compare/inc/class-product-compare.php:322
+msgid "Add to Compare"
+msgstr "加入比较"
+
+#: woocommerce-product-compare/inc/class-product-compare.php:170
+msgid "Clear All"
+msgstr "清除所有"
+
+#: woocommerce-product-compare/inc/class-product-compare.php:223
+msgid "You may not compare more than "
+msgstr "你可能不比较多"
+
+#: woocommerce-product-compare/inc/class-product-compare.php:318
+#: woocommerce-product-compare/woocommerce-product-compare.php:156
+msgid "Please Enter a Title for this Category"
+msgstr "请输入一个标题为这个类别"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:28
+msgid "Categories"
+msgstr "分类"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:66
+msgid "Categories & Features"
+msgstr "分类及特点"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:67
+msgid "Manage Features"
+msgstr "管理功能"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:123
+msgid "Compare Features"
+msgstr "比较特点"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:125
+msgid ""
+"Below is a list of currently available features for product comparison. From "
+"here you may edit and delete the existing features, but new ones must be "
+"added when setting up your categories."
+msgstr ""
+"以下是对产品比较现有的功能列表。从这里设置你的类别时，您可以编辑和删除现有的"
+"功能，但新的必须添加。"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:136
+msgid "Product Categories"
+msgstr "产品分类"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:138
+msgid ""
+"Create the categories that comparable products will be assigned to. This "
+"will also manage the sub-categories and various features within each."
+msgstr "创建可比产品将被分配到的类别。这也将管理在每个子类别和各种功能。"
+
+#: woocommerce-product-compare/inc/class-settings-categories.php:604
+msgid "Add Category"
+msgstr "添加类别"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:25
+#: woocommerce-product-compare/woocommerce-product-compare.php:301
+msgid "Settings"
+msgstr "设置"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:42
+msgid "General Options"
+msgstr "常规选项"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:45
+msgid "Enable Product Comparison"
+msgstr "使产品比较"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:46
+msgid "Allow users to select similar products for comparison."
+msgstr "允许用户选择同类产品进行比较。"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:53
+msgid "Comparison Page"
+msgstr "比较页"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:54
+msgid ""
+"This is the page that will display the comparison table when a user clicks "
+"the Compare button"
+msgstr "这是将显示在对照表的页面，当用户点击该按钮比较"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:63
+msgid "Compare Button Location"
+msgstr "比较按钮位置"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:64
+msgid "Choose where the button appears on the single product page"
+msgstr "选择在那里的按钮出现在单品页"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:71
+msgid "Below Product Title"
+msgstr "下面的产品名称"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:72
+msgid "Below Product Price"
+msgstr "以下产品报价"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:73
+msgid "Below Short Summary"
+msgstr "下面小结"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:74
+msgid "Below Categories"
+msgstr "下面分类"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:80
+msgid "Compare Button Visibility"
+msgstr "比较按钮能见度"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:81
+msgid "Choose where the button can appear in shop"
+msgstr "选择在那里按钮可以出现在店"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:88
+msgid "All Locations"
+msgstr "所有地点"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:89
+msgid "Shop Listing / Archive Only"
+msgstr "购物清单/存档只有"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:90
+msgid "Single Product Pages Only"
+msgstr "只有单一产品页面"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:96
+msgid "Compare Preview Location"
+msgstr "比较预览位置"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:97
+msgid "Display a box of product icons the user has selected to compare"
+msgstr "显示一个框产物图标的用户选择，以比较"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:104
+msgid "Top of Page"
+msgstr "页首"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:105
+msgid "End of Page"
+msgstr "此页完结"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:106
+msgid "Do not show this preview"
+msgstr "不要显示此预览"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:112
+msgid "Compare Limit"
+msgstr "比较极限"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:113
+msgid "The maximum number of items a user can compare"
+msgstr "项的用户可以比较的最大数量"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:114
+msgid "4"
+msgstr "4"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:120
+msgid "Hide Compare on Mobile/Tablet Devices"
+msgstr "隐藏在手机/平板电脑设备比较"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:121
+msgid "Removes the compare buttons, preview table, and compare table"
+msgstr "删除按钮相比，预览表，比较表"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:129
+msgid "Features Tab"
+msgstr "功能选项卡"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:132
+msgid "Enable Features Tab"
+msgstr "启用功能选项卡"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:133
+#: woocommerce-product-compare/inc/class-settings-general.php:141
+msgid ""
+"Allow users to view a complete list of features on the single product page."
+msgstr "允许用户查看单一产品页面上的功能的完整列表。"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:140
+msgid "Title"
+msgstr "称号"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:142
+msgid "Features"
+msgstr "产品特点"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:149
+msgid "Tab Location"
+msgstr "标签位置"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:150
+msgid "Choose which position the tab appears"
+msgstr "选择选项卡会显示哪个位置"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:157
+msgid "Before Description Tab"
+msgstr "说明标签之前"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:158
+msgid "Before Additional Tab"
+msgstr "其他选项卡之前，"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:159
+msgid "Before Reviews Tab"
+msgstr "之前评测标签"
+
+#: woocommerce-product-compare/inc/class-settings-general.php:160
+msgid "After Reviews Tab"
+msgstr "经过评测标签"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:25
+msgid "Products"
+msgstr "制品"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:51
+#: woocommerce-product-compare/woocommerce-product-compare.php:45
+#: woocommerce-product-compare/woocommerce-product-compare.php:106
+msgid "Compare Products"
+msgstr "比较产品"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:53
+msgid ""
+"Below is a list of currently enabled products. These products have the "
+"ability to be compared, however you can still disable them below to "
+"temporarily hide this feature from its options."
+msgstr ""
+"下面是目前功能的产品清单。这些产品有能力进行比较，但是你仍然可以禁用它们下方"
+"暂时隐藏其选项此功能。"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:128
+msgid "Activate compare ability for this product"
+msgstr "激活该产品的能力比较"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:130
+msgid "Select a compare category"
+msgstr "选择一个类别比较"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:141
+msgid "Update"
+msgstr "更新"
+
+#: woocommerce-product-compare/inc/class-settings-products.php:142
+#: woocommerce-product-compare/woocommerce-product-compare.php:175
+msgid "Cancel"
+msgstr "取消"
+
+#: woocommerce-product-compare/inc/class-settings-shortcodes.php:25
+msgid "Shortcodes"
+msgstr "简码"
+
+#: woocommerce-product-compare/inc/class-settings.php:46
+msgid "Action failed. Please refresh the page and retry."
+msgstr "操作失败。请刷新页面，然后重试。"
+
+#: woocommerce-product-compare/inc/class-settings.php:57
+msgid "Your settings have been saved."
+msgstr "您的设置已保存。"
+
+#: woocommerce-product-compare/inc/class-settings.php:84
+msgid "The changes you made will be lost if you navigate away from this page."
+msgstr "如果您离开这个页面，你所做的更改将丢失。"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:62
+msgid "No fields were found for this subcategory"
+msgstr "没有字段被找到此子类别"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:104
+#: woocommerce-product-compare/inc/class-table-features.php:96
+msgid "Text Input"
+msgstr "文本输入"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:107
+#: woocommerce-product-compare/inc/class-table-features.php:99
+msgid "Textarea"
+msgstr "textarea的"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:110
+msgid "Yes"
+msgstr "是的"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:110
+msgid "No"
+msgstr "没有"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:113
+#: woocommerce-product-compare/inc/class-table-features.php:105
+msgid "Single Option"
+msgstr "单选项"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:116
+#: woocommerce-product-compare/inc/class-table-features.php:108
+msgid "Multiple Options"
+msgstr "多个选项"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:149
+#: woocommerce-product-compare/inc/class-table-features.php:141
+msgid "Feature"
+msgstr "特点"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:150
+#: woocommerce-product-compare/inc/class-table-features.php:142
+msgid "Type"
+msgstr "类型"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:257
+msgid "Add Feature"
+msgstr "添加功能"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:258
+#: woocommerce-product-compare/woocommerce-product-compare.php:176
+msgid "Delete"
+msgstr "删除"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:277
+msgid "No subcategories could be found."
+msgstr "无子类别可以被发现。"
+
+#: woocommerce-product-compare/inc/class-table-categories.php:283
+msgid "Add New Subcategory"
+msgstr "添加新类别"
+
+#: woocommerce-product-compare/inc/class-table-features.php:57
+msgid "No features could be found."
+msgstr "没有特色，可以找到。"
+
+#: woocommerce-product-compare/inc/class-table-features.php:57
+msgid "Create the first one under the Categories & Features section"
+msgstr "创建类别和功能部分下，第一个"
+
+#: woocommerce-product-compare/inc/class-table-features.php:102
+msgid "Yes / No"
+msgstr "是/否"
+
+#: woocommerce-product-compare/inc/class-table-features.php:132
+msgid "Data Could Not Be Found"
+msgstr "数据无法找到"
+
+#: woocommerce-product-compare/inc/class-table-features.php:249
+msgid "A zone with the ID provided does not exist"
+msgstr "所提供的ID一个区域不存在"
+
+#: woocommerce-product-compare/inc/class-table-features.php:254
+msgid "The zone titled <strong>"
+msgstr "题为区域的<strong>"
+
+#: woocommerce-product-compare/inc/class-table-products.php:59
+msgid "No products have been added yet."
+msgstr "任何产品添加呢。"
+
+#: woocommerce-product-compare/inc/class-table-products.php:59
+msgid "View Products"
+msgstr "查看产品"
+
+#: woocommerce-product-compare/inc/class-table-products.php:123
+msgid "Product"
+msgstr "产品"
+
+#: woocommerce-product-compare/inc/class-table-products.php:124
+msgid "Product Category"
+msgstr "产品类别"
+
+#: woocommerce-product-compare/inc/class-table-products.php:125
+msgid "Compare Category"
+msgstr "比较范畴"
+
+#: woocommerce-product-compare/inc/class-table-products.php:126
+msgid "Status"
+msgstr "状态"
+
+#: woocommerce-product-compare/inc/class-table-products.php:186
+msgid "No Categories"
+msgstr "无分类"
+
+#: woocommerce-product-compare/inc/class-table-products.php:197
+#: woocommerce-product-compare/woocommerce-product-compare.php:178
+msgid "Active"
+msgstr "积极"
+
+#: woocommerce-product-compare/inc/class-table-products.php:197
+#: woocommerce-product-compare/woocommerce-product-compare.php:179
+msgid "Inactive"
+msgstr "待用"
+
+#: woocommerce-product-compare/inc/html-settings.php:19
+msgid "Save changes"
+msgstr "保存更改"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:46
+msgid ""
+"Setup categories of products with similar to features to display a "
+"comparison table"
+msgstr "设置类的产品类似的功能，显示对比表"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:124
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:157
+msgid ""
+"The title will not be seen to the user but used when setting up product "
+"features"
+msgstr "建立产品功能时的标题将不可见的用户，但使用的"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:158
+msgid ""
+"Are you sure you want to delete this category and all of its subcategories "
+"and features"
+msgstr "要删除该类别是否确定及其所有子类别和特点"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:159
+msgid "This action CANNOT be undone"
+msgstr "此操作不可撤消"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:160
+msgid "Please Enter a Title for this Subcategory"
+msgstr "请输入一个标题为这个子目录"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:161
+msgid ""
+"This title will appear in the compare table above any features assigned to it"
+msgstr "这个标题会出现在比较表中分配给它的任何功能"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:162
+msgid ""
+"Are you sure you want to delete this subcategory and all of its features"
+msgstr "要删除此子类别是否确实和它的所有功能"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:163
+msgid "Add a Feature"
+msgstr "添加功能"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:164
+msgid "Select an existing feature"
+msgstr "选择一个现有的功能"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:165
+msgid "Or create a new one"
+msgstr "或创建一个新的"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:166
+msgid "Feature Title"
+msgstr "功能标题"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:167
+msgid "Input Type"
+msgstr "输入类型"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:168
+msgid "Input Options"
+msgstr "输入选项"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:169
+msgid "Edit Feature"
+msgstr "编辑特征"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:170
+msgid "Are you sure you want to remove the feature from this subcategory"
+msgstr "你确定你想从这个子类中删除功能"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:171
+msgid "Are you sure you want to delete this feature"
+msgstr "您确定要删除这个功能"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:172
+msgid "Are you sure you want to delete these features"
+msgstr "您确定要删除这些功能"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:173
+msgid "Add New"
+msgstr "添加新"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:174
+msgid "Edit"
+msgstr "编辑"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:177
+msgid "Go"
+msgstr "去"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:245
+msgid "Enable Product Compare"
+msgstr "使产品比较"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:245
+msgid "Enable the ability to compare this item to other products"
+msgstr "使比较这个项目的其他产品的能力"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:246
+msgid "Select Compare Category"
+msgstr "选择类别比较"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:302
+#: woocommerce-product-compare/woocommerce-product-compare.php:312
+msgid "Registration"
+msgstr "注册"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:337
+msgid "View details"
+msgstr "查看详情"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:338
+msgid "Docs"
+msgstr "文件"
+
+#: woocommerce-product-compare/woocommerce-product-compare.php:339
+msgid "Support"
+msgstr "支持"
+
+#~ msgid ""
+#~ "This is the page that will display the comparison table when a user "
+#~ "clicks the 'Compare' button"
+#~ msgstr "这是将显示该对比表的页面，当用户点击“比较”按钮"
+
+#~ msgid "No fields were found for this subcategory."
+#~ msgstr "任何领域中找到此子类别。"
