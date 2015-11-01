@@ -10533,6 +10533,7 @@ li.depth-1 {
   padding: 10px 0;
   border-bottom: 1px solid #bbb;
   position: relative;
+  overflow: hidden;
 }
 
 .cr-product-block h4{
@@ -10749,4 +10750,56 @@ img.payments-method {
   background-color: red;
   display: block;
   margin: 10px 0;
+}
+
+/***************************************/
+/** Таблица сравнения в продукте *******/
+/***************************************/
+.be_compare_features_table tr.subcategory td {
+    font-weight: bold;
+    border-bottom: 1px solid #c2c2c2;
+    border-color: #fff #fff #c2c2c2 #fff;
+    background-color: #fff!important;
+    text-align: left;
+    padding: 25px 0 10px 0;
+}
+
+
+/***************************************/
+/** Табы слева                   *******/
+/***************************************/
+.tabs-left > .nav-tabs > li,
+.tabs-right > .nav-tabs > li {
+  float: none;
+}
+
+.tabs-left > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
+.tabs-left > .nav-tabs {
+  float: left;
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #ffffff;
 }

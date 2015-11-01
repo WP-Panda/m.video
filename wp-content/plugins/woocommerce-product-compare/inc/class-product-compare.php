@@ -276,7 +276,7 @@ class BE_Compare_Products {
 
 
 	/**
-	 * Add new tab to products page if enabled
+	 * Вкладка спецификация
 	 */
 	function new_product_tab( $tabs ) {
 		global $post;
@@ -314,6 +314,7 @@ class BE_Compare_Products {
 	 
 	}
 
+	//Вывод контента во вкладку продукт;
 	function new_product_tab_content() {
 		global $product;
 	 
@@ -321,6 +322,16 @@ class BE_Compare_Products {
 		$featuresTable->prepare_items( array( $product->id ) );
 		echo $featuresTable->display( true );
 		
+	}
+
+	//Вывод контента во вкладку продукт анонс;
+	function new_product_tab_content_short() {
+		global $product;
+
+		$featuresTable = new BE_Compare_Tables();
+		$featuresTable->prepare_items( array( $product->id ) );
+		echo $featuresTable->display_short( true );
+
 	}
 
 

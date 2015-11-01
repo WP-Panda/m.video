@@ -13,7 +13,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-global $product, $woocommerce_loop;
+	global $product, $woocommerce_loop;
+
 
 // Store loop count we're currently on
 if ( empty( $woocommerce_loop['loop'] ) ) {
@@ -74,7 +75,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 		do_action( 'woocommerce_after_shop_loop_item_title' );
 		?>
 
-	</div><!-- /.book-details -->
+	</div>
 
 	<div class="cart animate-effect">
 		<div class="action">

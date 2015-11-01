@@ -35,6 +35,10 @@ class BE_Compare_Settings_Products extends WC_Settings_Page {
 		// AJAX functions
 		add_action( 'wp_ajax_be_compare_edit_product_form', array( &$this, 'edit_product_form' ) );
 		add_action( 'wp_ajax_be_compare_edit_product_update', array( &$this, 'update_product_form' ) );
+
+		/**
+		 * Сохранение параметров ппродукта в модальномс окне вызов
+		 */
 		add_action( 'wp_ajax_be_compare_edit_product_save', array( &$this, 'save_product_form' ) );
 	}
 
@@ -254,7 +258,7 @@ class BE_Compare_Settings_Products extends WC_Settings_Page {
 
 
 	/**
-	 * Generate compare product 'Edit' form
+	 * Сохранание параметров продукта в модальном окне
 	 */
 	public function save_product_form() {
 		// check security tag
@@ -272,6 +276,8 @@ class BE_Compare_Settings_Products extends WC_Settings_Page {
 
 			if( isset( $_POST[ 'post' ] ) && isset( $_POST[ 'product_id' ] ) ) :
 				$fields = array();
+
+				print_r($_POST[ 'post' ]);
 
 				foreach( $_POST[ 'post' ] as $k1 => $v1 ) {
 					foreach ( $v1 as $k2 => $v2 ) {

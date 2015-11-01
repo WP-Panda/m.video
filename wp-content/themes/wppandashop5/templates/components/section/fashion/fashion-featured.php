@@ -124,4 +124,4 @@
 					</div><!-- /.item -->										
 				<?php $delay++; ?>	
 			<?php endforeach;?>
-		</div><!-- /.fashion-featured -->
+		</div><!-- /.fashion-featured --></div><!-- /.fashion-featured -->

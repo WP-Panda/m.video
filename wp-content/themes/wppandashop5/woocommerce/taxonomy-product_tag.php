@@ -12,5 +12,5 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-
+echo '777777777777';
 wc_get_template( 'archive-product.php' );

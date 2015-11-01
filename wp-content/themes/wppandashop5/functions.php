@@ -61,6 +61,19 @@ function wps5_register_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'wps5_register_scripts' );
 
+
+/**
+ * Сайдбары
+ */
+$args = array(
+    'name'          => 'Sidebar %d',
+    'id'            => "sidebar",
+    'before_widget' => '<li id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</li>',
+    'before_title'  => '<h2 class="widgettitle">',
+    'after_title'   => '</h2>'
+);
+register_sidebars( 2, $args );
 /**
  * Подключение всякого
  */

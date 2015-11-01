@@ -1,0 +1,883 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Project-Id-Version: WOOF - WooCommerce Products Filter\n"
+"POT-Creation-Date: 2015-11-01 15:33+0300\n"
+"PO-Revision-Date: 2015-11-01 15:50+0300\n"
+"Language-Team: Max Popov <yoowordpress@yandex.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: index.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: Max Popov <yoowordpress@yandex.ru>\n"
+"Language: ru_RU\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: classes/helper.php:302
+msgid "Min price"
+msgstr "Минимальная цена"
+
+#: classes/helper.php:303
+msgid "Max price"
+msgstr "Максимальная  цена"
+
+#: classes/helper.php:304 views/woof.php:334
+msgid "Filter"
+msgstr "Фильтр"
+
+#: classes/helper.php:306
+msgid "Price:"
+msgstr "Цена:"
+
+#. Plugin Name of the plugin/theme
+#: classes/widgets.php:11
+msgid "WOOF - WooCommerce Products Filter"
+msgstr ""
+
+#: classes/widgets.php:13
+msgid "WooCommerce Products Filter by realmag777"
+msgstr ""
+
+#: classes/widgets.php:78
+msgid "WooCommerce Products Filter"
+msgstr "WooCommerce Фильтр Продуктов"
+
+#: classes/widgets.php:86 index.php:821
+msgid "Title"
+msgstr "Заголовок"
+
+#: index.php:249
+#, php-format
+msgid "each %s days"
+msgstr "Каждые %s дней"
+
+#: index.php:285
+msgid "Settings"
+msgstr "Настройки"
+
+#: index.php:286
+msgid "Documentation"
+msgstr "Документация"
+
+#: index.php:529
+msgid "Products Filter"
+msgstr "Фильтр Товаров"
+
+#: index.php:814
+msgid "Loading ..."
+msgstr "Загрузка …"
+
+#: index.php:820
+msgid "orderby"
+msgstr "Сортировать по:"
+
+#: index.php:822 views/woof.php:112
+msgid "In sales only"
+msgstr "Распродажа"
+
+#: index.php:823 views/woof.php:102
+msgid "In stock only"
+msgstr "В наличии"
+
+#: index.php:824
+msgid "Per page"
+msgstr "На Странице"
+
+#: index.php:825
+msgid "SKU"
+msgstr "Артикул (SKU)"
+
+#: index.php:826
+msgid "price range"
+msgstr "Диапазон цен"
+
+#: index.php:827
+msgid "show products filter"
+msgstr "Показать фильтр товаров"
+
+#: index.php:828
+msgid "hide products filter"
+msgstr "Скрыть  фильтр товаров"
+
+#: index.php:994
+msgid "Set filter automatically"
+msgstr "Установить фильтр автоматически"
+
+#: index.php:995
+msgid "Set filter automatically on the shop page"
+msgstr "Установить фильтр автоматически на странице магазина"
+
+#: index.php:1001 index.php:1015 index.php:1028 index.php:1041 index.php:1054
+#: index.php:1067 index.php:1080 index.php:1093 index.php:1106 index.php:1119
+#: index.php:1132 index.php:1158 index.php:1171 index.php:1198 index.php:1211
+#: views/plugin_options.php:304 views/plugin_options.php:632
+#: views/plugin_options.php:664 views/plugin_options.php:907
+#: views/plugin_options.php:914
+msgid "Yes"
+msgstr "Да"
+
+#: index.php:1002 index.php:1014 index.php:1027 index.php:1040 index.php:1053
+#: index.php:1066 index.php:1079 index.php:1092 index.php:1105 index.php:1118
+#: index.php:1131 index.php:1157 index.php:1170 index.php:1183 index.php:1197
+#: index.php:1210 views/plugin_options.php:303 views/plugin_options.php:631
+#: views/plugin_options.php:663 views/plugin_options.php:906
+#: views/plugin_options.php:913
+msgid "No"
+msgstr "Нет"
+
+#: index.php:1007
+msgid "Autosubmit"
+msgstr "Автоотправка"
+
+#: index.php:1008
+msgid ""
+"Start searching just after changing any of the elements on the search form"
+msgstr ""
+"Начните поиск только после изменения любого из элементов в форме поиска"
+
+#: index.php:1020
+msgid "Show count"
+msgstr "Показать количество"
+
+#: index.php:1021
+msgid "Show count of items near taxonomies terms on the front"
+msgstr "Показать число элементов напротив каждого фильтра"
+
+#: index.php:1033
+msgid "Dynamic recount"
+msgstr "Динамический пересчет"
+
+#: index.php:1034
+msgid ""
+"Show count of items near taxonomies terms on the front dynamically. Must be "
+"switched on \"Show count\""
+msgstr ""
+
+#: index.php:1046
+msgid "Hide empty terms"
+msgstr "Скрыть пустые термины"
+
+#: index.php:1047
+msgid "Hide empty terms in \"Dynamic recount\" mode"
+msgstr "Скрыть пустые термины в режиме \"Динамический пересчет\""
+
+#: index.php:1059
+msgid "Try to ajaxify the shop"
+msgstr "Попробуйте ajaxify магазин"
+
+#: index.php:1060
+#, php-format
+msgid ""
+"Select \"Yes\" if you want to TRY make filtering in your shop by AJAX. Not "
+"compatible for 100% of all wp themes."
+msgstr ""
+
+#: index.php:1072
+msgid "Use chosen"
+msgstr "Использовать выбранное"
+
+#: index.php:1073
+msgid "Use chosen javascript library on the front of your site for drop-downs."
+msgstr ""
+
+#: index.php:1085
+msgid "Hide childs in checkboxes and radio"
+msgstr ""
+
+#: index.php:1086
+msgid ""
+"Hide childs in checkboxes and radio. Near checkbox/radio which has childs "
+"will be plus icon to show childs."
+msgstr ""
+
+#: index.php:1098
+msgid "Use beauty scroll"
+msgstr "Use beauty scroll ??"
+
+#: index.php:1099
+msgid ""
+"Use beauty scroll when you apply max height for taxonomy block on the front"
+msgstr ""
+
+#: index.php:1111
+msgid "Show \"Search by title\" textinput"
+msgstr ""
+
+#: index.php:1112
+msgid "Show textinput for searching by products title"
+msgstr ""
+
+#: index.php:1124
+msgid "Show \"Search by SKU\" textinput"
+msgstr ""
+
+#: index.php:1125
+msgid "Show textinput for searching by products sku"
+msgstr ""
+
+#: index.php:1137
+msgid "Conditions logic of \"Search by SKU\""
+msgstr ""
+
+#: index.php:1138
+msgid "LIKE or Equally"
+msgstr "Содержит  или Равно"
+
+#: index.php:1144
+msgid "Equally"
+msgstr "Равно"
+
+#: index.php:1145
+msgid "LIKE"
+msgstr "Содержит"
+
+#: index.php:1150
+msgid "Show \"In stock only checkbox\""
+msgstr "Показать \"чекбокс в наличии \""
+
+#: index.php:1151
+msgid "Show \"In stock only checkbox\" on the front"
+msgstr "Показать \"чекбокс в наличии \" на главной странице"
+
+#: index.php:1163
+msgid "Show \"In sales only checkbox\""
+msgstr "Показать \"чекбокс распродажа \""
+
+#: index.php:1164
+msgid "Show \"In sales only checkbox\" on the front"
+msgstr "Показать \"чекбокс распродажа на главной \""
+
+#: index.php:1176
+msgid "Show \"Filter by price\""
+msgstr "Показать \"Фильтр по цене\""
+
+#: index.php:1177
+msgid "Show woocommerce filter by price inside woof search form"
+msgstr "Показать WooCommerce фильтр по цене внутри формы фильтра"
+
+#: index.php:1184
+msgid "As range-slider"
+msgstr "Слайдер диапазона"
+
+#: index.php:1185
+msgid "As drop-down"
+msgstr "Выпадающий список"
+
+#: index.php:1190
+msgid "Show button for \"Filter by price\""
+msgstr "Показать кнопку  \"Фильтр по цене\""
+
+#: index.php:1191
+msgid "Show button for woocommerce filter by price inside woof search form"
+msgstr "Показать WooCommerce фильтр по цене внутри формы фильтра"
+
+#: index.php:1203
+msgid "Hide woof top panel buttons"
+msgstr "Скрыть  woof кнопки верхней панели"
+
+#: index.php:1204
+msgid "Red buttons on the top of the widget or shop when searching done"
+msgstr ""
+
+#: index.php:1216
+msgid "Filter button text"
+msgstr ""
+
+#: index.php:1217
+msgid "Filter button text in the search form"
+msgstr ""
+
+#: index.php:1225
+msgid "Reset button text"
+msgstr ""
+
+#: index.php:1226
+msgid ""
+"Reset button text in the search form. Write \"none\" to hide this button on "
+"front."
+msgstr ""
+
+#: views/plugin_options.php:5
+#, php-format
+msgid "WOOF - Products Filter Options v.%s"
+msgstr ""
+
+#: views/plugin_options.php:10
+msgid ""
+"ATTENTION! Your version of the woocommerce plugin is too obsolete. There is "
+"no warranty for working with WOOF!!"
+msgstr ""
+
+#: views/plugin_options.php:17
+msgid "Taxonomies"
+msgstr ""
+
+#: views/plugin_options.php:18
+msgid "Options"
+msgstr "Опции"
+
+#: views/plugin_options.php:19
+msgid "Auto show layout"
+msgstr ""
+
+#: views/plugin_options.php:20
+msgid "Miscellaneous"
+msgstr ""
+
+#: views/plugin_options.php:21
+msgid "Advanced"
+msgstr ""
+
+#: views/plugin_options.php:22
+msgid "Info"
+msgstr "Информация"
+
+#: views/plugin_options.php:50
+msgid "drag and drope"
+msgstr ""
+
+#: views/plugin_options.php:50
+msgid "move"
+msgstr "переместить"
+
+#: views/plugin_options.php:55
+msgid "View of the taxonomies terms on the front"
+msgstr ""
+
+#: views/plugin_options.php:64
+msgid "excluded terms ids"
+msgstr "Исключить термины по айди"
+
+#: views/plugin_options.php:64
+msgid ""
+"If you want to exclude some current taxonomies terms from the searching at "
+"all! Example: 11,23,77"
+msgstr ""
+
+#: views/plugin_options.php:65
+msgid "additional options"
+msgstr ""
+
+#: views/plugin_options.php:210
+msgid "Radio and checkboxes skin"
+msgstr ""
+
+#: views/plugin_options.php:223
+msgid "Default"
+msgstr ""
+
+#: views/plugin_options.php:224
+msgid "Plainoverlay"
+msgstr ""
+
+#: views/plugin_options.php:225
+msgid "Loading balls - experimental"
+msgstr ""
+
+#: views/plugin_options.php:226
+msgid "Loading bars - experimental"
+msgstr ""
+
+#: views/plugin_options.php:227
+msgid "Loading bubbles - experimental"
+msgstr ""
+
+#: views/plugin_options.php:228
+msgid "Loading cubes - experimental"
+msgstr ""
+
+#: views/plugin_options.php:229
+msgid "Loading cyclone - experimental"
+msgstr ""
+
+#: views/plugin_options.php:230
+msgid "Loading spin - experimental"
+msgstr ""
+
+#: views/plugin_options.php:231
+msgid "Loading spinning bubbles - experimental"
+msgstr ""
+
+#: views/plugin_options.php:232
+msgid "Loading spokes - experimental"
+msgstr ""
+
+#: views/plugin_options.php:240
+msgid "Overlay skins"
+msgstr ""
+
+#: views/plugin_options.php:255
+msgid "Overlay image background"
+msgstr ""
+
+#: views/plugin_options.php:257 views/plugin_options.php:365
+#: views/plugin_options.php:383 views/plugin_options.php:459
+#: views/plugin_options.php:836
+msgid "Example"
+msgstr ""
+
+#: views/plugin_options.php:270
+msgid "Plainoverlay color"
+msgstr ""
+
+#: views/plugin_options.php:287
+msgid "Loading word"
+msgstr ""
+
+#: views/plugin_options.php:289
+msgid ""
+"Word while searching is going on front when \"Overlay skins\" is default."
+msgstr ""
+
+#: views/plugin_options.php:312
+msgid "Hide auto filter by default"
+msgstr ""
+
+#: views/plugin_options.php:318
+msgid ""
+"If in options tab option \"Set filter automatically\" is \"Yes\" you can "
+"hide filter and show hide/show button instead of it."
+msgstr ""
+
+#: views/plugin_options.php:335
+msgid "Auto filter close/open image"
+msgstr ""
+
+#: views/plugin_options.php:337
+msgid ""
+"Image which displayed instead filter while it is closed if selected. Write "
+"\"none\" here if you want to use text only!"
+msgstr ""
+
+#: views/plugin_options.php:339
+msgid "Auto filter close/open text"
+msgstr ""
+
+#: views/plugin_options.php:341
+msgid "Text which displayed instead filter while it is closed if selected."
+msgstr ""
+
+#: views/plugin_options.php:345
+msgid "Image for subcategories - open"
+msgstr ""
+
+#: views/plugin_options.php:347
+msgid ""
+"Image when you select in tab Options \"Hide childs in checkboxes and radio"
+"\". By default it is green cross."
+msgstr ""
+
+#: views/plugin_options.php:349
+msgid "Image for subcategories - close"
+msgstr ""
+
+#: views/plugin_options.php:351
+msgid ""
+"Image when you select in tab Options \"Hide childs in checkboxes and radio"
+"\". By default it is green minus."
+msgstr ""
+
+#: views/plugin_options.php:362
+msgid "Image for checked color type checkbox"
+msgstr ""
+
+#: views/plugin_options.php:364
+msgid ""
+"Image for color checkboxes when its checked. Better use png. Size is: 20x20 "
+"px."
+msgstr ""
+
+#: views/plugin_options.php:380
+msgid "Image for title search input button"
+msgstr ""
+
+#: views/plugin_options.php:382
+msgid ""
+"Image for title search button which appears near input when users typing "
+"there any symbols. Better use png. Size is: 20x20 px."
+msgstr ""
+
+#: views/plugin_options.php:401
+msgid "Price filter title text"
+msgstr ""
+
+#: views/plugin_options.php:403
+msgid ""
+"Text before the price filter range slider. Leave it empty if you not need it!"
+msgstr ""
+
+#: views/plugin_options.php:414
+msgid "Drop-down price filter ranges"
+msgstr ""
+
+#: views/plugin_options.php:416
+#, php-format
+msgid ""
+"Ranges for price filter when its activated as drop down. Example: "
+"0-50,51-100,101-i. Where \"i\" is infinity. Max price is %s."
+msgstr ""
+
+#: views/plugin_options.php:427
+msgid "Drop-down price filter text"
+msgstr ""
+
+#: views/plugin_options.php:429
+msgid "Drop-down price filter first option text"
+msgstr ""
+
+#: views/plugin_options.php:443
+msgid "SKU textinput placeholder"
+msgstr ""
+
+#: views/plugin_options.php:445
+msgid ""
+"SKU textinput placeholder. Set \"none\" if you want leave it empty on the "
+"front."
+msgstr ""
+
+#: views/plugin_options.php:456
+msgid "Image for sku input button"
+msgstr ""
+
+#: views/plugin_options.php:458
+msgid ""
+"Image for sku search button which appears near input when users typing there "
+"any symbols. Better use png. Size is: 20x20 px."
+msgstr ""
+
+#: views/plugin_options.php:487
+msgid "WPML taxonomies labels translations"
+msgstr ""
+
+#: views/plugin_options.php:493
+msgid ""
+"Use it if you can not translate your custom taxonomies labels and attributes "
+"labels by another plugins."
+msgstr ""
+
+#: views/plugin_options.php:504
+msgid "Search by title behaviour"
+msgstr ""
+
+#: views/plugin_options.php:511
+msgid "Search by title"
+msgstr ""
+
+#: views/plugin_options.php:512
+msgid "Search by content"
+msgstr ""
+
+#: views/plugin_options.php:513
+msgid "Search by title OR content"
+msgstr ""
+
+#: views/plugin_options.php:514
+msgid "Search by title AND content"
+msgstr ""
+
+#: views/plugin_options.php:539
+msgid "Placeholder text for the title textinput"
+msgstr ""
+
+#: views/plugin_options.php:540
+msgid "enter the product title here ..."
+msgstr ""
+
+#: views/plugin_options.php:541
+msgid "Set \"none\" to disable placeholder for this textinput"
+msgstr ""
+
+#: views/plugin_options.php:550
+msgid "Search slug"
+msgstr ""
+
+#: views/plugin_options.php:563
+msgid ""
+"If you do not like search key \"swoof\" in the search link you can replace "
+"it by your own word. But be care to avoid conflicts with any themes and "
+"plugins, + never define it as symbol \"s\".<br /> Not understood? Simply do "
+"not touch it!"
+msgstr ""
+
+#: views/plugin_options.php:572
+msgid "Default per page"
+msgstr ""
+
+#: views/plugin_options.php:584
+msgid "Products per page by default"
+msgstr ""
+
+#: views/plugin_options.php:591
+msgid "Storage type"
+msgstr ""
+
+#: views/plugin_options.php:615
+msgid ""
+"If you have troubles with relevant terms recount on categories pages with "
+"dynamic recount for not logged in users - select transient."
+msgstr ""
+
+#: views/plugin_options.php:624
+msgid "Hide terms count text"
+msgstr ""
+
+#: views/plugin_options.php:648
+msgid ""
+"If you want show relevant tags and tags count on the categories pages you "
+"should activate show count, dynamic recount and <b>hide empty terms</b> in "
+"the tab Options. But if you do not want show count text near each term - set "
+"Yes here."
+msgstr ""
+
+#: views/plugin_options.php:656
+msgid "Cache dynamic recount number for each item in filter"
+msgstr ""
+
+#: views/plugin_options.php:680
+msgid ""
+"Useful thing when you already started your site and use dynamic recount -> "
+"it make recount very fast! Of course if you added new posts which have to be "
+"in search results you have to clean this cache OR you can set time period "
+"for auto cleaning!"
+msgstr ""
+
+#: views/plugin_options.php:683
+msgid "clear cache"
+msgstr "Очистить кэш"
+
+#: views/plugin_options.php:692
+msgid "do not clean cache automatically"
+msgstr "Не чистите кэш автоматически"
+
+#: views/plugin_options.php:693
+msgid "clean cache automatically hourly"
+msgstr "чистый кэш автоматически почасовая"
+
+#: views/plugin_options.php:694
+msgid "clean cache automatically twicedaily"
+msgstr "чистый кэш автоматически twicedaily"
+
+#: views/plugin_options.php:695
+msgid "clean cache automatically daily"
+msgstr "чистый кэш автоматически ежедневно"
+
+#: views/plugin_options.php:696
+msgid "clean cache automatically each 2 days"
+msgstr "чистый кэш автоматически каждые 2 дня"
+
+#: views/plugin_options.php:697
+msgid "clean cache automatically each 3 days"
+msgstr "чистый кэш автоматически каждые 3 дня"
+
+#: views/plugin_options.php:698
+msgid "clean cache automatically each 4 days"
+msgstr "чистый кэш автоматически каждые 4 дня"
+
+#: views/plugin_options.php:699
+msgid "clean cache automatically each 5 days"
+msgstr "чистый кэш автоматически каждые 5 дней"
+
+#: views/plugin_options.php:700
+msgid "clean cache automatically each 6 days"
+msgstr "чистый кэш автоматически каждые 6 дней"
+
+#: views/plugin_options.php:701
+msgid "clean cache automatically each 7 days"
+msgstr "чистый кэш автоматически 7 дней"
+
+#: views/plugin_options.php:740
+msgid ""
+"WOOF cannot create the database table! Make sure that your mysql user has "
+"the CREATE privilege! Do it manually using your host panel&phpmyadmin!"
+msgstr ""
+
+#: views/plugin_options.php:751
+msgid "Custom CSS code"
+msgstr "Ваш CSS код"
+
+#: views/plugin_options.php:757
+msgid ""
+"If you are need to customize something and you don't want to lose your "
+"changes after update"
+msgstr ""
+
+#: views/plugin_options.php:763
+msgid "JavaScript code after AJAX is done"
+msgstr ""
+
+#: views/plugin_options.php:766
+msgid ""
+"Use it when you are need additional action after AJAX redraw your products "
+"in shop page or in page with shortcode!"
+msgstr ""
+
+#: views/plugin_options.php:779
+msgid "Docs"
+msgstr "Документация"
+
+#: views/plugin_options.php:789
+msgid "Short video tutorial"
+msgstr "Видео руководство"
+
+#: views/plugin_options.php:799
+msgid "Demo site"
+msgstr "Демо сайт"
+
+#: views/plugin_options.php:813
+msgid "Recommended plugins for your site flexibility and features"
+msgstr ""
+
+#: views/plugin_options.php:820
+msgid ""
+"Order Categories and all custom taxonomies terms (hierarchically) and child "
+"terms using a Drag and Drop Sortable javascript capability"
+msgstr ""
+
+#: views/plugin_options.php:825
+msgid ""
+"Allows for the ordering of categories and custom taxonomy terms through a "
+"simple drag-and-drop interface"
+msgstr ""
+
+#: views/plugin_options.php:830
+msgid ""
+"WooCommerce Currency Switcher – is the plugin that allows you to switch to "
+"different currencies and get their rates converted in the real time!"
+msgstr ""
+
+#: views/plugin_options.php:835
+msgid ""
+"Insert Gallery in post, page and custom post types just in two clicks. You "
+"can create great galleries for your products."
+msgstr ""
+
+#: views/plugin_options.php:842
+msgid ""
+"It concatenates all scripts and styles, minifies and compresses them, adds "
+"expires headers, caches them, and moves styles to the page head, and scripts "
+"to the footer"
+msgstr ""
+
+#: views/plugin_options.php:848
+msgid ""
+"Shrink, beautify, track, manage and share any URL on or off of your "
+"WordPress website. Create links that look how you want using your own domain "
+"name!"
+msgstr ""
+
+#: views/plugin_options.php:853
+msgid ""
+"This plugin provides an easy to use interface to create and administer "
+"custom post types and taxonomies in WordPress."
+msgstr ""
+
+#: views/plugin_options.php:858
+msgid "Widget Logic lets you control on which pages widgets appear using"
+msgstr ""
+
+#: views/plugin_options.php:863
+msgid ""
+"Cache pages, allow to make a lot of search queries on your site without high "
+"load on your server!"
+msgstr ""
+
+#: views/plugin_options.php:869
+msgid ""
+"Exports your database, does a find and replace on URLs and file paths, then "
+"allows you to save it to your computer."
+msgstr ""
+
+#: views/plugin_options.php:896
+msgid "Taxonomy custom label"
+msgstr ""
+
+#: views/plugin_options.php:896
+msgid ""
+"For example you want to show title of Product Categories as \"My Products\". "
+"Just for your conveniencing."
+msgstr ""
+
+#: views/plugin_options.php:897
+msgid "leave it empty to use native taxonomy name"
+msgstr ""
+
+#: views/plugin_options.php:900
+msgid "Max height of the block"
+msgstr ""
+
+#: views/plugin_options.php:900
+msgid ""
+"Max-height (px). Works if the taxonomy view is radio or checkbox. 0 means no "
+"max-height."
+msgstr ""
+
+#: views/plugin_options.php:901
+msgid "Max height of  the block"
+msgstr ""
+
+#: views/plugin_options.php:904
+msgid "Show title label"
+msgstr ""
+
+#: views/plugin_options.php:904
+msgid "Show/Hide taxonomy block title on the front"
+msgstr ""
+
+#: views/plugin_options.php:911
+msgid "Dispaly items in a row"
+msgstr ""
+
+#: views/plugin_options.php:911
+msgid ""
+"Works for radio and checkboxes only. Allows show radio/checkboxes in 1 row!"
+msgstr ""
+
+#: views/shortcodes/woof_price_filter.php:8
+msgid "filter by price"
+msgstr ""
+
+#: views/shortcodes/woof_price_filter.php:58
+msgid ""
+"Not possible. Enter options ranges in the plugin settings -> tab "
+"Miscellaneous -> Drop-down price filter ranges!"
+msgstr ""
+
+#: views/shortcodes/woof_sku_filter.php:16
+msgid "enter a product sku here ..."
+msgstr ""
+
+#: views/shortcodes/woof_title_filter.php:16
+msgid "enter a product title here ..."
+msgstr ""
+
+#: views/woof.php:58
+msgid "edit view helper"
+msgstr ""
+
+#: views/woof.php:320
+msgid "Reset"
+msgstr "Сброс"
+
+#. Plugin URI of the plugin/theme
+msgid "http://woocommerce-filter.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "WOOF - WooCommerce Products Filter. Easy & Quick!"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "realmag777"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://pluginus.net/"
+msgstr ""

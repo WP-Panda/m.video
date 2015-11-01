@@ -676,10 +676,14 @@
 
         });
 
-
-        // Save product compare features
+        /**
+         * Сохранание параметров продукта в модальном окне
+         */
         jQuery('#be-compare-product-edit-form form').live('submit', function (e) {
             e.preventDefault();
+
+            alert('jjj');
+           // return false;
 
             var return_fields = {};
             var be_nonce = jQuery('#be-compare-product-edit-form #be-nonce').val();
@@ -762,6 +766,7 @@
                     else becpwc_message_update(message_div, 'error');
 
                     jQuery('#be-compare-product-edit').remove();
+                    console.log(response);
 
                 });
             }
@@ -1187,6 +1192,12 @@
                 }
             }
         }
+
+
+
+        $('h1').click(function(){
+            console.log($('#post').serialize());
+        });
 
     });
 })(jQuery);

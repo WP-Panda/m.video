@@ -8,6 +8,27 @@ if ( ! function_exists( 'is_woocommerce_activated' ) ) {
     }
 }
 
+require_once 'cr_woo_short.php';
+
+/**
+ * Категория продукта по ID
+ */
+function get_product_category_by_product_id( $id ) {
+    $term = wp_get_post_terms( $id, 'product_cat' );
+    return $term;
+}
+
+
+/**
+ * Отключение подобных продуктов
+ */
+remove_action( 'woocommerce_after_single_product_summary','woocommerce_output_related_products',20 );
+
+/**
+ * Отключение сайдбара на транице продукты
+ */
+remove_action( 'woocommerce_sidebar','woocommerce_get_sidebar',10 );
+
 /**
  * Показывать по XX Записей
  */
@@ -88,7 +109,7 @@ function cr_template_loop_product_thumbnail($size = 'shop_catalog'){
 
     $out = '
     <div class="product-image">
-        <a href="' . $full .'" data-lightbox="image-1">
+        <a href="' . get_the_permalink($post->ID). '" data-lightbox="image-1">
             <div class="image">
                 <img src="' . $thumb.'" data-echo="' . $full .'" class="img-responsive" alt="">
             </div>';
@@ -183,7 +204,12 @@ require_once 'woocommerce-modules/pick-up-in-store.php';
 require_once 'woocommerce-modules/shipping-in-home.php';
 // скидки
 require_once 'woocommerce-modules/discount.php';
-
+// с этим товаром покупают
+require_once 'woocommerce-modules/buy-with-this-item.php';
+// с этим товаром покупают слайдер
+require_once 'woocommerce-modules/buy-with-this-item-short.php';
+//отзывы
+require_once 'woocommerce-modules/rev.php';
 
 
 
@@ -331,6 +357,12 @@ function cr_modules_tab_fields_save( $post_id ){
     //бордер
     $block_discount_border = $_POST['_block_discount_border'];
     update_post_meta( $post_id, '_block_discount_border', $block_discount_border);
+
+    /**
+     * С этим товаром покупают
+     */
+    $buy_with_this = $_POST['_buy_with_this'];
+    update_post_meta( $post_id, '_buy_with_this', $buy_with_this);
 }
 
 add_filter( 'woocommerce_add_cart_item_data', 'woo_custom_add_to_cart' );
@@ -340,9 +372,9 @@ add_filter( 'woocommerce_add_cart_item_data', 'woo_custom_add_to_cart' );
 add_filter( 'woocommerce_product_tabs', 'woo_rename_tabs', 98 );
 function woo_rename_tabs( $tabs ) {
 
-    //unset( $tabs['description'] );      	// Удаление вкладки с описанием товара
-    //unset( $tabs['reviews'] ); 			// Удаление вкладки с отзывами
-    //unset( $tabs['additional_information'] );  	// Удаление вкладки с дополнительной информацией
+    unset( $tabs['description'] );      	// Удаление вкладки с описанием товара
+    unset( $tabs['reviews'] ); 			// Удаление вкладки с отзывами
+    unset( $tabs['additional_information'] ); // Удаление вкладки с дополнительной информацией
 
     $tabs['main'] = array(
         'title' 	=> __( 'Обзор', 'woocommerce' ),
@@ -350,9 +382,44 @@ function woo_rename_tabs( $tabs ) {
         'callback' 	=> 'main_tab_content'
     );
 
+    $tabs['spec'] = array(
+        'title' 	=> __( 'Спецификации', 'woocommerce' ),
+        'priority' 	=> 20,
+        'callback' 	=> 'spec_tab_content'
+    );
+
+    $tabs['rev'] = array(
+        'title' 	=> __( 'Отзывы', 'woocommerce' ),
+        'priority' 	=> 30,
+        'callback' 	=> 'rev_tab_content'
+    );
+
+    $tabs['accessories'] = array(
+        'title' 	=> __( 'Акссесуары', 'woocommerce' ),
+        'priority' 	=> 40,
+        'callback' 	=> 'accessories_tab_content'
+    );
+
     return $tabs;
 }
 
+/**
+ * Акссесуары
+ */
+function accessories_tab_content()
+{
+    cr_woocommerce_buy_with_this_item();
+}
+/**
+ * отз
+ */
+function rev_tab_content(){
+    cr_woocommerce_rev();
+}
+
+/**
+ * Обзор
+ */
 
 function main_tab_content() {
 
@@ -412,10 +479,99 @@ function main_tab_content() {
     }
     ?>
 
+
+
     <div class="cr-product-block">
         <h3>Описание</h3>
-        <?php the_content(); ?>
+        <div class="col-xs-12">
+            <?php the_content(); ?>
+        </div>
+        <div class="col-xs-8">
+            <?php $cont = new BE_Compare_Products();
+            $cont->new_product_tab_content_short();
+            ?>
+        </div>
+        <div class="col-xs-4">
+            <span><?php the_title(); ?></span>
+            <p>
+                Вы можете купить <?php the_title(); ?> в магазинах М.Видео по доступной цене. <?php the_title(); ?>: описание, фото, характеристики, отзывы покупателей, инструкция и аксессуары.
+            </p>
+            <a href="#">Смотреть все <?php the_title(); ?></a>
+        </div>
+        <div class="col-xs-12 text-center">
+            <a href="#tab-spec">Смотреть все Спецификации</a>
+        </div>
     </div>
+
+    <div class="cr-product-block">
+        <div class="shop-sub-options clearfix">
+            <ul>
+                <li class="col-xs-3">
+                    <a href="/deliverypage">
+                        <div class="option-icon"><i class="fa fa-truck fa-3x"></i></div>
+                        <div class="option-text">Доставка вовремя</div>
+                    </a>
+                </li>
+                <li class="col-xs-3">
+                    <a href="/ppc">
+                        <div class="option-icon"><i class="fa fa-thumbs-o-up fa-3x"></i></div>
+                        <div class="option-text">Нашли дешевле? Снизим цену!</div>
+                    </a>
+                </li>
+                <li class="col-xs-3">
+                    <a href="/catalog">
+                        <div class="option-icon"><i class="fa fa-shopping-cart fa-3x"></i></div>
+                        <div class="option-text">Полный каталог на mvideo.ru</div>
+                    </a>
+                </li>
+                <li class="col-xs-3">
+                    <a href="/exchange">
+                        <div class="option-icon"><i class="fa fa-exchange  fa-3x"></i></div>
+                        <div class="option-text">30 дней на обмен</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cr-product-block">
+        <h3>Как получить товар?</h3>
+        <div class="col-xs-8">
+            <p>Смартфон Samsung Galaxy A3 сочетает в себе высокую функциональность и стильный дизайн.
+                Благодаря мощному четырехъядерному процессору он отлично работает в режиме многозадачности.
+                Улучшенный интерфейс позволяет менять темы для экрана, выбирать опции для startup и многое другое.</p>
+
+            <p>Наслаждайтесь просмотром фильмов на 4,5-дюймовом Full HD super amoled экране!
+                Любите делать автопортреты? Просто произнесите голосовую команду или махните рукой.
+                Режим «широкоугольное селфи» подойдет для больших компаний. А функция авторедактирования придаст фотографии яркость.
+                С опцией «GIF-анимация» можно сделать 20 снимков в непрерывном режиме и создать анимированный GIF-файл!</p>
+
+            <p>Умный смартфон самостоятельно увеличит или уменьшит громкость звонка в зависимости
+                от того, где вы находитесь, благодаря функции Adjustable Audio. Смартфон оснащен LTE-модулем.
+                Купите Samsung Galaxy A3 – оцените все его великолепные возможности!</p>
+
+        </div>
+        <div class="col-xs-4">
+
+            <div>Доставить на дом
+                Завтра и позже - Бесплатно
+            </div>
+
+            <div>
+                Забрать в магазине
+                г. Ростов-на-Дону, ул. Красноармейская, 157
+                Другие магазины
+                Бесплатно
+                Премия 500
+                Сегодня
+            </div>
+
+        </div>
+    </div>
+
+    <?php //слайдер подобные
+    cr_woocommerce_buy_with_this_item_short();
+    ?>
 
     <div class="blog cr-product-block">
         <h3>Отзывы</h3>
@@ -447,7 +603,7 @@ function main_tab_content() {
                 <div class="cr-rating-lines col-xs-6">
                     <?php
                     foreach ( $array as $key => $one ) { ?>
-                     <span class="col-xs-2"><?php echo $key ?> звезд</span>   <div class="cr-rating-liner col-xs-8"><span style="width: <?php echo $one*$index ?>%" class="cr-rating-line"></div><span class="col-xs-2">(<?php echo $one ?>)</span>
+                        <span class="col-xs-2"><?php echo $key ?> звезд</span>   <div class="cr-rating-liner col-xs-8"><span style="width: <?php echo $one*$index ?>%" class="cr-rating-line"></div><span class="col-xs-2">(<?php echo $one ?>)</span>
                     <?php } ?>
 
                 </div>
@@ -504,3 +660,17 @@ function main_tab_content() {
 
     <?php
 }
+
+/**
+ * Спецификации
+ */
+
+function spec_tab_content(){ ?>
+    <div class="col-xs-4">gg</div>
+    <div class="col-xs-8">
+        <?php
+        $cont = new BE_Compare_Products();
+        $cont->new_product_tab_content();
+        ?>
+    </div>
+<?php }

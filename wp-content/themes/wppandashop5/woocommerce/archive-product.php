@@ -35,17 +35,8 @@ get_header(); ?>
 
 
 			<div class="col-md-3 col-sm-12 sidebar">
-				<?php get_template_part('templates/components/navigation/sidemenu'); ?>
-				<h3 class="section-title">shop by</h3>
-				<div class="sidebar-filter">
-					<?php get_template_part('templates/components/sidebar/sidebar','manufactures'); ?>
-					<?php get_template_part('templates/components/sidebar/sidebar','price-slider'); ?>
-					<?php get_template_part('templates/components/sidebar/sidebar','color'); ?>
-				</div><!-- /.sidebar-filter -->
 
-				<?php get_template_part('templates/components/sidebar/product-tags'); ?>
-				<?php get_template_part('templates/components/sidebar/sidebar','comparision'); ?>
-				<?php get_template_part('templates/components/sidebar/sidebar','advertisement'); ?>
+				<?php get_sidebar();?>
 
 			</div><!-- /.sidebar -->
 

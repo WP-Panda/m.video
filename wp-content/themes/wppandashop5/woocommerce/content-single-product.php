@@ -75,7 +75,6 @@ if ( post_password_required() ) {
 				}
 			}
 			?>
-
 			<?php
 			/**
 			 * woocommerce_single_product_summary hook
