@@ -659,7 +659,7 @@ hr {
 /*  CUSTOM SELECT
 /*===================================================================================*/
 .custom-select {
- /* text-align: center;*/
+  /* text-align: center;*/
 }
 .custom-select section {
   padding-left: 10px;
@@ -10732,9 +10732,9 @@ img.payments-method {
 }
 
 .graise {
-   background-color: #e7e7e7;
-   padding: 5px 10px;
- }
+  background-color: #e7e7e7;
+  padding: 5px 10px;
+}
 .graise{}
 .graise span{}
 
@@ -10761,12 +10761,12 @@ img.payments-method {
 /** ������� ��������� � �������� *******/
 /***************************************/
 .be_compare_features_table tr.subcategory td {
-    font-weight: bold;
-    border-bottom: 1px solid #c2c2c2;
-    border-color: #fff #fff #c2c2c2 #fff;
-    background-color: #fff!important;
-    text-align: left;
-    padding: 25px 0 10px 0;
+  font-weight: bold;
+  border-bottom: 1px solid #c2c2c2;
+  border-color: #fff #fff #c2c2c2 #fff;
+  background-color: #fff!important;
+  text-align: left;
+  padding: 25px 0 10px 0;
 }
 
 
@@ -10918,9 +10918,13 @@ img.main-banner {
   padding: 0;
   width: 34px;
   height: 34px;
-  background: #47A9D8;
+  background-color: #e7e7e7;
   border: none;
   cursor: pointer;
+}
+
+.icheckbox_minimal-comp:hover, .iradio_minimal-comp:hover {
+  background-color: #45a6e6;
 }
 
 .icheckbox_minimal-comp:before {
@@ -10938,7 +10942,7 @@ img.main-banner {
   padding: 0;
   width: 34px;
   height: 34px;
-  background: #47A9D8;
+  background-color: #45a6e6;
   border: none;
   cursor: pointer;
 }
@@ -10946,10 +10950,15 @@ img.main-banner {
 .icheckbox_minimal-comp.checked:before {
   content: "\f0ec";
   font-family: FontAwesome;
-  color: #ff3835;
+  color: #ff6d6f;
   font-size: 24px;
   padding: 5px;
 }
+
+.icheckbox_minimal-comp.checked:hover:before {
+  color: #ffffff;
+}
+
 
 /*****************************/
 /* Сравнение */
@@ -10957,4 +10966,30 @@ img.main-banner {
 .compare-product-link{
   float:right;
   position: relative;
+}
+
+/**************************/
+/* список желаний
+/**************************/
+a.whislist {
+  padding: 0;
+  font-size: 22px;
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin-right: 3px;
+  color: #fff;
+}
+a.whislist i {
+  margin-right: 0;
+  font-size: 24px;
+  margin-top: 6px;
+}
+.uni-wishlist-link-container{
+  float: right;
+}
+
+a.whislist.uni-wishlist-link-added {
+  background-color: #45a6e6;
+  color: #ff6d6f;
 }

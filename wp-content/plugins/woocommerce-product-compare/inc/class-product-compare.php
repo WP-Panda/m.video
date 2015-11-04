@@ -84,13 +84,13 @@ class BE_Compare_Products {
 
 		if( isset( $_SESSION[ 'be_compare_products' ] ) && count( $_SESSION[ 'be_compare_products' ] ) && in_array( $pid, $_SESSION[ 'be_compare_products' ] ) && $reset == false ) {
 ?>
-		<div id="compare-link-<?php echo $pid; ?>" product-id="<?php echo $pid; ?>" class="compare-product-link"   data-toggle="tooltip" data-placement="top" title="Удалить из сравнения">
+		<div id="compare-link-<?php echo $pid; ?>" product-id="<?php echo $pid; ?>" class="compare-product-link">
 			<input type="checkbox" checked="checked" class="cr-i-check" /> <?php //echo '<input type="button" class="compare-products-button" value="' . __( 'Compare', 'be-compare-products' ) . '" />'; ?>
 		</div>
 <?php
 		} else {
 ?>
-		<div id="compare-link-<?php echo $pid; ?>" product-id="<?php echo $pid; ?>" class="compare-product-link"     data-toggle="tooltip" data-placement="top" title="Добавить в сравнение">
+		<div id="compare-link-<?php echo $pid; ?>" product-id="<?php echo $pid; ?>" class="compare-product-link">
 			<input type="checkbox" id="compare-checkbox-<?php echo $pid; ?>" class="cr-i-check"/>
 		</div>
 <?php

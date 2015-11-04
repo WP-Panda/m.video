@@ -1,0 +1,6 @@
+Version 1.1.1:
+- Fixed: error msg from the plugin when WC doesn't activated
+- Fixed: adding empty cart item meta 
+
+Version 1.1.0:
+- Official release

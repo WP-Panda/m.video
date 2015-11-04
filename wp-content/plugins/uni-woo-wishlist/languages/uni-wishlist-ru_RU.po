@@ -1,0 +1,312 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Project-Id-Version: Uni Woo Wish & Bridal Lists\n"
+"POT-Creation-Date: 2015-11-05 01:41+0300\n"
+"PO-Revision-Date: 2015-11-05 01:46+0300\n"
+"Language-Team: Max Popov <yoowordpress@yandex.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: uni-woo-wishlist.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: Max Popov <yoowordpress@yandex.ru>\n"
+"Language: ru_RU\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/uni-class-wishlist-ajax.php:55
+msgid "Error!"
+msgstr "Ошибка!"
+
+#: includes/uni-class-wishlist-ajax.php:121
+msgid "Error: the product and variation IDs are not defined!"
+msgstr "Ошибка: не указаны идентификаторы продукта и вариации!"
+
+#: includes/uni-class-wishlist-ajax.php:151
+msgid "Successfully added to your Wish List!"
+msgstr "Успешно добавлен в ваш список пожеланий!"
+
+#: includes/uni-class-wishlist-ajax.php:153
+#: includes/uni-class-wishlist-ajax.php:189
+#: includes/uni-class-wishlist-ajax.php:219
+#: includes/uni-class-wishlist-ajax.php:323
+#: includes/uni-class-wishlist-ajax.php:359
+#: includes/uni-class-wishlist-ajax.php:408
+msgid "Error: unknown reason"
+msgstr "Ошибка: неизвестная причина"
+
+#: includes/uni-class-wishlist-ajax.php:157
+#: includes/uni-class-wishlist-ajax.php:193
+#: includes/uni-class-wishlist-ajax.php:223
+#: includes/uni-class-wishlist-ajax.php:327
+#: includes/uni-class-wishlist-ajax.php:363
+#: includes/uni-class-wishlist-ajax.php:412
+msgid "Error: the product ID is not defined!"
+msgstr "Ошибка: не определен идентификатор продукта!"
+
+#: includes/uni-class-wishlist-ajax.php:187
+#: includes/uni-class-wishlist-ajax.php:217
+msgid "Successfully deleted from your Wish List!"
+msgstr "Успешно удалена из вашего списка желаний!"
+
+#: includes/uni-class-wishlist-ajax.php:321
+msgid "Successfully added to your bridal List!"
+msgstr "Успешно добавлены в список для новобрачных!"
+
+#: includes/uni-class-wishlist-ajax.php:357
+msgid "Successfully deleted from your bridal List!"
+msgstr "Успешно удален из списка для новобрачных!"
+
+#: includes/uni-class-wishlist-ajax.php:406
+msgid "Successfully deleted from your Bridal List!"
+msgstr "Успешно удалена из вашего списка для новобрачных!"
+
+#: includes/uni-wc-wishlist-functions.php:61
+#, php-format
+msgid "Bridal list of user #%d"
+msgstr "Список пользователей #%d"
+
+#: includes/uni-wc-wishlist-functions.php:69
+msgid ""
+"You haven't added title yet. Click on the edit icon next to this field to "
+"edit it."
+msgstr ""
+"Вы еще не добавили Заголовок. Нажмите на значок редактирования рядом с это "
+"поле, чтобы изменить его."
+
+#: includes/uni-wc-wishlist-functions.php:93
+msgid "This product is added from bridal list: #"
+msgstr "Этот продукт из списка для новобрачных: #"
+
+#: includes/views/bridalitem-table-row-my.php:43
+#: includes/views/bridalitem-table-row.php:43
+#: includes/views/item-table-row.php:41
+msgid "Select options"
+msgstr "Выберите опцию"
+
+#: includes/views/bridalitem-table-row-my.php:54
+#: includes/views/bridalitem-table-row.php:54
+#: includes/views/item-table-row.php:52
+msgid "Add to Cart"
+msgstr "Добавить в корзину"
+
+#: includes/views/bridalitem-table-row-my.php:54
+#: includes/views/bridalitem-table-row.php:54
+#: includes/views/item-table-row.php:52
+msgid "Read More"
+msgstr "Читать далее"
+
+#: includes/views/bridalitem-table-row-my.php:61
+#: includes/views/bridalitem-table-row.php:61
+#: includes/views/bridalitem-variation-table-row-my.php:55
+#: includes/views/bridalitem-variation-table-row.php:55
+msgid "Already bought"
+msgstr "Уже купили"
+
+#: includes/views/bridalitem-table-row-my.php:68
+#: includes/views/bridalitem-variation-table-row-my.php:62
+#: includes/views/item-table-row.php:61
+#: includes/views/item-variation-table-row.php:54
+msgid "Delete"
+msgstr "Удалить"
+
+#: includes/views/bridallist-current.php:24
+#, php-format
+msgid "The URI of this list is %s. You can give this link to your guests."
+msgstr ""
+"URI этого списка является %s. Эту ссылку вы можете дать вашим гостям."
+
+#: includes/views/bridallist-current.php:70 includes/views/bridallist.php:56
+msgid "The bridal list is empty."
+msgstr "Для новобрачных список пуст."
+
+#: includes/views/bridallist-nonreg.php:7
+#, php-format
+msgid ""
+"Bridal lists are available for registered users only. <a href=\"%s"
+"\">Register now!</a>"
+msgstr ""
+"Для новобрачных списки доступны только для зарегистрированных "
+"пользователей. <a href=\"%s\">Зарегистрируйтесь прямо сейчас!</a>"
+
+#: includes/views/bridallist-nonreg.php:9 includes/views/wishlist-empty.php:5
+msgid "Return To Shop"
+msgstr "Вернуться в магазин"
+
+#: includes/views/wishlist-empty.php:1
+msgid "Your wishlist is currently empty."
+msgstr "Ваш список желаемого пуст."
+
+#: uni-woo-wishlist.php:109
+msgid "Uni Wish & Bridal Lists"
+msgstr "UNI желание & для новобрачных списки"
+
+#: uni-woo-wishlist.php:133
+msgid "Uni Wish & Bridal Lists Plugin Options"
+msgstr "UNI желание & для новобрачных перечислены параметры плагина"
+
+#: uni-woo-wishlist.php:139
+msgid "General settings"
+msgstr "Основные настройки"
+
+#: uni-woo-wishlist.php:144
+msgid "\"Add to wishlist\" link position"
+msgstr "«Добавить в список пожеланий» позиция ссылка"
+
+#: uni-woo-wishlist.php:160
+msgid ""
+"Choose a position for \"Add to Wish List\" link. If you decide to use "
+"\"bridal list\" functionality, \"Add to Bridal List\" link will be added "
+"next to \"Add to Wish List\" link."
+msgstr ""
+
+#: uni-woo-wishlist.php:165
+msgid "Enable/disable \"bridal list\" functionality"
+msgstr "Включение/выключение функции «список для новобрачных»"
+
+#: uni-woo-wishlist.php:169
+msgid "You can enable/disable \"bridal list\" functionality here."
+msgstr ""
+"Вы можете включить/отключить «для новобрачных список» функциональность "
+"здесь."
+
+#: uni-woo-wishlist.php:174
+msgid "Visual appearance"
+msgstr "Внешний вид"
+
+#: uni-woo-wishlist.php:179
+msgid "Style of Wish and Bridal lists links (both states)"
+msgstr "Стиль желание и свадебный список ссылок (оба государства)"
+
+#: uni-woo-wishlist.php:183
+msgid "Default (no icons)"
+msgstr "По умолчанию (нет иконки)"
+
+#: uni-woo-wishlist.php:184
+msgid "Heart and Gift icons"
+msgstr "Сердце и дар иконы"
+
+#: uni-woo-wishlist.php:185
+msgid "Star and Gift icons"
+msgstr "Звезда и дар иконы"
+
+#: uni-woo-wishlist.php:186
+msgid "Heart and Venus-Mars icons"
+msgstr "Сердце и Венера-Марс иконки"
+
+#: uni-woo-wishlist.php:187
+msgid "Custom (define custom fontawesome icons)"
+msgstr "Пользовательские (определить пользовательские fontawesome иконки)"
+
+#: uni-woo-wishlist.php:189
+#, php-format
+msgid ""
+"Choose one of prepared styles (icons) or choose \"Custom\" and define your "
+"fontawesome icons (%s a full list of fontawesome icons here %s)."
+msgstr ""
+"Выберите один из стилей подготовленный (иконки) или выберите "
+"«Пользовательский» и определить ваши иконы fontawesome (%s полный список "
+"fontawesome иконы здесь %s)."
+
+#: uni-woo-wishlist.php:194
+msgid "Custom fontawesome icon for Wish list link (added)"
+msgstr ""
+"Пользовательские fontawesome значок ссылки список пожеланий (Добавлено)"
+
+#: uni-woo-wishlist.php:198 uni-woo-wishlist.php:207 uni-woo-wishlist.php:216
+#: uni-woo-wishlist.php:225
+msgid "Example: \"fa-amazon\". Another example: \"fa-gift\""
+msgstr "Пример: «фа Амазонка». Другой пример: «фа подарок»"
+
+#: uni-woo-wishlist.php:203
+msgid "Custom fontawesome icon for Wish list link (not added)"
+msgstr ""
+"Пользовательские fontawesome значок ссылки список пожеланий (не "
+"добавляется)"
+
+#: uni-woo-wishlist.php:212
+msgid "Custom fontawesome icon for Bridal list link (added)"
+msgstr ""
+"Пользовательские fontawesome значок для новобрачных список ссылок "
+"(Добавлено)"
+
+#: uni-woo-wishlist.php:221
+msgid "Custom fontawesome icon for Bridal list link (not added)"
+msgstr ""
+"Пользовательские fontawesome значок для новобрачных список ссылок (не "
+"добавляется)"
+
+#: uni-woo-wishlist.php:243
+msgid "None (insert by php function by myself)"
+msgstr "Нет (вставить php функции сам)"
+
+#: uni-woo-wishlist.php:244
+msgid "After Add to Cart"
+msgstr "После «Добавить в корзину»"
+
+#: uni-woo-wishlist.php:245
+msgid "After Thumbnail"
+msgstr "После эскиз"
+
+#: uni-woo-wishlist.php:246
+msgid "After Product Summary"
+msgstr "После суммы продукта"
+
+#: uni-woo-wishlist.php:283
+msgid "Saving..."
+msgstr "Сохранение…"
+
+#: uni-woo-wishlist.php:284
+msgid "Click to edit the title"
+msgstr "Для правки текста заголовка щелкните мышью"
+
+#: uni-woo-wishlist.php:285
+msgid "Cancel"
+msgstr "Отмена"
+
+#: uni-woo-wishlist.php:286
+msgid "Save"
+msgstr "Сохранить"
+
+#: uni-woo-wishlist.php:402 uni-woo-wishlist.php:418
+msgid "Add to Wish List"
+msgstr "Добавить в список желании"
+
+#: uni-woo-wishlist.php:410 uni-woo-wishlist.php:426
+msgid "Added to Wish List"
+msgstr "Добавлен в Избранное"
+
+#: uni-woo-wishlist.php:854 uni-woo-wishlist.php:870
+msgid "Add to Bridal List"
+msgstr "Добавить в список для новобрачных"
+
+#: uni-woo-wishlist.php:862 uni-woo-wishlist.php:878
+msgid "Added to Bridal List"
+msgstr "Добавлено в список для новобрачных"
+
+#. Plugin Name of the plugin/theme
+msgid "Uni Woo Wish & Bridal Lists"
+msgstr "UNI Ву желание & для новобрачных списки"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://moomoo.agency"
+msgstr "http://moomoo.agency"
+
+#. Description of the plugin/theme
+msgid ""
+"A comprehensive, modern and flexible Wish and Bridal lists for WooCommerce."
+msgstr ""
+"Всеобъемлющий, современные и гибкие желание и свадебные списки для "
+"WooCommerce."
+
+#. Author of the plugin/theme
+msgid "MooMoo Web Studio"
+msgstr "MooMoo Web Studio"
