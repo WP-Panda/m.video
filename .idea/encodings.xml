@@ -6,6 +6,8 @@
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/comments.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/breadcrumbs.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/cir-to-lat.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/redux/config.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/tax-meta.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-config.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/add-cart.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/bonus.php" charset="UTF-8" />
@@ -19,10 +21,12 @@
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/sale-query-tab.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/shipping-in-home.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/functions.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/archive-product.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/add-cart.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/bonus.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/discount.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/favorites.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/info-list.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/pick-up-in-store.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/price.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/sale-query.php" charset="UTF-8" />

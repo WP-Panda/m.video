@@ -21,7 +21,7 @@ function bootstrap_breadcrumb($custom_home_icon = false, $custom_post_types = fa
     $is_custom_post = $custom_post_types ? is_singular( $custom_post_types ) : false;
 
     if (!is_front_page() && !is_home()) {
-        echo '<ul class="list-inline list-unstyled">';
+        echo '<div class="breadcrumb"><div class="container"></div><div class="breadcrumb-inner"><ul class="list-inline list-unstyled">';
         echo '<li><a href="';
         echo get_option('home');
         echo '">';
@@ -72,6 +72,6 @@ function bootstrap_breadcrumb($custom_home_icon = false, $custom_post_types = fa
         } elseif (is_404()) {
             echo '<li class="active">404</li>';
         }
-        echo '</ul>';
+        echo '</ul></div></div></div>';
     }
 }

@@ -13,7 +13,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-get_header(); ?>
+get_header();
+global $wps5_option;
+
+
+
+$term_id = get_queried_object()->term_id;
+$children = get_term_children( $term_id, 'product_cat' );
+$crsh5_meta =  get_option( '_crsh5_category_' . $term_id );
+
+$img_url =  (! empty( $crsh5_meta ) && ! empty( $crsh5_meta['fa_limit'] )) ? $crsh5_meta['fa_limit'] :( ! empty( $wps5_option['main_banner'] ) ? $wps5_option['main_banner']['url']  : '');
+$img_link = (! empty( $crsh5_meta ) && ! empty( $crsh5_meta['bn_link']  )) ? $crsh5_meta['bn_link'] : ( ! empty( $wps5_option['main_banner_link'] )	? $wps5_option['main_banner_link'] : "");
+
+?>
 <div class="body-content outer-top-xs">
 	<div class="container">
 		<div class="row category-v1 outer-bottom-sm">
@@ -27,9 +39,15 @@ get_header(); ?>
 			do_action( 'woocommerce_before_main_content' );
 			?>
 
+			<?php if( ! $children ) : ?>
+
+				<?php echo '<a href="' . $img_link . '" title=""><img class="main-banner" src="' . $img_url . '" alt=""></a>'; ?>
+
+			<?php endif; ?>
+
 			<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 
-				<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
+				<div class="outer-bottom-xs border-b-sol"><h1 class="page-title"><?php woocommerce_page_title(); ?></h1></div>
 
 			<?php endif; ?>
 
@@ -43,47 +61,41 @@ get_header(); ?>
 
 			<div class=" col-md-9 col-sm-12 outer-bottom-sm">
 
-				<?php
-				/**
-				 * woocommerce_archive_description hook
-				 *
-				 * @hooked woocommerce_taxonomy_archive_description - 10
-				 * @hooked woocommerce_product_archive_description - 10
-				 */
-				do_action( 'woocommerce_archive_description' );
-				?>
+				<?php if(  $children ) : ?>
+
+					<?php echo '<a href="' . $img_link . '" title=""><img class="main-banner" src="' . $img_url . '" alt=""></a>'; ?>
+					<?php wc_get_template( 'single-product/panda-block/info-list.php' ); ?>
+
+				<?php endif; ?>
 
 				<?php if ( have_posts() ) : ?>
 
-					<div class="controls-product-top outer-top-vs wow fadeInUp">
-						<div class="controls-product-item row">
+					<?php if( ! $children ) : ?>
+						<div class="controls-product-top">
+							<div class="controls-product-item row">
 
-							<div class="col-sm-3 col-md-3">
-								<div class="product-item-view">
-									<ul class="nav nav-tabs">
-										<li class="active"><a data-toggle="tab" href="#grid-container"><i class="icon fa fa-th"></i></a></li>
-										<li><a data-toggle="tab" href="#list-container"><i class="icon fa fa-th-list"></i></a></li>
-									</ul>
-								</div><!-- /.controls-tabs -->
-							</div><!-- /.col -->
-							<?php
-							/**
-							 * woocommerce_before_shop_loop hook
-							 *
-							 * @hooked woocommerce_result_count - 20
-							 * @hooked woocommerce_catalog_ordering - 30
-							 */
-							remove_action( 'woocommerce_before_shop_loop','woocommerce_result_count',20 );
-							do_action( 'woocommerce_before_shop_loop' );
-							?>
+								<div class="col-sm-3 col-md-3">
+									<div class="product-item-view">
+										<ul class="nav nav-tabs">
+											<li class="active"><a data-toggle="tab" href="#grid-container"><i class="icon fa fa-th"></i></a></li>
+											<li><a data-toggle="tab" href="#list-container"><i class="icon fa fa-th-list"></i></a></li>
+										</ul>
+									</div><!-- /.controls-tabs -->
+								</div><!-- /.col -->
+								<?php
+								/**
+								 * woocommerce_before_shop_loop hook
+								 *
+								 * @hooked woocommerce_result_count - 20
+								 * @hooked woocommerce_catalog_ordering - 30
+								 */
+								remove_action( 'woocommerce_before_shop_loop','woocommerce_result_count',20 );
+								do_action( 'woocommerce_before_shop_loop' );
+								?>
 
-
-							<div class="col col-sm-4 col-md-3">
-								<?php get_template_part('templates/content-templates/category/pagination'); ?>
-							</div><!-- /.col -->
-						</div><!-- /.row -->
-					</div><!-- /.controls-product-top -->
-
+							</div><!-- /.row -->
+						</div><!-- /.controls-product-top -->
+					<?php endif; ?>
 
 					<div class="search-result-container">
 						<div id="myTabContent" class="tab-content">
@@ -148,7 +160,17 @@ get_header(); ?>
 				do_action( 'woocommerce_after_main_content' );
 				?>
 			</div><!-- /.col -->
+			<?php
+			/**
+			 * woocommerce_archive_description hook
+			 *
+			 * @hooked woocommerce_taxonomy_archive_description - 10
+			 * @hooked woocommerce_product_archive_description - 10
+			 */
+			do_action( 'woocommerce_archive_description' );
+			?>
 		</div><!-- /.row -->
+
 	</div><!-- /.container -->
 
 	<?php /**

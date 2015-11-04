@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-<div class="col-sm-5 col-md-6">
+<div class="col-sm-9 col-md-9 text-right">
 	<div class="custom-select">
 		<ul class="list-unstyled">
 			<li class="short-by">
@@ -39,7 +39,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					?>
 				</form>
 			</li>
-			<?php do_action('cr_woocommerce_before_shop_loop'); ?>
+			<?php //do_action('cr_woocommerce_before_shop_loop'); ?>
 		</ul>
 	</div>
 </div><!-- /.col -->

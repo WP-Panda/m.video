@@ -1,4 +1,11 @@
 <?php
+
+
+/**
+ * Подключение плагинов
+ */
+require_once 'plugins/init-plugins.php';
+
 /**
  * Query WooCommerce activation
  */
@@ -23,73 +30,36 @@ function get_product_category_by_product_id( $id ) {
  * Отключение подобных продуктов
  */
 remove_action( 'woocommerce_after_single_product_summary','woocommerce_output_related_products',20 );
-
 /**
  * Отключение сайдбара на транице продукты
  */
 remove_action( 'woocommerce_sidebar','woocommerce_get_sidebar',10 );
+/**
+ * отключение распродажи
+ */
+remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10 );
+/**
+ * отключение миниатюры
+ */
+remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );
+/**
+ * Отключение хлебных крошек WooCoommerce
+ */
+add_action( 'init', 'jk_remove_wc_breadcrumbs' );
+function jk_remove_wc_breadcrumbs() {
+    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+    add_action('woocommerce_before_main_content','bootstrap_breadcrumb',20);
+}
+
 
 /**
- * Показывать по XX Записей
+ * новая миниатюра и распродажа
  */
-function woocommerce_catalog_per_page_ordering() {
-    ?>
-    <li class="show-page">
-        <form action="" method="POST" name="results" class="woocommerce-ordering">
-            <label>Show:</label>
-            <select name="woocommerce-sort-by-columns" id="woocommerce-sort-by-columns" class="sortby styled" onchange="this.form.submit()">
-                <?php
-
-                //Get products on page reload
-                if  (isset($_POST['woocommerce-sort-by-columns']) && (($_COOKIE['shop_pageResults'] <> $_POST['woocommerce-sort-by-columns']))) {
-                    $numberOfProductsPerPage = $_POST['woocommerce-sort-by-columns'];
-                } else {
-                    $numberOfProductsPerPage = $_COOKIE['shop_pageResults'];
-                }
-
-                //  This is where you can change the amounts per page that the user will use  feel free to change the numbers and text as you want, in my case we had 4 products per row so I chose to have multiples of four for the user to select.
-                $shopCatalog_orderby = apply_filters('woocommerce_sortby_page', array(
-                    //Add as many of these as you like, -1 shows all products per page
-                    //  ''       => __('Results per page', 'woocommerce'),
-                    '10'        => __('10', 'woocommerce'),
-                    '20' 		=> __('20', 'woocommerce'),
-                    '-1' 		=> __('All', 'woocommerce'),
-                ));
-
-                foreach ( $shopCatalog_orderby as $sort_id => $sort_name )
-                    echo '<option value="' . $sort_id . '" ' . selected( $numberOfProductsPerPage, $sort_id, true ) . ' >' . $sort_name . '</option>';
-                ?>
-            </select>
-        </form>
-    </li>
-
-    <?php
-}
-
-// now we set our cookie if we need to
-function dl_sort_by_page($count) {
-    if (isset($_COOKIE['shop_pageResults'])) { // if normal page load with cookie
-        $count = $_COOKIE['shop_pageResults'];
-    }
-    if (isset($_POST['woocommerce-sort-by-columns'])) { //if form submitted
-        setcookie('shop_pageResults', $_POST['woocommerce-sort-by-columns'], time()+1209600, '/', 'www.your-domain-goes-here.com', false); //this will fail if any part of page has been output- hope this works!
-        $count = $_POST['woocommerce-sort-by-columns'];
-    }
-    // else normal page load and no cookie
-    return $count;
-}
-
-add_filter('loop_shop_per_page','dl_sort_by_page');
-add_action( 'cr_woocommerce_before_shop_loop', 'woocommerce_catalog_per_page_ordering', 20 );
-
-
-//отключение распродажи
-remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10 );
-//отключение миниатюры
-remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );
-
-//новая миниатюра и распродажа
 add_action( 'woocommerce_before_shop_loop_item_title', 'cr_template_loop_product_thumbnail', 10 );
+
+
+
+
 
 /**
  * Новая миниатюра и распродажа
@@ -129,12 +99,12 @@ function cr_template_loop_product_thumbnail($size = 'shop_catalog'){
 /**
  * Добавление в списое желаний
  */
-add_action('woocommerce_after_shop_loop_item','pwlp_product_display',20);
+//add_action('woocommerce_after_shop_loop_item','pwlp_product_display',20);
 
 /**
  * Добавление в сравнение
  */
-add_action( 'woocommerce_after_shop_loop_item', 'pcp_shop_display_compare', 30);
+//add_action( 'woocommerce_after_shop_loop_item', 'pcp_shop_display_compare', 30);
 
 /**
  * Модули карточки товара
@@ -503,36 +473,7 @@ function main_tab_content() {
         </div>
     </div>
 
-    <div class="cr-product-block">
-        <div class="shop-sub-options clearfix">
-            <ul>
-                <li class="col-xs-3">
-                    <a href="/deliverypage">
-                        <div class="option-icon"><i class="fa fa-truck fa-3x"></i></div>
-                        <div class="option-text">Доставка вовремя</div>
-                    </a>
-                </li>
-                <li class="col-xs-3">
-                    <a href="/ppc">
-                        <div class="option-icon"><i class="fa fa-thumbs-o-up fa-3x"></i></div>
-                        <div class="option-text">Нашли дешевле? Снизим цену!</div>
-                    </a>
-                </li>
-                <li class="col-xs-3">
-                    <a href="/catalog">
-                        <div class="option-icon"><i class="fa fa-shopping-cart fa-3x"></i></div>
-                        <div class="option-text">Полный каталог на mvideo.ru</div>
-                    </a>
-                </li>
-                <li class="col-xs-3">
-                    <a href="/exchange">
-                        <div class="option-icon"><i class="fa fa-exchange  fa-3x"></i></div>
-                        <div class="option-text">30 дней на обмен</div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <?php wc_get_template( 'single-product/panda-block/info-list.php' ); ?>
 
     <div class="cr-product-block">
         <h3>Как получить товар?</h3>

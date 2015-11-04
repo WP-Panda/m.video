@@ -582,7 +582,7 @@ hr {
   padding: 0;
 }
 .breadcrumb ul {
-  border-bottom: 1px solid #F2F2F2;
+  border-bottom: 1px solid #bbb;
   margin: auto;
   padding: 20px 0 10px;
 }
@@ -649,7 +649,7 @@ hr {
 }
 .controls-product-item .custom-select ul > li {
   float: left;
-  margin-right: 40px;
+  /*margin-right: 40px;*/
 }
 .controls-product-item .custom-select ul:first-child,
 .controls-product-item .custom-select section:first-child {
@@ -659,7 +659,7 @@ hr {
 /*  CUSTOM SELECT
 /*===================================================================================*/
 .custom-select {
-  text-align: center;
+ /* text-align: center;*/
 }
 .custom-select section {
   padding-left: 10px;
@@ -10525,6 +10525,11 @@ li.depth-1 {
 .border-b-da {
   border-bottom: 1px dashed #bbb;
 }
+
+.border-b-sol {
+  border-bottom: 1px solid #bbb;
+}
+
 .paddind-b-20 {
   padding-bottom: 20px;
 }
@@ -10533,7 +10538,7 @@ li.depth-1 {
   padding: 10px 0;
   border-bottom: 1px solid #bbb;
   position: relative;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .cr-product-block h4{
@@ -10803,3 +10808,102 @@ img.payments-method {
   border-color: #ddd transparent #ddd #ddd;
   *border-right-color: #ffffff;
 }
+
+/******************************************/
+/***** Cброс обтекания  *******************
+/*******************************************/
+
+.col-sm-4.col-md-3.wow.fadeInUp.animated:nth-child(4n+1) {
+  clear: both;
+}
+
+/**********************************************/
+/****** Фильтр    *****************************/
+/**********************************************/
+.woof_container h4 {
+  margin-bottom: 11px !important;
+  font-size: 14px;
+  color: #434343;
+  font-weight: bold;
+}
+
+.woof_list label {
+  vertical-align: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.woof_products_top_panel li span {
+  padding-right: 0;
+  background: none;
+}
+.woof_products_top_panel li span .fa {
+  color: #bbb;
+}
+.woof_products_top_panel li span:hover .fa{
+  color: #ff3835;
+}
+
+.woof_list_checkbox li div{
+  margin-top: -3px;
+}
+
+.woof_products_top_panel li {
+  float: left;
+  margin: 0 15px 0 0;
+  list-style: none !important;
+  border: 1px solid #ddd;
+  line-height: 1.3;
+  padding: 4px;
+  background-color: #F1F1F1;
+}
+
+/************************************************/
+/*  Категория продуктов *************************/
+/************************************************/
+li.product-category {
+  list-style: none;
+}
+li.product-category img{
+  width: 100%;
+  height: auto!important;
+}
+
+/***********************************************/
+/* Меню товаров в сайдбаре                     */
+/***********************************************/
+.sidebar .sidebar-filter ul>li a {
+  color: #434343;
+  font-family: Montserrat,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  display: block;
+  padding: 8px 0;
+}
+
+/**********************************************/
+/* Главный баннер                             */
+/**********************************************/
+img.main-banner {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/**********************************************/
+/* Блок иконок                                */
+/**********************************************/
+.shop-sub-options i.fa {
+  border-radius: 50%;
+  background-color: #45a6e6;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.shop-sub-options a {}

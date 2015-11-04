@@ -29,7 +29,7 @@ if ( empty( $woocommerce_loop['columns'] ) ) {
 $woocommerce_loop['loop'] ++;
 ?>
 
-<li <?php wc_product_cat_class(); ?>>
+<li <?php wc_product_cat_class('col-xs-4'); ?>>
 	<?php do_action( 'woocommerce_before_subcategory', $category ); ?>
 	<a href="<?php echo get_term_link( $category->slug, 'product_cat' ); ?>">
 

@@ -184,7 +184,7 @@ final class WOOF
         add_filter('woocommerce_product_query', array($this, "woocommerce_product_query"), 9999);
         //add_filter('posts_where', array($this, 'woof_post_title_filter'), 9999); //for searching by title
         //+++
-        add_action('woocommerce_before_shop_loop', array($this, 'woocommerce_before_shop_loop'));
+       // add_action('woocommerce_before_shop_loop', array($this, 'woocommerce_before_shop_loop'));
         add_action('woocommerce_after_shop_loop', array($this, 'woocommerce_after_shop_loop'));
         add_shortcode('woof_products', array($this, 'woof_products'));
         add_shortcode('woof_price_filter', array($this, 'woof_price_filter'));

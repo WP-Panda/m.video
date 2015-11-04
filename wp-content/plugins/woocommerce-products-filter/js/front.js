@@ -492,7 +492,7 @@ function woof_draw_products_top_panel() {
                     panel.find('ul').append(
                             jQuery('<li>').append(
                             jQuery('<a>').attr('href', v).attr('data-tax', index).append(
-                            jQuery('<span>').attr('class', 'woof_remove_ppi').append(txt)
+                            jQuery('<span>').attr('class', 'woof_remove_ppi').append(txt + '   <i class="fa fa-times"></i>')
                             )));
 
                 });

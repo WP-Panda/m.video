@@ -1461,80 +1461,59 @@ if (!class_exists('Redux_Framework_sample_config')) {
             /*  - Portfolio
             /*-----------------------------------------------------------------------------------*/
             $this->sections[] = array(
-                'title'      =>  __('Portfolio', 'wppandashop5'),
-                'desc'       =>  __('Control and configure the general setup of your portfolio.', 'wppandashop5'),
+                'title'      =>  __('WooCommerce', 'wppandashop5'),
+                //'desc'       =>  __('Control and configure the general setup of your portfolio.', 'wppandashop5'),
                 'icon'       =>  'font-icon-grid',
                 'customizer' =>  false,
                 'fields'     =>  array( 
 
                     array(
-                        'id'        =>  'portfolio_rewrite_slug', 
-                        'type'      =>  'text', 
-                        'title'     =>  __('Custom Slug', 'wppandashop5'),
-                        'subtitle'  =>  __('If you want your portfolio post type to have a custom slug in the url, please enter it here.<br/><br/>
-                                        <b>You will still have to refresh your permalinks after saving this!</b><br/><br/>
-                                        This is done by going to <b>Settings -> Permalinks</b> and clicking save.', 'wppandashop5'),
-                        'desc'      => ''
+                        'id'        =>  'main_banner',
+                        'type'      =>  'media',
+                        'title'     =>  __('Баннер Магазина', 'wppandashop5'),
+                        'subtitle'  =>  __('Основной баннер магазина, если баннер для категории продуктов не определен выводится будет этот', 'wppandashop5'),
+                        'desc'      => 'Загрузите баннер магазина'
                     ),
 
                     array(
-                        'id'        =>  'navigation_portfolio_mode',
-                        'type'      =>  'button_set',
-                        'title'     =>  __('Navigation Portfolio Posts Mode', 'wppandashop5'),
-                        'subtitle'  =>  __('Select your navigation portfolio posts mode.<br/><br/>
-                                            <strong>Normal:</strong><br/>You can navigate all single posts without limitation.<br/><br/>
-                                            <strong>Categories:</strong><br/>You can navigate all single posts based on categories attributes.<br/><br/>It is recommended to use this navigation only if you have multiple portfolio pages based on different categories.', 'wppandashop5'),
-                        'desc'      =>  '',
-                        'options'   =>  array(
-                            'normal'       =>  'Normal',
-                            'categories'   =>  'Categories'
-                        ),
-                        'default'   =>  'normal',
+                        'id'        =>  'main_banner_link',
+                        'type'      =>  'text',
+                        'title'     =>  __('Ссылка с баннера магазина', 'wppandashop5'),
+                        'subtitle'  =>  __('Основная ссылка с баннера магазина, если ссылка для баннера категории не определена выводится будет эта', 'wppandashop5'),
+                        'desc'      => 'Введите ссылку'
+                    ),
+
+
+                    array(
+                        'id'        =>  'shipping_link',
+                        'type'      =>  'text',
+                        'title'     =>  __('Ссылка "Доставка Вовремя"', 'wppandashop5'),
+                        'subtitle'  =>  __('Ссылка на страницу "Доставка Вовремя", если ссылка не введена, иконка не будет перенаправлять куда-либо', 'wppandashop5'),
+                        'desc'      => 'Введите ссылку'
                     ),
 
                     array(
-                        'id'        =>  'back_to_portfolio',
-                        'type'      =>  'switch',
-                        'title'     =>  __('Back to Main Portfolio Page on Navigation?', 'wppandashop5'),
-                        'subtitle'  =>  __('Enable/Disable Back to Portfolio Button.', 'wppandashop5'),
-                        'desc'      =>  '',
-                        'default'   =>  0
+                        'id'        =>  'sale_link',
+                        'type'      =>  'text',
+                        'title'     =>  __('Ссылка "Нашли Дешевле?"', 'wppandashop5'),
+                        'subtitle'  =>   __('Ссылка на страницу "Нашли Дешевле?", если ссылка не введена, иконка не будет перенаправлять куда-либо', 'wppandashop5'),
+                        'desc'      => 'Введите ссылку'
                     ),
 
                     array(
-                        'id'        =>  'back_to_portfolio_mode',
-                        'type'      =>  'button_set',
-                        'required'  =>  array('back_to_portfolio','=','1'),
-                        'title'     =>  __('Back To Portfolio Mode', 'wppandashop5'),
-                        'subtitle'  =>  __('Select your back to portfolio button mode.<br/><br/>
-                                            <strong>Simple:</strong><br/>You have a global link for all single portfolio post.<br/><br/>
-                                            <strong>Custom:</strong><br/>You can have a different URL for each single portfolio post.<br/><br/>You need set the URL inside the single portfolio post for each post in the respective metabox.<br/><br/>It is recommended to use this if you have multiple portfolio pages based on different categories.', 'wppandashop5'),
-                        'desc'      =>  '',
-                        'options'   =>  array(
-                            'general'   =>  'General',
-                            'custom'    =>  'Custom'
-                        ),
-                        'default'   =>  'general',
+                        'id'        =>  'shop_link',
+                        'type'      =>  'text',
+                        'title'     =>  __('Ссылка "Полный каталог"', 'wppandashop5'),
+                        'subtitle'  =>  sprintf(__('Ссылка на страницу "Полный каталог", если ссылка не введена, будет выведена ссылка на страницу %s', 'wppandashop5'), get_home_url().'/shop/'),
+                        'desc'      => 'Введите ссылку'
                     ),
 
                     array(
-                        'id'        =>  'back_to_portfolio_url_general',
-                        'type'      =>  'select',
-                        'data'      =>  'pages',
-                        'required'  =>  array('back_to_portfolio_mode','=','general'),    
-                        'title'     =>  __('Portfolio Main Page', 'wppandashop5'),
-                        'subtitle'  =>  __('Required. Select the page that is your main portfolio index page. This is used to link to the page from the portfolio post detail page..', 'wppandashop5'),
-                        'desc'      =>  '',
-                        'default'   =>  ''  
-                    ),
-
-                    array(
-                        'id'        =>  'enable_comment_portfolio',
-                        'type'      =>  'switch',
-                        'title'     =>  __('Enable Comments Template on Single Portfolio Post?', 'wppandashop5'),
-                        'subtitle'  =>  __('Enable/Disable Comments Template.', 'wppandashop5'),
-                        'desc'      =>  '',
-                        'default'   =>  0
+                        'id'        =>  'request_link',
+                        'type'      =>  'text',
+                        'title'     =>  __('Ссылка "30 дней на обмен"', 'wppandashop5'),
+                        'subtitle'  =>  __('Ссылка на страницу "30 дней на обмен", если ссылка не введена, иконка не будет перенаправлять куда-либо', 'wppandashop5'),
+                        'desc'      => 'Введите ссылку'
                     ),
                                             
                 )
