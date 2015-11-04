@@ -44,7 +44,8 @@ class BE_Compare_Products {
 
 		// If disabled on shop page
 		if( BE_Compare_Settings::get_option( 'be_compare_button_visibility' ) != 'only-single' )
-			add_action( 'woocommerce_after_shop_loop_item', array( &$this, 'display_button' ), 5 );
+			// РљРЅРѕРїРєР° СЃСЂР°РІРЅРµРЅРёРµ РІ Р°СЂС…РёРІРµ
+			add_action( 'woocommerce_after_shop_loop_item', array( $this, 'display_button' ), 20 );
 		add_action( 'woocommerce_before_single_product', array( $this, 'determine_button_location' ) );
 		add_action( 'wp_footer', array( $this, 'add_script_frontend' ) );
 		add_filter( 'woocommerce_product_tabs', array( $this, 'new_product_tab' ) );
@@ -83,14 +84,14 @@ class BE_Compare_Products {
 
 		if( isset( $_SESSION[ 'be_compare_products' ] ) && count( $_SESSION[ 'be_compare_products' ] ) && in_array( $pid, $_SESSION[ 'be_compare_products' ] ) && $reset == false ) {
 ?>
-		<div id="compare-link-<?php echo $pid; ?>" product-id="<?php echo $pid; ?>" class="compare-product-link">
-			<input type="checkbox" checked="checked" /> <?php echo '<input type="button" class="compare-products-button" value="' . __( 'Compare', 'be-compare-products' ) . '" />'; ?>
+		<div id="compare-link-<?php echo $pid; ?>" product-id="<?php echo $pid; ?>" class="compare-product-link"   data-toggle="tooltip" data-placement="top" title="РЈРґР°Р»РёС‚СЊ РёР· СЃСЂР°РІРЅРµРЅРёСЏ">
+			<input type="checkbox" checked="checked" class="cr-i-check" /> <?php //echo '<input type="button" class="compare-products-button" value="' . __( 'Compare', 'be-compare-products' ) . '" />'; ?>
 		</div>
 <?php
 		} else {
 ?>
-		<div id="compare-link-<?php echo $pid; ?>" product-id="<?php echo $pid; ?>" class="compare-product-link">
-			<input type="checkbox" id="compare-checkbox-<?php echo $pid; ?>" /> <label for="compare-checkbox-<?php echo $pid; ?>"><?php _e( 'Add to Compare', 'be-compare-products' ); ?></label>
+		<div id="compare-link-<?php echo $pid; ?>" product-id="<?php echo $pid; ?>" class="compare-product-link"     data-toggle="tooltip" data-placement="top" title="Р”РѕР±Р°РІРёС‚СЊ РІ СЃСЂР°РІРЅРµРЅРёРµ">
+			<input type="checkbox" id="compare-checkbox-<?php echo $pid; ?>" class="cr-i-check"/>
 		</div>
 <?php
 		}
@@ -276,7 +277,7 @@ class BE_Compare_Products {
 
 
 	/**
-	 * Вкладка спецификация
+	 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	 */
 	function new_product_tab( $tabs ) {
 		global $post;
@@ -314,7 +315,7 @@ class BE_Compare_Products {
 	 
 	}
 
-	//Вывод контента во вкладку продукт;
+	//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ;
 	function new_product_tab_content() {
 		global $product;
 	 
@@ -324,7 +325,7 @@ class BE_Compare_Products {
 		
 	}
 
-	//Вывод контента во вкладку продукт анонс;
+	//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ;
 	function new_product_tab_content_short() {
 		global $product;
 

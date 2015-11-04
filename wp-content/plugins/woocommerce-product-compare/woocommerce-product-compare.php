@@ -246,48 +246,6 @@ function be_woocommerce_compare_init() {
                     <div id="compare_products_data" class="panel woocommerce_options_panel">
                         <div class="options_group">
 
-                            <?php
-                            //                            echo '<pre>';
-                            //                            print_r(get_post_meta( $post->ID));
-                            //                            echo '</pre>';
-                            //
-                            //                            echo '<pre>kk';
-                            //
-                            //                            $r = array();
-                            //                            $x = get_post_meta( $post->ID, '1_product_data');
-                            //                            foreach ( $x[0] as $key => $val ) {
-                            //                                $pos = strpos( $key,'cr_param_' );
-                            //                                if( false !== $pos  )  {
-                            //                                    $r[$key] = $val;
-                            //                                }
-                            //                            }
-                            //
-                            //                            print_r($r);
-                            //
-                            //
-                            //                            $fields = array();
-                            //
-                            //                            foreach( $r as $k1 => $v1 ) {
-                            //                                foreach ( $v1 as $k2 => $v2 ) {
-                            //                                    if( is_array( $v2 ) ) {
-                            //                                        foreach ( $v2 as $k3 => $v3 ) {
-                            //                                            $fields[ $k1 ][ $k2 ][ $k3 ] = wp_kses_data( $v3 );
-                            //                                        }
-                            //                                    } else
-                            //                                        $fields[ $k1 ][ $k2 ] = wp_kses_data( $v2 );
-                            //                                }
-                            //                            }
-                            //                            print_r($fields);
-                            //
-                            //                            echo '</pre>';
-                            //                            											$custom_fields = get_post_meta($post->ID);
-                            //                            											foreach ( $custom_fields as $key => $value )
-                            //                            												echo '<pre>' . $key . ' => ';
-                            //                            													var_dump( $value );
-                            //                            												echo '</pre>';
-                            //                            							print_r($custom_fields);
-                            ?>
-
                             <p>
                                 <?php woocommerce_wp_checkbox(
                                     array(
@@ -383,7 +341,8 @@ function be_woocommerce_compare_init() {
                         return $post_id;
 
                     $postType = sanitize_title( $_REQUEST['post_type'] );
-                    $enable_compare_product = sanitize_title( $_REQUEST['enable_compare_product'] );
+                    $enable_compare_product = !empty($_REQUEST['enable_compare_product']) ? sanitize_title( $_REQUEST['enable_compare_product'] ) : '';
+
                     $selcat_compare_product = sanitize_title( $_REQUEST['selcat_compare_product'] );
 
                     // Only save for product post types

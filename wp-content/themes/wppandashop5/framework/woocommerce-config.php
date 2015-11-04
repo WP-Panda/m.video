@@ -186,6 +186,16 @@ require_once 'woocommerce-modules/rev.php';
 // Save Fields
 add_action( 'woocommerce_process_product_meta', 'cr_modules_tab_fields_save' );
 
+/**
+ * Сохраняет значение поля
+ * @param $var
+ * @param $post_id
+ */
+function saver($var,$post_id) {
+    $variable = !empty ( $_POST[$var] ) ? $_POST[$var] : '';
+    update_post_meta( $post_id, $var, $variable );
+}
+
 // Function to save all custom field information from products
 function cr_modules_tab_fields_save( $post_id ){
 
@@ -210,129 +220,96 @@ function cr_modules_tab_fields_save( $post_id ){
     $rules = esc_url($rules);
     update_post_meta( $post_id, '_rules_sale_query', $rules );
     //бордер
-    $block_query_border = $_POST['_block_query_border'];
-    update_post_meta( $post_id, '_block_query_border', $block_query_border );
+    saver('_block_query_border',$post_id);
 
     /**
      * Блок цена
      */
-    $block_price_border = $_POST['_block_price_border'];
-    update_post_meta( $post_id, '_block_price_border', $block_price_border );
+    saver('_block_price_border',$post_id);
 
     /**
      * Блок бонус
      */
     //сумма
-    $prise = $_POST['_bonus_price'];
-    update_post_meta( $post_id, '_bonus_price', $prise );
+    saver('_bonus_price',$post_id);
     //заголовок
-    $title  = $_POST['_bonus_title'];
-    update_post_meta( $post_id, '_bonus_title', $title );
+    saver('_bonus_title',$post_id);
     //текст
-    $text  = $_POST['_bonus_text'];
-    update_post_meta( $post_id, '_bonus_text', $text );
+    saver('_bonus_text',$post_id);
     //цвет
-    $color = $_POST['_bonus_color'];
-    update_post_meta( $post_id, '_bonus_color', $color );
+    saver('_bonus_color',$post_id);
     //бордер
-    $block_bonus_border = $_POST['_block_bonus_border'];
-    update_post_meta( $post_id, '_block_bonus_border', $block_bonus_border );
+    saver('_block_bonus_border',$post_id);
 
     /**
      * Кнопка в корзину
      */
     //текст
-    $button_text = $_POST['_button_text'];
-    update_post_meta( $post_id, '_button_text', $button_text );
-    //бордер
-    $block_cart_border = $_POST['_block_cart_border'];
-    update_post_meta( $post_id, '_block_cart_border', $block_cart_border );
+    saver('_button_text',$post_id);
+    saver('_block_cart_border',$post_id);
 
     /**
      * Кнопка в избранное
      */
     //текст
-    $favorites_text = $_POST['_favorites_text'];
-    update_post_meta( $post_id, '_favorites_text', $favorites_text );
+    saver('_favorites_text',$post_id);
     //бордер
-    $block_favorites_border = $_POST['_block_favorites_border'];
-    update_post_meta( $post_id, '_block_favorites_border', $block_favorites_border);
+    saver('_block_favorites_border',$post_id);
 
     /**
      * Забрать в магазине
      */
     //текст
-    $pick_text  = $_POST['_pick_text'];
-    update_post_meta( $post_id, '_pick_text', $pick_text );
+    saver('_pick_text',$post_id);
     //сумма
-    $pick_summ  = $_POST['_pick_summ'];
-    update_post_meta( $post_id, '_pick_summ', $pick_summ );
+    saver('_pick_summ',$post_id);
     //ссылка
-    $pick_link  = esc_url($_POST['_pick_link']);
-    update_post_meta( $post_id, '_pick_link', $pick_link );
+    saver('_pick_link',$post_id);
     //бордер
-    $block_store_border = $_POST['_block_store_border'];
-    update_post_meta( $post_id, '_block_store_border', $block_store_border);
+    saver('_block_store_border',$post_id);
 
     /**
      * Привезти
      */
     //текст
-    $shipping_text_1  = $_POST['_shipping_text_1'];
-    update_post_meta( $post_id, '_shipping_text_1', $shipping_text_1 );
+    saver('_shipping_text_1',$post_id);
     //сумма
-    $shipping_summ_1  = $_POST['_shipping_summ_1'];
-    update_post_meta( $post_id, '_shipping_summ_1', $shipping_summ_1 );
+    saver('_shipping_summ_1',$post_id);
     //текст2
-    $shipping_text_2  = $_POST['_shipping_text_2'];
-    update_post_meta( $post_id, '_shipping_text_2', $shipping_text_2 );
+    saver('_shipping_text_2',$post_id);
     //сумма2
-    $shipping_summ_2  = $_POST['_shipping_summ_2'];
-    update_post_meta( $post_id, '_shipping_summ_2', $shipping_summ_2 );
+    saver('_shipping_summ_2',$post_id);
     //ссылка
-    $shipping_link  = esc_url($_POST['_shipping_link']);
-    update_post_meta( $post_id, '_shipping_link', $shipping_link );
+    saver('_shipping_link',$post_id);
     //бордер
-    $block_shipping_border = $_POST['_block_shipping_border'];
-    update_post_meta( $post_id, '_block_shipping_border', $block_shipping_border);
-
+    saver('_block_shipping_border',$post_id);
 
     /**
      * Скидки
      */
     //включение ксидки
-    $discount_card_discount  = $_POST['_discount_card_discount'];
-    update_post_meta( $post_id, '_discount_card_discount', $discount_card_discount );
+    saver('_discount_card_discount',$post_id);
     //включение кредита
-    $discount_online_credit  = $_POST['_discount_online_credit'];
-    update_post_meta( $post_id, '_discount_online_credit', $discount_online_credit );
+    saver('_discount_online_credit',$post_id);
     //включение купонов
-    $discount_discount_coupons  = $_POST['_discount_discount_coupons'];
-    update_post_meta( $post_id, '_discount_discount_coupons', $discount_discount_coupons );
+    saver('_discount_discount_coupons',$post_id);
     //сумма скидки
-    $discount_summ  = $_POST['_discount_summ'];
-    update_post_meta( $post_id, '_discount_summ', $discount_summ );
+    saver('_discount_summ',$post_id);
     //ссылка скидки
-    $discount_link  = $_POST['_discount_link'];
-    update_post_meta( $post_id, '_discount_link', $discount_link );
+    saver('_discount_link',$post_id);
     //ссылка кредита
-    $discount_credit = $_POST['_discount_credit'];
-    update_post_meta( $post_id, '_discount_credit', $discount_credit );
+    saver('_discount_credit',$post_id);
     //текст кредита
-    $discount_credit_text = $_POST['_discount_credit_text'];
-    update_post_meta( $post_id, '_discount_credit_text', $discount_credit_text );
+    saver('_discount_credit_text',$post_id);
     //количество купонов
-    $discount_coupons = $_POST['_discount_coupons'];
-    update_post_meta( $post_id, '_discount_coupons', $discount_coupons );
+    saver('_discount_coupons',$post_id);
     //бордер
-    $block_discount_border = $_POST['_block_discount_border'];
-    update_post_meta( $post_id, '_block_discount_border', $block_discount_border);
+    saver('_block_discount_border',$post_id);
 
     /**
      * С этим товаром покупают
      */
-    $buy_with_this = $_POST['_buy_with_this'];
-    update_post_meta( $post_id, '_buy_with_this', $buy_with_this);
+    saver('_buy_with_this',$post_id);
 }
 
 add_filter( 'woocommerce_add_cart_item_data', 'woo_custom_add_to_cart' );
