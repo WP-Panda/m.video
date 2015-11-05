@@ -73,7 +73,7 @@ if ( $attachment_ids ) {
 					'alt'	=> $image_title
 				) );
 
-				$image_class = esc_attr( implode( ' ', $classes ) );
+			//	$image_class = esc_attr( implode( ' ', $classes ) );
 
 				echo apply_filters( 'woocommerce_single_product_image_thumbnail_html',
 					sprintf( '

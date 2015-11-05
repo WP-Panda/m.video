@@ -35,14 +35,14 @@ function cr_woocommerce_price_options() {
             </fieldset>
         </div>
     </div>
-    <script>
-        (function( $ ) {
-            // Add Color Picker to all inputs that have 'color-field' class
-            $(function() {
-                $('.color-field').wpColorPicker();
-            });
-        })( jQuery );
-    </script>
+<!--    <script>-->
+<!--        (function( $ ) {-->
+<!--            // Add Color Picker to all inputs that have 'color-field' class-->
+<!--            $(function() {-->
+<!--                $('.color-field').wpColorPicker();-->
+<!--            });-->
+<!--        })( jQuery );-->
+<!--    </script>-->
     <?php ;
 }
 add_action('woocommerce_product_write_panels', 'cr_woocommerce_price_options');

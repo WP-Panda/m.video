@@ -52,13 +52,32 @@ function jk_remove_wc_breadcrumbs() {
 }
 
 
+// Отключение стилей по одному
+add_filter( 'woocommerce_enqueue_styles', 'jk_dequeue_styles' );
+function jk_dequeue_styles( $enqueue_styles ) {
+   // unset( $enqueue_styles['woocommerce-general'] );	// Отключение общий стилей
+    unset( $enqueue_styles['woocommerce-layout'] );		// Отключение стилей шаблонов
+   // unset( $enqueue_styles['woocommerce-smallscreen'] );	// Отключение оптимизации для маленьких экранов
+    return $enqueue_styles;
+}
+
+// // Или просто удалить их все в одной строкой
+add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+
 /**
  * новая миниатюра и распродажа
  */
 add_action( 'woocommerce_before_shop_loop_item_title', 'cr_template_loop_product_thumbnail', 10 );
 
 
-
+/**
+ *
+ */
+if ( is_archive() ) {
+    add_action('woocommerce_after_shop_loop_item', 'cr_woocommerce_discount', 50);
+    add_action('woocommerce_after_shop_loop_item', 'cr_woocommerce_pick_up_in_store', 60);
+    add_action('woocommerce_after_shop_loop_item', 'cr_woocommerce_shipping_in_home', 70);
+}
 
 
 /**
@@ -180,6 +199,8 @@ require_once 'woocommerce-modules/buy-with-this-item.php';
 require_once 'woocommerce-modules/buy-with-this-item-short.php';
 //отзывы
 require_once 'woocommerce-modules/rev.php';
+//сравнение
+require_once 'woocommerce-modules/compare.php';
 
 
 

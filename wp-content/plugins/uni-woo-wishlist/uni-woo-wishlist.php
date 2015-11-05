@@ -316,7 +316,7 @@ if ( !class_exists( 'Uni_WC_Wishlist' ) ) :
             wp_enqueue_script( 'jquery' );
 
             wp_register_script( 'uni-wc-wishlist-admin', $this->plugin_url().'/assets/js/uni-wc-wishlist-admin.js', array('jquery', 'jquery-blockui'), $this->version);
-            wp_enqueue_script( 'uni-wc-wishlist-admin' );
+            //wp_enqueue_script( 'uni-wc-wishlist-admin' );
 
             wp_enqueue_style( 'uni-wc-wishlist-styles-admin', $this->plugin_url().'/assets/css/uni-wc-wishlist-styles-admin.css', false, $this->version, 'all');
 
@@ -402,6 +402,9 @@ if ( !class_exists( 'Uni_WC_Wishlist' ) ) :
         function wishlist_link_raw( $product_id, $variation_id = null, $state, $type ) {
 
             $wish_link_raw = '';
+            global $post;
+            $text = get_post_meta( $post->ID, '_favorites_text', true );
+            $text = !empty($text) ? $text : 'В избранное';
 
             if ( $variation_id == null && $state == 'not-added' && $type == 'not-variable' ) {
 
@@ -412,7 +415,7 @@ if ( !class_exists( 'Uni_WC_Wishlist' ) ) :
                 if( is_archive() ){
                     $wish_link_raw = '<a href="#" data-pid="' . $product_id . '" class="btn btn-primary whislist ' . $wish_link_new_class . '" data-action="uni_wishlist_add"><i class="icon fa fa-heart"></i></a>';
                 } else {
-                    $wish_link_raw = '<a href="#" data-pid="' . $product_id . '" class="' . $wish_link_new_class . '" data-action="uni_wishlist_add">' . $wish_link_title . '</a>';
+                    $wish_link_raw = '<a href="#" data-pid="' . $product_id . '" class="btn btn-primary whislist ' . $wish_link_new_class . '" data-action="uni_wishlist_add">' . $text  . '</a>';
                 }
 
             } else if ( $variation_id == null && $state == 'added' && $type == 'not-variable' ) {
@@ -424,7 +427,7 @@ if ( !class_exists( 'Uni_WC_Wishlist' ) ) :
                 if( is_archive() ){
                     $wish_link_raw = '<a href="#" data-pid="' . $product_id . '" class="btn btn-primary whislist ' . $sWishlistLinkAddedClasses . '" data-action="uni_wishlist_add"><i class="icon fa fa-heart"></i></a>';
                 } else {
-                    $wish_link_raw = '<a href="#" data-pid="'.$product_id.'" class="btn btn-primary whislist '.$sWishlistLinkAddedClasses.'" data-action="uni_wishlist_delete"><i class="icon fa fa-heart"></i></a>';
+                    $wish_link_raw = '<a href="#" data-pid="'.$product_id.'" class="btn btn-primary whislist '.$sWishlistLinkAddedClasses.'" data-action="uni_wishlist_delete">' . $sWishlistLinkAddedTitle .'</a>';
                 }
 
 

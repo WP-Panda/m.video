@@ -17,7 +17,7 @@
     <![endif]-->
 
 </head>
-<body>
+<body <?php body_class() ?>>
 <?php global $wps5_option;
 if( !empty( $wps5_option['site_layout_mode'] && 'box' === $wps5_option['site_layout_mode']) ) {
     echo '<div class="box-wrapper">

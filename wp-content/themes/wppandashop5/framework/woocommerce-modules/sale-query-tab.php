@@ -58,12 +58,12 @@ function cr_query_sales_tab_options() {
         </div>
     </div>
     <script>
-        (function( $ ) {
-            // Add Color Picker to all inputs that have 'color-field' class
-            $(function() {
-                $('.color-field').wpColorPicker();
-            });
-        })( jQuery );
+//        (function( $ ) {
+//            // Add Color Picker to all inputs that have 'color-field' class
+//            $(function() {
+//                $('.color-field').wpColorPicker();
+//            });
+//        })( jQuery );
     </script>
     <?php ;
 }

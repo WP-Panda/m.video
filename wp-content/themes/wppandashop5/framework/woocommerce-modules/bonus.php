@@ -58,14 +58,6 @@ function cr_bonus_tab_options() {
             </fieldset>
         </div>
     </div>
-    <script>
-        (function( $ ) {
-            // Add Color Picker to all inputs that have 'color-field' class
-            $(function() {
-                $('.color-field').wpColorPicker();
-            });
-        })( jQuery );
-    </script>
-    <?php ;
+    <?php
 }
 add_action('woocommerce_product_write_panels', 'cr_bonus_tab_options');

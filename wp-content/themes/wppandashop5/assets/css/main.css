@@ -10909,7 +10909,7 @@ img.main-banner {
 .shop-sub-options a {}
 
 /******************************************/
-/** чекбокс                              */
+/** чекбокс сравнение                    */
 /******************************************/
 .icheckbox_minimal-comp, .iradio_minimal-comp {
   display: inline-block;
@@ -10959,6 +10959,64 @@ img.main-banner {
   color: #ffffff;
 }
 
+/** в проджукте */
+.icheckbox_minimal-comp-full {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 43px;
+    background-color: #e7e7e7;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 8px;
+}
+.icheckbox_minimal-comp-full:hover {
+    background-color: #45a6e6;
+}
+
+.icheckbox_minimal-comp-full:before {
+    content: "В сравнение";
+    color: #555;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.icheckbox_minimal-comp-full.checked {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 43px;
+    background-color: #45a6e6;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_minimal-comp-full.checked:before {
+    content: "Добавлен в сравнение";
+  /* font-family: FontAwesome;*/
+    color: #ff6d6f;
+    padding: 5px;
+    display: inline-block;
+}
+
+.icheckbox_minimal-comp-full.checked:hover:before,
+.icheckbox_minimal-comp-full:hover:before{
+    color: #ffffff;
+}
+
+.single-product .compare-product-link{
+    width: 100%;
+}
 
 /*****************************/
 /* Сравнение */
@@ -10968,10 +11026,14 @@ img.main-banner {
   position: relative;
 }
 
+.cr-compare-block{
+    overflow: hidden;
+}
+
 /**************************/
 /* список желаний
 /**************************/
-a.whislist {
+.archive a.whislist {
   padding: 0;
   font-size: 22px;
   display: inline-block;
@@ -10980,16 +11042,38 @@ a.whislist {
   margin-right: 3px;
   color: #fff;
 }
-a.whislist i {
+.archive a.whislist i {
   margin-right: 0;
   font-size: 24px;
   margin-top: 6px;
 }
-.uni-wishlist-link-container{
+.archive .uni-wishlist-link-container{
   float: right;
 }
 
-a.whislist.uni-wishlist-link-added {
+.archive a.whislist.uni-wishlist-link-added {
   background-color: #45a6e6;
   color: #ff6d6f;
+}
+
+/*******************************/
+/* Блок доставка в архиве
+/******************************/
+.archive .cr-shippin-block:nth-child(2n) {
+  padding-top: 0;
+}
+.archive .cr-shippin-block:nth-child(2n+1) {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.archive .cr-bonus-block {
+  clear: both;
+  border-top: none;
+}
+
+/********************************/
+/* Рейтинг
+/*********************************/
+.star-rating span:before {
+  letter-spacing: 1px;
 }

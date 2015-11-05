@@ -53,7 +53,8 @@ function cr_modules_tab_options() {
                 #cr_woocommerce_favorites,
                 #cr_woocommerce_pick_up_in_store,
                 #cr_woocommerce_shipping_in_home,
-                #cr_woocommerce_discount
+                #cr_woocommerce_discount,
+                #cr_woocommerce_compare
                 {
                     background-color: #a9a4cc;
                     background-image: none;
@@ -99,7 +100,8 @@ function cr_modules_tab_options() {
                 'В избранное'       => 'cr_woocommerce_favorites',
                 'Забрать в магазине'=> 'cr_woocommerce_pick_up_in_store',
                 'Доставка на дом'   => 'cr_woocommerce_shipping_in_home',
-                'Скидки'            => 'cr_woocommerce_discount'
+                'Скидки'            => 'cr_woocommerce_discount',
+                'Сравнение'         => 'cr_woocommerce_compare'
             ); ?>
             <?php $content = get_post_meta($post->ID, '_cr_single_modules_card', true);
 
@@ -152,3 +154,18 @@ function cr_modules_tab_options() {
     <?php ;
 }
 add_action('woocommerce_product_write_panels', 'cr_modules_tab_options');
+
+function woo_cr_colorist() { ?>
+
+<!--    <script>-->
+<!--        (function( $ ) {-->
+<!--            // Add Color Picker to all inputs that have 'color-field' class-->
+<!--            $(function() {-->
+<!--                $('.color-field').wpColorPicker();-->
+<!--            });-->
+<!--        })( jQuery );-->
+<!--    </script>-->
+
+<?php }
+
+add_action('admin_footer','woo_cr_colorist',1000);

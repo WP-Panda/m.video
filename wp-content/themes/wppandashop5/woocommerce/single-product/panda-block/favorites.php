@@ -7,6 +7,8 @@ $block_favorites_border = 1 == $block_favorites_border ? ' none-border' : '';
 
 ?>
 <div class="cr-product-block cr-wishlist-block<?php echo $block_favorites_border; ?>">
-    <?php echo cr_product_display($text); ?>
+    <?php $class = new Uni_WC_Wishlist();
+    $class->print_wishlist_link();   ?>
+    <?php // echo cr_product_display($text); ?>
 </div>
 
