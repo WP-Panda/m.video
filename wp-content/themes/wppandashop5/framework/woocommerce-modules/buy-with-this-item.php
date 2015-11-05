@@ -24,11 +24,12 @@ function cr_woocommerce_buy_with_this_item_options() {
     $buy_with_this = explode(',',$values);
 
     ?>
+
     <div id="cr_buy_with_this_item" class="panel woocommerce_options_panel">
         <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css">
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
         <div class="club-opening-hours">
-
+            <?php echo get_the_ID(); ?>
             <fieldset class="form-field">
                 <div class="wrap">
 

@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-config.php" line="413" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="276d5165-4436-40cd-b32e-ef286ab8a15b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/compare.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/compare.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/deck.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/best-comment.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/deck.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/haw-get.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/tab-rev.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/uni-woo-wishlist/uni-woo-wishlist.php" afterPath="$PROJECT_DIR$/wp-content/plugins/uni-woo-wishlist/uni-woo-wishlist.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/assets/js/frontend.js" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/assets/js/frontend.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/inc/class-product-compare.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/inc/class-product-compare.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/inc/class-compare-tables.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/inc/class-compare-tables.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wppandashop5/assets/css/main.css" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/assets/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/cir-to-lat.php" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/cir-to-lat.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/cr_woo_short.php" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/cr_woo_short.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-config.php" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/bonus.php" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/bonus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/modules-tab.php" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/modules-tab.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/pick-up-in-store.php" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/pick-up-in-store.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/price.php" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/price.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/sale-query-tab.php" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/sale-query-tab.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wppandashop5/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/favorites.php" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/favorites.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/product-image.php" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/product-image.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/product-thumbnails.php" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/product-thumbnails.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/buy-with-this-item-short.php" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/buy-with-this-item-short.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/buy-with-this-item.php" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/buy-with-this-item.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/compare.php" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/compare.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/buy-with-this-item-short.php" afterPath="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/buy-with-this-item-short.php" />
     </list>
     <ignored path="m.video.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,68 +35,94 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DockManager">
-    <window id="3">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="favorites.php" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/favorites.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="-9.153846">
-                    <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="class-product-compare.php" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/inc/class-product-compare.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.7535135">
-                    <caret line="47" column="83" selection-start-line="47" selection-start-column="79" selection-end-line="47" selection-end-column="93" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="m.video" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="add-cart.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/add-cart.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="buy-with-this-item-short.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/buy-with-this-item-short.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="-17.653847">
+              <caret line="27" column="109" selection-start-line="27" selection-start-column="109" selection-end-line="27" selection-end-column="109" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buy-with-this-item.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/buy-with-this-item.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="7.1923075">
+              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single-product.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="6.8076925">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="info-list.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/info-list.php">
+      <file leaf-file-name="woocommerce-config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+            <state vertical-scroll-proportion="-4.2909093">
+              <caret line="395" column="38" selection-start-line="395" selection-start-column="38" selection-end-line="395" selection-end-column="38" />
+              <folding>
+                <marker date="1446759753747" expanded="true" signature="2973:3199" placeholder="..." />
+                <marker date="1446759753747" expanded="true" signature="3052:3199" placeholder="..." />
+                <marker date="1446759753747" expanded="true" signature="3084:3199" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/assets/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.075472">
+              <caret line="10749" column="23" selection-start-line="10749" selection-start-column="23" selection-end-line="10749" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="price.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/price.php">
+      <file leaf-file-name="tab-rev.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/tab-rev.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.45945945">
+              <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <marker date="1446760475064" expanded="true" signature="3012:3151" placeholder="..." />
+                <marker date="1446760475064" expanded="true" signature="3047:3151" placeholder="..." />
+                <marker date="1446760475064" expanded="true" signature="3092:3151" placeholder="..." />
+                <marker date="1446760475064" expanded="true" signature="3458:3501" placeholder="..." />
+                <marker date="1446760475064" expanded="true" signature="3726:3803" placeholder="..." />
+                <marker date="1446760475064" expanded="true" signature="3956:4496" placeholder="..." />
+                <marker date="1446760475064" expanded="true" signature="4099:4397" placeholder="..." />
+                <marker date="1446760475064" expanded="true" signature="4166:4366" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cir-to-lat.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/cir-to-lat.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-27.846153">
+              <caret line="98" column="20" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="20" />
+              <folding>
+                <marker date="1446760418191" expanded="true" signature="2543:2596" placeholder="SELECT slug ..${{$wpdb-&gt;terms}..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,61 +137,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sale-query.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/sale-query.php">
+      <file leaf-file-name="best-comment.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/best-comment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-16.346153">
+              <caret line="25" column="36" selection-start-line="21" selection-start-column="6" selection-end-line="25" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compare.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/compare.php">
+      <file leaf-file-name="class-compare-tables.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/inc/class-compare-tables.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617">
-              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="compare.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/compare.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846">
-              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modules-tab.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/modules-tab.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.923077">
-              <caret line="55" column="41" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/assets/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49615806">
-              <caret line="11029" column="21" selection-start-line="11029" selection-start-column="21" selection-end-line="11029" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="frontend.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/assets/js/frontend.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="88" column="92" selection-start-line="88" selection-start-column="87" selection-end-line="88" selection-end-column="114" />
+            <state vertical-scroll-proportion="-5.075472">
+              <caret line="191" column="64" selection-start-line="191" selection-start-column="64" selection-end-line="191" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -185,21 +172,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/inc/class-table-products.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/inc/class-settings-categories.php" />
-        <option value="$PROJECT_DIR$/../../modules/php/PHP-5.6/php.ini" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/assets/js/dashboard.js" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/inc/class-settings-products.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/inc/class-compare-tables.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/taxonomy-product_cat.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/taxonomy-product_tag.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/content-single-product.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/buy-with-this-item.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/buy-with-this-item-short.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/templates/components/section/fashion/fashion-featured.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/buy-with-this-item-short.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/rev.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/cr_woo_short.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/buy-with-this-item.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/review.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/rev.php" />
@@ -229,13 +204,25 @@
         <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/favorites.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/uni-woo-wishlist/uni-woo-wishlist.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/inc/class-product-compare.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-config.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/compare.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/modules-tab.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/bonus.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/assets/js/frontend.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/compare.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/buy-with-this-item.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/compare.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/deck.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/haw-get.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/deck.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/buy-with-this-item-short.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/cr_woo_short.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/haw-get.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/best-comment.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-config.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/cir-to-lat.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/tab-rev.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/assets/css/main.css" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/inc/class-compare-tables.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/buy-with-this-item-short.php" />
       </list>
     </option>
   </component>
@@ -252,10 +239,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="x" value="211" />
+    <option name="width" value="1484" />
+    <option name="height" value="1036" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -563,63 +549,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="woocommerce-product-compare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NekrMvideoShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m.video" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="woocommerce-product-compare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NekrMvideoShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="m.video" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="woocommerce-product-compare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="uni-woo-wishlist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -721,15 +651,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="211" y="0" width="1484" height="1036" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17803837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23735955" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32834226" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5946524" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59378237" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -793,111 +723,15 @@
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="19" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-products-filter/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.909091">
-          <caret line="2343" column="31" selection-start-line="2343" selection-start-column="31" selection-end-line="2343" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="180" selection-start-line="17" selection-start-column="180" selection-end-line="17" selection-end-column="180" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/redux/meta-config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019296255">
-          <caret line="337" column="101" selection-start-line="337" selection-start-column="100" selection-end-line="337" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/redux/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1511" column="40" selection-start-line="1511" selection-start-column="40" selection-end-line="1511" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/tax-meta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="155" column="26" selection-start-line="155" selection-start-column="26" selection-end-line="155" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/content-product_cat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-products-filter/classes/counter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-products-filter/views/html_types/checkbox.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="145" column="100" selection-start-line="145" selection-start-column="100" selection-end-line="145" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/loop/orderby.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wp-panda.tk/resources/themes/panda-m---osaic/author.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29705215">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.018660812">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-products-filter/js/icheck/icheck.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.4827585">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-products-filter/js/plugin_options.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.5172415">
           <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,7 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.074972436">
           <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,10 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5455581">
           <caret line="190" column="48" selection-start-line="190" selection-start-column="48" selection-end-line="190" selection-end-column="48" />
-          <folding>
-            <marker date="1446437409088" expanded="true" signature="106:120" placeholder="..." />
-            <marker date="1446437409088" expanded="true" signature="13046:13070" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -932,7 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.1475596">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -960,7 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -968,7 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="37.923077">
           <caret line="22" column="4" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -984,15 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/discount.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693">
-          <caret line="15" column="82" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1004,22 +821,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/shipping-in-home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.423077">
           <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <marker date="1446682882949" expanded="true" signature="862:947" placeholder="..." />
-            <marker date="1446682882949" expanded="true" signature="903:947" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1027,23 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.0384614">
           <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="44" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/sale-query-tab.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.73077">
-          <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/pick-up-in-store.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.73077">
-          <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1070,38 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/uni-woo-wishlist/uni-woo-wishlist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.654546">
-          <caret line="417" column="113" selection-start-line="417" selection-start-column="113" selection-end-line="417" selection-end-column="113" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.8461537">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/content-single-product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
-          <caret line="69" column="0" selection-start-line="68" selection-start-column="113" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/woocommerce-product-compare.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.2545457">
-          <caret line="28" column="106" selection-start-line="28" selection-start-column="106" selection-end-line="28" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/discount.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1114,19 +870,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.65384614">
           <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/price.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/rev.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1142,66 +889,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1752086">
-          <caret line="202" column="47" selection-start-line="202" selection-start-column="47" selection-end-line="202" selection-end-column="47" />
-          <folding>
-            <marker date="1446689727778" expanded="true" signature="2952:3178" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="3031:3178" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="3063:3178" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="4868:4997" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="4903:4997" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="5150:5376" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="11826:12121" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="11930:12121" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="11970:12121" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="12009:12121" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="12058:12121" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="12436:12479" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="12716:12797" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="12962:13534" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="13113:13427" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="13184:13392" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="13695:14485" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="13753:13804" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="13835:13970" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="14001:14353" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="14064:14275" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="14397:14474" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="14598:16157" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="14666:15760" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="14682:14995" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="15012:15446" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="15463:15744" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="15791:16146" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="15810:15888" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="15907:16130" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="16282:16669" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="16364:16669" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="16840:16888" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="16889:17023" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="17936:18324" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="18156:18189" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="18380:18618" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="18406:18532" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="18962:19113" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="19001:19113" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="19050:19113" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="19428:19471" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="19708:19789" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="19954:20526" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="20105:20419" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="20176:20384" placeholder="..." />
-            <marker date="1446689727778" expanded="true" signature="20807:20928" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/bonus.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8111111">
           <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/assets/js/frontend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="92" selection-start-line="88" selection-start-column="87" selection-end-line="88" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/inc/class-product-compare.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7911464">
+          <caret line="47" column="83" selection-start-line="47" selection-start-column="79" selection-end-line="47" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/favorites.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27014756">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/add-cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385">
+          <caret line="17" column="85" selection-start-line="17" selection-start-column="85" selection-end-line="17" selection-end-column="85" />
           <folding />
         </state>
       </provider>
@@ -1210,27 +931,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.923077">
           <caret line="55" column="41" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/discount.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.846153">
+          <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/sale-query-tab.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-39.884617">
+          <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/compare.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding />
+        <state vertical-scroll-proportion="-20.26923">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/favorites.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/pick-up-in-store.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/add-cart.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/compare.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/deck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/related.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1238,35 +987,173 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/assets/js/frontend.js">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/rating.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="35" selection-end-column="15" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/shipping-in-home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0384616">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/content-single-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-33.423077">
+          <caret line="76" column="14" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/woocommerce-product-compare.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="28" column="106" selection-start-line="28" selection-start-column="106" selection-end-line="28" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/uni-woo-wishlist/uni-woo-wishlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.436363">
+          <caret line="87" column="12" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/buy-with-this-item-short.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/deck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/cr_woo_short.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/haw-get.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.8076925">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/cir-to-lat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.846153">
+          <caret line="98" column="20" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="20" />
+          <folding>
+            <marker date="1446760418191" expanded="true" signature="2543:2596" placeholder="SELECT slug ..${{$wpdb-&gt;terms}..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/rev.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="92" selection-start-line="88" selection-start-column="87" selection-end-line="88" selection-end-column="114" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/inc/class-product-compare.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7535135">
-          <caret line="47" column="83" selection-start-line="47" selection-start-column="79" selection-end-line="47" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/compare.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49615806">
-          <caret line="11029" column="21" selection-start-line="11029" selection-start-column="21" selection-end-line="11029" selection-end-column="21" />
+        <state vertical-scroll-proportion="-5.075472">
+          <caret line="10749" column="23" selection-start-line="10749" selection-start-column="23" selection-end-line="10749" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce-product-compare/inc/class-compare-tables.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.075472">
+          <caret line="191" column="64" selection-start-line="191" selection-start-column="64" selection-end-line="191" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/best-comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.346153">
+          <caret line="25" column="36" selection-start-line="21" selection-start-column="6" selection-end-line="25" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2909093">
+          <caret line="395" column="38" selection-start-line="395" selection-start-column="38" selection-end-line="395" selection-end-column="38" />
+          <folding>
+            <marker date="1446759753747" expanded="true" signature="2973:3199" placeholder="..." />
+            <marker date="1446759753747" expanded="true" signature="3052:3199" placeholder="..." />
+            <marker date="1446759753747" expanded="true" signature="3084:3199" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/framework/woocommerce-modules/buy-with-this-item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.1923075">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/buy-with-this-item-short.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.653847">
+          <caret line="27" column="109" selection-start-line="27" selection-start-column="109" selection-end-line="27" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/wppandashop5/woocommerce/single-product/panda-block/tab-rev.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45945945">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <marker date="1446760475064" expanded="true" signature="3012:3151" placeholder="..." />
+            <marker date="1446760475064" expanded="true" signature="3047:3151" placeholder="..." />
+            <marker date="1446760475064" expanded="true" signature="3092:3151" placeholder="..." />
+            <marker date="1446760475064" expanded="true" signature="3458:3501" placeholder="..." />
+            <marker date="1446760475064" expanded="true" signature="3726:3803" placeholder="..." />
+            <marker date="1446760475064" expanded="true" signature="3956:4496" placeholder="..." />
+            <marker date="1446760475064" expanded="true" signature="4099:4397" placeholder="..." />
+            <marker date="1446760475064" expanded="true" signature="4166:4366" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

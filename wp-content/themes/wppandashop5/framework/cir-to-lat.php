@@ -94,3 +94,11 @@ function rus_comments($null = false, $one = false, $mores = false) {
 }
 
 add_filter('comments_number', 'rus_comments');
+
+// правильное склонение у числительных
+function rus_numbers($num, $args) {
+
+    $cases = array(2, 0, 1, 1, 1, 2);
+    $out = $args[($num % 100 > 4 && $num % 100 < 20) ? 2 : $cases[min($num % 10, 5)]];
+    return $out;
+}

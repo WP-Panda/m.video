@@ -15,17 +15,21 @@
         }
 
     } ?>
+    <div class="block-title-block">
+        <h3 class="block-title col-xs-10">C этим товаром покупают?</h3>
+        <a class="col-xs-2" href="#">Посмотреть все <i class="fa fa-angle-right"></i></a>
+    </div>
+    <div class="featured-product">
 
-    <div class="featured-product wow fadeInUp">
+        <?php
+        foreach ( $arrays   as $one_cat => $cat_tov ) { ?>
 
             <?php
-            foreach ( $arrays   as $one_cat => $cat_tov ) { ?>
+            echo do_shortcode( '[product_category per_page ="12" slider=" item category-product" "columns"="3" category="' . $cat_tov . '"]');
+            ?>
 
-                    <?php
-                    echo do_shortcode( '[product_category per_page ="12" slider=" item category-product" category="' . $cat_tov . '"]');
-                    ?>
+        <?php  } ?>
 
-            <?php  } ?>
-    </div><!-- /.fashion-featured -->
+    </div>
 
 </div>

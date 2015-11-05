@@ -7,17 +7,32 @@ function product_loop( $query_args, $atts, $loop_name ) {
     $slider                      = $atts['slider'] ? $atts['slider'] : 'col-sm-4 col-md-3';
     $woocommerce_loop['columns'] = $columns;
     ob_start();
-    if ( $products->have_posts() ) : ?>
+    if ( $products->have_posts() ) :
+        ?>
 
         <?php do_action( "woocommerce_shortcode_before_{$loop_name}_loop" ); ?>
 
         <?php woocommerce_product_loop_start(); ?>
         <?php while ( $products->have_posts() ) : $products->the_post(); ?>
             <div class="<?php echo $slider ?>">
+
                 <?php if(!empty($slider)) { ?>
                 <div class="products grid-v2">
-                    <?php } ?>
-                    <?php wc_get_template_part( 'content', 'product' ); ?>
+                    <?php }
+                    //if ( !is_singular() && is_main_query() ) {
+                    remove_action('woocommerce_after_shop_loop_item','print_wishlist_link',30);
+                    remove_action('woocommerce_after_shop_loop_item', 'cr_woocommerce_discount', 50);
+                    remove_action('woocommerce_after_shop_loop_item', 'cr_woocommerce_pick_up_in_store', 60);
+                    remove_action('woocommerce_after_shop_loop_item', 'cr_woocommerce_shipping_in_home', 70);
+                    //}
+                    ?>
+                    <?php wc_get_template_part( 'content', 'product' );
+                    if ( !is_singular() && is_main_query() ) {
+                        add_action('woocommerce_after_shop_loop_item','print_wishlist_link',30);
+                        add_action('woocommerce_after_shop_loop_item', 'cr_woocommerce_discount', 50);
+                        add_action('woocommerce_after_shop_loop_item', 'cr_woocommerce_pick_up_in_store', 60);
+                        add_action('woocommerce_after_shop_loop_item', 'cr_woocommerce_shipping_in_home', 70);
+                    }?>
                     <?php if(!empty($slider)) { ?>
                 </div>
             <?php } ?>

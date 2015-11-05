@@ -10739,7 +10739,7 @@ img.payments-method {
 .graise span{}
 
 /***************************************/
-/**** ����� �������� *******************/
+/**** Рейтинг *******************/
 /***************************************/
 
 .cr-rating-lines{}
@@ -10747,14 +10747,15 @@ img.payments-method {
 .cr-rating-liner {
   height: 10px;
   background-color: #ddd;
+  padding: 0!important;
 }
+
 
 .cr-rating-line {
   height: 10px;
   width: 50%;
   background-color: red;
   display: block;
-  margin: 10px 0;
 }
 
 /***************************************/
@@ -11076,4 +11077,55 @@ img.main-banner {
 /*********************************/
 .star-rating span:before {
   letter-spacing: 1px;
+}
+
+/*******************************/
+/* Вкладка обзора товаров
+/******************************/
+#tab-main .cr-product-block {
+overflow: hidden;
+}
+#tab-main .block-title-block {
+    border-bottom: 1px solid #bbb;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+#tab-main .block-title-block a {
+    padding-top: 25px;
+}
+
+#tab-main .cr-product-block {
+    padding-bottom: 25px;
+}
+
+#tab-main .taber-cont{
+    padding-bottom: 25px;
+}
+
+#tab-main .be_compare_features_table tr:nth-child(2n+1) {
+    background-color: #F7F7F7;
+}
+
+#tab-main h3.deck-title {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.all-cpec {
+    margin-top: 40px;
+}
+
+.shop-sub-options{
+    margin-top: 40px;
+}
+
+#tab-main .cr-shippin-block:nth-child(2n) {
+    border-bottom: none;
+}
+
+#tab-main .uni-wishlist-link-container{
+  opacity: 0;
+  visibility: hidden;
 }

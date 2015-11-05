@@ -191,7 +191,8 @@ if ( ! class_exists( 'BE_Compare_Tables' ) ) :
 							<?php
 							// woocommerce attribute information
 							if( strstr( $fid, 'attr_' ) ) {
-								$attr_id = str_replace( 'attr_', '', $fid, $temp = 1 );
+								$temp = 1;
+								$attr_id = str_replace( 'attr_', '', $fid, $temp );
 								$result = array_search( $attr_id, array_map( array( $this, 'map_attribute_id' ), $attributes ) );
 
 								// proceed if attribute is found
@@ -250,7 +251,7 @@ if ( ! class_exists( 'BE_Compare_Tables' ) ) :
 
 
 		/**
-		 * Маленькая таблица
+		 * пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		 */
 		function display_short( ) {
 			$GLOBALS['be_compare_disable_table_link'] = true;
@@ -267,12 +268,13 @@ if ( ! class_exists( 'BE_Compare_Tables' ) ) :
 				<?php uasort( $this->categories, array( &$this, 'usort_reorder' ) ); foreach( $this->categories as $cid => $cat ) : ?>
 					<?php uasort( $cat['features'], array( &$this, 'usort_reorder' ) ); $i = 1; foreach( $cat[ 'features' ] as $fid => $feat ) :
 						if($a>10) break; ?>
-						<tr <?php if( $i % 2 !== 0 ) echo 'class="alternate"'; ?>>
+						<tr>
 							<?php
 //echo '||' . $i;
 							// woocommerce attribute information
 							if( strstr( $fid, 'attr_' ) ) {
-								$attr_id = str_replace( 'attr_', '', $fid, $temp = 1 );
+								$temp =1;
+								$attr_id = str_replace( 'attr_', '', $fid, $temp );
 								$result = array_search( $attr_id, array_map( array( $this, 'map_attribute_id' ), $attributes ) );
 
 								// proceed if attribute is found
