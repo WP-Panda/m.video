@@ -21,7 +21,7 @@ foreach($comments as $comment){
 
         <div class="block-title-block">
             <h3 class="block-title col-xs-10">Самый полезный отзыв</h3>
-            <a class="col-xs-2" href="#">Посмотреть все <i class="fa fa-angle-right"></i></a>
+            <a class="col-xs-2 inner-tabber" href="#tab-rev">Посмотреть все <i class="fa fa-angle-right"></i></a>
         </div>
         <div class="clearfix"></div>
 

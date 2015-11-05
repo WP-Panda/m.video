@@ -814,14 +814,14 @@
     );
 
     /**
-     * Позакз блока нашди дешевле
+     * пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
      */
     $('.cr-product-block.cr-query-block').click(function(){
         $('.cr-query-hide').show();
     });
 
     /**
-     * Скрытие блока нашли дешевле
+     * пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
      */
     $('#query-hider').click(function(e){
         //e.preventDefault();
@@ -833,7 +833,7 @@
     });
 
     /**
-     * поповер с кнопкой закрыть
+     * пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
      */
 
     $.fn.extend({
@@ -864,6 +864,26 @@
 
     $('[data-toggle="popover"]').popoverClosable({html:true});
 
+
+    /**************************************
+     *  СЃРѕ СЃСЃС‹Р»РєРё РЅР° С‚Р°Р±
+     */
+
+    $(document).on('click','.inner-tabber',function(e){
+        e.preventDefault();
+        var $target = $(this).attr('href');
+        alert($target);
+        $('.tabs li').each(function(){
+            if( $(this).find('a[href=' + $target + ']').length ) {
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+            }
+
+            $('.wc-tab').hide();
+            $($target).show();
+        });
+    });
 
 })(jQuery);
 

@@ -2,9 +2,9 @@
 global $post,$product;
 
 $args = array(
-'status' => 'approve',
-'number' => '1000',
-'post_id' => $post->ID,
+    'status' => 'approve',
+    'number' => '1000',
+    'post_id' => $post->ID,
 );
 
 
@@ -14,7 +14,7 @@ $comments = get_comments($args);
 <div class="blog cr-product-block">
     <div class="block-title-block">
         <h3 class="block-title col-xs-10">Отзывы</h3>
-        <a class="col-xs-2" href="#">Посмотреть все <i class="fa fa-angle-right"></i></a>
+        <a class="col-xs-2 inner-tabber" href="#tab-rev">Посмотреть все <i class="fa fa-angle-right"></i></a>
     </div>
     <div class="clearfix"></div>
     <div class="blog-comments">
@@ -55,13 +55,16 @@ $comments = get_comments($args);
 
             <div class="cr-rating-lines col-xs-6">
                 <div>
-                    Оставьте свой отзыв о товаре:
-                    <?php the_title() ?>
+                    Оставьте свой отзыв о товаре: <br>
+                    <b><?php the_title() ?></b>
                 </div>
-                <a class="btn btn-primary">В избранное</a>
+                <div class="col-xs-12 text-center outer-top-xs">
+                    <a href="#tab-rev" class="btn btn-primary inner-tabber">Оставить свой отзыв</a>
+                </div>
             </div>
             <div class="clearfix"></div>
 
+            <div class="border inner-xs"></div>
         <?php endif; ?>
         <?php
         $n = 1;

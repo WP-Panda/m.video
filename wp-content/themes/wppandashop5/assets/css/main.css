@@ -10748,6 +10748,7 @@ img.payments-method {
   height: 10px;
   background-color: #ddd;
   padding: 0!important;
+  margin-top: 6px;
 }
 
 
@@ -11128,4 +11129,11 @@ overflow: hidden;
 #tab-main .uni-wishlist-link-container{
   opacity: 0;
   visibility: hidden;
+}
+
+.star-rating b {
+  margin-left: 66px;
+}
+.border {
+  border-bottom: 1px solid #bbb;
 }

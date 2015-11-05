@@ -9,8 +9,8 @@ $terms = wp_get_post_terms( $post->ID, 'product_cat');
 <div class="cr-product-block">
 
     <div class="block-title-block">
-        <h3 class="block-title col-xs-10">Описание</h3>
-        <a class="col-xs-2" href="#">Посмотреть все <i class="fa fa-angle-right"></i></a>
+        <h3 class="block-title col-xs-10 inner-tabber">Описание</h3>
+        <a class="col-xs-2 inner-tabber" href="#tab-spec">Посмотреть все <i class="fa fa-angle-right"></i></a>
     </div>
     <div class="clearfix"></div>
 
@@ -32,6 +32,6 @@ $terms = wp_get_post_terms( $post->ID, 'product_cat');
         <a href="<?php echo get_term_link((int)$terms[0]->term_id,'product_cat'); ?> ">Смотреть все <?php echo $terms[0]->name ?></a>
     </div>
     <div class="col-xs-12 text-center all-cpec">
-        <a href="#tab-spec">Смотреть все Спецификации</a>
+        <a href="#tab-spec" class="inner-tabber">Смотреть все Спецификации</a>
     </div>
 </div>
