@@ -19,7 +19,7 @@ if ( post_password_required() ) {
             <?php break;
         default : ?>
             <li <?php comment_class('media'); ?> id="comment-<?php comment_ID(); ?>">
-            <article <?php comment_class(); ?> class="comment">
+            <article <?php comment_class('comment'); ?>>
 
                 <div class="media-left">
                     <?php echo get_avatar( $comment, 70 ); ?>

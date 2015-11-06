@@ -11175,3 +11175,19 @@ overflow: hidden;
   display: block;
   float: right;
 }
+
+p.comment-form-rating span a {
+  margin: 15px;
+  font-size: 25px;
+  font-family: arial;
+}
+
+.hidd{
+  overflow: hidden;
+}
+
+.comment-form-rating .stars a{
+  margin: 20px;
+  font-size: 18px;
+  font-family: Arial;
+}

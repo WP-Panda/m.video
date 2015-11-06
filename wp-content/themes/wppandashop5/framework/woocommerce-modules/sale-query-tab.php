@@ -36,18 +36,22 @@ function cr_query_sales_tab_options() {
                         <label>Цвет заголовка модуля: </label>
                         <input class="color-field" type="text" name="_title_sale_colors" value="<?php echo $color; ?>"/>
                     </p>
+
                     <p>
                         <label>Текст заголовка модуля: </label>
                         <input type="text" class="short"  name="_title_sale_query" id="_title_sale_query" value="<?php echo $title; ?>"/>
                     </p>
+
                     <p>
                         <label>Текст модуля: </label>
                         <textarea class="short" row="2" cols="20"  name="_text_sale_query" id="_text_sale_query"><?php echo $text; ?></textarea>
                     </p>
+
                     <p>
                         <label>Cылка на страницу Правила: </label>
                         <input type="text" class="short"  name="_rules_sale_query" id="_rules_sale_query" value="<?php echo $rules; ?>"/>
                     </p>
+
                     <p>
                         <label for="_block_query_border">Не включать разделитель: </label>
                         <input type="checkbox" name="_block_query_border" id="_block_cart_border" value="1" <?php checked( $block_query_border ); ?>/>

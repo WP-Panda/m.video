@@ -438,20 +438,20 @@ function spec_tab_content(){
             <ul>
                 <li>
                     <?php
-                    if(!empty($ins_text)) {
+                    if( ! empty( $ins_text ) ) {
                         $filetype = wp_check_filetype($ins_text);
                         $file = str_replace(get_home_url(),$_SERVER['DOCUMENT_ROOT'],$ins_text);
                         echo '<i class="fa fa-file-' . $filetype['ext'] . '-o"></i>';
-                        echo '<a href="' . $ins_text . '" title="Инструкция для ' . get_the_title() . '">Инструкция для ' . get_the_title() . ' ' . getSize($file) . '</a>';
+                        echo '<a href="' . esc_url($ins_text) . '" title="Инструкция для ' . get_the_title() . '">Инструкция для ' . get_the_title() . ' ' . getSize($file) . '</a>';
                     } ?>
                 </li>
                 <li>
                     <?php
-                    if(!empty($sert_text)) {
+                    if( ! empty( $sert_text ) ) {
                         $filetype = wp_check_filetype($sert_text);
                         $file = str_replace(get_home_url(),$_SERVER['DOCUMENT_ROOT'],$sert_text);
                         echo '<i class="fa fa-file-' . $filetype['ext'] . '-o"></i>';
-                        echo '<a href="' . $sert_text . '" title="Скачать сертификат соответствия ' . get_the_title() . '">Скачать сертификат соответствия ' . get_the_title() . ' ' . getSize($file) . '</a>';
+                        echo '<a href="' . esc_url($sert_text) . '" title="Скачать сертификат соответствия ' . get_the_title() . '">Скачать сертификат соответствия ' . get_the_title() . ' ' . getSize($file) . '</a>';
                     }
                     ?>
                 </li>
