@@ -11086,7 +11086,8 @@ img.main-banner {
 #tab-main .cr-product-block {
 overflow: hidden;
 }
-#tab-main .block-title-block {
+#tab-main .block-title-block,
+#tab-spec .block-title-block {
     border-bottom: 1px solid #bbb;
     overflow: hidden;
     margin-bottom: 20px;
@@ -11136,4 +11137,41 @@ overflow: hidden;
 }
 .border {
   border-bottom: 1px solid #bbb;
+}
+
+.spec-taber {
+  overflow: hidden;
+  border-bottom: none;
+}
+
+#tab-spec .print-link{
+  display: none;
+}
+
+.ins-ti {
+  font-weight: bold;
+  border-bottom: 1px solid #c2c2c2;
+  border-color: #fff #fff #c2c2c2 #fff;
+  background-color: #fff !important;
+  text-align: left;
+  padding: 25px 0 10px 0;
+  font-size: 16px;
+  margin-top: 3px;
+}
+
+.docer-col ul{}
+.docer-col li {
+  margin: 20px 0;
+}
+
+.docer-col .fa {
+  font-size: 38px;
+  color: #CA3B3B;
+}
+
+.docer-col a {
+  color: #45a6e6;
+  width: 88%;
+  display: block;
+  float: right;
 }

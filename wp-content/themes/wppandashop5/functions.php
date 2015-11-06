@@ -110,3 +110,13 @@ add_action('after_setup_theme', function(){
         'footer_menu' => 'Меню в подвале'
     ) );
 });
+
+/**
+ * Получение размера файла
+ */
+function getSize($file){
+    $bytes = filesize($file);
+    $s = array('b', 'Kb', 'Mb', 'Gb');
+    $e = floor(log($bytes)/log(1024));
+    return sprintf('%.2f '.$s[$e], ($bytes/pow(1024, floor($e))));
+}

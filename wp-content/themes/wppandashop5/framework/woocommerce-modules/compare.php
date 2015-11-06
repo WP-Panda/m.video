@@ -29,7 +29,6 @@ function cr_compare_tab_options_help() {
         <div class="club-opening-hours">
             <fieldset class="form-field">
                 <div class="wrap">
-<?php var_dump($post); ?>
                     <p>
                         <label>Текст кнопки: </label>
                         <input type="text" class="short" row="2" cols="20"  name="_compare_text" id="_compare_text" value="<?php echo $text; ?>"/>

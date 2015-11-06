@@ -55,9 +55,9 @@ function jk_remove_wc_breadcrumbs() {
 // Отключение стилей по одному
 add_filter( 'woocommerce_enqueue_styles', 'jk_dequeue_styles' );
 function jk_dequeue_styles( $enqueue_styles ) {
-   // unset( $enqueue_styles['woocommerce-general'] );	// Отключение общий стилей
+    // unset( $enqueue_styles['woocommerce-general'] );	// Отключение общий стилей
     unset( $enqueue_styles['woocommerce-layout'] );		// Отключение стилей шаблонов
-   // unset( $enqueue_styles['woocommerce-smallscreen'] );	// Отключение оптимизации для маленьких экранов
+    // unset( $enqueue_styles['woocommerce-smallscreen'] );	// Отключение оптимизации для маленьких экранов
     return $enqueue_styles;
 }
 
@@ -347,6 +347,8 @@ function cr_modules_tab_fields_save( $post_id ){
      */
     saver('_deck_tab_text',$post_id);
     saver('_deck_tab_text_tov',$post_id);
+    saver('_ins_text',$post_id);
+    saver('_sert_text',$post_id);
 
 }
 
@@ -407,34 +409,62 @@ function rev_tab_content(){
  */
 
 function main_tab_content() {
-
-    global $post,$product;
-
     wc_get_template( 'single-product/panda-block/best-comment.php' );
     wc_get_template( 'single-product/panda-block/deck.php' );
     wc_get_template( 'single-product/panda-block/info-list.php' );
     wc_get_template( 'single-product/panda-block/haw-get.php' );
-     //слайдер подобные
     cr_woocommerce_buy_with_this_item_short();
     wc_get_template( 'single-product/panda-block/tab-rev.php' );
-
-    ?>
-
-
-
-    <?php
 }
 
 /**
  * Спецификации
  */
 
-function spec_tab_content(){ ?>
-    <div class="col-xs-4">gg</div>
-    <div class="col-xs-8">
-        <?php
-        $cont = new BE_Compare_Products();
-        $cont->new_product_tab_content();
-        ?>
+function spec_tab_content(){
+    global $post;
+    $ins_text = get_post_meta( $post->ID, '_ins_text', true );
+    $sert_text = get_post_meta( $post->ID, '_sert_text', true );
+    ?>
+    <div class="cr-product-block spec-taber">
+
+        <div class="block-title-block">
+            <h3 class="block-title col-xs-12">Описание</h3>
+        </div>
+
+        <div class="col-xs-4 docer-col">
+
+            <div class="ins-ti">Инструкции и сертификаты</div>
+            <ul>
+                <li>
+                    <?php
+                    if(!empty($ins_text)) {
+                        $filetype = wp_check_filetype($ins_text);
+                        $file = str_replace(get_home_url(),$_SERVER['DOCUMENT_ROOT'],$ins_text);
+                        echo '<i class="fa fa-file-' . $filetype['ext'] . '-o"></i>';
+                        echo '<a href="' . $ins_text . '" title="Инструкция для ' . get_the_title() . '">Инструкция для ' . get_the_title() . ' ' . getSize($file) . '</a>';
+                    } ?>
+                </li>
+                <li>
+                    <?php
+                    if(!empty($sert_text)) {
+                        $filetype = wp_check_filetype($sert_text);
+                        $file = str_replace(get_home_url(),$_SERVER['DOCUMENT_ROOT'],$sert_text);
+                        echo '<i class="fa fa-file-' . $filetype['ext'] . '-o"></i>';
+                        echo '<a href="' . $sert_text . '" title="Скачать сертификат соответствия ' . get_the_title() . '">Скачать сертификат соответствия ' . get_the_title() . ' ' . getSize($file) . '</a>';
+                    }
+                    ?>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="col-xs-8">
+            <?php
+            $cont = new BE_Compare_Products();
+            $cont->new_product_tab_content();
+            ?>
+        </div>
+
     </div>
 <?php }
