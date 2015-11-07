@@ -643,47 +643,46 @@
 
         });
 
+        var $sync1 = $('#owl-single-product'),
+            $sync2 = $('#owl-single-product-thumbnails'),
+            flag = false,
+            duration = 300;
 
-        $('#owl-single-product').owlCarousel({
-            items: 1,
-            nav: false
-        });
-
-        $('#owl-single-product-thumbnails').owlCarousel({
-           // items: 4,
-            nav: false,
-            dots:true,
-            rewindNav: true,
-            responsive:{
-                285:{
-                    items:2
-                },
-                428:{
-                    items:3
-                },
-                571:{
-                    items:4
-                },
-                714:{
-                    items:5
-                },
-                857:{
-                    items:6
-                },
-                1000:{
-                    items:7
+        $sync1
+            .owlCarousel({
+                items: 1,
+                margin: 10,
+                nav: true,
+                dots: true,
+            })
+            .on('changed.owl.carousel', function (e) {
+                if (!flag) {
+                    flag = true;
+                    $sync2.trigger('to.owl.carousel', [e.item.index, duration, true]);
+                    flag = false;
                 }
-            },
-            itemsTablet : [768, 4]
-        });
+            });
 
-        
-        
-        $(document).on('click', '.slider-prev', function(e) {
-            var owl = $($(this).data('target'));
-            owl.trigger('owl.prev');
-            return false;
-        });
+        $sync2
+            .owlCarousel({
+                margin: 20,
+                items: 6,
+                nav: true,
+                autoWidth:true,
+                dots: true
+            })
+            .on('click', '.owl-item', function () {
+                $sync1.trigger('to.owl.carousel', [$(this).index(), duration, true]);
+
+            })
+            .on('changed.owl.carousel', function (e) {
+                if (!flag) {
+                    flag = true;
+                    $sync1.trigger('to.owl.carousel', [e.item.index, duration, true]);
+                    flag = false;
+                }
+            });
+
 
         $(document).on('click', '.single-product-gallery .horizontal-thumb', function(e) {
             var $this = $(this), owl = $($this.data('target')), slideTo = $this.data('slide');

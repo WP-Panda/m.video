@@ -33,7 +33,7 @@ if ( post_password_required() ) {
 
 	<div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(' row '); ?>>
 
-		<div class="col-xs-12 col-sm-8  gallery-holder wow fadeInUp">
+		<div class="col-xs-12 col-sm-8  gallery-holder">
 			<?php
 
 			add_action('woocommerce_before_single_product_summary', 'woocommerce_template_single_title' , 8);
@@ -48,8 +48,7 @@ if ( post_password_required() ) {
 			do_action( 'woocommerce_before_single_product_summary' );
 			?>
 		</div>
-
-		<div class="summary entry-summary col-sm-4 wow fadeInUp">
+		<div class="summary entry-summary col-xs-12 col-sm-4">
 
 			<?php
 

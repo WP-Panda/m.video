@@ -11257,3 +11257,15 @@ p.comment-form-rating span a {
   margin-left: 2px;
   background-color: #2dcc80;
 }
+
+/****************************************/
+/***** Слайдер магазина          ********/
+/****************************************/
+.single-product-gallery-thumbs.gallery-thumbs {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.owl-carousel .owl-item img {
+  height: 100%;
+}

@@ -40,9 +40,7 @@ if ( $attachment_ids ) {
 				echo apply_filters( 'woocommerce_single_product_image_html',
 					sprintf( '
 					  	<div class="item">
-					 		<a class="horizontal-thumb active" data-target="#owl-single-product" data-slide="0" href="#slide0">
 					 			%3$s
-					 		</a>
 					 	</div>',
 						$image_title,
 						$image_link,
@@ -78,7 +76,7 @@ if ( $attachment_ids ) {
 				echo apply_filters( 'woocommerce_single_product_image_thumbnail_html',
 					sprintf( '
 					 <div class="single-product-gallery-item" id="slide%1$s">
-					 <a data-lightbox="image-%1$s" data-title="%2$s" href="%3$s">%4$s</a>
+					 %4$s
 					 </div>',
 						$loop,
 						$image_title,
@@ -93,6 +91,5 @@ if ( $attachment_ids ) {
 			?>
 		</div>
 	</div>
-
 	<?php
 }
