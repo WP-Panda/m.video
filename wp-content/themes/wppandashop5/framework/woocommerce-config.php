@@ -179,7 +179,8 @@ if ( ! function_exists( 'cr_single_variation_add_to_cart_button' ) ) {
 require_once 'woocommerce-modules/deck.php';
 //сравнение
 require_once 'woocommerce-modules/compare.php';
-
+//магазины
+require_once 'woocommerce-modules/shops.php';
 //основная вкладка ?
 require_once 'woocommerce-modules/modules-tab.php';
 // нашли дешевле ?
@@ -204,6 +205,7 @@ require_once 'woocommerce-modules/buy-with-this-item.php';
 require_once 'woocommerce-modules/buy-with-this-item-short.php';
 //отзывы
 require_once 'woocommerce-modules/rev.php';
+
 
 
 
@@ -350,6 +352,19 @@ function cr_modules_tab_fields_save( $post_id ){
     saver('_ins_text',$post_id);
     saver('_sert_text',$post_id);
 
+    saver('_shop_nal_1',$post_id);
+    saver('_shop_zab_1',$post_id);
+    saver('_shop_nal_2',$post_id);
+    saver('_shop_zab_2',$post_id);
+    saver('_shop_nal_3',$post_id);
+    saver('_shop_zab_3',$post_id);
+    saver('_shop_nal_4',$post_id);
+    saver('_shop_zab_4',$post_id);
+    saver('_shop_nal_5',$post_id);
+    saver('_shop_zab_5',$post_id);
+    saver('_shop_nal_6',$post_id);
+    saver('_shop_zab_6',$post_id);
+
 }
 
 add_filter( 'woocommerce_add_cart_item_data', 'woo_custom_add_to_cart' );
@@ -387,14 +402,27 @@ function woo_rename_tabs( $tabs ) {
         'callback' 	=> 'accessories_tab_content'
     );
 
+    $tabs['shops'] = array(
+        'title' 	=> __( 'Магазины', 'woocommerce' ),
+        'priority' 	=> 50,
+        'callback' 	=> 'shops_tab_content'
+    );
+
     return $tabs;
+}
+
+
+/**
+ * Акссесуары
+ */
+function shops_tab_content(){
+    cr_woocommerce_shops_tabs();
 }
 
 /**
  * Акссесуары
  */
-function accessories_tab_content()
-{
+function accessories_tab_content(){
     cr_woocommerce_buy_with_this_item();
 }
 /**

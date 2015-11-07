@@ -650,10 +650,30 @@
         });
 
         $('#owl-single-product-thumbnails').owlCarousel({
-            items: 4,
+           // items: 4,
             nav: false,
             dots:true,
             rewindNav: true,
+            responsive:{
+                285:{
+                    items:2
+                },
+                428:{
+                    items:3
+                },
+                571:{
+                    items:4
+                },
+                714:{
+                    items:5
+                },
+                857:{
+                    items:6
+                },
+                1000:{
+                    items:7
+                }
+            },
             itemsTablet : [768, 4]
         });
 
@@ -872,7 +892,7 @@
     $(document).on('click','.inner-tabber',function(e){
         e.preventDefault();
         var $target = $(this).attr('href');
-        alert($target);
+
         $('.tabs li').each(function(){
             if( $(this).find('a[href=' + $target + ']').length ) {
                 $(this).addClass('active');
@@ -882,8 +902,23 @@
 
             $('.wc-tab').hide();
             $($target).show();
+
+            $('html,body').animate({
+                scrollTop: $($target).offset().top - 100
+            },500);
         });
     });
+
+    /** Прокрутка к табу */
+   /* $('.abbrer').click(function(){
+
+        var $target = $(this).attr('href');
+
+        $('html,body').animate({
+            scrollTop: $($target).offset().top
+        },500);
+
+    });*/
 
 })(jQuery);
 

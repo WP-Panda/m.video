@@ -75,6 +75,7 @@ function product_category($atts){
         'per_page' => '12',
         'slider' =>'',
         'columns'  => '4',
+        'columner' => '',
         'orderby'  => 'title',
         'order'    => 'desc',
         'category' => '',  // Slugs

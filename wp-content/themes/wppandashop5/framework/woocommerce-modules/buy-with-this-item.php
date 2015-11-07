@@ -81,7 +81,7 @@ function cr_woocommerce_buy_with_this_item_options() {
                         $eventSelect.on("change", function (e) { jQuery('#_buy_with_this').val($eventSelect.val()) });
 
                         jQuery('a.ccc').click(function (e) {
-                            alert(jQuery('#multiple-select-box').val());
+                           // alert(jQuery('#multiple-select-box').val());
                         });
                     </script>
 

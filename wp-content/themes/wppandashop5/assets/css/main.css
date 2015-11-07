@@ -11127,9 +11127,13 @@ overflow: hidden;
     border-bottom: none;
 }
 
-#tab-main .uni-wishlist-link-container{
+#tab-main .uni-wishlist-link-container,
+#tab-accessories .uni-wishlist-link-container,
+#tab-accessories .hover-effect,
+#tab-accessories .tag{
   opacity: 0;
   visibility: hidden;
+  display: none;
 }
 
 .star-rating b {
@@ -11190,4 +11194,66 @@ p.comment-form-rating span a {
   margin: 20px;
   font-size: 18px;
   font-family: Arial;
+}
+
+#tab-accessories .tab-pane {
+  width: 100%;
+}
+
+#tab-accessories h3.name a {
+  color: #434343;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.tabs-left,.tabs-left ul.nav-tabs {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.details-page .product-info-panel #tab-accessories .nav-tabs li.active a {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #45a6e6;
+  color: #45a6e6;
+  padding: 0;
+}
+
+.details-page .product-info-panel #tab-accessories .nav-tabs li a {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #555;
+  color: #555;
+  padding: 0;
+}
+
+#tab-accessories .tab-pane .col-md-4.col-sm-6:nth-child(3n+1){
+  clear: both;
+}
+
+.col-md-4.col-sm-6:nth-child(3n+1) {
+  clear: both;
+}
+
+
+/*****************************************/
+/**** Вкладка магазина                ****/
+/*****************************************/
+#tab-shops .outer-xs{
+  overflow: hidden;
+}
+
+.lh-1-6 {
+  line-height: 1.6;
+}
+
+#tab-shops .fa-pause{
+  color: #2dcc80;
+}
+
+#tab-shops .fa-pause {
+  color: #2dcc80;
+  margin-left: 2px;
+  background-color: #2dcc80;
 }

@@ -46,6 +46,14 @@ function cr_modules_tab_options() {
                     /* width: 120px; */
                 }
 
+                .woocommerce_options_panel label, .woocommerce_options_panel legend {
+                   margin: 0!important;
+                }
+
+                .woocommerce_options_panel fieldset.form-field, .woocommerce_options_panel p.form-field{
+                    padding: 0!important;
+                }
+
                 #cr_woocommerce_query_sales,
                 #cr_woocommerce_price,
                 #cr_woocommerce_bonus,

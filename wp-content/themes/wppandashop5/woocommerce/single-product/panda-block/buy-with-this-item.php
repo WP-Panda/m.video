@@ -15,6 +15,7 @@
         }
 
     } ?>
+
     <div class="tabbable tabs-left container">
         <ul class="nav nav-tabs col-xs-3" role="tablist">
             <?php
@@ -33,7 +34,7 @@
                 $active = $i == 0 ? ' active' : '';
                 ?>
                 <div id="<?php echo $one_cat; ?>" role="tabpanel"  class="container tab-pane<?php echo $active; ?>">
-                    <?php  echo do_shortcode( '[product_category per_page ="12" category="' . $cat_tov . '"]'); ?>
+                    <?php  echo do_shortcode( '[product_category per_page ="12" slider="col-md-4 col-sm-6" category="' . $cat_tov . '"]'); ?>
                 </div>
                 <?php  $i ++;
             } ?>
