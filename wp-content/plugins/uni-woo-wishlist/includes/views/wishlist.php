@@ -7,6 +7,7 @@
 <table class="uni-wishlist-table" cellspacing="0">
 	<thead>
 		<tr>
+            <th class="product-image">&nbsp;</th>
 			<th class="product-name">&nbsp;</th>
 			<th class="product-price">&nbsp;</th>
 			<th class="product-add-to-cart">&nbsp;</th>

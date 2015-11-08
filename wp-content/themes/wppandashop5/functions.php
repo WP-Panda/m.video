@@ -56,12 +56,13 @@ function wps5_register_scripts() {
     wp_enqueue_script( 'easing-js', WPS5_BASE_DIR . 'assets/js/jquery.easing-1.3.min.js', array( ), '1.3', true );
     wp_enqueue_script( 'wow-js', WPS5_BASE_DIR . 'assets/js/wow.min.js', array(), '1.0.3', true );
     wp_enqueue_script( 'echo-js', WPS5_BASE_DIR . 'assets/js/echo.min.js', array(), '1.6.0', true );
+    wp_enqueue_script( 'light', WPS5_BASE_DIR . 'assets/js/lightbox.min.js', array(), '2.0.0', true );
     wp_enqueue_script( 'main-js', WPS5_BASE_DIR . 'assets/js/scripts.js', array( ), '1.0.0', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'wps5_register_scripts' );
 
-
+$e = 'mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmm mmmmmmmmmmmmm mmmmmmmmmmmmmmmmmmmmmmmmmmm mmm mmmm mmm mm m m mmmmmmmm mmmmm mmmm mmmmm';
 /**
  * Сайдбары
  */

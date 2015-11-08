@@ -11269,3 +11269,63 @@ p.comment-form-rating span a {
 .owl-carousel .owl-item img {
   height: 100%;
 }
+
+#owl-single-product-thumbnails .owl-prev,
+#owl-single-product-thumbnails .owl-next{
+  color: transparent;
+}
+
+/*********************************************/
+/***** Список желаний  ***********************/
+/*********************************************/
+
+.uni-wishlist-table {
+  width: 100%;
+}
+
+.uni-wishlist-table-row td {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.uni-wishlist-table-remove-link{
+  font-size: 29px;
+  color: #E83E3E;
+}
+
+.uni-wishlist-table-remove-link:hover{
+  color: #ff1d15;
+}
+/*******************************************/
+/****** Слайдеры на главной   ******************/
+/****************************************/
+.homer .compare-product-link,
+.homer .uni-wishlist-link-container,
+.homer .hover-effect{
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.homer img.payments-method {
+  width: 36px !important;
+}
+
+.homer .block-title-block {
+  margin-bottom: 25px;
+  overflow: hidden;
+  border-bottom: 1px solid #bbb;
+  border-top: 1px solid #bbb;
+}
+
+.homer .block-title-block h3{
+  padding-left: 0;
+}
+
+.homer .owl-prev,
+.homer .owl-next{
+  color: transparent;
+}
+
+.banner-6x4 img{width: 100%!important;}

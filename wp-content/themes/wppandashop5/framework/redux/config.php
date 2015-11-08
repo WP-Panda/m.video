@@ -1309,7 +1309,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
             /*  - Home page
             /*-----------------------------------------------------------------------------------*/
             $this->sections[] = array(
-                'title'      =>  __('Home Page', 'wppandashop5'),
+                'title'      =>  __('Главная', 'wppandashop5'),
                 'desc'       =>  __('Control and configure of your Home Page.', 'wppandashop5'),
                 'icon'       =>  'font-icon-cone',
                 'customizer' =>  false,
@@ -1343,32 +1343,154 @@ if (!class_exists('Redux_Framework_sample_config')) {
                     ),
 
                     array(
-                        'id'        =>  'footer_widget_area_color_type',
+                        'id'        =>  'home_bunner',
                         'type'      =>  'button_set',
-                        'title'     =>  __('Footer Widgets Color Type', 'wppandashop5'),
-                        'subtitle'  =>  __('The setting refers to which color type for footer widgets area will appear.', 'wppandashop5'),
+                        'title'     =>  __('Включить блок баннеров', 'wppandashop5'),
                         'desc'      =>  '',
                         'options'   =>  array(
-                            'light-type' =>  'Light',
-                            'dark-type'  =>  'Dark',
+                            'on'   =>  'Вкл',
+                            'off'  =>  'Выкл',
                         ),
-                        'default'   =>  'dark-type',
+                        'default'   =>  'on',
+                    ),
+
+                    array(
+                        'id'        =>  'h_b_1_l',
+                        'type'      =>  'text',
+                        'title'     =>  __('Ссылка баннера 1', 'wppandashop5'),
+                        'default'   =>  '',
+                    ),
+
+                    array(
+                        'id'        =>  'h_b_1_h4',
+                        'type'      =>  'text',
+                        'title'     =>  __('Заголовок баннера 1', 'wppandashop5'),
+                        'default'   =>  '',
+                    ),
+
+                    array(
+                        'id'        =>  'h_b_1_h2',
+                        'type'      =>  'text',
+                        'title'     =>  __('Дополнительный Заголовок баннера 1', 'wppandashop5'),
+                        'default'   =>  '',
+                    ),
+
+                    array(
+                        'id'        =>  'h_b_1_i',
+                        'type'      =>  'media',
+                        'title'     =>  __('Изображение баннера 1', 'wppandashop5'),
+                        'default'   =>  '',
+                    ),
+
+                    array(
+                        'id'        =>  'h_b_2_l',
+                        'type'      =>  'text',
+                        'title'     =>  __('Ссылка баннера 2', 'wppandashop5'),
+                        'default'   =>  '',
+                    ),
+
+                    array(
+                        'id'        =>  'h_b_2_h4',
+                        'type'      =>  'text',
+                        'title'     =>  __('Заголовок баннера 2', 'wppandashop5'),
+                        'default'   =>  '',
+                    ),
+
+                    array(
+                        'id'        =>  'h_b_2_h2',
+                        'type'      =>  'text',
+                        'title'     =>  __('Дополнительный Заголовок баннера 2', 'wppandashop5'),
+                        'default'   =>  '',
+                    ),
+
+                    array(
+                        'id'        =>  'h_b_2_i',
+                        'type'      =>  'media',
+                        'title'     =>  __('Изображение баннера 2', 'wppandashop5'),
+                        'default'   =>  '',
+                    ),
+
+                    array(
+                        'id'        =>  'h_b_3_l',
+                        'type'      =>  'text',
+                        'title'     =>  __('Ссылка баннера 3', 'wppandashop5'),
+                        'default'   =>  '',
+                    ),
+
+                    array(
+                        'id'        =>  'h_b_3_h4',
+                        'type'      =>  'text',
+                        'title'     =>  __('Заголовок баннера 3', 'wppandashop5'),
+                        'default'   =>  '',
+                    ),
+
+                    array(
+                        'id'        =>  'h_b_3_h2',
+                        'type'      =>  'text',
+                        'title'     =>  __('Дополнительный Заголовок баннера 3', 'wppandashop5'),
+                        'default'   =>  '',
+                    ),
+
+                    array(
+                        'id'        =>  'h_b_3_i',
+                        'type'      =>  'media',
+                        'title'     =>  __('Изображение баннера 3', 'wppandashop5'),
+                        'default'   =>  '',
                     ),
 
 
-
-                    // Copyright/Credits Text
                     array(
-                        'id'        =>  'footer_credits_text',
-                        'type'      =>  'editor',
-                        'title'     =>  __('Credits Section Area', 'wppandashop5'),
-                        'subtitle'  =>  __('Optional. Please enter your custom credits/copyright section text.', 'wppandashop5'),
+                        'id'        =>  'n_new_block',
+                        'type'      =>  'text',
+                        'title'     =>  __('ID продуктов для блока новинки, через запятую', 'wppandashop5'),
+                        'default'   =>  '',
+                    ),
+
+                    array(
+                        'id'        =>  'home_bunner_d',
+                        'type'      =>  'button_set',
+                        'title'     =>  __('Включить  баннер делитель', 'wppandashop5'),
                         'desc'      =>  '',
-                        'args'   => array(
-                            'teeny'         => false,
-                            'wpautop'       => true,
-                            'media_buttons' => false
-                        )
+                        'options'   =>  array(
+                            'on'   =>  'Вкл',
+                            'off'  =>  'Выкл',
+                        ),
+                        'default'   =>  'on',
+                    ),
+
+                    array(
+                        'id'        =>  'h_b_4_l',
+                        'type'      =>  'text',
+                        'title'     =>  __('Ссылка баннера делителя', 'wppandashop5'),
+                        'default'   =>  '',
+                    ),
+
+                    array(
+                        'id'        =>  'h_b_4_h4',
+                        'type'      =>  'text',
+                        'title'     =>  __('Заголовок баннера делителя', 'wppandashop5'),
+                        'default'   =>  '',
+                    ),
+
+                    array(
+                        'id'        =>  'h_b_4_h2',
+                        'type'      =>  'text',
+                        'title'     =>  __('Дополнительный Заголовок баннера делителя', 'wppandashop5'),
+                        'default'   =>  '',
+                    ),
+
+                    array(
+                        'id'        =>  'h_b_4_i',
+                        'type'      =>  'media',
+                        'title'     =>  __('Изображение баннера делителя', 'wppandashop5'),
+                        'default'   =>  '',
+                    ),
+
+                    array(
+                        'id'        =>  'n_top_block',
+                        'type'      =>  'text',
+                        'title'     =>  __('ID продуктов для блока топ продаж, через запятую', 'wppandashop5'),
+                        'default'   =>  '',
                     ),
                 )
             );

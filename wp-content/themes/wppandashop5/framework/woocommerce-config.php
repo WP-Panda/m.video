@@ -46,6 +46,7 @@ remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_
  * Отключение хлебных крошек WooCoommerce
  */
 add_action( 'init', 'jk_remove_wc_breadcrumbs' );
+
 function jk_remove_wc_breadcrumbs() {
     remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
     add_action('woocommerce_before_main_content','bootstrap_breadcrumb',20);
@@ -55,14 +56,21 @@ function jk_remove_wc_breadcrumbs() {
 // Отключение стилей по одному
 add_filter( 'woocommerce_enqueue_styles', 'jk_dequeue_styles' );
 function jk_dequeue_styles( $enqueue_styles ) {
-    // unset( $enqueue_styles['woocommerce-general'] );	// Отключение общий стилей
-    unset( $enqueue_styles['woocommerce-layout'] );		// Отключение стилей шаблонов
-    // unset( $enqueue_styles['woocommerce-smallscreen'] );	// Отключение оптимизации для маленьких экранов
-    return $enqueue_styles;
+    // 	// Отключение общий стилей
+    if( is_cart() || is_checkout() )
+        return $enqueue_styles;
+
+
+        unset($enqueue_styles['woocommerce-general']);
+        unset($enqueue_styles['woocommerce-layout']);        // Отключение стилей шаблонов
+
+        // unset( $enqueue_styles['woocommerce-smallscreen'] );	// Отключение оптимизации для маленьких экранов
+        return $enqueue_styles;
+
 }
 
 // // Или просто удалить их все в одной строкой
-add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+//add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
 /**
  * новая миниатюра и распродажа

@@ -3,7 +3,7 @@
 
     /*===================================================================================*/
     /*  owl carousel
-    /*===================================================================================*/
+     /*===================================================================================*/
     $(document).ready(function () {
         var dragging = true;
         var owlElementID = "#owl-main";
@@ -119,10 +119,10 @@
                     items : 1,
                 },
                 onTranslate : function(){
-                      echo.render();
-                    }
+                    echo.render();
+                }
             },
-            
+
 
             onInitialize   : function() {
                 fadeIn();
@@ -232,7 +232,7 @@
                 dragging = false;
             }
         });
-   
+
         $('.banner-slider').owlCarousel({
             loop:true,
             margin:30,
@@ -369,7 +369,7 @@
             margin:10,
             nav:false,
             dots:true,
-            
+
             items:1,
             responsive:{
                 0:{
@@ -387,7 +387,7 @@
             loop:true,
             margin:10,
             nav:true,
-             navText: ["", ""],
+            navText: ["", ""],
             items:5,
             responsive:{
                 0:{
@@ -419,7 +419,7 @@
                 }
             }
         });
-        
+
         $('.handtool-featured').owlCarousel({
             loop:true,
             margin:30,
@@ -652,7 +652,7 @@
             .owlCarousel({
                 items: 1,
                 margin: 10,
-                nav: true,
+                nav: false,
                 dots: true,
             })
             .on('changed.owl.carousel', function (e) {
@@ -669,7 +669,8 @@
                 items: 6,
                 nav: true,
                 autoWidth:true,
-                dots: true
+                dots: true,
+                navigationText : [".","."],
             })
             .on('click', '.owl-item', function () {
                 $sync1.trigger('to.owl.carousel', [$(this).index(), duration, true]);
@@ -690,7 +691,7 @@
             $this.addClass('active').parent().siblings().find('.active').removeClass('active');
             return false;
         });
-        
+
 
         $('.fashion-v6-featured').owlCarousel({
             loop:true,
@@ -733,10 +734,10 @@
             }
         });
 
-    /*===================================================================================*/
-    /*  LAZY LOAD IMAGES USING ECHO
-    /*===================================================================================*/
-    
+        /*===================================================================================*/
+        /*  LAZY LOAD IMAGES USING ECHO
+         /*===================================================================================*/
+
         echo.init({
             offset: 100,
             throttle: 250,
@@ -745,10 +746,10 @@
 
 
 
-    /*===================================================================================*/
-    /* PRICE SLIDER
-    /*===================================================================================*/
-     
+        /*===================================================================================*/
+        /* PRICE SLIDER
+         /*===================================================================================*/
+
         // Price Slider
         if ($('.price-slider').length > 0) {
             $('.price-slider').slider({
@@ -759,13 +760,13 @@
                 handle: "square"
 
             });
-           
+
         }
-         
-    
-    /*===================================================================================*/
-    /*  WOW 
-    /*===================================================================================*/
+
+
+        /*===================================================================================*/
+        /*  WOW
+         /*===================================================================================*/
 
         var wow = new WOW(
             {
@@ -775,42 +776,42 @@
                 mobile:       true,       // trigger animations on mobile devices (default is true)
                 live:         true,       // act on asynchronously loaded content (default is true)
                 callback:     function(box) {
-                  // the callback is fired every time an animation is started
-                  // the argument that is passed in is the DOM node being animated
+                    // the callback is fired every time an animation is started
+                    // the argument that is passed in is the DOM node being animated
                 }
             }
         );
         wow.init();
 
-  
-   /*===================================================================================*/
-   /*  TOOLTIP 
-   /*===================================================================================*/
-        $("[data-toggle='tooltip']").tooltip(); 
+
+        /*===================================================================================*/
+        /*  TOOLTIP
+         /*===================================================================================*/
+        $("[data-toggle='tooltip']").tooltip();
         $(document).on('click', '#transitionType li a', function(e) {
             $('#transitionType li a').removeClass('active');
             $(this).addClass('active');
-            
+
             var newValue = $(this).attr('data-transition-type');
-            
+
             $(owlElementID).data("owlCarousel").transitionTypes(newValue);
             $(owlElementID).trigger("owl.next");
-            
+
             return false;
-                
+
         });
 
 
-   /*===================================================================================*/
-   /*  custom select 
-   /*===================================================================================*/
+        /*===================================================================================*/
+        /*  custom select
+         /*===================================================================================*/
 
         $('select.styled').customSelect();
     });
 
     /*===================================================================================*/
     /*  YAMM DROPDOWN
-    /*===================================================================================*/
+     /*===================================================================================*/
     $(document).on('click', '.yamm .dropdown-menu', function(e) {
         e.stopPropagation()
     });
@@ -823,7 +824,7 @@
 
     /*===================================================================================*/
     /* CART DROPDOWN
-    /*===================================================================================*/
+     /*===================================================================================*/
     $('#cart-drop').hover(
         function(){
             $(this).find('ul.dropdown-menu').fadeIn();
@@ -909,15 +910,33 @@
     });
 
     /** Прокрутка к табу */
-   /* $('.abbrer').click(function(){
+    /* $('.abbrer').click(function(){
 
-        var $target = $(this).attr('href');
+     var $target = $(this).attr('href');
 
-        $('html,body').animate({
-            scrollTop: $($target).offset().top
-        },500);
+     $('html,body').animate({
+     scrollTop: $($target).offset().top
+     },500);
 
-    });*/
+     });*/
+
+    $('.owl-news').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
+
 
 })(jQuery);
 

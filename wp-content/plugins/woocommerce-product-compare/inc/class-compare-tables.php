@@ -211,13 +211,20 @@ if ( ! class_exists( 'BE_Compare_Tables' ) ) :
 									if( $result !== false ) {
 										$product = wc_get_product( $pid );
 										$terms = get_the_terms( $product->id, 'pa_' . $attributes[ $result ]->attribute_name );
-										if( is_array( $terms ) )
-											$feature_specs = array_map( array( $this, 'map_attribute_name' ), $terms );
-										else $feature_specs = '';
+										if( is_array( $terms ) ) {
+											$feature_specs = array_map(array($this, 'map_attribute_name'), $terms);
+										} else {
+											$feature_specs = 'Нет данных';
+										}
 									}
 									// custom feature information
-								} else
-									$feature_specs = $this->data[ $cid ][ $fid ][ $pid ];
+								} else {
+									if ( ! empty ($this->data[$cid][$fid][$pid])) {
+										$feature_specs = $this->data[$cid][$fid][$pid];
+									} else {
+										$feature_specs = 'Нет данных';
+									}
+								}
 								?>
 								<td><?php if( isset( $feature_specs ) ) :
 										if( is_array( $feature_specs ) )
@@ -295,11 +302,15 @@ if ( ! class_exists( 'BE_Compare_Tables' ) ) :
 										$terms = get_the_terms( $product->id, 'pa_' . $attributes[ $result ]->attribute_name );
 										if( is_array( $terms ) )
 											$feature_specs = array_map( array( $this, 'map_attribute_name' ), $terms );
-										else $feature_specs = '';
+										else $feature_specs = 'нет данных';
 									}
 									// custom feature information
 								} else
-									$feature_specs = $this->data[ $cid ][ $fid ][ $pid ];
+									if( ! empty( $this->data[ $cid ][ $fid ][ $pid ])) {
+										$feature_specs = $this->data[$cid][$fid][$pid];
+									} else {
+										$feature_specs = 'нет данных';
+									}
 								?>
 								<td><?php if( isset( $feature_specs ) ) :
 										if( is_array( $feature_specs ) )

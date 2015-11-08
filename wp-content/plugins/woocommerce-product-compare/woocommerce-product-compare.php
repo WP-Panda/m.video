@@ -342,14 +342,13 @@ function be_woocommerce_compare_init() {
 
                     $postType = sanitize_title( $_REQUEST['post_type'] );
                     $enable_compare_product = !empty($_REQUEST['enable_compare_product']) ? sanitize_title( $_REQUEST['enable_compare_product'] ) : '';
-
-                    $selcat_compare_product = sanitize_title( $_REQUEST['selcat_compare_product'] );
-
                     // Only save for product post types
                     if( 'product' == $postType ) {
 
+                        $selcat_compare_product = sanitize_title( $_REQUEST['selcat_compare_product'] );
                         update_post_meta( $post_id, 'enable_compare_product', ( isset( $enable_compare_product ) && $enable_compare_product ) ? 'yes' : 'no' );
                         update_post_meta( $post_id, 'selcat_compare_product', $selcat_compare_product );
+
                     }
 
 
