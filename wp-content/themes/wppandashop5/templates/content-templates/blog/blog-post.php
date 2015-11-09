@@ -6,8 +6,8 @@
 	<?php } ?>
 	<h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
 	<span class="author-date">
-		<?php printf(__('By %s - %s','wppandashop5'),get_the_author(),get_the_date('d.m.Y'));?>
+		<?php printf(__('%s - %s','wppandashop5'),get_the_author(),get_the_date('d.m.Y'));?>
 	</span>
 	<?php the_excerpt(); ?>
-	<a href="<?php the_permalink(); ?>" class="btn btn-upper btn-primary" title="<?php the_title(); ?>"><?php _e('read more','wppandashop5'); ?></a>
+	<a href="<?php the_permalink(); ?>" class="btn btn-upper btn-primary" title="<?php the_title(); ?>"><?php _e('Читать дальше','wppandashop5'); ?></a>
 </div>

@@ -1,14 +1,15 @@
 <?php global $wps5_option;
-$logo = $wps5_option['custom_admin_logo']; ?>
+$logo = $wps5_option['custom_admin_logo'];
+$text = ! empty( $wps5_option['h_t'] ) ? $wps5_option['h_t'] : '+38 099 454 43 30'?>
 <header>
 	<div class="header-v2">
 		<div class="top">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-6 top-bar">
-						<span class="welcome-msg hidden-xs">Default welcome msg!</span>
+					<div class="col-xs-12 col-sm-12 col-md-5 top-bar">
+						<span class="welcome-msg hidden-xs"><?php echo $text ?></span>
 					</div>
-					<div class="col-xs-12 col-sm-12 col-md-6 top-navbar">
+					<div class="col-xs-12 col-sm-12 col-md-7 top-navbar">
 						<?php get_template_part('templates/components/navigation/top-navbar'); ?>
 					</div>
 				</div><!-- /.row -->

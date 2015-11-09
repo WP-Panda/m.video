@@ -7,6 +7,7 @@
 
 
 			<li class="hidden-xs"><a href="<?php echo home_url('wishlist/') ?>">Список желаний</a></li>
+			<li class="hidden-xs"><a href="<?php echo home_url('compare/') ?>">Сравнение</a></li>
 			<?php if ( WC()->cart->get_cart_contents_count() !== 0 ) { ?>
 				<li class="hidden-xs"><a href="<?php echo $woocommerce->cart->get_cart_url(); ?>"><?php _e('Корзина','wppandashop5'); ?></a></li>
 				<li class=""><a href="<?php echo $woocommerce->cart->get_checkout_url(); ?>"><?php _e('Оформление заказа','wppandashop5'); ?></a></li>

@@ -547,7 +547,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
             /*-----------------------------------------------------------------------------------*/
             /*  - Typography
             /*-----------------------------------------------------------------------------------*/
-            $this->sections[] = array(
+        /*    $this->sections[] = array(
                 'title'      =>  __('Typography', 'wppandashop5'),
                 'desc'       =>  __('Welcome to the WP Panda Shop 5 Options Panel! Control and configure the typography of your theme.', 'wppandashop5'),
                 'icon'       =>  'font-icon-pencil',
@@ -687,7 +687,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
             /*-----------------------------------------------------------------------------------*/
             /*  - Colors
             /*-----------------------------------------------------------------------------------*/
-            $this->sections[] = array(
+       /*     $this->sections[] = array(
                 'title'      =>  __('Colors', 'wppandashop5'),
                 'desc'       =>  __('Welcome to the WP Panda Shop 5 Options Panel! Control and configure the colors setup of your theme.', 'wppandashop5'),
                 'icon'       =>  'font-icon-brush',
@@ -756,14 +756,14 @@ if (!class_exists('Redux_Framework_sample_config')) {
             /*-----------------------------------------------------------------------------------*/
             $this->sections[] = array(
                 'title'     =>  __('Header', 'wppandashop5'),
-                'icon'      =>  'font-icon-list-2'
-            );
-
-                // Logo
-                $this->sections[] = array(
-                    'title'         =>  __('Menu & Logo', 'wppandashop5'),
-                    'subsection'    =>  true,
-                    'icon'          =>  'font-icon-arrow-right-simple-thin-round',
+                'icon'      =>  'font-icon-list-2',
+//            );
+//
+//                // Logo
+//                $this->sections[] = array(
+//                    'title'         =>  __('Menu & Logo', 'wppandashop5'),
+//                    'subsection'    =>  true,
+//                    'icon'          =>  'font-icon-arrow-right-simple-thin-round',
                     'customizer'    =>  false,
                     'fields'        =>  array(
 
@@ -788,7 +788,17 @@ if (!class_exists('Redux_Framework_sample_config')) {
                             'default'  => '1'
                         ),
 
-                        // Menu Type
+                        array(
+                            'id'        =>  'h_t',
+                            'type'      =>  'text',
+                           // 'required'  =>  array('use_logo_image','=','1'),
+                            'title'     =>  __('Текст верхней панели', 'wppandashop5'),
+                            //'subtitle'  =>  __('<em>Optional</em>. Upload your Dark Retina Logo version for Retina Devices. Double Size of Dark Logo PNG.', 'wppandashop5'),
+                            'desc'      =>  '+38 099 454 43 30'
+                        ),
+
+
+            /*            // Menu Type
                         array(
                             'id'        =>  'global_menu_type',
                             'type'      =>  'button_set',
@@ -882,11 +892,11 @@ if (!class_exists('Redux_Framework_sample_config')) {
                             'desc'      =>  ''  
                         ),
 
-                    )
+      */              )
                 );
 
                 // Top Side
-                $this->sections[] = array(
+        /*        $this->sections[] = array(
                     'title'         =>  __('Top Side', 'wppandashop5'),
                     'subsection'    =>  true,
                     'icon'          =>  'font-icon-arrow-right-simple-thin-round',
@@ -1184,7 +1194,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
             /*-----------------------------------------------------------------------------------*/
 
             // Title Header
-            $this->sections[] = array(
+        /*    $this->sections[] = array(
                 'title'         =>  __('Title Header', 'wppandashop5'),
                 'desc'          =>  __('Control and configure the globals variable about the title header for pages, posts and custom post types ( portfolio and team ). If you want can modify in each page the all settings based on your needs.', 'wppandashop5'),
                 'icon'          =>  'font-icon-book',
@@ -1646,7 +1656,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
             /*-----------------------------------------------------------------------------------*/
             /*  - Team
             /*-----------------------------------------------------------------------------------*/
-            $this->sections[] = array(
+        /*    $this->sections[] = array(
                 'title'      =>  __('Team', 'wppandashop5'),
                 'desc'       =>  __('Control and configure the general setup of your team.', 'wppandashop5'),
                 'icon'       =>  'font-icon-group',
@@ -1718,7 +1728,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
             /*-----------------------------------------------------------------------------------*/
             /*  - Blog
             /*-----------------------------------------------------------------------------------*/
-            $this->sections[] = array(
+       /*     $this->sections[] = array(
                 'title'      =>  __('Blog', 'wppandashop5'),
                 'desc'       =>  __('Control and configure the general setup of your blog.', 'wppandashop5'),
                 'icon'       =>  'font-icon-align-left',
@@ -1856,7 +1866,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
             /*-----------------------------------------------------------------------------------*/
             /*  - Misc
             /*-----------------------------------------------------------------------------------*/
-            $this->sections[] = array(
+        /*    $this->sections[] = array(
                 'title'     =>  __('Misc', 'wppandashop5'),
                 'desc'      =>  __('Control and configure the misc options available.', 'wppandashop5'),
                 'icon'      =>  'font-icon-droplets',
@@ -2835,7 +2845,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
             /*-----------------------------------------------------------------------------------*/
             /*  - Automatic Updates
             /*-----------------------------------------------------------------------------------*/
-            $this->sections[] = array(
+        /*    $this->sections[] = array(
                 'title'     =>  __('Theme Updates', 'wppandashop5'),
                 'desc'      =>  __('Here you can enabled the Automatic Update for WP Panda Shop 5 Theme.', 'wppandashop5'),
                 'icon'      =>  'font-icon-cycle',

@@ -7,7 +7,7 @@ get_header(); ?>
         <div class="container">
             <div class="row blog">
 
-                <div class="col-md-9">
+                <div class="col-md-12">
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
                         <?php get_template_part('templates/content-templates/blog/blog','single-post'); ?>
@@ -17,10 +17,6 @@ get_header(); ?>
                     <?php endwhile; else: ?>
                         <p><?php _e('Sorry, no posts matched your criteria.','wppandashop5'); ?></p>
                     <?php endif; ?>
-                </div>
-
-                <div class="col-md-3 sidebar">
-                    <?php get_sidebar(); ?>
                 </div>
 
             </div>

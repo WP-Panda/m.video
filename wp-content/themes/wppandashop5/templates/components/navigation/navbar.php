@@ -1,4 +1,3 @@
-<!-- ============================================== NAVBAR ============================================== -->
 <div class="header-nav animate-dropdown">
     <div class="yamm navbar-default" role="navigation">
         <div class="nav-bg-class">
@@ -8,8 +7,7 @@
                 'menu'            => '',
             ));
             ?>
-        </div><!-- /.nav-bg-class -->
-    </div><!-- /.navbar-default -->
+        </div>
+    </div>
 
-</div><!-- /.header-nav -->
-<!-- ============================================== NAVBAR : END ============================================== -->
+</div>

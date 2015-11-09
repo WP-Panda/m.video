@@ -22,6 +22,6 @@ echo apply_filters( 'woocommerce_loop_add_to_cart_link',
 		$product->is_purchasable() && $product->is_in_stock() ? 'add_to_cart_button' : '',
 		esc_attr( $product->product_type ),
 		//esc_html( $product->add_to_cart_text() )
-		esc_html(__('Add to Cart','wppandashop5'))
+		esc_html(__('В корзину','wppandashop5'))
 	),
 $product );

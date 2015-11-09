@@ -11431,3 +11431,9 @@ footer .menu li.current_page_item {
 .smaller img{
   width: 60px;
 }
+.homer h3.name a {
+  color: #434343;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
