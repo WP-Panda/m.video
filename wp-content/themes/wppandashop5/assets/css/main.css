@@ -11329,3 +11329,105 @@ p.comment-form-rating span a {
 }
 
 .banner-6x4 img{width: 100%!important;}
+
+/**************************************/
+/***** wordpress **********************/
+/**************************************/
+.entry-content img {
+  margin: 0 0 1.5em 0;
+}
+.alignleft, img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left;
+}
+.alignright, img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right;
+}
+.aligncenter, img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both;
+}
+.alignnone, img.alignnone {
+  /* not sure about this one */
+}
+.wp-caption {
+  margin-bottom: 1.5em;
+  text-align: center;
+  padding-top: 5px;
+}
+.wp-caption img {
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+}
+.wp-caption p.wp-caption-text {
+  line-height: 1.5;
+  font-size: 10px;
+  margin: 0;
+}
+.wp-smiley {
+  margin: 0 !important;
+  max-height: 1em;
+}
+blockquote.left {
+  margin-right: 20px;
+  text-align: right;
+  margin-left: 0;
+  width: 33%;
+  float: left;
+}
+blockquote.right {
+  margin-left: 20px;
+  text-align: left;
+  margin-right: 0;
+  width: 33%;
+  float: right;
+}
+
+/*********************/
+footer .menu li a {
+  color: #969696;
+  padding: 12px 0px;
+  border-bottom: 1px solid #313131;
+  display: block;
+}
+
+footer .menu li a:hover {
+  color: #45a6e6;
+}
+
+img.logo{
+  width: 100%;
+}
+
+footer .footer-outer-2 .payment-card img {
+  width: 35px;
+  opacity: 1;
+}
+
+footer .footer-outer-2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #000;
+}
+
+footer .menu li.current_page_item a{
+  color: #45a6e6;
+}
+
+footer .menu li.current_page_item {
+  background-color: transparent;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+.smaller img{
+  width: 60px;
+}

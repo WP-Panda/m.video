@@ -67,7 +67,7 @@ $e = 'mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm mmmmmmmmmmmmmmmmm
  * Сайдбары
  */
 $args = array(
-    'name'          => 'Sidebar %d',
+    'name'          => 'Сайдбар %d',
     'id'            => "sidebar",
     'before_widget' => '<li id="%1$s" class="widget %2$s">',
     'after_widget'  => '</li>',
@@ -75,6 +75,61 @@ $args = array(
     'after_title'   => '</h2>'
 );
 register_sidebars( 2, $args );
+
+
+/**
+ * Сайдбар футера
+ */
+
+function register_cr_widgets(){
+    register_sidebar( array(
+        'name' => sprintf(__('Футер %d'), 1 ),
+        'id' => "footer-1",
+        'description' => '',
+        'class' => '',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => "</div>\n",
+        'before_title' => '<div class="foot-title"><h4 class="title">',
+        'after_title' => "</h4></div>\n",
+    ) );
+
+    register_sidebar( array(
+        'name' => sprintf(__('Футер %d'), 2 ),
+        'id' => "footer-2",
+        'description' => '',
+        'class' => '',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => "</div>\n",
+        'before_title' => '<div class="foot-title"><h4 class="title">',
+        'after_title' => "</h4></div>\n",
+    ) );
+
+    register_sidebar( array(
+        'name' => sprintf(__('Футер %d'), 3 ),
+        'id' => "footer-3",
+        'description' => '',
+        'class' => '',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => "</div>\n",
+        'before_title' => '<div class="foot-title"><h4 class="title">',
+        'after_title' => "</h4></div>\n",
+    ) );
+
+    register_sidebar( array(
+        'name' => sprintf(__('Футер %d'), 4 ),
+        'id' => "footer-4",
+        'description' => '',
+        'class' => '',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => "</div>\n",
+        'before_title' => '<div class="foot-title"><h4 class="title">',
+        'after_title' => "</h4></div>\n",
+    ) );
+}
+add_action( 'widgets_init', 'register_cr_widgets' );
+
+
+
 /**
  * Подключение всякого
  */

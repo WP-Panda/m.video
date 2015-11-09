@@ -1,127 +1,94 @@
-<!-- ============================================== FOOTER-v2 ============================================== -->
+<?php global $wps5_option;
+$logo = $wps5_option['custom_admin_logo'];
+$f 	= ( ! empty( $wps5_option['facebook-url'] ))	 ? $wps5_option['facebook-url'] 	: '' ;
+$f1 = ( ! empty( $wps5_option['google-plus-url'] ))	 ? $wps5_option['google-plus-url']  : "" ;
+$f2 = ( ! empty( $wps5_option['twitter-url'] ))		 ? $wps5_option['twitter-url'] 		: "" ;
+$f3 = ( ! empty( $wps5_option['youtube-url'] ))	 	 ? $wps5_option['youtube-url'] 		: "" ;
+$cop = ( ! empty( $wps5_option['footer_credits_text'] ))	? $wps5_option['footer_credits_text'] : '<p class="copy-rights"><i class="fa fa-copyright"></i> 2015 <a href="http://wp-panda.com">WP Panda</a></p>' ;
+?>
 <footer>
 	<div class="footer-v2">
 		<div class="footer-outer-1">
 			<div class="container">
 				<div class="row">
+
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<?php
+						if ( function_exists('dynamic_sidebar') )
+							dynamic_sidebar('footer-1');
+						?>
+					</div>
+
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<?php
+						if ( function_exists('dynamic_sidebar') )
+							dynamic_sidebar('footer-2');
+						?>
+					</div>
+
+					<div class="col-xs-12 col-sm-6 col-md-3">
+						<?php
+						if ( function_exists('dynamic_sidebar') )
+							dynamic_sidebar('footer-3');
+						?>
+					</div>
+
 					<div class="col-xs-12 col-sm-6 col-md-3 company-info">
 						<div class="logo">
-							<?php get_template_part('templates/components/footer/logo','mixed'); ?>
+							<?php
+							if( ! empty( $logo ) ) {
+								echo '<a href="' . home_url() . '" alt="' . get_bloginfo('name'). '"><img class="logo" src="' . $logo['url'] . '" title="' . get_bloginfo('name'). '"></a>';
+							} else {
+								get_template_part('templates/components/footer/logo','mixed');
+							}
+							?>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipi scing elit. Duis a feugiat nibh. Aliq uam scele risque tellus et tortor laoreet..</p>
+						<?php
+						if ( function_exists('dynamic_sidebar') )
+							dynamic_sidebar('footer-4');
+						?>
 						<div class="social-network">
-							<h4 class="title">folow us on</h4>
+							<h4 class="title">В социальных сетях</h4>
 							<div class="footer-social">
 								<ul class="social-links list-unstyled list-inline">
-									<li><a href="#" class="link"><span class="icon facebook"><i class="fa fa-facebook"></i></span></a></li>
-									<li><a href="#" class="link"><span class="icon google-plus"><i class="fa fa-google-plus"></i></span></a></li>
-									<li><a href="#" class="link"><span class="icon twitter"><i class="fa fa-twitter"></i></span></a></li>
-									<li><a href="#" class="link"><span class="icon tumblr"><i class="fa fa-tumblr"></i></span></a></li>
-									<li><a href="#" class="link"><span class="icon pinterest"><i class="fa fa-pinterest"></i></span></a></li>
+									<?php if(!empty($f)) { ?>
+									<li><a href="<?php echo $f ?>" class="link"><span class="icon facebook"><i class="fa fa-facebook"></i></span></a></li>
+									<?php } ?>
+									<?php if(!empty($f1)) { ?>
+									<li><a href="<?php echo $f1 ?>" class="link"><span class="icon google-plus"><i class="fa fa-google-plus"></i></span></a></li>
+									<?php } ?>
+									<?php if(!empty($f2)) { ?>
+									<li><a href="<?php echo $f2 ?>" class="link"><span class="icon twitter"><i class="fa fa-twitter"></i></span></a></li>
+									<?php } ?>
+									<?php if(!empty($f3)) { ?>
+									<li><a href="<?php echo $f3 ?>" class="link"><span class="icon tumblr"><i class="fa fa-tumblr"></i></span></a></li>
+									<?php } ?>
+
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3 foot-menu information">
-						<div class="foot-menu-outer">
-							<div class="foot-title">
-								<h4 class="title">information</h4>
-							</div>
-							<div class="list-links">
-								<ul class="foot-link list-unstyled">
-									<li><a href="#" class="">about us</a></li>
-									<li><a href="#">delivery information</a></li>
-									<li><a href="#">privacy policy</a></li>
-									<li><a href="#">terms &amp; conditions</a></li>
-									<li><a href="#">manufacutre</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3 latest-tweet">
-						<div class="foot-title">
-							<h4 class="title">latest tweet</h4>
-						</div>
-						<div class="list-links">
-							<ul class="tweet-link list-unstyled">
-								<li>
-									<div class="tweet-icon">
-										<p class="text"><a href="#" class="t-link">@Rokanthemes</a> Phasellus mauris mauris, maximus in dolor mauris mauris acm auris mauris.</p>
-									</div>
-								</li>
 
-								<li>
-									<div class="tweet-icon">
-										<p class="text"><a href="#" class="t-link">@Rokanthemes</a> Phasellus mauris mauris, maximus in dolor mauris mauris acm auris mauris.</p>
-									</div>
-								</li>
-
-								<li>
-									<div class="tweet-icon">
-										<p class="text"><a href="#" class="t-link">@Rokanthemes</a> Phasellus mauris mauris, maximus in dolor mauris mauris acm auris mauris.</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<div class="contact more-info">
-							<div class="contact-outer">
-								<div class="foot-title">
-									<h4 class="title">more info</h4>
-								</div>
-								<div class="location media">
-									<span class="map icon media-left">
-										<i class="fa fa-map-marker"></i>
-									</span>
-									<div class="content media-body">
-										<address>68 Dohava Stress,Lorem isput Spusts <br> United States- New York</address>
-									</div>
-								</div>
-								<div class="phone-no media">
-									<span class="phone icon media-left">
-										<i class="fa fa-phone"></i>
-									</span>
-									<span class="content media-body">
-										<span class="contact-no">+111 222 3344 5566</span>
-										<span class="contact-no">+111 222 3344 5566</span>
-									</span>
-								</div>
-								<div class="email-id media">
-									<span class="mail icon media-left">
-										<i class="fa fa-envelope"></i>
-									</span>
-									<span class="content media-body">
-										<a href="#" class="email">Rokanthemes@gmail.com </a>
-										<a href="#" class="email">SupportRokan@gmail.com</a>
-									</span>
-								</div>
-							</div>
-						</div>
-					</div><!-- /.col -->			
-				</div><!-- /.row -->
-			</div><!-- /.container -->
-		</div><!-- /.footer-outer-1 -->
+				</div>
+			</div>
+		</div>
 
 		<div class="footer-outer-2 outer-top-vs">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-7 col-md-6">
-						<p class="copy-rights">copyright <i class="fa fa-copyright"></i> 2015 <a href="#">Rokan Themes</a> all the rights reserved.</p>
+						<?php echo $cop ?>
 					</div>
 					<div class="col-xs-12 col-sm-5 col-md-6 payment-card">
 						<ul class="payment-link list-unstyled list-inline">
-							<li><a href="#"><img src="assets/images/payments/6.png" alt="#"></a></li>
-							<li><a href="#"><img src="assets/images/payments/7.png" alt=""></a></li>
-							<li><a href=""><img src="assets/images/payments/8.png" alt=""></a></li>
-							<li><a href=""><img src="assets/images/payments/9.png" alt=""></a></li>
-							<li><a href=""><img src="assets/images/payments/10.png" alt=""></a></li>
+							<li><a href="javascript:void(0);"><img src="<?php get_home_url(); ?>/wp-content/themes/wppandashop5/assets/images/payments/master.png" alt="#"></a></li>
+							<li><a href="javascript:void(0);"><img src="<?php get_home_url(); ?>/wp-content/themes/wppandashop5/assets/images/payments/visa.png" alt=""></a></li>
+							<li><a href="http://wp-panda.com/" data-toggle="tooltip" data-placement="top" title="Создание сайта"><img style="width: 50px;" src="http://wp-panda.com/wp-content/uploads/2015/03/pandalogo.png" alt="Создание сайта"></a></li>
 						</ul>
-					</div><!-- /.col -->
-				</div><!-- /.row -->
-			</div><!-- /.container -->
-		</div><!-- /.footer-outer-2 -->
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 </footer>
-<!-- ============================================== FOOTER-v2 : END ============================================== -->

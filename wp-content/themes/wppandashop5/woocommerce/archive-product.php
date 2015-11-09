@@ -76,12 +76,12 @@ $img_link = (! empty( $crsh5_meta ) && ! empty( $crsh5_meta['bn_link']  )) ? $cr
 
 								<div class="col-sm-3 col-md-3">
 									<div class="product-item-view">
-										<ul class="nav nav-tabs">
+										<?php /* ul class="nav nav-tabs">
 											<li class="active"><a data-toggle="tab" href="#grid-container"><i class="icon fa fa-th"></i></a></li>
 											<li><a data-toggle="tab" href="#list-container"><i class="icon fa fa-th-list"></i></a></li>
-										</ul>
-									</div><!-- /.controls-tabs -->
-								</div><!-- /.col -->
+										</ul */ ?>
+									</div>
+								</div>
 								<?php
 								/**
 								 * woocommerce_before_shop_loop hook

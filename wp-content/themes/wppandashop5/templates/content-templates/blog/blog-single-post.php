@@ -4,7 +4,7 @@
 		<?php the_post_thumbnail( array( 'class' => ' img-responsive ',870, 400 ) ); ?>
 	<?php } ?>
 	<h1><?php the_title(); ?></h1>
-	<?php if ( ! is_page('wishlist')) { ?>
+	<?php if ( ! is_page()) { ?>
 		<span class="author-date">
 			<?php printf(__('By %s - %s','wppandashop5'),get_the_author(),get_the_date('d.m.Y'));?>
 		</span>

@@ -238,8 +238,8 @@ if (!class_exists('Redux_Framework_sample_config')) {
             /*  - General
             /*-----------------------------------------------------------------------------------*/
             $this->sections[] = array(
-                'title'      =>  __('General', 'wppandashop5'),
-                'desc'       =>  __('Welcome to the WP Panda Shop 5 Options Panel! Control and configure the general setup of your theme.', 'wppandashop5'),
+                'title'      =>  __('Основные', 'wppandashop5'),
+                //'desc'       =>  __('Welcome to the WP Panda Shop 5 Options Panel! Control and configure the general setup of your theme.', 'wppandashop5'),
                 'icon'       =>  'font-icon-house',
                 'customizer' =>  false,  
                 'fields'     =>  array(
@@ -247,8 +247,8 @@ if (!class_exists('Redux_Framework_sample_config')) {
                     array(
                         'id'        =>  'site_layout_mode',
                         'type'      =>  'image_select',
-                        'title'     =>  __('Site Layout Mode', 'wppandashop5'),
-                        'subtitle'  =>  __('Select the main layout for the site.', 'wppandashop5'),
+                        'title'     =>  __('Стиль сайта', 'wppandashop5'),
+                       // 'subtitle'  =>  __('Select the main layout for the site.', 'wppandashop5'),
                         'desc'      =>  '',
                         'options'   =>  array(
                             'wide'    =>  array(
@@ -266,7 +266,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
                     array(
                         'id'        =>  'cyrillic_site',
                         'type'      =>  'button_set',
-                        'title'     =>  __('Enable cirilic options', 'wppandashop5'),
+                        'title'     =>  __('Включить опции для киррилицы', 'wppandashop5'),
                         'subtitle'  =>  __('To enable the adaptation of the site to Russian language', 'wppandashop5'),
                         'desc'      =>  '',
                         'options'   =>  array(
@@ -280,20 +280,20 @@ if (!class_exists('Redux_Framework_sample_config')) {
                     array(
                         'id'        =>  'custom_admin_logo',
                         'type'      =>  'media', 
-                        'title'     =>  __('Custom Admin Login Logo', 'wppandashop5'),
-                        'subtitle'  =>  __('Upload 260 x 98px image here to replace the admin login logo', 'wppandashop5'),
+                        'title'     =>  __('Лого', 'wppandashop5'),
+                        //'subtitle'  =>  __('Upload 260 x 98px image here to replace the admin login logo', 'wppandashop5'),
                         'desc'      =>  ''
                     ),
 
                     array(
                         'id'        =>  'favicon',
                         'type'      =>  'media', 
-                        'title'     =>  __('Favicon Upload', 'wppandashop5'),
-                        'subtitle'  =>  __('Upload a 16px x 16px Png/Gif image that will represent your website\'s favicon.', 'wppandashop5'),
+                        'title'     =>  __('Фавикон', 'wppandashop5'),
+                       // 'subtitle'  =>  __('Upload a 16px x 16px Png/Gif image that will represent your website\'s favicon.', 'wppandashop5'),
                         'desc'      =>  ''
                     ),
 
-                    array(
+                   /* array(
                         'id'        =>  'custom_ios_bookmark_title',
                         'type'      =>  'text', 
                         'title'     =>  __('Custom iOS Bookmark Title', 'wppandashop5'),
@@ -332,6 +332,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
                         'subtitle'  =>  __('Upload a 144px x 144px Png image that will be your website bookmark on retina iOS devices.', 'wppandashop5'),
                         'desc'      =>  ''
                     ),
+                   */
 
                 )
             );
@@ -395,7 +396,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
                 ); */
 
                 // Common
-                $this->sections[] = array(
+              /*  $this->sections[] = array(
                     'title'         =>  __('Common Options', 'wppandashop5'),
                     'subsection'    =>  true,
                     'icon'          =>  'font-icon-arrow-right-simple-thin-round',
@@ -541,7 +542,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
                     )
                 );
 
-
+ */
             
             /*-----------------------------------------------------------------------------------*/
             /*  - Typography
@@ -1500,7 +1501,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
             /*  - Footer
             /*-----------------------------------------------------------------------------------*/
             $this->sections[] = array(
-                'title'      =>  __('Footer', 'wppandashop5'),
+                'title'      =>  __('Футер', 'wppandashop5'),
                 'desc'       =>  __('Control and configure of your footer area.', 'wppandashop5'),
                 'icon'       =>  'font-icon-cone',
                 'customizer' =>  false,
@@ -1523,7 +1524,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
                         'default'  => '1'
                     ),
 
-                    array(
+                   /* array(
                         'id'        =>  'global_footer_widget_visibility',
                         'type'      =>  'button_set',
                         'title'     =>  __('Global Footer Widgets Area', 'wppandashop5'),
@@ -1564,11 +1565,12 @@ if (!class_exists('Redux_Framework_sample_config')) {
                     ),
 
                     // Copyright/Credits Text
+                   */
                     array(
                         'id'        =>  'footer_credits_text',
                         'type'      =>  'editor',
-                        'title'     =>  __('Credits Section Area', 'wppandashop5'),
-                        'subtitle'  =>  __('Optional. Please enter your custom credits/copyright section text.', 'wppandashop5'),
+                        'title'     =>  __('Копирайт', 'wppandashop5'),
+                       // 'subtitle'  =>  __('Optional. Please enter your custom credits/copyright section text.', 'wppandashop5'),
                         'desc'      =>  '',
                         'args'   => array(
                             'teeny'         => false,
@@ -2564,11 +2566,39 @@ if (!class_exists('Redux_Framework_sample_config')) {
             /*  - Social
             /*-----------------------------------------------------------------------------------*/
             $this->sections[] = array(
-                'title'     =>  __('Social', 'wppandashop5'),
-                'desc'      =>  __('Control and configure the general setup of your social profile.', 'wppandashop5'),
+                'title'     =>  __('Соцсети', 'wppandashop5'),
+                //'desc'      =>  __('Control and configure the general setup of your social profile.', 'wppandashop5'),
                 'icon'      =>  'font-icon-social-twitter',
                 'fields'    =>  array(
                     array(
+                        'id'        =>  'facebook-url',
+                        'type'      =>  'text',
+                        'title'     =>  __('Facebook URL', 'wppandashop5'),
+                        //'subtitle'  =>  __('Please enter in your Facebook URL.', 'wppandashop5'),
+                        'desc'      =>  ''
+                    ),
+                    array(
+                        'id'        =>  'google-plus-url',
+                        'type'      =>  'text',
+                        'title'     =>  __('Google Plus URL', 'wppandashop5'),
+                        //'subtitle'  =>  __('Please enter in your Google Plus URL.', 'wppandashop5'),
+                        'desc'      =>  ''
+                    ),
+                    array(
+                        'id'        =>  'twitter-url',
+                        'type'      =>  'text',
+                        'title'     =>  __('Twitter URL', 'wppandashop5'),
+                        //subtitle'  =>  __('Please enter in your Twitter URL.', 'wppandashop5'),
+                        'desc'      =>  ''
+                    ),
+                    array(
+                        'id'        =>  'youtube-url',
+                        'type'      =>  'text',
+                        'title'     =>  __('You Tube URL', 'wppandashop5'),
+                        //'subtitle'  =>  __('Please enter in your You Tube URL.', 'wppandashop5'),
+                        'desc'      =>  ''
+                    ),
+/*                    array(
                         'id'        =>  '500px-url', 
                         'type'      =>  'text', 
                         'title'     =>  __('500PX URL', 'wppandashop5'),
@@ -2638,13 +2668,9 @@ if (!class_exists('Redux_Framework_sample_config')) {
                         'subtitle'  =>  __('Please enter in your Envernote URL.', 'wppandashop5'),
                         'desc'      =>  ''
                     ),
-                    array(
-                        'id'        =>  'facebook-url', 
-                        'type'      =>  'text', 
-                        'title'     =>  __('Facebook URL', 'wppandashop5'),
-                        'subtitle'  =>  __('Please enter in your Facebook URL.', 'wppandashop5'),
-                        'desc'      =>  ''
-                    ),
+*/
+
+                    /*
                     array(
                         'id'        =>  'flickr-url', 
                         'type'      =>  'text', 
@@ -2666,13 +2692,8 @@ if (!class_exists('Redux_Framework_sample_config')) {
                         'subtitle'  =>  __('Please enter in your Github URL.', 'wppandashop5'),
                         'desc'      =>  ''
                     ),
-                    array(
-                        'id'        =>  'google-plus-url', 
-                        'type'      =>  'text', 
-                        'title'     =>  __('Google Plus URL', 'wppandashop5'),
-                        'subtitle'  =>  __('Please enter in your Google Plus URL.', 'wppandashop5'),
-                        'desc'      =>  ''
-                    ),
+                    */
+                    /*
                     array(
                         'id'        =>  'grooveshark-url', 
                         'type'      =>  'text', 
@@ -2749,14 +2770,8 @@ if (!class_exists('Redux_Framework_sample_config')) {
                         'title'     =>  __('Tumblr URL', 'wppandashop5'),
                         'subtitle'  =>  __('Please enter in your Tumblr URL.', 'wppandashop5'),
                         'desc'      =>  ''
-                    ),
-                    array(
-                        'id'        =>  'twitter-url', 
-                        'type'      =>  'text', 
-                        'title'     =>  __('Twitter URL', 'wppandashop5'),
-                        'subtitle'  =>  __('Please enter in your Twitter URL.', 'wppandashop5'),
-                        'desc'      =>  ''
-                    ),
+                    ),*/
+                    /*
                     array(
                         'id'        =>  'viddler-url', 
                         'type'      =>  'text', 
@@ -2805,21 +2820,15 @@ if (!class_exists('Redux_Framework_sample_config')) {
                         'title'     =>  __('Yelp URL', 'wppandashop5'),
                         'subtitle'  =>  __('Please enter in your Yelp URL.', 'wppandashop5'),
                         'desc'      =>  ''
-                    ),
-                    array(
-                        'id'        =>  'youtube-url', 
-                        'type'      =>  'text', 
-                        'title'     =>  __('You Tube URL', 'wppandashop5'),
-                        'subtitle'  =>  __('Please enter in your You Tube URL.', 'wppandashop5'),
-                        'desc'      =>  ''
-                    ),
+                    ),*/
+                   /*
                     array(
                         'id'        =>  'zerply-url', 
                         'type'      =>  'text', 
                         'title'     =>  __('Zerply URL', 'wppandashop5'),
                         'subtitle'  =>  __('Please enter in your Zerply URL.', 'wppandashop5'),
                         'desc'      =>  ''
-                    )
+                    )*/
                 )
             );
 
