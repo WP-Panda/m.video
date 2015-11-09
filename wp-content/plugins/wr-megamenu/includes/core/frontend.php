@@ -182,7 +182,7 @@ class WR_Megamenu_Core_Frontend {
 				$script .= "$( '.$profile_selector ul.sub-menu li a, .$profile_selector ul.submenu-items li a' ).prepend( '<i class=\"glyphicon glyphicon-chevron-right\"></i>' );";
 			}
 
-			if ( $setting['menu-bar-stick_menu'] == 'yes' ) {
+			if ( $setting['menu-bar-stick_menu'] == 'od' ) {
 				$script .= "$(document).scroll(function () {
 								var y = $(document).scrollTop(),
 								mega_container = $( '.wr-megamenu-container.$profile_selector' );
