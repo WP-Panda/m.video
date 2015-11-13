@@ -30,15 +30,23 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-
+<div class="clearfix"></div>
 	<div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(' row '); ?>>
 
-		<div class="col-xs-12 col-sm-8  gallery-holder">
+		<div class="col-xs-12 col-sm-8  gallery-holder block-group">
 			<?php
 
-			add_action('woocommerce_before_single_product_summary', 'woocommerce_template_single_title' , 8);
-			add_action('woocommerce_before_single_product_summary', 'woocommerce_template_single_rating' , 9);
+			add_action('woocommerce_before_single_product_summary_cr', 'woocommerce_template_single_title' , 8);
+			add_action('woocommerce_before_single_product_summary_cr', 'woocommerce_template_single_rating' , 9);
 
+			?>
+			<div class="row">
+			<div class="col-xs-8">
+			<?php do_action( 'woocommerce_before_single_product_summary_cr' ); ?>
+			</div>
+			<div class="col-xs-4">h</div>
+			</div>
+<?php
 			/**
 			 * woocommerce_before_single_product_summary hook
 			 *
@@ -55,6 +63,8 @@ if ( post_password_required() ) {
 			remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title' , 5);
 			remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating' , 10);
 
+
+
 			$content = get_post_meta($post->ID, '_cr_single_modules_card', true);
 			$content = (array)json_decode($content);
 			if( ! empty( $content ) ) {
@@ -68,11 +78,41 @@ if ( post_password_required() ) {
 				remove_action('woocommerce_single_product_summary',  'woocommerce_template_single_sharing' , 50);
 
 				$n = 10;
+
 				foreach ($content as $val){
-					add_action('woocommerce_single_product_summary', $val , $n);
-					$n = $n + 10;
+					if($val == 'cr_woocommerce_query_sales') {
+						add_action('woocommerce_single_product_summary_one', $val, $n);
+						//$val();
+						$n = $n + 10;
+					} else {
+						continue;
+					}
 				}
+
+				foreach ($content as $val){
+					if($val !== 'cr_woocommerce_query_sales') {
+						add_action('woocommerce_single_product_summary_two', $val, $n);
+						//$val();
+						$n = $n + 10;
+					}
+				}
+
 			}
+
+			function block_pack($post){
+
+				do_action('woocommerce_single_product_summary_one');
+
+				echo '<div class="block-group">';
+				do_action('woocommerce_single_product_summary_two');
+				echo '</div>';
+
+			}
+
+			add_action('woocommerce_single_product_summary', 'block_pack');
+
+
+
 			?>
 			<?php
 			/**
@@ -91,7 +131,15 @@ if ( post_password_required() ) {
 
 		</div><!-- .summary -->
 		<div class="clearfix"></div>
-
+		</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid white borda">
+<div class="container top-min">
+<div class="row">
 		<?php
 		/**
 		 * woocommerce_after_single_product_summary hook
@@ -104,7 +152,8 @@ if ( post_password_required() ) {
 		?>
 
 		<meta itemprop="url" content="<?php the_permalink(); ?>" />
-
-	</div><!-- #product-<?php the_ID(); ?> -->
+</div>
+	</div>
+	</div>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>

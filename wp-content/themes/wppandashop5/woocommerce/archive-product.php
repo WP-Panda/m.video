@@ -102,22 +102,21 @@ $img_link = (! empty( $crsh5_meta ) && ! empty( $crsh5_meta['bn_link']  )) ? $cr
 
 							<div class="tab-pane active " id="grid-container">
 								<div class="category-product  inner-top-xs">
-									<div class="row">
+									<div class="row bor">
 										<?php
 										woocommerce_product_loop_start();
-										$delay = 0;
 										?>
 
 										<?php woocommerce_product_subcategories(); ?>
 
 										<?php while ( have_posts() ) : the_post(); ?>
 
-											<div class="col-sm-4 col-md-3 wow fadeInUp" data-wow-delay="<?php echo (float)($delay/10);?>s">
+											<div class="col-sm-4 col-md-4 prod-list">
 												<div class="products grid-v1">
 													<?php wc_get_template_part( 'content', 'product' ); ?>
 												</div><!-- /.products -->
 											</div><!-- /.item -->
-											<?php $delay++;  endwhile; // end of the loop. ?>
+											<?php endwhile; // end of the loop. ?>
 
 										<?php woocommerce_product_loop_end(); ?>
 

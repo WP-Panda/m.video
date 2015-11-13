@@ -63,22 +63,17 @@
     }
     .wr-megamenu-container ul.wr-mega-menu li:hover > ul.sub-menu, .wr-megamenu-container ul.wr-mega-menu li:hover > .wr-megamenu-inner {
         opacity: 1;
-        transform: translateY(0px);
+       /* transform: translateY(0px);*/
         visibility: visible;
     }
     .wr-megamenu-container ul.wr-mega-menu ul.sub-menu, .wr-megamenu-inner {
-        border-color: #ddd;
-        border-style: solid;
-        border-width: 0 1px 1px;
-        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
         display: inherit;
         margin: 0;
         opacity: 0;
         padding: 0;
         position: absolute;
-        top: auto;
-        transform: translateY(40px);
-        transition: transform 0.3s ease 0s;
+       /* transform: translateY(40px);
+        transition: transform 0.3s ease 0s;*/
         visibility: hidden;
         z-index: 9999;
     }
@@ -193,7 +188,11 @@ ul.sub-menu li a > i, ul.submenu-items li a > i {
     margin-left: 10px;
 }
 .wr-element-submenu .submenu-items a {
-    padding: 10px;
+    padding: 5px 0;
+}
+
+.wr-element-submenu .submenu-items a .glyphicon{
+    display: none;
 }
 .wr-megamenu-container.vertical {
     display: table !important;
@@ -411,7 +410,7 @@ ul.sub-menu li a > i, ul.submenu-items li a > i {
         white-space: nowrap;
     }
     .wr-megamenu-container ul ul {
-        background-color: #45a6e6;
+        background-color: #ed1c24;
         float: left;
         left: -999em;
         margin: 0;
@@ -433,10 +432,10 @@ ul.sub-menu li a > i, ul.submenu-items li a > i {
         white-space: normal;
     }
     .wr-megamenu-container li:hover > a, .wr-megamenu-container li.focus > a {
-        color: #45a6e6;
+        color: #ed1c24;
     }
     .wr-megamenu-container ul ul a:hover, .wr-megamenu-container ul ul li.focus > a {
-        color: #45a6e6;
+        color: #ed1c24;
     }
     .wr-megamenu-container ul li:hover > ul, .wr-megamenu-container ul li.focus > ul {
         left: auto;
@@ -448,8 +447,13 @@ ul.sub-menu li a > i, ul.submenu-items li a > i {
 
 .ig-menu-title {
     color: #525252!important;
-    font-size: 15px;
-    text-transform: uppercase;
+    text-transform: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ig-menu-title:hover {
+    color: #ed1c24!important;
 }
 
 .current_page_item a span,.current-menu-ancestor a span{
@@ -457,7 +461,7 @@ ul.sub-menu li a > i, ul.submenu-items li a > i {
 }
 
 .current_page_item,.current-menu-ancestor {
-    background-color:#45a6e6;
+    background-color:#ed1c24;
 }
 
 li.menu-item:hover a span {
@@ -466,6 +470,7 @@ li.menu-item:hover a span {
 
 .wr-megamenu-inner {
     background-color: #fff;
+    border: none;
 }
 
 .wr-megamenu-container .wr-megamenu-inner ul a {
@@ -473,6 +478,6 @@ li.menu-item:hover a span {
 }
 
 .wr-megamenu-container .wr-megamenu-inner ul li a:hover {
-    color:#45a6e6!important;
+    color:#ed1c24!important;
 }
 .ig-menu-title{ color:#525252;}

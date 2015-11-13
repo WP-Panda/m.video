@@ -45,7 +45,7 @@ if ( ! class_exists( 'BE_Compare_Products' ) ) :
 			// If disabled on shop page
 			if( BE_Compare_Settings::get_option( 'be_compare_button_visibility' ) != 'only-single' )
 				// Кнопка сравнение в архиве
-				add_action( 'woocommerce_after_shop_loop_item', array( $this, 'display_button' ), 20 );
+				//add_action( 'woocommerce_after_shop_loop_item', array( $this, 'display_button' ), 150 );
 			add_action( 'woocommerce_before_single_product', array( $this, 'determine_button_location' ) );
 			add_action( 'wp_footer', array( $this, 'add_script_frontend' ) );
 			add_filter( 'woocommerce_product_tabs', array( $this, 'new_product_tab' ) );
@@ -83,36 +83,17 @@ if ( ! class_exists( 'BE_Compare_Products' ) ) :
 			if( !$category || empty( $category ) ) return;
 
 			if( isset( $_SESSION[ 'be_compare_products' ] ) && count( $_SESSION[ 'be_compare_products' ] ) && in_array( $pid, $_SESSION[ 'be_compare_products' ] ) && $reset == false ) {
-				if(is_archive()) {
-					?>
-					<div id="compare-link-<?php echo $pid; ?>" product-id="<?php echo $pid; ?>"
-						 class="compare-product-link">
-						<input type="checkbox" checked="checked"
-							   class="cr-i-check"/> <?php //echo '<input type="button" class="compare-products-button" value="' . __( 'Compare', 'be-compare-products' ) . '" />';
-						?>
-					</div>
-					<?php
-				} else { ?>
-					<div id="compare-link-<?php echo $pid; ?>" product-id="<?php echo $pid; ?>"
-						 class="compare-product-link">
-						<input type="checkbox" checked="checked"
-							   class="cr-i-check-full"/> <?php //echo '<input type="button" class="compare-products-button" value="' . __( 'Compare', 'be-compare-products' ) . '" />';
-						?>
-					</div>
-				<?php }
+				?>
+				<div id="compare-link-<?php echo $pid; ?>" product-id="<?php echo $pid; ?>" class="compare-product-link">
+					<input type="checkbox" checked="checked" class="cr-i-check" id="compare-checkbox-<?php echo $pid; ?>" /> <label for="compare-checkbox-<?php echo $pid; ?>"><?php _e( 'Сравнить', 'be-compare-products' ); ?></label>
+				</div>
+				<?php
 			} else {
-				if( is_archive() ) { ?>
-					<div id="compare-link-<?php echo $pid; ?>" product-id="<?php echo $pid; ?>"
-						 class="compare-product-link">
-						<input type="checkbox" id="compare-checkbox-<?php echo $pid; ?>" class="cr-i-check"/>
-					</div>
-					<?php
-				} else { ?>
-					<div id="compare-link-<?php echo $pid; ?>" product-id="<?php echo $pid; ?>"
-						 class="compare-product-link">
-						<input type="checkbox" id="compare-checkbox-<?php echo $pid; ?>" class="cr-i-check-full"/>
-					</div>
-				<?php }
+				?>
+				<div id="compare-link-<?php echo $pid; ?>" product-id="<?php echo $pid; ?>" class="compare-product-link">
+					<input type="checkbox" class="cr-i-check" id="compare-checkbox-<?php echo $pid; ?>" /> <label for="compare-checkbox-<?php echo $pid; ?>"><?php _e( 'Сравнить', 'be-compare-products' ); ?></label>
+				</div>
+				<?php
 			}
 
 		}

@@ -12,28 +12,35 @@ $cop = ( ! empty( $wps5_option['footer_credits_text'] ))	? $wps5_option['footer_
 			<div class="container">
 				<div class="row">
 
-					<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="col-xs-12 col-sm-4 col-md-2">
 						<?php
 						if ( function_exists('dynamic_sidebar') )
 							dynamic_sidebar('footer-1');
 						?>
 					</div>
 
-					<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="col-xs-12 col-sm-4 col-md-2">
 						<?php
 						if ( function_exists('dynamic_sidebar') )
 							dynamic_sidebar('footer-2');
 						?>
 					</div>
 
-					<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="col-xs-12 col-sm-4 col-md-2">
 						<?php
 						if ( function_exists('dynamic_sidebar') )
 							dynamic_sidebar('footer-3');
 						?>
 					</div>
 
-					<div class="col-xs-12 col-sm-6 col-md-3 company-info">
+					<div class="col-xs-12 col-sm-6 col-md-2">
+						<?php
+						if ( function_exists('dynamic_sidebar') )
+							dynamic_sidebar('footer-4');
+						?>
+					</div>
+
+					<div class="col-xs-12 col-sm-6 col-md-4 company-info">
 						<div class="logo">
 							<?php
 							if( ! empty( $logo ) ) {
@@ -45,7 +52,7 @@ $cop = ( ! empty( $wps5_option['footer_credits_text'] ))	? $wps5_option['footer_
 						</div>
 						<?php
 						if ( function_exists('dynamic_sidebar') )
-							dynamic_sidebar('footer-4');
+							dynamic_sidebar('footer-5');
 						?>
 						<div class="social-network">
 							<h4 class="title">В социальных сетях</h4>

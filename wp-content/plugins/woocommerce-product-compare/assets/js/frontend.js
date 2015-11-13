@@ -39,7 +39,7 @@ jQuery( function( $ ) {
 
                     });
 
-                $iop = $('.cr-i-check').iCheck('destroy').iCheck({checkboxClass: 'icheckbox_minimal-comp'});
+                $iop = $('.cr-i-check').iCheck('destroy').iCheck({checkboxClass: 'icheckbox_minimal-aero'});
                //  $('.cr-i-check').iCheck({checkboxClass: 'icheckbox_minimal-comp'});
                 $iop.on('ifChanged', function(){
                     ffff($(this));
@@ -210,7 +210,7 @@ jQuery( function( $ ) {
 
     });
 
-    $iop = $('.cr-i-check').iCheck({checkboxClass: 'icheckbox_minimal-comp'});
+    $iop = $('.cr-i-check').iCheck({checkboxClass: 'icheckbox_minimal-aero'});
     $iop.on('ifChanged', function(){
         ffff($(this));
 

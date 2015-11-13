@@ -125,6 +125,17 @@ function register_cr_widgets(){
         'before_title' => '<div class="foot-title"><h4 class="title">',
         'after_title' => "</h4></div>\n",
     ) );
+
+    register_sidebar( array(
+        'name' => sprintf(__('Футер %d'), 5 ),
+        'id' => "footer-5",
+        'description' => '',
+        'class' => '',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => "</div>\n",
+        'before_title' => '<div class="foot-title"><h4 class="title">',
+        'after_title' => "</h4></div>\n",
+    ) );
 }
 add_action( 'widgets_init', 'register_cr_widgets' );
 

@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-	global $product, $woocommerce_loop;
+global $product, $woocommerce_loop;
 
 
 // Store loop count we're currently on
@@ -45,19 +45,23 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 ?>
 <div <?php post_class( $classes ); ?>>
 
-	<?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
+	<?php //do_action( 'woocommerce_before_shop_loop_item' ); ?>
 
-	<?php /* a href="<?php the_permalink(); ?>" */ ?>
+
 
 	<div class="product-info">
+		<a href="<?php the_permalink(); ?>" >
+			<?php
+			/**
+			 * woocommerce_before_shop_loop_item_title hook
+			 *
+			 * @hooked woocommerce_show_product_loop_sale_flash - 10
+			 * @hooked woocommerce_template_loop_product_thumbnail - 10
+			 */
+			do_action( 'woocommerce_before_shop_loop_item_title' );
+			?>
+		</a>
 		<?php
-		/**
-		 * woocommerce_before_shop_loop_item_title hook
-		 *
-		 * @hooked woocommerce_show_product_loop_sale_flash - 10
-		 * @hooked woocommerce_template_loop_product_thumbnail - 10
-		 */
-		do_action( 'woocommerce_before_shop_loop_item_title' );
 
 		/**
 		 * woocommerce_shop_loop_item_title hook
@@ -75,11 +79,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 		do_action( 'woocommerce_after_shop_loop_item_title' );
 		?>
 
-	</div>
 
-	<div class="cart animate-effect">
-		<div class="action">
-			<ul class="list-unstyled">
 				<?php
 
 				/**
@@ -90,8 +90,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 				do_action( 'woocommerce_after_shop_loop_item' );
 
 				?>
-			</ul>
-		</div><!-- /.action -->
-	</div><!-- /.cart -->
 
+
+</div>
 </div>

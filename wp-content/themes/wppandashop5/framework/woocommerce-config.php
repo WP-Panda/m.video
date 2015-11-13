@@ -61,11 +61,11 @@ function jk_dequeue_styles( $enqueue_styles ) {
         return $enqueue_styles;
 
 
-        unset($enqueue_styles['woocommerce-general']);
-        unset($enqueue_styles['woocommerce-layout']);        // Отключение стилей шаблонов
+    unset($enqueue_styles['woocommerce-general']);
+    unset($enqueue_styles['woocommerce-layout']);        // Отключение стилей шаблонов
 
-        // unset( $enqueue_styles['woocommerce-smallscreen'] );	// Отключение оптимизации для маленьких экранов
-        return $enqueue_styles;
+    // unset( $enqueue_styles['woocommerce-smallscreen'] );	// Отключение оптимизации для маленьких экранов
+    return $enqueue_styles;
 
 }
 
@@ -81,12 +81,28 @@ add_action( 'woocommerce_before_shop_loop_item_title', 'cr_template_loop_product
 /**
  *
  */
-if ( !is_singular() && is_main_query() ) {
-    add_action('woocommerce_after_shop_loop_item', 'cr_woocommerce_discount', 50);
-    add_action('woocommerce_after_shop_loop_item', 'cr_woocommerce_pick_up_in_store', 60);
-    add_action('woocommerce_after_shop_loop_item', 'cr_woocommerce_shipping_in_home', 70);
+
+
+
+function do_alter(){
+    if ( !is_singular() && is_main_query() ) { ?>
+        <div class="discounses">
+            <?php cr_woocommerce_discount(); ?>
+        </div>
+        <?php
+        cr_woocommerce_pick_up_in_store();
+        cr_woocommerce_shipping_in_home();
+        $butt = new BE_Compare_Products();
+        ?>
+        <div class="cr-compares">
+            <?php
+            $butt->display_button();
+            ?>
+        </div>
+    <?php }
 }
 
+add_action('woocommerce_after_shop_loop_item', 'do_alter', 50);
 
 /**
  * Новая миниатюра и распродажа
@@ -106,18 +122,15 @@ function cr_template_loop_product_thumbnail($size = 'shop_catalog'){
 
     $out = '
     <div class="product-image">
-        <a href="' . get_the_permalink($post->ID). '" data-lightbox="image-1">
             <div class="image">
                 <img src="' . $thumb.'" data-echo="' . $full .'" class="img-responsive" alt="">
             </div>';
 
     if ( $product->is_on_sale() ) {
-        $out .= apply_filters( 'woocommerce_sale_flash', '<div class="tag"><div class="tag-text sale">' . __( 'Sale!', 'woocommerce' ) . '</div></div>', $post, $product );
+        $out .= apply_filters( 'woocommerce_sale_flash', '<div class="tag"><div class="tag-text sale">' . __( 'SALE!', 'woocommerce' ) . '</div></div>', $post, $product );
     }
 
-    $out.= '<div class="hover-effect"><i class="fa fa-search"></i></div>
-        </a>
-    </div>';
+    $out.= '</div>';
 
     echo $out;
 
@@ -373,6 +386,8 @@ function cr_modules_tab_fields_save( $post_id ){
     saver('_shop_nal_6',$post_id);
     saver('_shop_zab_6',$post_id);
 
+    saver('_block_shipping_kog',$post_id);
+
 }
 
 add_filter( 'woocommerce_add_cart_item_data', 'woo_custom_add_to_cart' );
@@ -504,3 +519,25 @@ function spec_tab_content(){
 
     </div>
 <?php }
+
+/**
+ * Изменгенттая функция вывода рейтинга
+ *
+ * @param string $rating (default: '')
+ *
+ * @return string
+ */
+function get_rating_html_cr( $rating = null ) {
+    global $product;
+    $rating_html = '';
+    if ( ! is_numeric( $rating ) ) {
+        $rating = $product->get_average_rating();
+    }
+    $review_count = $product->get_review_count();
+    //if ( $rating > 0 ) {
+    $rating_html  = '<div class="star-rating" title="' . sprintf( __( 'Rated %s out of 5', 'woocommerce' ), $rating ) . '">';
+    $rating_html .= '<span style="width:' . ( ( $rating / 5 ) * 100 ) . '%"><strong class="rating">' . $rating . '</strong> ' . __( 'out of 5', 'woocommerce' ) . '</span>';
+    $rating_html .= '</div><b class="rate-ind">(' . $review_count . ')</b>';
+    // }
+    return apply_filters( 'woocommerce_product_get_rating_html', $rating_html, $rating );
+}

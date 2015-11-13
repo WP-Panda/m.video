@@ -16,23 +16,25 @@ $block_query_border = 1 == $block_query_border ? ' none-border' : '';
 <div class="cr-product-block cr-query-block<?php echo $block_query_border; ?>">
     <h4 class="name"<?php echo $mcolor ?>>
         <i class="fa fa-thumbs-o-up"<?php echo $bcolor ?>></i>
-        <?php echo $title ?>
+        <strong><?php echo $title ?></strong>
         <i class="fa fa-chevron-right"></i>
     </h4>
     <div class="cr-query-hide">
         <p class="border-b-da paddind-b-20">
-            <?php echo $text ?>
+            <?php echo $text ?><br>
             <a href="<?php echo $rules ?>">Правила</a>
         </p>
-        <p>Для участия в программе вы должны быть авторизованы.</p>
-        <ul>
-            <li>
-                <a href="<?php echo wp_login_url(); ?>">Войти</a>
-            </li>
-            <li>
-                <a href="<?php echo wp_registration_url(); ?>">Регистрация</a>
-            </li>
-        </ul>
-        <a href="javascript:void(0);" id="query-hider" class="btn-upper btn btn-primary checkout-page-button">Закрыть</a>
+        <div class="auto-block">
+            <p>Для участия в программе вы должны быть авторизованы.</p>
+            <ul>
+                <li>
+                    <a href="<?php echo wp_login_url(); ?>">Войти</a>
+                </li>
+                <li>
+                    <a href="<?php echo wp_registration_url(); ?>">Регистрация</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" id="query-hider" class="btn-upper btn btn-primary checkout-page-button w-100 p-12-0">Закрыть</a>
+        </div>
     </div>
 </div>

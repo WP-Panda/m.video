@@ -24,12 +24,28 @@ function cr_woocommerce_pick_up_in_store_options() {
     $pick_summ  = get_post_meta( $post->ID, '_pick_summ', true );
     $pick_link  = get_post_meta( $post->ID, '_pick_link', true );
     $block_store_border = get_post_meta( $post->ID, '_block_store_border', true );
+    $block_shipping_kog = get_post_meta( $post->ID, '_block_shipping_kog', true );
     ?>
     <div id="cr_pick_up_in_store_tab" class="panel woocommerce_options_panel">
         <div class="club-opening-hours">
 
             <fieldset class="form-field">
                 <div class="wrap">
+
+                    <?php woocommerce_wp_radio(
+                        array(
+                            'id'          => '_shop_zab_4',
+                            'label'       => __( 'Когда', 'woocommerce' ),
+                            'description' => __( 'Выберите значение.', 'woocommerce' ),
+                            'value'       =>  $block_shipping_kog,
+                            'options' => array(
+                                'no'   => __( 'недоступно', 'woocommerce' ),
+                                'one'   => __( 'Сегодня', 'woocommerce' ),
+                                'two'   => __( 'Завтра', 'woocommerce' ),
+                                'three' => __( 'В течении недели', 'woocommerce' )
+                            )
+                        )
+                    ) ?>
 
                     <p>
                         <label>Ссылка с блока: </label>

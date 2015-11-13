@@ -85,7 +85,7 @@ if ( !class_exists( 'Uni_WC_Wishlist' ) ) :
             add_action( 'wp_ajax_uni_bridallist_delete', array( $this, 'bridallist_delete_ajax' ) );
             add_action( 'wp_ajax_uni_wc_wishlist_bridal_title_inline_edit', array( $this, 'bridallist_title_inline_edit' ) );
 
-            add_action('woocommerce_after_shop_loop_item',array($this,'print_wishlist_link'),30);
+          //  add_action('woocommerce_after_shop_loop_item',array($this,'print_wishlist_link'),30);
 
             //add_action( 'show_user_profile', array( $this, 'uni_bridallist_user_fields') );
             //add_action( 'edit_user_profile', array( $this, 'uni_bridallist_user_fields') );

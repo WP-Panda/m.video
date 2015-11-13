@@ -129,8 +129,7 @@
             } else {
 
                 $('.wr-megamenu-fixed .wr-megamenu-inner').each(function() {
-                    //var or_width = $(this).attr('data-container');
-                    var or_width = $('.wr-megamenu-container').width();
+                    var or_width = $(this).attr('data-container');
                     $(this).css('width', or_width);
                 });
 

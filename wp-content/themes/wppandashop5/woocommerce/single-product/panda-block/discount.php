@@ -17,30 +17,38 @@ $discount_coupons = ! empty($discount_coupons) ? $discount_coupons : '5000';
 $block_discount_border = get_post_meta( $post->ID, '_block_discount_border', true );
 $block_discount_border = 1 == $block_discount_border ? ' none-border' : '';
 
-?>
+if(is_singular()){
+    ?>
 
-<div class="cr-product-block cr-bonus-block<?php echo $block_discount_border; ?>">
-    <?php if ( 1 == $discount_card_discount ) { ?>
-    <p>
-        <a href="<?php echo $discount_link; ?>">Скидка <?php echo $discount_summ; ?>%</a>
-        <img class="payments-method" src="<?php  echo WPS5_BASE_DIR . '/assets/images/payments/visa.png'?>" alt="">
-        <img class="payments-method" src="<?php  echo WPS5_BASE_DIR . '/assets/images/payments/master.png'?>" alt="">
-    </p>
-    <?php } ?>
-    <?php if ( 1 == $discount_online_credit ) { ?>
-    <p>
-        <a href="<?php echo $discount_credit; ?>">Онлайн кредит</a>   <i
+    <div class="cr-product-block cr-bonus-block<?php echo $block_discount_border; ?>">
+        <?php if ( 1 == $discount_card_discount ) { ?>
+            <p>
+                <a href="<?php echo $discount_link; ?>">Скидка <?php echo $discount_summ; ?>%</a>
+                <img class="payments-method" src="<?php  echo WPS5_BASE_DIR . '/assets/images/payments/visa.png'?>" alt="">
+                <img class="payments-method" src="<?php  echo WPS5_BASE_DIR . '/assets/images/payments/master.png'?>" alt="">
+            </p>
+        <?php } ?>
+        <?php if ( 1 == $discount_online_credit ) { ?>
+            <p>
+                <a href="<?php echo $discount_credit; ?>">Онлайн кредит</a>   <i
                     class="fa fa-question"
                     data-toggle="popover"
                     data-placement="top"
                     data-content="<?php echo htmlspecialchars ($discount_credit_text .  '<a href="' .  $discount_credit . '">подробнее</a>');?>"
-                    ></i>
-    </p>
-    <?php } ?>
-    <?php if ( 1 == $discount_discount_coupons ) { ?>
-    <p class="graise">
-        <span>+ «М.Купоны» на <?php echo $discount_coupons; ?> рублей</span>
-    </p>
-    <?php } ?>
-</div>
+                ></i>
+            </p>
+        <?php } ?>
+        <?php if ( 1 == $discount_discount_coupons ) { ?>
+            <p class="graise">
+                <span>+ «М.Купоны» на <?php echo $discount_coupons; ?> рублей</span>
+            </p>
+        <?php } ?>
+    </div>
 
+<?php } else { ?>
+    <?php if ( 1 == $discount_online_credit ) { ?>
+        <div class="product-tile-monthly-payment">
+            <a href="<?php echo $discount_credit; ?>">Онлайн кредит от<strong>	3&nbsp;729 руб./мес.</strong></a>
+        </div>
+    <?php } ?>
+<?php } ?>

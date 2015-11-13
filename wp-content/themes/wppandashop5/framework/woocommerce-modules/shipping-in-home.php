@@ -26,12 +26,14 @@ function cr_woocommerce_shipping_in_home_options() {
     $shipping_text_2  = get_post_meta( $post->ID, '_shipping_text_2', true );
     $shipping_summ_2  = get_post_meta( $post->ID, '_shipping_summ_2', true );
     $block_shipping_border = get_post_meta( $post->ID, '_block_shipping_border', true );
+
     ?>
     <div id="cr_shipping_in_home" class="panel woocommerce_options_panel">
         <div class="club-opening-hours">
 
             <fieldset class="form-field">
                 <div class="wrap">
+
 
                     <p>
                         <label>Ссылка с блока: </label>

@@ -104,7 +104,7 @@ class WR_Megamenu_Walker extends Walker_Nav_Menu {
 				$this->style = 'style="width:' . $this->mega_wrapper_width . '; left:0;"';
 	
 				if ( $this->is_mega ) {
-					$item_output .= '<div class="wr-megamenu-inner" ' . $this->style . ' data-container="'.$this->mega_wrapper_width.'">';
+					$item_output .= '<div class="wr-megamenu-inner" ' . $this->style . ' data-container="940">';
 					$shortcode_content = urldecode( $data['shortcode_content'] );
 					if ( ! empty( $shortcode_content ) ) {
 	
