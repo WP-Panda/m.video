@@ -6673,7 +6673,7 @@ span.page-numbers.current{
     margin-top: 6px;
 }
 .header-v2 .shopping-cart {
-    padding-left: 30%;
+   /* padding-left: 30%;*/
 }
 .header-v2 .shopping-cart .dropdown-toggle {
     padding: 0 !important;
@@ -6688,10 +6688,15 @@ span.page-numbers.current{
     text-align: center;
 }
 .header-v2 .shopping-cart .dropdown-toggle .total-price-basket .cart-icon i {
-    color: #fff;
+    color: #999;
     padding-right: 0;
-    font-size: 18px;
+    font-size: 30px;
 }
+
+.header-v2 .shopping-cart .dropdown-toggle .total-price-basket:hover > .cart-icon i {
+    color: #fff;
+}
+
 .header-v2 .shopping-cart .dropdown-toggle .cart-info {
     display: table-cell;
     text-align: left;
@@ -8266,7 +8271,7 @@ span.page-numbers.current:hover,
 .header-v2 .cart-icon,
 .header-v5 .cart-icon,
 .header-v9 .cart-icon {
-    background-color: #ed1c24 !important;
+    /*background-color: #ed1c24 !important;*/
 }
 .header-v2 .cart-info .amount,
 .header-v5 .cart-info .amount,
@@ -11950,4 +11955,32 @@ div#content {
 .block-sub-menu {
     border-right: 1px solid #e9eaec;
     padding-bottom: 30px;
+}
+
+#fixer{
+    background-color: #fff;
+}
+
+span.mini-basket-amount.amount {
+    background-color: #ed1c24;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    padding: 0 8px;
+    border-radius: 25px;
+    color: #fff;
+    text-decoration: none!important;
+    position: absolute;
+    margin-left: -10px;
+    top: -2px;
+}
+
+#fixer i.fa.fa-heart {
+    font-size: 26px;
+    color: #999;
+    padding-top: 7px;
+}
+
+img.logo{
+    width: 200px;
 }

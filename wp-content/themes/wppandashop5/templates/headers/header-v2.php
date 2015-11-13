@@ -16,10 +16,17 @@ $text = ! empty( $wps5_option['h_t'] ) ? $wps5_option['h_t'] : '+38 099 454 43 3
 			</div><!-- /.container -->
 		</div><!-- /.top -->
 
-		<div class="middle">
+		<div id="fixer" class="middle">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-4 logo">
+
+					<div class="col-xs-4 col-sm-5 col-md-2">
+						<div class="navbar-header">
+							Войтить
+						</div>
+					</div>
+
+					<div class="col-xs-8 col-sm-7 col-md-5 logo">
 						<div class="navbar-header">
 								<?php
 								if( ! empty( $logo ) ) {
@@ -37,11 +44,17 @@ $text = ! empty( $wps5_option['h_t'] ) ? $wps5_option['h_t'] : '+38 099 454 43 3
 						</div>
 					</div>
 
-					<div class="col-xs-12 col-sm-12 col-md-5">
-						<?php //get_template_part('templates/components/header/option-search-bar'); ?>
+					<div class="col-xs-12 col-sm-12 col-md-3">
+						<?php get_template_part('templates/components/header/option-search-bar'); ?>
 					</div>
 
-					<div class="col-xs-12 col-sm-12 col-md-3">
+					<div class="col-xs-6 col-sm-6 col-md-1 text-right">
+						<?php if ( is_woocommerce_activated() ) { ?>
+								<i class="fa fa-heart"></i>
+						<?php } ?>
+					</div>
+
+					<div class="col-xs-6 col-sm-6 col-md-1">
 						<?php if ( is_woocommerce_activated() ) { ?>
 							<div id="cart-drop" class="dropdown dropdown-cart shopping-cart">
 								<?php get_template_part('templates/components/header/cart-style','v2'); ?>
